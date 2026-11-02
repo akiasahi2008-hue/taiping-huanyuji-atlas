@@ -1,0 +1,22 @@
+<!--
+
+請根據四庫全書掃描版校對本頁，標準見[[Wikisource:四庫全書原文]]。加標點請另外建立頁面。
+
+
+-->{{SKQS header|title=太平寰宇記|section=卷一百十七|prev=卷一百十六|prev_link=卷116|next=卷一百十八|next_link=卷118|type=史}}<onlyinclude><poem>　　欽定四庫全書
+　　{{SK anchor|太平寰宇記卷一百十七}}
+　　宋　樂史　撰
+　　{{SK notes|原闕}}
+
+
+
+
+
+
+
+
+
+
+
+
+</poem></onlyinclude>{{SKQS footer|title=太平寰宇記|section=卷一百十七|prev=卷一百十六|prev_link=卷116|next=卷一百十八|next_link=卷118|type=史}}{{PD-old}}

@@ -1,0 +1,22 @@
+<!--
+
+請根據四庫全書掃描版校對本頁，標準見[[Wikisource:四庫全書原文]]。加標點請另外建立頁面。
+
+
+-->{{SKQS header|title=太平寰宇記|section=卷一百十四|prev=卷一百十三|prev_link=卷113|next=卷一百十五|next_link=卷115|type=史}}<onlyinclude><poem>　　欽定四庫全書
+　　{{SK anchor|太平寰宇記卷一百十四}}
+　　宋　樂史　撰
+　　{{SK notes|原闕}}
+
+
+
+
+
+
+
+
+
+
+
+
+</poem></onlyinclude>{{SKQS footer|title=太平寰宇記|section=卷一百十四|prev=卷一百十三|prev_link=卷113|next=卷一百十五|next_link=卷115|type=史}}{{PD-old}}

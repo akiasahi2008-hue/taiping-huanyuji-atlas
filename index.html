@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>太平寰宇記 · 北宋太宗朝天下輿図（全二百巻空間解析・十三道州県・四至八到里程網・山川古跡GIS）</title>
+  <meta name="description" content="北宋・楽史撰『太平寰宇記』全二百巻を固有表現抽出（NER）・四至八到ネットワーク三辺測量（NetworkX/Shapely）・CHGIS突合により空間構造化したインタラクティブ歴史地理情報システム（GIS）。十三道・387州府軍監・1,150県・6,934山川古跡・2,513里程網・唐宋戸口統計を収録。" />
+  <meta name="theme-color" content="#f3eee4" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* 『太平寰宇記』専用拡張スタイル */
+    .mode-switch-group {
+      display: inline-flex;
+      background: rgba(43, 38, 34, 0.06);
+      border: 1px solid rgba(43, 38, 34, 0.14);
+      border-radius: 9px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .mode-switch-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 7px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-switch-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.55);
+    }
+    .mode-switch-btn.is-active {
+      background: #fff;
+      color: var(--vermilion);
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(43, 38, 34, 0.12);
+    }
+    #lm-cat-bar {
+      position: absolute;
+      top: 56px;
+      left: 14px;
+      z-index: 22;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      background: rgba(251, 248, 241, 0.94);
+      border: 1px solid rgba(181, 69, 47, 0.25);
+      border-radius: 10px;
+      padding: 6px 8px;
+      box-shadow: 0 6px 20px rgba(43, 38, 34, 0.12);
+      backdrop-filter: blur(6px);
+    }
+    .lm-cat-pill {
+      font-size: 11.5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(43, 38, 34, 0.14);
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text-secondary);
+    }
+    .lm-cat-pill.is-active {
+      background: var(--vermilion);
+      color: #fff;
+      border-color: var(--vermilion);
+      font-weight: 600;
+    }
+    .stat-grid-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+      margin: 10px 0;
+    }
+    .stat-card {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(43, 38, 34, 0.11);
+      border-radius: 9px;
+      padding: 7px 10px;
+    }
+    .stat-card .stat-lbl {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .stat-card .stat-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      font-family: var(--serif-stack);
+      margin-top: 2px;
+    }
+    .stat-card .stat-sub {
+      font-size: 10.5px;
+      color: var(--vermilion);
+    }
+    .hh-bar-wrap {
+      margin: 8px 0;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(43, 38, 34, 0.12);
+      border-radius: 9px;
+      padding: 8px 10px;
+    }
+    .hh-bar-track {
+      height: 8px;
+      border-radius: 4px;
+      background: #e2d9c8;
+      overflow: hidden;
+      display: flex;
+      margin: 5px 0;
+    }
+    .hh-bar-zhu {
+      background: #b5452f;
+      height: 100%;
+    }
+    .hh-bar-ke {
+      background: #d98a3c;
+      height: 100%;
+    }
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin: 6px 0;
+    }
+    .info-tag {
+      font-size: 11.5px;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: rgba(181, 69, 47, 0.09);
+      color: #7a2e1d;
+      border: 1px solid rgba(181, 69, 47, 0.2);
+      cursor: pointer;
+    }
+    .info-tag:hover {
+      background: rgba(181, 69, 47, 0.18);
+    }
+    .info-tag.county-tag {
+      background: rgba(46, 95, 133, 0.1);
+      color: #1f496b;
+      border-color: rgba(46, 95, 133, 0.24);
+    }
+    .info-tag.cit-tag {
+      background: rgba(92, 107, 69, 0.12);
+      color: #3a4726;
+      border-color: rgba(92, 107, 69, 0.25);
+      font-size: 10.5px;
+    }
+    .pref-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 8px;
+      border-radius: 7px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(43, 38, 34, 0.06);
+      transition: background 0.12s;
+    }
+    .pref-list-item:hover {
+      background: rgba(181, 69, 47, 0.08);
+    }
+    .pref-list-item.is-selected {
+      background: rgba(181, 69, 47, 0.15);
+      border-left: 3px solid var(--vermilion);
+    }
+    .sizhi-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 4px 6px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .sizhi-row:hover {
+      background: rgba(181, 69, 47, 0.08);
+    }
+    #atlas-svg .inv-scale {
+      transform: scale(var(--inv-k, 1));
+      transform-origin: 0px 0px;
+    }
+    .dao-dock-strip {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow-x: auto;
+      padding: 4px 6px;
+      scrollbar-width: thin;
+      flex: 1;
+    }
+    .dao-pill-btn {
+      border: 1px solid rgba(43, 38, 34, 0.16);
+      background: rgba(255, 255, 255, 0.65);
+      color: var(--text-main);
+      font-family: var(--serif-stack);
+      font-size: 12.5px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s;
+    }
+    .dao-pill-btn:hover {
+      background: #fff;
+      border-color: var(--vermilion);
+    }
+    .dao-pill-btn.is-active {
+      background: var(--vermilion);
+      color: #fff;
+      border-color: var(--vermilion);
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(181, 69, 47, 0.28);
+    }
+    .dao-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .siyi-sub-btn {
+      border: 1px solid rgba(43, 38, 34, 0.16);
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text-main);
+      font-family: var(--serif-stack);
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+    }
+    .siyi-sub-btn:hover {
+      background: #fff;
+      border-color: var(--tint, var(--vermilion));
+    }
+    .siyi-sub-btn.is-active {
+      background: var(--tint, var(--vermilion));
+      color: #fff;
+      border-color: var(--tint, var(--vermilion));
+      font-weight: 600;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+    }
+    /* SVG custom styles */
+    .dao-poly {
+      fill-opacity: 0.18;
+      stroke-width: 1.5;
+      stroke-dasharray: 4 2;
+      transition: fill-opacity 0.2s;
+      vector-effect: non-scaling-stroke;
+    }
+    .dao-poly:hover {
+      fill-opacity: 0.28;
+    }
+    .pref-poly {
+      fill-opacity: 0.14;
+      stroke: rgba(65, 52, 42, 0.42);
+      stroke-width: 0.8;
+      vector-effect: non-scaling-stroke;
+      cursor: pointer;
+      transition: fill-opacity 0.15s, stroke-width 0.15s;
+    }
+    .pref-poly:hover {
+      fill-opacity: 0.36;
+      stroke: #b5452f;
+      stroke-width: 1.6;
+    }
+    .pref-poly.is-selected {
+      fill-opacity: 0.45;
+      stroke: #b5452f;
+      stroke-width: 2.2;
+    }
+    .net-edge {
+      stroke: rgba(143, 75, 50, 0.32);
+      stroke-width: 1.0;
+      vector-effect: non-scaling-stroke;
+      pointer-events: none;
+    }
+    .net-edge-active {
+      stroke: #b5452f;
+      stroke-width: 2.2;
+      stroke-dasharray: 5 3;
+      vector-effect: non-scaling-stroke;
+      pointer-events: none;
+    }
+    .trilat-line {
+      stroke: #2e5f85;
+      stroke-width: 1.5;
+      stroke-dasharray: 2 2;
+      vector-effect: non-scaling-stroke;
+      pointer-events: none;
+    }
+    .section-subhead {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--vermilion);
+      margin: 12px 0 5px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid rgba(181, 69, 47, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /* Modal for Pipeline & GeoJSON Download */
+    .pipeline-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(25, 22, 18, 0.55);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(3px);
+    }
+    .pipeline-modal {
+      background: #fbf8f1;
+      border: 1px solid rgba(181, 69, 47, 0.35);
+      border-radius: 14px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 20px 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="atlas-shell">
+    <header id="nav-bar">
+      <div class="brand-group">
+        <h1 id="site-heading">
+          <a class="home-link" id="act-home" href="./" title="全体表示にリセット">
+            <span class="seal-mark" id="txt-seal">太平寰宇記</span>
+          </a>
+          <span class="subtitle-mark" id="txt-subtitle">北宋太宗朝天下輿図 · 全二百巻空間解析（十三道・387州府・1,150県・6,934山川古跡）</span>
+        </h1>
+      </div>
+
+      <div class="control-strip" role="toolbar" aria-label="解析モードとレイヤー切替">
+        <div class="mode-switch-group" role="group" aria-label="解析表示モード">
+          <button type="button" class="mode-switch-btn is-active" data-mode="polity" title="十三道・州府軍監・県・山川古跡の標準歴史輿図モード">輿図政区</button>
+          <button type="button" class="mode-switch-btn" data-mode="network" title="『四至八到』記載の2,513本の州間里程ネットワークと三辺測量誤差の可視化">四至八到網</button>
+          <button type="button" class="mode-switch-btn" data-mode="household" title="唐・開元戸数と北宋・皇朝戸数（主戸・客戸）の人口動態比較バブル">唐宋戸口比較</button>
+          <button type="button" class="mode-switch-btn" data-mode="landmarks" title="固有表現抽出（NER）で抽出した6,934件の山川・故城・陵墓・祠廟マップ">山川・名勝古跡</button>
+        </div>
+
+        <span class="toolbar-divider" aria-hidden="true"></span>
+
+        <button id="act-layers-menu" class="action-btn subtle layers-trigger-btn" type="button" aria-expanded="false" aria-controls="layers-popover">
+          <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1.8L1.5 5.2 8 8.6l6.5-3.4L8 1.8zM1.5 8.2L8 11.6l6.5-3.4M1.5 11.2L8 14.6l6.5-3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>レイヤー</span>
+          <span class="caret-mark" aria-hidden="true">▾</span>
+        </button>
+
+        <button id="act-data-modal" class="action-btn subtle" type="button" title="GeoJSON・CSV・Colabノートブック・解析統計を表示">
+          <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 13.5h11M8 2v8.5M4.8 7.5L8 10.7l3.2-3.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>GeoJSON / 工程データ</span>
+        </button>
+      </div>
+
+      <div id="layers-popover" class="layers-popover is-hidden" role="dialog" aria-label="地図レイヤー設定">
+        <div class="layers-pop-section">
+          <div class="layers-pop-heading">『太平寰宇記』空間解析レイヤー</div>
+          <div class="layers-pop-grid">
+            <label class="layer-chip"><input type="checkbox" id="chk-daos" checked /><span>十三道疆域</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-prefectures" checked /><span>州府軍監境 (387)</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-settlements" checked /><span>州府治所名</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-network" checked /><span>四至八到里程網</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-counties" /><span>所属県 (1,150)</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-landmarks" /><span>山川古跡 (6,934)</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-siyi" checked /><span>四夷諸国 (203)</span></label>
+            <label class="layer-chip" title="四至八到の記載里数からNetworkX三辺測量で推計した座標とCHGIS座標の偏差ベクトル"><input type="checkbox" id="chk-trilat" /><span>三辺測量ベクトル</span></label>
+          </div>
+        </div>
+        <div class="layers-pop-section">
+          <div class="layers-pop-heading">山川・現代参照レイヤー</div>
+          <div class="layers-pop-grid">
+            <label class="layer-chip"><input type="checkbox" id="chk-terrain" checked /><span>山川水系・地形</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-provinces" checked /><span>現代省界</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-prov-names" /><span>現代省名</span></label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="workspace-body">
+      <div id="viewport-frame">
+        <div id="svg-stage-wrap">
+          <svg id="atlas-svg" class="terrain-active" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="太平寰宇記 歴史地図">
+            <defs>
+              <filter id="label-halo" x="-20%" y="-20%" width="140%" height="140%">
+                <feMorphology operator="dilate" radius="1.4" in="SourceAlpha" result="dilated" />
+                <feFlood flood-color="#f6f1e6" flood-opacity="0.92" result="bg" />
+                <feComposite in="bg" in2="dilated" operator="in" result="outline" />
+                <feMerge>
+                  <feMergeNode in="outline" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <linearGradient id="terrain-fade-h" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" class="terrain-edge-stop" />
+                <stop offset="4.5%" class="terrain-edge-stop" stop-opacity="0" />
+                <stop offset="94.5%" class="terrain-edge-stop" stop-opacity="0" />
+                <stop offset="100%" class="terrain-edge-stop" />
+              </linearGradient>
+              <linearGradient id="terrain-fade-v" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" class="terrain-edge-stop" />
+                <stop offset="4.5%" class="terrain-edge-stop" stop-opacity="0" />
+                <stop offset="94.5%" class="terrain-edge-stop" stop-opacity="0" />
+                <stop offset="100%" class="terrain-edge-stop" />
+              </linearGradient>
+              <marker id="arrow-vermilion" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#b5452f" />
+              </marker>
+            </defs>
+            <rect id="ocean-bg" x="-2000" y="-2000" width="6000" height="6000" />
+            <g id="camera-rig">
+              <g id="grp-terrain">
+                <image id="terrain-relief-img" href="assets/terrain_relief.webp" x="-80" y="-40" width="1160" height="780" preserveAspectRatio="none" />
+                <rect x="-80" y="-40" width="1160" height="780" fill="url(#terrain-fade-h)" />
+                <rect x="-80" y="-40" width="1160" height="780" fill="url(#terrain-fade-v)" />
+              </g>
+              <g id="grp-provinces"></g>
+              <g id="grp-daos"></g>
+              <g id="grp-prefectures"></g>
+              <g id="grp-rivers"></g>
+              <g id="grp-network"></g>
+              <g id="grp-trilat"></g>
+              <g id="grp-households"></g>
+              <g id="grp-prov-names" class="is-hidden"></g>
+              <g id="grp-counties"></g>
+              <g id="grp-landmarks"></g>
+              <g id="grp-siyi"></g>
+              <g id="grp-settlements"></g>
+              <g id="grp-active-rays"></g>
+            </g>
+          </svg>
+        </div>
+
+        <div id="map-search-box" role="search" aria-label="州府・県・山川古跡・人物・土産を検索">
+          <div class="search-input-wrap">
+            <svg class="search-ico" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+              <circle cx="7" cy="7" r="4.8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10.6 10.6L14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <input id="inp-map-search" type="search" autocomplete="off" placeholder="州府 / 県 / 山川古跡 / 人物 / 土産（例: 開封, 藍田, 麻黄, 蔡邕）" />
+          </div>
+          <ul id="map-search-results" class="search-results-list is-hidden" role="listbox"></ul>
+        </div>
+
+        <div id="lm-cat-bar" class="is-hidden" role="toolbar" aria-label="山川古跡カテゴリフィルタ">
+          <button type="button" class="lm-cat-pill is-active" data-cat="ALL">すべて (6,934)</button>
+          <button type="button" class="lm-cat-pill" data-cat="山岳">⛰ 山岳</button>
+          <button type="button" class="lm-cat-pill" data-cat="水系">💧 水系</button>
+          <button type="button" class="lm-cat-pill" data-cat="故城">🏯 故城</button>
+          <button type="button" class="lm-cat-pill" data-cat="関津">⛩ 関津</button>
+          <button type="button" class="lm-cat-pill" data-cat="陵墓">🪦 陵墓</button>
+          <button type="button" class="lm-cat-pill" data-cat="祠廟">🛕 祠廟</button>
+          <button type="button" class="lm-cat-pill" data-cat="亭台">🏮 亭台</button>
+        </div>
+
+        <div id="map-key" aria-live="polite"></div>
+
+        <div id="canvas-br-dock">
+          <button id="act-reset-camera" class="canvas-reset-btn" type="button" title="全体表示にリセット">
+            <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg>
+            <span>全体表示</span>
+          </button>
+          <div id="scale-bar-box" aria-hidden="true">
+            <div class="scale-label" id="scale-label-text">500 km (約1,340宋里)</div>
+            <div class="scale-ruler" id="scale-ruler-bar"></div>
+          </div>
+        </div>
+
+        <button id="act-toggle-pane" type="button" title="側欄を折りたたむ / 開く"><span class="tp-arrow" aria-hidden="true">›</span><span class="tp-label">全図</span></button>
+
+        <!-- 州府・県・山川古跡 詳細ポップアップカード -->
+        <div id="genealogy-card" class="is-hidden" role="dialog" aria-label="太平寰宇記 考証詳細">
+          <div class="genealogy-header">
+            <div class="genealogy-heading-group">
+              <div class="genealogy-tag" id="txt-genealogy-kicker">太平寰宇記 · 州府考証</div>
+              <div id="genealogy-heading" class="genealogy-title"></div>
+            </div>
+            <div class="genealogy-header-actions">
+              <button id="act-expand-genealogy" class="icon-close gen-expand-btn" type="button" title="パネルを拡大/縮小">⤢</button>
+              <button id="act-close-genealogy" class="icon-close" type="button" title="閉じる">
+                <svg class="ico-svg" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div id="genealogy-sub" class="genealogy-sub"></div>
+          <div id="genealogy-body" class="genealogy-body"></div>
+        </div>
+
+        <div id="hover-tip" class="is-hidden" role="tooltip"></div>
+
+        <div id="gesture-guide">ホイールで拡大縮小（拡大すると所属1,150県・山川6,934箇所が自動表示） · 州府クリックで『四至八到』里程網・戸口・土産・原文を表示</div>
+      </div>
+
+      <aside id="chronicle-pane" aria-label="十三道・州府詳細">
+        <button id="polity-backbar" class="polity-backbar is-hidden" type="button">← 全十三道総覧へ戻る</button>
+        <div class="dynasty-banner" id="dynasty-banner-bar">
+          <div class="dynasty-title-row">
+            <h2 id="dynasty-title">天下十三道・四夷総覧</h2>
+            <span id="dynasty-span" class="span-label">全二百巻（979–984年撰）</span>
+          </div>
+          <div class="seat-row">
+            <span class="seat-tag" id="txt-seat-label">中枢</span>
+            <span id="dynasty-seat">東京開封府 · 西京河南府 · 十三道387州府軍監</span>
+          </div>
+        </div>
+
+        <p id="dynasty-summary" class="dynasty-desc"></p>
+
+        <div id="dao-stats-container"></div>
+
+        <div class="milestone-section">
+          <h3 id="txt-milestones-heading">収録州・府・軍・監一覧</h3>
+          <div id="prefecture-list-container"></div>
+        </div>
+
+        <div class="disclaimer-box">
+          ※本図は四庫全書本『太平寰宇記』全200巻（原闕巻113〜119は宋刊本・隣州四至により空間補完）を固有表現抽出（NER）・NetworkX三辺測量（1宋里≈0.372km測地換算）・CHGIS突合により自動構築した歴史GISです。
+        </div>
+      </aside>
+    </main>
+
+    <footer id="scrubber-dock" aria-label="十三道・四夷ナビゲーション">
+      <div class="dao-dock-strip" id="dao-dock-list"></div>
+      <div class="year-stepper">
+        <button id="act-vol-prev" class="step-nav-btn" type="button" title="前の道へ">‹</button>
+        <span class="unit-label" id="lbl-active-dao" style="min-width:76px;text-align:center;font-weight:600;">全道総覧</span>
+        <button id="act-vol-next" class="step-nav-btn" type="button" title="次の道へ">›</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- GeoJSON / パイプライン成果物モーダル -->
+  <div id="pipeline-modal-wrap" class="pipeline-modal-backdrop is-hidden" role="dialog" aria-label="解析パイプラインとデータ出力">
+    <div class="pipeline-modal">
+      <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(43,38,34,0.15);padding-bottom:10px;margin-bottom:12px;">
+        <h2 style="font-family:var(--serif-stack);color:var(--vermilion);font-size:18px;">『太平寰宇記』GIS構築パイプライン ＆ 構造化データ一覧</h2>
+        <button id="act-close-modal" class="icon-close" type="button">✕</button>
+      </div>
+      <div style="font-size:13px;line-height:1.65;color:var(--text-main);">
+        <p style="margin-top:0;">ご指定の3段階ワークフローに基づき、全200巻の漢文テキスト取得からNER構造化・空間三辺測量・GeoJSON変換までを実行済みです。</p>
+        <div class="stat-grid-box">
+          <div class="stat-card">
+            <div class="stat-lbl">① 漢文テキスト・NER構造化</div>
+            <div class="stat-val">全200巻 / 6,934古跡</div>
+            <div class="stat-sub">data/*.json, *.csv に出力済</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-lbl">② 四至八到・空間三辺測量</div>
+            <div class="stat-val">2,513 里程エッジ</div>
+            <div class="stat-sub">実測中央値: 1宋里 = 0.3721 km</div>
+          </div>
+        </div>
+        <h3 style="font-size:13.5px;color:var(--vermilion);margin:12px 0 6px;">生成済みファイル（ローカル & Google Colab 共通）</h3>
+        <ul style="margin:0;padding-left:18px;font-size:12.5px;">
+          <li><strong>構造化JSON / CSV (<code>data/</code>)</strong>:
+            <a href="data/taiping_huanyuji_prefectures.csv" download>taiping_huanyuji_prefectures.csv</a> (387州府軍監) /
+            <a href="data/taiping_huanyuji_distances.csv" download>taiping_huanyuji_distances.csv</a> (3,223四至八到) /
+            <a href="data/taiping_huanyuji_counties.csv" download>taiping_huanyuji_counties.csv</a> (1,150県) /
+            <a href="data/taiping_huanyuji_landmarks.csv" download>taiping_huanyuji_landmarks.csv</a> (6,934山川古跡)
+          </li>
+          <li><strong>標準 RFC 7946 GeoJSON (<code>geojson/</code>)</strong>:
+            <a href="geojson/dao_regions.geojson" download>dao_regions.geojson</a> (十三道ポリゴン) /
+            <a href="geojson/prefectures.geojson" download>prefectures.geojson</a> (州府ポリゴン) /
+            <a href="geojson/distance_network.geojson" download>distance_network.geojson</a> (四至八到LineString) /
+            <a href="geojson/counties.geojson" download>counties.geojson</a> /
+            <a href="geojson/landmarks.geojson" download>landmarks.geojson</a> /
+            <a href="geojson/siyi_states.geojson" download>siyi_states.geojson</a>
+          </li>
+          <li><strong>Google Colab ノートブック (<code>notebooks/</code>)</strong>:
+            <a href="notebooks/taiping_huanyuji_gis_pipeline.ipynb" download>taiping_huanyuji_gis_pipeline.ipynb</a>（CHGIS突合・NetworkX三辺測量・GeoPandas/Folium可視化をColab上で再現・カスタマイズ可能）
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/china_geo_data.js"></script>
+  <script src="js/taiping_atlas_data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
