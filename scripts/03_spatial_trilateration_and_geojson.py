@@ -914,25 +914,113 @@ def main():
         json.dumps(prefs, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # 10. Build Web App JS Bundle (`js/taiping_atlas_data.js`)
-    # Keep landmarks compact for fast browser load (all 6,934 landmarks stored as compact arrays or objects)
-    compact_landmarks = [
-        {
-            "n": lm["name"],
-            "c": lm["category"],
-            "cnty": lm["county"],
-            "p": lm["prefecture"],
-            "d": lm["dao"],
-            "v": lm["vol"],
-            "dir": lm["direction"],
-            "li": lm["distance_li"],
-            "cit": lm["citations"],
-            "xy": lm["coord"],
-            "desc": lm.get("desc_ja") or lm["desc"][:140],
-            "desc_ja": lm.get("desc_ja"),
+    # 10. Build Web App JS Bundles:
+    #   - `js/taiping_atlas_data.js` (Lightweight Core Map Data ~1.1 MB for instant initial load)
+    #   - `js/taiping_atlas_texts.js` (Full Classical Chinese & Japanese Translations loaded asynchronously)
+    core_prefs = []
+    texts_prefs = {}
+    for p in prefs:
+        pid = p["id"]
+        core_prefs.append({
+            "id": pid,
+            "name": p["name"],
+            "jun_name": p.get("jun_name", ""),
+            "dao_id": p["dao_id"],
+            "dao": p["dao"],
+            "vol": p["vol"],
+            "seat": p.get("seat", ""),
+            "east_west_li": p.get("east_west_li"),
+            "north_south_li": p.get("north_south_li"),
+            "tang_households": p.get("tang_households"),
+            "song_zhu_households": p.get("song_zhu_households"),
+            "song_ke_households": p.get("song_ke_households"),
+            "song_total_households": p.get("song_total_households"),
+            "orig_counties_count": p.get("orig_counties_count"),
+            "county_names": p.get("county_names", []),
+            "products": p.get("products", []),
+            "distance_count": len(p.get("distances", [])),
+            "coord": p["coord"],
+            "coord_source": p.get("coord_source", ""),
+            "trilaterated_coord": p.get("trilaterated_coord"),
+            "trilateration_error_km": p.get("trilateration_error_km", 0),
+            "rings": p.get("rings", []),
+        })
+        texts_prefs[pid] = {
+            "history": p.get("history", ""),
+            "history_ja": p.get("history_ja", ""),
+            "customs": p.get("customs", ""),
+            "customs_ja": p.get("customs_ja", ""),
+            "surnames": p.get("surnames", ""),
+            "surnames_ja": p.get("surnames_ja", ""),
+            "figures": p.get("figures", []),
+            "figures_ja": p.get("figures_ja", []),
+            "distances": p.get("distances", []),
         }
-        for lm in landmarks
-    ]
+
+    core_counties = []
+    texts_counties = []
+    for c in counties:
+        core_counties.append({
+            "name": c["name"],
+            "prefecture": c["prefecture"],
+            "dao_id": c["dao_id"],
+            "dao": c["dao"],
+            "vol": c["vol"],
+            "direction": c.get("direction", ""),
+            "distance_li": c.get("distance_li"),
+            "old_xiang": c.get("old_xiang"),
+            "curr_xiang": c.get("curr_xiang"),
+            "coord": c["coord"],
+        })
+        texts_counties.append([
+            c.get("intro", ""),
+            c.get("intro_ja", ""),
+        ])
+
+    core_landmarks = []
+    texts_landmarks = []
+    for lm in landmarks:
+        xy = lm["coord"]
+        core_landmarks.append([
+            lm["name"],
+            lm["category"],
+            lm["county"],
+            lm["prefecture"],
+            lm["dao"],
+            lm["vol"],
+            lm.get("direction") or "",
+            lm.get("distance_li") or 0,
+            round(xy[0], 2),
+            round(xy[1], 2),
+        ])
+        texts_landmarks.append([
+            (lm.get("desc") or "")[:180],
+            lm.get("desc_ja") or "",
+            lm.get("citations") or [],
+        ])
+
+    core_siyi = []
+    texts_siyi = []
+    for s in siyi:
+        prev = s.get("customs_ja") or s.get("customs") or s.get("history_ja") or ""
+        short_prev = prev[:60] + ("…" if len(prev) > 60 else "")
+        core_siyi.append({
+            "name": s["name"],
+            "vol": s["vol"],
+            "dao_id": s["dao_id"],
+            "dao": s["dao"],
+            "distance_chang_an_li": s.get("distance_chang_an_li"),
+            "coord": s.get("coord"),
+            "short_preview": short_prev,
+        })
+        texts_siyi.append({
+            "history": s.get("history", ""),
+            "history_ja": s.get("history_ja", ""),
+            "sizhi": s.get("sizhi", ""),
+            "sizhi_ja": s.get("sizhi_ja", ""),
+            "customs": s.get("customs", ""),
+            "customs_ja": s.get("customs_ja", ""),
+        })
 
     bundle = {
         "meta": {
@@ -949,23 +1037,45 @@ def main():
             {k: v for k, v in d.items() if k != "geojson_geometry"}
             for d in dao_regions_out
         ] + [DAO_META[-1]],
-        "prefectures": prefs,
+        "prefectures": core_prefs,
         "edges": valid_edges,
-        "counties": counties,
-        "landmarks": compact_landmarks,
-        "siyi": siyi,
+        "counties": core_counties,
+        "landmarks": core_landmarks,
+        "siyi": core_siyi,
     }
 
     js_content = (
         "/**\n"
-        " * 『太平寰宇記』全二百巻 空間構造化データバンドル (NER・四至八到三辺測量・十三道政区ポリゴン)\n"
+        " * 『太平寰宇記』全二百巻 空間構造化コアデータバンドル (軽量初期表示用)\n"
         " */\n"
         "window.TAIPING_ATLAS_DATA = "
         + json.dumps(bundle, ensure_ascii=False, separators=(",", ":"))
         + ";\n"
     )
     (JS_DIR / "taiping_atlas_data.js").write_text(js_content, encoding="utf-8")
-    print(f"Wrote js/taiping_atlas_data.js ({len(js_content) / 1024 / 1024:.2f} MB) and 6 GeoJSON files in geojson/!")
+
+    texts_bundle = {
+        "prefectures": texts_prefs,
+        "counties": texts_counties,
+        "landmarks": texts_landmarks,
+        "siyi": texts_siyi,
+    }
+    texts_js_content = (
+        "/**\n"
+        " * 『太平寰宇記』全二百巻 詳細テキスト・現代語和訳データバンドル (非同期遅延読込用)\n"
+        " */\n"
+        "window.TAIPING_ATLAS_TEXTS = "
+        + json.dumps(texts_bundle, ensure_ascii=False, separators=(",", ":"))
+        + ";\n"
+        "if (window.taipingApp && typeof window.taipingApp.hydrateTexts === 'function') {\n"
+        "  window.taipingApp.hydrateTexts(window.TAIPING_ATLAS_TEXTS);\n"
+        "}\n"
+    )
+    (JS_DIR / "taiping_atlas_texts.js").write_text(texts_js_content, encoding="utf-8")
+    print(
+        f"Wrote js/taiping_atlas_data.js ({len(js_content.encode('utf-8')) / 1024 / 1024:.2f} MB) "
+        f"and js/taiping_atlas_texts.js ({len(texts_js_content.encode('utf-8')) / 1024 / 1024:.2f} MB)!"
+    )
 
 
 def _geom_to_rings(geom) -> list[list[list[float]]]:
@@ -974,7 +1084,7 @@ def _geom_to_rings(geom) -> list[list[list[float]]]:
         return rings
     polys = [geom] if isinstance(geom, Polygon) else list(geom.geoms) if isinstance(geom, MultiPolygon) else []
     for poly in polys:
-        ext = [[round(x, 3), round(y, 3)] for x, y in poly.exterior.coords]
+        ext = [[round(x, 2), round(y, 2)] for x, y in poly.exterior.coords]
         if len(ext) >= 4:
             rings.append(ext)
     return rings

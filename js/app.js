@@ -1,10 +1,9 @@
 /**
- * 『太平寰宇記』北宋太宗朝天下輿図 インタラクティブ歴史GISコントローラ
+ * 『太平寰宇記』北宋太宗朝天下輿図 インタラクティブ歴史GISコントローラ（高速描画・遅延読込最適化版）
  */
 (function () {
   'use strict';
 
-  const SVG_NS = 'http://www.w3.org/2000/svg';
   const RAD_TO_DEG = 180 / Math.PI;
   const DEG_TO_RAD = Math.PI / 180;
 
@@ -37,7 +36,7 @@
 
     _latToMerc(lat) {
       const clamped = Math.max(-80, Math.min(80, lat));
-      return Math.log(Math.tan(Math.PI * 0.25 + (clamped * DEG_TO_RAD) * 0.5));
+      return Math.log(Math.tan(Math.PI * 0.25 + clamped * DEG_TO_RAD * 0.5));
     }
 
     toScreen(lng, lat) {
@@ -82,7 +81,7 @@
     siyi_dongyi: { fill: '#1b7a70', stroke: '#0e4a44', label: '東夷' },
     siyi_nanman: { fill: '#c04829', stroke: '#7d1e08', label: '南蠻' },
     siyi_xirong: { fill: '#d97706', stroke: '#8c4800', label: '西戎' },
-    siyi_beidi:  { fill: '#4a5568', stroke: '#212732', label: '北狄' },
+    siyi_beidi: { fill: '#4a5568', stroke: '#212732', label: '北狄' },
   };
 
   class TaipingAtlasApp {
@@ -100,6 +99,8 @@
       this.activeSiyiSub = 'ALL';
       this.selectedPref = null;
       this.selectedCounty = null;
+      this.selectedLandmark = null;
+      this.selectedSiyi = null;
       this.displayMode = 'polity'; // 'polity' | 'network' | 'household' | 'landmarks'
       this.activeLmCat = 'ALL';
 
@@ -108,6 +109,16 @@
       this.daoById = new Map();
       this.countiesByPref = new Map();
       this.landmarksByPref = new Map();
+      this.edgesBySource = new Map();
+
+      this.textsLoaded = false;
+      this._textsCallbacks = [];
+      this._renderedPrefKey = null;
+      this._hoveredEl = null;
+      this._rafCamera = 0;
+      this._detailTimer = 0;
+      this._movingTimer = 0;
+      this._viewportRect = null;
 
       this._indexData();
       this._cacheDom();
@@ -117,36 +128,192 @@
       this.renderAll();
       this.updateSidePane();
       this.updateLegend();
+
+      // Defer loading of the 5.5MB detailed texts bundle until after initial paint
+      requestAnimationFrame(() => {
+        setTimeout(() => this._loadTextsAsync(), 40);
+      });
     }
 
     _indexData() {
       for (const d of this.data.daos) {
+        let pathD = '';
+        for (const r of d.rings || []) pathD += this.projector.ringToSvgPath(r);
+        d._pathD = pathD;
+        if (d.anchor) {
+          const [ax, ay] = this.projector.toScreen(d.anchor[0], d.anchor[1]);
+          d._ax = ax;
+          d._ay = ay;
+        }
         this.daoById.set(d.id, d);
       }
+
       for (const p of this.data.prefectures) {
+        const [sx, sy] = this.projector.toScreen(p.coord[0], p.coord[1]);
+        p._sx = sx;
+        p._sy = sy;
+        if (p.trilaterated_coord) {
+          const [tx, ty] = this.projector.toScreen(p.trilaterated_coord[0], p.trilaterated_coord[1]);
+          p._tx = tx;
+          p._ty = ty;
+        }
+        let pathD = '';
+        for (const r of p.rings || []) pathD += this.projector.ringToSvgPath(r);
+        p._pathD = pathD;
+        if (!p.distances) p.distances = [];
+        if (!p.figures) p.figures = [];
+        if (!p.figures_ja) p.figures_ja = [];
+
         this.prefByName.set(p.name, p);
         this.prefById.set(p.id, p);
         this.countiesByPref.set(p.name, []);
         this.landmarksByPref.set(p.name, []);
+        this.edgesBySource.set(p.name, []);
       }
+
       // Capitals alias lookup
       if (this.prefByName.has('開封府')) this.prefByName.set('東京', this.prefByName.get('開封府'));
       if (this.prefByName.has('河南府')) this.prefByName.set('西京', this.prefByName.get('河南府'));
       if (this.prefByName.has('雍州')) this.prefByName.set('長安', this.prefByName.get('雍州'));
 
+      for (const e of this.data.edges) {
+        const [x1, y1] = this.projector.toScreen(e.source_coord[0], e.source_coord[1]);
+        const [x2, y2] = this.projector.toScreen(e.target_coord[0], e.target_coord[1]);
+        e._x1 = x1;
+        e._y1 = y1;
+        e._x2 = x2;
+        e._y2 = y2;
+        if (this.edgesBySource.has(e.source)) {
+          this.edgesBySource.get(e.source).push(e);
+        }
+      }
+
       for (const c of this.data.counties) {
+        const [sx, sy] = this.projector.toScreen(c.coord[0], c.coord[1]);
+        c._sx = sx;
+        c._sy = sy;
         if (this.countiesByPref.has(c.prefecture)) {
           this.countiesByPref.get(c.prefecture).push(c);
         }
       }
-      for (const lm of this.data.landmarks) {
+
+      // Unpack compact landmarks if stored as tuples [n, c, cnty, p, d, v, dir, li, x, y]
+      const rawLms = this.data.landmarks;
+      for (let i = 0; i < rawLms.length; i++) {
+        let lm = rawLms[i];
+        if (Array.isArray(lm)) {
+          lm = {
+            n: lm[0],
+            c: lm[1],
+            cnty: lm[2],
+            p: lm[3],
+            d: lm[4],
+            v: lm[5],
+            dir: lm[6],
+            li: lm[7],
+            xy: [lm[8], lm[9]],
+            desc: '',
+            desc_ja: '',
+            cit: [],
+          };
+          rawLms[i] = lm;
+        }
+        const [sx, sy] = this.projector.toScreen(lm.xy[0], lm.xy[1]);
+        lm._sx = sx;
+        lm._sy = sy;
         if (this.landmarksByPref.has(lm.p)) {
           this.landmarksByPref.get(lm.p).push(lm);
+        }
+      }
+
+      for (const s of this.data.siyi) {
+        if (s.coord) {
+          const [sx, sy] = this.projector.toScreen(s.coord[0], s.coord[1]);
+          s._sx = sx;
+          s._sy = sy;
+        }
+      }
+
+      const [chX, chY] = this.projector.toScreen(108.93, 34.27);
+      this._changAnScreen = [chX, chY];
+    }
+
+    _loadTextsAsync() {
+      if (this.textsLoaded) return;
+      if (window.TAIPING_ATLAS_TEXTS) {
+        this.hydrateTexts(window.TAIPING_ATLAS_TEXTS);
+        return;
+      }
+      if (this._loadingTextsScript) return;
+      this._loadingTextsScript = true;
+      const s = document.createElement('script');
+      s.src = 'js/taiping_atlas_texts.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+
+    hydrateTexts(texts) {
+      if (!texts || this.textsLoaded) return;
+      const pMap = texts.prefectures || {};
+      for (const p of this.data.prefectures) {
+        const tp = pMap[p.id];
+        if (tp) {
+          p.history = tp.history || '';
+          p.history_ja = tp.history_ja || '';
+          p.customs = tp.customs || '';
+          p.customs_ja = tp.customs_ja || '';
+          p.surnames = tp.surnames || '';
+          p.surnames_ja = tp.surnames_ja || '';
+          p.figures = tp.figures || [];
+          p.figures_ja = tp.figures_ja || [];
+          p.distances = tp.distances || [];
+        }
+      }
+
+      const cList = texts.counties || [];
+      for (let i = 0; i < this.data.counties.length && i < cList.length; i++) {
+        const tc = cList[i];
+        if (tc) {
+          this.data.counties[i].intro = tc[0] || '';
+          this.data.counties[i].intro_ja = tc[1] || '';
+        }
+      }
+
+      const lmList = texts.landmarks || [];
+      for (let i = 0; i < this.data.landmarks.length && i < lmList.length; i++) {
+        const tlm = lmList[i];
+        if (tlm) {
+          this.data.landmarks[i].desc = tlm[0] || '';
+          this.data.landmarks[i].desc_ja = tlm[1] || tlm[0] || '';
+          this.data.landmarks[i].cit = tlm[2] || [];
+        }
+      }
+
+      const sList = texts.siyi || [];
+      for (let i = 0; i < this.data.siyi.length && i < sList.length; i++) {
+        const ts = sList[i];
+        if (ts) {
+          Object.assign(this.data.siyi[i], ts);
+        }
+      }
+
+      this.textsLoaded = true;
+      // Refresh open detail card if user clicked one before texts finished loading
+      if (!this.genCard.classList.contains('is-hidden')) {
+        if (this._openCardType === 'pref' && this.selectedPref) {
+          this.openPrefectureDetail(this.selectedPref, false);
+        } else if (this._openCardType === 'county' && this.selectedCounty) {
+          this.openCountyDetail(this.selectedCounty, false);
+        } else if (this._openCardType === 'lm' && this.selectedLandmark) {
+          this.openLandmarkDetail(this.selectedLandmark, false);
+        } else if (this._openCardType === 'siyi' && this.selectedSiyi) {
+          this.openSiyiDetail(this.selectedSiyi, false);
         }
       }
     }
 
     _cacheDom() {
+      this.viewportFrame = document.getElementById('viewport-frame');
       this.svg = document.getElementById('atlas-svg');
       this.cameraRig = document.getElementById('camera-rig');
       this.grpTerrain = document.getElementById('grp-terrain');
@@ -239,19 +406,37 @@
         html += `<button type="button" class="dao-pill-btn" data-dao="${escHtml(d.id)}"><span class="dao-dot" style="background:${escHtml(d.tint || '#888')}"></span>${escHtml(d.name)}</button>`;
       }
       dock.innerHTML = html;
-      dock.querySelectorAll('.dao-pill-btn').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          this.selectDao(btn.dataset.dao, true);
-        });
+      dock.addEventListener('click', (e) => {
+        const btn = e.target.closest('.dao-pill-btn');
+        if (btn) this.selectDao(btn.dataset.dao, true);
       });
     }
 
+    _markCameraMoving() {
+      this.viewportFrame.classList.add('is-camera-moving');
+      this.hoverTip.classList.add('is-hidden');
+      if (this._movingTimer) clearTimeout(this._movingTimer);
+      this._movingTimer = setTimeout(() => {
+        this.viewportFrame.classList.remove('is-camera-moving');
+        this._viewportRect = null;
+      }, 140);
+    }
+
+    _scheduleDynamicLayers(delayMs = 70) {
+      if (this._detailTimer) clearTimeout(this._detailTimer);
+      this._detailTimer = setTimeout(() => {
+        this._detailTimer = 0;
+        this.renderDynamicDetailLayers();
+      }, delayMs);
+    }
+
     _bindEvents() {
-      // Pan & Zoom on SVG
+      // Pan & Zoom on SVG (rAF-throttled)
       let isDragging = false;
       let startX = 0;
       let startY = 0;
       let dragMoved = false;
+      let svgRect = null;
 
       this.svg.addEventListener('mousedown', (e) => {
         if (e.button !== 0) return;
@@ -259,28 +444,45 @@
         dragMoved = false;
         startX = e.clientX;
         startY = e.clientY;
+        svgRect = this.svg.getBoundingClientRect();
         this.svg.style.cursor = 'grabbing';
       });
 
-      window.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        if (Math.hypot(dx, dy) > 3) dragMoved = true;
-        startX = e.clientX;
-        startY = e.clientY;
-        const rect = this.svg.getBoundingClientRect();
-        const scaleX = 1000 / rect.width;
-        const scaleY = 700 / rect.height;
-        this.camera.x += dx * scaleX;
-        this.camera.y += dy * scaleY;
-        this._applyCamera();
-      });
+      window.addEventListener(
+        'mousemove',
+        (e) => {
+          if (!isDragging) return;
+          const dx = e.clientX - startX;
+          const dy = e.clientY - startY;
+          if (!dragMoved && Math.hypot(dx, dy) > 3) {
+            dragMoved = true;
+            this._markCameraMoving();
+          }
+          startX = e.clientX;
+          startY = e.clientY;
+          const rect = svgRect || this.svg.getBoundingClientRect();
+          const scaleX = 1000 / rect.width;
+          const scaleY = 700 / rect.height;
+          this.camera.x += dx * scaleX;
+          this.camera.y += dy * scaleY;
+          if (!this._rafCamera) {
+            this._rafCamera = requestAnimationFrame(() => {
+              this._rafCamera = 0;
+              this._applyCamera();
+            });
+          }
+        },
+        { passive: true }
+      );
 
       window.addEventListener('mouseup', () => {
         if (isDragging) {
           isDragging = false;
+          svgRect = null;
           this.svg.style.cursor = '';
+          if (dragMoved) {
+            this._scheduleDynamicLayers(20);
+          }
         }
       });
 
@@ -288,7 +490,8 @@
         'wheel',
         (e) => {
           e.preventDefault();
-          const rect = this.svg.getBoundingClientRect();
+          this._markCameraMoving();
+          const rect = this._viewportRect || (this._viewportRect = this.svg.getBoundingClientRect());
           const mx = ((e.clientX - rect.left) / rect.width) * 1000;
           const my = ((e.clientY - rect.top) / rect.height) * 700;
           const factor = e.deltaY < 0 ? 1.22 : 1 / 1.22;
@@ -297,11 +500,105 @@
           this.camera.x = mx - (mx - this.camera.x) * ratio;
           this.camera.y = my - (my - this.camera.y) * ratio;
           this.camera.k = nextK;
-          this._applyCamera();
-          this.renderDynamicDetailLayers();
+          if (!this._rafCamera) {
+            this._rafCamera = requestAnimationFrame(() => {
+              this._rafCamera = 0;
+              this._applyCamera();
+            });
+          }
+          this._scheduleDynamicLayers(75);
         },
         { passive: false }
       );
+
+      // Single Delegated Click Listener on SVG
+      this.svg.addEventListener('click', (e) => {
+        if (dragMoved) return;
+        const target = e.target.closest('[data-pref-id], [data-siyi-idx], [data-cnty-idx], [data-lm-idx]');
+        if (!target) return;
+        e.stopPropagation();
+        if (target.dataset.prefId) {
+          const p = this.prefById.get(target.dataset.prefId);
+          if (p) this.openPrefectureDetail(p, false);
+        } else if (target.dataset.siyiIdx != null) {
+          const s = this.data.siyi[Number(target.dataset.siyiIdx)];
+          if (s) this.openSiyiDetail(s, true);
+        } else if (target.dataset.cntyIdx != null) {
+          const c = this.data.counties[Number(target.dataset.cntyIdx)];
+          if (c) this.openCountyDetail(c, true);
+        } else if (target.dataset.lmIdx != null) {
+          const lm = this.data.landmarks[Number(target.dataset.lmIdx)];
+          if (lm) this.openLandmarkDetail(lm, true);
+        }
+      });
+
+      // Single Delegated Hover Listener on SVG
+      this.svg.addEventListener(
+        'mousemove',
+        (e) => {
+          if (isDragging) return;
+          const target = e.target.closest('.pref-poly, .pref-node, .siyi-marker, .cnty-node, .lm-node');
+          if (!target) {
+            if (this._hoveredEl) {
+              this._hoveredEl = null;
+              this.hoverTip.classList.add('is-hidden');
+              if (!this.selectedPref) this.grpActiveRays.innerHTML = '';
+            }
+            return;
+          }
+          if (target !== this._hoveredEl) {
+            this._hoveredEl = target;
+            if (target.dataset.prefId) {
+              const p = this.prefById.get(target.dataset.prefId);
+              if (p) {
+                this._showHoverTip(
+                  e,
+                  `<strong>${escHtml(p.name)}</strong>（${escHtml(p.dao)} · ${escHtml(p.vol)}）<br/>治所: ${escHtml(p.seat || '郭下')} · 領県: ${p.county_names.length} · 皇朝戸: ${fmtNum(p.song_total_households)}`
+                );
+                if (!this.selectedPref) this.renderActiveRays(p);
+              }
+            } else if (target.dataset.siyiIdx != null) {
+              const s = this.data.siyi[Number(target.dataset.siyiIdx)];
+              if (s) {
+                const distStr = s.distance_chang_an_li ? ` · 長安より${fmtNum(s.distance_chang_an_li)}里` : '';
+                const shortPrev = s.short_preview || (s.customs_ja || s.customs || s.history_ja || '').slice(0, 60);
+                this._showHoverTip(
+                  e,
+                  `<strong>${escHtml(s.name)}</strong>（${escHtml(s.dao)} · ${escHtml(s.vol)}${distStr}）${shortPrev ? `<br/><span style="font-size:11px;color:#eee">${escHtml(shortPrev)}</span>` : ''}`
+                );
+                if (s.distance_chang_an_li && s._sx != null) {
+                  this.renderSiyiRay(s);
+                }
+              }
+            } else if (target.dataset.cntyIdx != null) {
+              const c = this.data.counties[Number(target.dataset.cntyIdx)];
+              if (c) {
+                this._showHoverTip(
+                  e,
+                  `<strong>${escHtml(c.name)}</strong>（${escHtml(c.prefecture)}管轄 · ${escHtml(c.dao)}）`
+                );
+              }
+            } else if (target.dataset.lmIdx != null) {
+              const lm = this.data.landmarks[Number(target.dataset.lmIdx)];
+              if (lm) {
+                this._showHoverTip(
+                  e,
+                  `<strong>【${escHtml(lm.c)}】${escHtml(lm.n)}</strong>（${escHtml(lm.p)}${escHtml(lm.cnty)}）`
+                );
+              }
+            }
+          } else {
+            this._moveHoverTip(e);
+          }
+        },
+        { passive: true }
+      );
+
+      this.svg.addEventListener('mouseleave', () => {
+        this._hoveredEl = null;
+        this.hoverTip.classList.add('is-hidden');
+        if (!this.selectedPref) this.grpActiveRays.innerHTML = '';
+      });
 
       // Reset camera
       document.getElementById('act-reset-camera').addEventListener('click', () => {
@@ -342,10 +639,14 @@
             this.chkLandmarks.checked = true;
           } else {
             lmBar.classList.add('is-hidden');
+            this.chkLandmarks.checked = false;
           }
           if (this.displayMode === 'network') {
             this.chkNetwork.checked = true;
             this.chkTrilat.checked = true;
+          } else {
+            this.chkNetwork.checked = false;
+            this.chkTrilat.checked = false;
           }
           this.renderAll();
           this.updateLegend();
@@ -404,14 +705,17 @@
       const shell = document.getElementById('atlas-shell');
       document.getElementById('act-toggle-pane').addEventListener('click', () => {
         shell.classList.toggle('pane-collapsed');
+        this._viewportRect = null;
       });
 
       // Detail card close & expand
       document.getElementById('act-close-genealogy').addEventListener('click', () => {
         this.genCard.classList.add('is-hidden');
         this.selectedPref = null;
+        this._openCardType = null;
         this.grpActiveRays.innerHTML = '';
         this.renderPrefectures();
+        this.renderDynamicDetailLayers();
       });
       document.getElementById('act-expand-genealogy').addEventListener('click', () => {
         this.genCard.classList.toggle('is-expanded');
@@ -438,9 +742,11 @@
           resList.classList.add('is-hidden');
           return;
         }
+        this._loadTextsAsync();
         this._runSearch(q, resList);
       });
       inpSearch.addEventListener('focus', () => {
+        this._loadTextsAsync();
         if (inpSearch.value.trim()) this._runSearch(inpSearch.value.trim(), resList);
       });
     }
@@ -448,11 +754,9 @@
     _applyCamera() {
       const { x, y, k } = this.camera;
       this.cameraRig.setAttribute('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) scale(${k.toFixed(4)})`);
-      // Keep labels readable when zoomed in: grow gently up to ~1.75x visual size instead of shrinking too small or blowing up with k
       const visualBoost = k > 1.0 ? Math.min(1.8, Math.pow(k, 0.28)) : 1.0;
       const invK = visualBoost / Math.max(1.0, k);
       this.svg.style.setProperty('--inv-k', invK.toFixed(4));
-      // Update scale bar
       const kmPerScreen = Math.round(500 / k);
       const liPerScreen = Math.round(kmPerScreen / 0.3721);
       const lbl = document.getElementById('scale-label-text');
@@ -521,16 +825,12 @@
       }
       let html = '';
       for (const d of this.data.daos) {
-        if (!d.rings || !d.rings.length) continue;
+        if (!d._pathD) continue;
         if (this.activeDaoId !== 'ALL' && this.activeDaoId !== d.id) continue;
-        let pathD = '';
-        for (const r of d.rings) pathD += this.projector.ringToSvgPath(r);
-        if (!pathD) continue;
         const fillOp = this.activeDaoId === d.id ? 0.25 : 0.16;
-        html += `<path class="dao-poly" data-dao="${escHtml(d.id)}" d="${pathD}" fill="${escHtml(d.tint)}" fill-opacity="${fillOp}" stroke="${escHtml(d.tint)}"/>`;
-        if (d.anchor) {
-          const [ax, ay] = this.projector.toScreen(d.anchor[0], d.anchor[1]);
-          html += `<g transform="translate(${ax.toFixed(1)},${ay.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="0" text-anchor="middle" font-family="var(--calligraphy-stack)" font-size="15.5" fill="${escHtml(d.tint)}" opacity="0.75" filter="url(#label-halo)">${escHtml(d.name)}</text></g></g>`;
+        html += `<path class="dao-poly" data-dao="${escHtml(d.id)}" d="${d._pathD}" fill="${escHtml(d.tint)}" fill-opacity="${fillOp}" stroke="${escHtml(d.tint)}"/>`;
+        if (d._ax != null) {
+          html += `<g transform="translate(${d._ax.toFixed(1)},${d._ay.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="0" text-anchor="middle" font-family="var(--calligraphy-stack)" font-size="15.5" fill="${escHtml(d.tint)}" opacity="0.78">${escHtml(d.name)}</text></g></g>`;
         }
       }
       this.grpDaos.innerHTML = html;
@@ -539,43 +839,32 @@
     renderPrefectures() {
       if (!this.chkPrefectures.checked || this.activeDaoId === 'siyi') {
         this.grpPrefectures.innerHTML = '';
+        this._renderedPrefKey = null;
         return;
       }
+      const key = `${this.activeDaoId}:${this.chkPrefectures.checked}`;
+      if (this._renderedPrefKey === key) {
+        // Fast O(1) selection class toggle without rebuilding 387 SVG paths
+        const prevSel = this.grpPrefectures.querySelector('.pref-poly.is-selected');
+        if (prevSel) prevSel.classList.remove('is-selected');
+        if (this.selectedPref) {
+          const nextSel = this.grpPrefectures.querySelector(`.pref-poly[data-pref-id="${this.selectedPref.id}"]`);
+          if (nextSel) nextSel.classList.add('is-selected');
+        }
+        return;
+      }
+      this._renderedPrefKey = key;
+
       let html = '';
       for (const p of this.data.prefectures) {
         if (this.activeDaoId !== 'ALL' && p.dao_id !== this.activeDaoId) continue;
+        if (!p._pathD) continue;
         const dMeta = this.daoById.get(p.dao_id);
         const tint = dMeta ? dMeta.tint : '#8f4b32';
-        let pathD = '';
-        for (const r of p.rings || []) pathD += this.projector.ringToSvgPath(r);
-        if (!pathD) continue;
         const isSel = this.selectedPref && this.selectedPref.id === p.id;
-        html += `<path class="pref-poly${isSel ? ' is-selected' : ''}" data-pref-id="${escHtml(p.id)}" d="${pathD}" fill="${escHtml(tint)}"/>`;
+        html += `<path class="pref-poly${isSel ? ' is-selected' : ''}" data-pref-id="${escHtml(p.id)}" d="${p._pathD}" fill="${escHtml(tint)}"/>`;
       }
       this.grpPrefectures.innerHTML = html;
-
-      this.grpPrefectures.querySelectorAll('.pref-poly').forEach((el) => {
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const p = this.prefById.get(el.dataset.prefId);
-          if (p) this.openPrefectureDetail(p, false);
-        });
-        el.addEventListener('mouseenter', (e) => {
-          const p = this.prefById.get(el.dataset.prefId);
-          if (p) {
-            this._showHoverTip(
-              e,
-              `<strong>${escHtml(p.name)}</strong>（${escHtml(p.dao)} · ${escHtml(p.vol)}）<br/>治所: ${escHtml(p.seat || '郭下')} · 領県: ${p.county_names.length} · 皇朝戸: ${fmtNum(p.song_total_households)}`
-            );
-            if (!this.selectedPref) this.renderActiveRays(p);
-          }
-        });
-        el.addEventListener('mousemove', (e) => this._moveHoverTip(e));
-        el.addEventListener('mouseleave', () => {
-          this.hoverTip.classList.add('is-hidden');
-          if (!this.selectedPref) this.grpActiveRays.innerHTML = '';
-        });
-      });
     }
 
     renderNetworkAndTrilat() {
@@ -596,38 +885,33 @@
             if (!sp || sp.dao_id !== this.activeDaoId) continue;
           }
           if (e.geodesic_km > 900 && !isNetMode) continue;
-          const [x1, y1] = this.projector.toScreen(e.source_coord[0], e.source_coord[1]);
-          const [x2, y2] = this.projector.toScreen(e.target_coord[0], e.target_coord[1]);
           let color = 'rgba(143, 75, 50, 0.25)';
           let sw = '0.85';
           if (isNetMode) {
-            // Color by tortuosity ratio (expected_km / geodesic_km)
             if (e.tortuosity >= 0.7 && e.tortuosity <= 1.35) {
-              color = 'rgba(46, 115, 87, 0.52)'; // Good match
+              color = 'rgba(46, 115, 87, 0.52)';
             } else if (e.tortuosity < 0.7) {
-              color = 'rgba(46, 95, 133, 0.52)'; // Mountain/detour route
+              color = 'rgba(46, 95, 133, 0.52)';
             } else {
-              color = 'rgba(181, 69, 47, 0.55)'; // High discrepancy
+              color = 'rgba(181, 69, 47, 0.55)';
             }
             sw = '1.2';
           }
-          netHtml += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${color}" stroke-width="${sw}" vector-effect="non-scaling-stroke" pointer-events="none"/>`;
+          netHtml += `<line x1="${e._x1.toFixed(1)}" y1="${e._y1.toFixed(1)}" x2="${e._x2.toFixed(1)}" y2="${e._y2.toFixed(1)}" stroke="${color}" stroke-width="${sw}" vector-effect="non-scaling-stroke" pointer-events="none"/>`;
         }
         this.grpNetwork.innerHTML = netHtml;
       }
 
-      // 2. Trilateration Vectors (CHGIS anchor -> NetworkX Trilaterated position)
+      // 2. Trilateration Vectors
       if (!this.chkTrilat.checked) {
         this.grpTrilat.innerHTML = '';
       } else {
         let triHtml = '';
         for (const p of this.data.prefectures) {
           if (this.activeDaoId !== 'ALL' && p.dao_id !== this.activeDaoId) continue;
-          if (!p.trilaterated_coord || p.trilateration_error_km < 5) continue;
-          const [x1, y1] = this.projector.toScreen(p.coord[0], p.coord[1]);
-          const [x2, y2] = this.projector.toScreen(p.trilaterated_coord[0], p.trilaterated_coord[1]);
-          triHtml += `<line class="trilat-line" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`;
-          triHtml += `<circle cx="${x2.toFixed(1)}" cy="${y2.toFixed(1)}" r="2.2" fill="#2e5f85" opacity="0.8" pointer-events="none"/>`;
+          if (p._tx == null || p.trilateration_error_km < 5) continue;
+          triHtml += `<line class="trilat-line" x1="${p._sx.toFixed(1)}" y1="${p._sy.toFixed(1)}" x2="${p._tx.toFixed(1)}" y2="${p._ty.toFixed(1)}"/>`;
+          triHtml += `<circle cx="${p._tx.toFixed(1)}" cy="${p._ty.toFixed(1)}" r="2.2" fill="#2e5f85" opacity="0.8" pointer-events="none"/>`;
         }
         this.grpTrilat.innerHTML = triHtml;
       }
@@ -643,23 +927,14 @@
         if (this.activeDaoId !== 'ALL' && p.dao_id !== this.activeDaoId) continue;
         const total = p.song_total_households || p.tang_households || 0;
         if (!total) continue;
-        const [x, y] = this.projector.toScreen(p.coord[0], p.coord[1]);
         const r = Math.max(3.5, Math.min(20, Math.sqrt(total / 1800)));
         const zhuRatio = p.song_total_households ? (p.song_zhu_households || 0) / p.song_total_households : 0.6;
-        // Outer circle = Song total, inner circle = Zhu (master households)
         html += `<g class="hh-bubble" data-pref-id="${escHtml(p.id)}" style="cursor:pointer">
-          <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="rgba(217,138,60,0.55)" stroke="#b5452f" stroke-width="1" vector-effect="non-scaling-stroke"/>
-          <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(r * Math.sqrt(zhuRatio)).toFixed(1)}" fill="rgba(181,69,47,0.72)" pointer-events="none"/>
+          <circle cx="${p._sx.toFixed(1)}" cy="${p._sy.toFixed(1)}" r="${r.toFixed(1)}" fill="rgba(217,138,60,0.55)" stroke="#b5452f" stroke-width="1" vector-effect="non-scaling-stroke"/>
+          <circle cx="${p._sx.toFixed(1)}" cy="${p._sy.toFixed(1)}" r="${(r * Math.sqrt(zhuRatio)).toFixed(1)}" fill="rgba(181,69,47,0.72)" pointer-events="none"/>
         </g>`;
       }
       this.grpHouseholds.innerHTML = html;
-      this.grpHouseholds.querySelectorAll('.hh-bubble').forEach((el) => {
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const p = this.prefById.get(el.dataset.prefId);
-          if (p) this.openPrefectureDetail(p, false);
-        });
-      });
     }
 
     renderSiyiLayer() {
@@ -675,56 +950,29 @@
 
       for (let i = 0; i < this.data.siyi.length; i++) {
         const s = this.data.siyi[i];
-        if (!s.coord) continue;
+        if (s._sx == null) continue;
         if (filterSub !== 'ALL' && s.dao_id !== filterSub) continue;
         const conf = SIYI_DIR_CONF[s.dao_id] || { fill: '#6e655c', stroke: '#3a322b', label: '四夷' };
-        const [x, y] = this.projector.toScreen(s.coord[0], s.coord[1]);
-        html += `<g class="siyi-marker" data-siyi-idx="${i}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer">
+        html += `<g class="siyi-marker" data-siyi-idx="${i}" transform="translate(${s._sx.toFixed(1)},${s._sy.toFixed(1)})" style="cursor:pointer">
           <g class="inv-scale">
             <rect x="${(-rSize).toFixed(1)}" y="${(-rSize).toFixed(1)}" width="${(rSize * 2).toFixed(1)}" height="${(rSize * 2).toFixed(1)}" transform="rotate(45)" fill="${conf.fill}" stroke="#ffffff" stroke-width="0.8"/>
             <circle cx="0" cy="0" r="1.1" fill="#ffffff"/>
-            <text x="0" y="${(-rSize - 3.2).toFixed(1)}" text-anchor="middle" font-family="var(--serif-stack)" font-size="${fSize}" font-weight="600" fill="${conf.stroke}" filter="url(#label-halo)">${escHtml(s.name)}</text>
+            <text x="0" y="${(-rSize - 3.2).toFixed(1)}" text-anchor="middle" font-family="var(--serif-stack)" font-size="${fSize}" font-weight="600" fill="${conf.stroke}">${escHtml(s.name)}</text>
           </g>
         </g>`;
       }
       this.grpSiyi.innerHTML = html;
-      this.grpSiyi.querySelectorAll('.siyi-marker').forEach((el) => {
-        const s = this.data.siyi[Number(el.dataset.siyiIdx)];
-        if (!s) return;
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          this.openSiyiDetail(s);
-        });
-        el.addEventListener('mouseenter', (e) => {
-          const distStr = s.distance_chang_an_li ? ` · 長安より${fmtNum(s.distance_chang_an_li)}里` : '';
-          const preview = s.customs_ja || s.customs || s.history_ja || '';
-          const shortPrev = preview.length > 60 ? preview.substring(0, 60) + '…' : preview;
-          this._showHoverTip(
-            e,
-            `<strong>${escHtml(s.name)}</strong>（${escHtml(s.dao)} · ${escHtml(s.vol)}${distStr}）${shortPrev ? `<br/><span style="font-size:11px;color:#eee">${escHtml(shortPrev)}</span>` : ''}`
-          );
-          if (s.distance_chang_an_li && s.coord) {
-            this.renderSiyiRay(s);
-          }
-        });
-        el.addEventListener('mousemove', (e) => this._moveHoverTip(e));
-        el.addEventListener('mouseleave', () => {
-          this.hoverTip.classList.add('is-hidden');
-          if (!this.selectedPref) this.grpActiveRays.innerHTML = '';
-        });
-      });
     }
 
     renderSiyiRay(s) {
-      if (!s.coord) return;
-      // 長安（雍州）の座標: [108.93, 34.27]
-      const chCo = [108.93, 34.27];
-      const [x1, y1] = this.projector.toScreen(chCo[0], chCo[1]);
-      const [x2, y2] = this.projector.toScreen(s.coord[0], s.coord[1]);
+      if (s._sx == null) return;
+      const [x1, y1] = this._changAnScreen;
+      const x2 = s._sx;
+      const y2 = s._sy;
       const mx = (x1 + x2) * 0.5;
       const my = (y1 + y2) * 0.5;
       let html = `<line class="net-edge-active" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="#c04829" stroke-dasharray="4,3" stroke-width="1.3" marker-end="url(#arrow-vermilion)"/>`;
-      html += `<g transform="translate(${mx.toFixed(1)},${my.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-3.5" text-anchor="middle" font-size="9.0" font-weight="600" fill="#c04829" filter="url(#label-halo)">長安より ${fmtNum(s.distance_chang_an_li)}里</text></g></g>`;
+      html += `<g transform="translate(${mx.toFixed(1)},${my.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-3.5" text-anchor="middle" font-size="9.0" font-weight="600" fill="#c04829">長安より ${fmtNum(s.distance_chang_an_li)}里</text></g></g>`;
       this.grpActiveRays.innerHTML = html;
     }
 
@@ -738,33 +986,35 @@
       for (const p of this.data.prefectures) {
         const isCap = p.name === '開封府' || p.name === '河南府' || p.name === '雍州';
         if (isSiyi) {
-          // 四夷モード時は、位置関係の基準点（アンカー）として首都・中枢（開封・洛陽・長安）のみを控えめに表示
           if (!isCap) continue;
         } else if (this.activeDaoId !== 'ALL' && p.dao_id !== this.activeDaoId) {
           continue;
         }
-        const [x, y] = this.projector.toScreen(p.coord[0], p.coord[1]);
         const isFu = p.name.endsWith('府');
         const r = isCap ? 4.0 : isFu ? 3.0 : 2.3;
         const fill = isCap ? '#b5452f' : isFu ? '#8f3524' : '#3a322b';
         const fSize = isCap ? 11.0 : isFu ? 9.6 : 8.5;
         const opacity = isSiyi ? '0.75' : '1.0';
         const capLabel = isSiyi && p.name === '雍州' ? '長安（雍州）' : p.name;
-        html += `<g class="pref-node" data-pref-id="${escHtml(p.id)}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer" opacity="${opacity}">
+        html += `<g class="pref-node" data-pref-id="${escHtml(p.id)}" transform="translate(${p._sx.toFixed(1)},${p._sy.toFixed(1)})" style="cursor:pointer" opacity="${opacity}">
           <g class="inv-scale">
             <circle cx="0" cy="0" r="${r}" fill="${fill}" stroke="#fbf8f1" stroke-width="0.8"/>
-            <text x="0" y="${(-r - 2.6).toFixed(1)}" text-anchor="middle" font-family="var(--serif-stack)" font-size="${fSize}" font-weight="${isCap || isFu ? '700' : '500'}" fill="${isCap ? '#9c2c18' : '#2b2622'}" filter="url(#label-halo)">${escHtml(capLabel)}</text>
+            <text x="0" y="${(-r - 2.6).toFixed(1)}" text-anchor="middle" font-family="var(--serif-stack)" font-size="${fSize}" font-weight="${isCap || isFu ? '700' : '500'}" fill="${isCap ? '#9c2c18' : '#2b2622'}">${escHtml(capLabel)}</text>
           </g>
         </g>`;
       }
       this.grpSettlements.innerHTML = html;
-      this.grpSettlements.querySelectorAll('.pref-node').forEach((el) => {
-        el.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const p = this.prefById.get(el.dataset.prefId);
-          if (p) this.openPrefectureDetail(p, false);
-        });
-      });
+    }
+
+    _getViewportBox(marginPx = 50) {
+      const k = this.camera.k;
+      const m = marginPx / k;
+      return {
+        minX: -this.camera.x / k - m,
+        maxX: (1000 - this.camera.x) / k + m,
+        minY: -this.camera.y / k - m,
+        maxY: (700 - this.camera.y) / k + m,
+      };
     }
 
     renderDynamicDetailLayers() {
@@ -778,77 +1028,107 @@
       const showLandmarks =
         this.chkLandmarks.checked || this.displayMode === 'landmarks' || k >= 3.2 || this.selectedPref != null;
 
-      // 1. Counties (1,150)
+      if (!showCounties && !showLandmarks) {
+        this.grpCounties.innerHTML = '';
+        this.grpLandmarks.innerHTML = '';
+        return;
+      }
+
+      const vp = this._getViewportBox(55);
+      const selPrefName = this.selectedPref ? this.selectedPref.name : null;
+
+      // 1. Counties (1,150) with Viewport Culling + Label Grid Decluttering
       if (!showCounties) {
         this.grpCounties.innerHTML = '';
       } else {
         let cHtml = '';
+        const cntyLabelGrid = new Set();
+        const showAllCntyLabels = k >= 3.0;
+        const showSomeCntyLabels = k >= 2.2;
+
         for (let i = 0; i < this.data.counties.length; i++) {
           const c = this.data.counties[i];
-          if (this.selectedPref && c.prefecture !== this.selectedPref.name && !this.chkCounties.checked && k < 2.8) {
+          if (c._sx < vp.minX || c._sx > vp.maxX || c._sy < vp.minY || c._sy > vp.maxY) continue;
+          const isSelPref = selPrefName && c.prefecture === selPrefName;
+          if (selPrefName && !isSelPref && !this.chkCounties.checked && k < 2.8) {
             continue;
           }
-          if (this.activeDaoId !== 'ALL') {
-            const p = this.prefByName.get(c.prefecture);
-            if (!p || p.dao_id !== this.activeDaoId) continue;
+          if (this.activeDaoId !== 'ALL' && c.dao_id !== this.activeDaoId) {
+            continue;
           }
-          const [x, y] = this.projector.toScreen(c.coord[0], c.coord[1]);
-          cHtml += `<g class="cnty-node" data-cnty-idx="${i}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer">
+          let drawLabel = false;
+          if (isSelPref || showAllCntyLabels) {
+            drawLabel = true;
+          } else if (showSomeCntyLabels) {
+            const gx = Math.floor((c._sx * k + this.camera.x) / 46);
+            const gy = Math.floor((c._sy * k + this.camera.y) / 18);
+            const gKey = gx * 10000 + gy;
+            if (!cntyLabelGrid.has(gKey)) {
+              cntyLabelGrid.add(gKey);
+              drawLabel = true;
+            }
+          }
+          cHtml += `<g class="cnty-node" data-cnty-idx="${i}" transform="translate(${c._sx.toFixed(1)},${c._sy.toFixed(1)})" style="cursor:pointer">
             <g class="inv-scale">
               <circle cx="0" cy="0" r="2.0" fill="#2e5f85" stroke="#fff" stroke-width="0.5"/>
-              ${k >= 2.2 || (this.selectedPref && c.prefecture === this.selectedPref.name) ? `<text x="0" y="-3.6" text-anchor="middle" font-size="8.4" fill="#1f496b" filter="url(#label-halo)">${escHtml(c.name)}</text>` : ''}
+              ${drawLabel ? `<text x="0" y="-3.6" text-anchor="middle" font-size="8.4" fill="#1f496b">${escHtml(c.name)}</text>` : ''}
             </g>
           </g>`;
         }
         this.grpCounties.innerHTML = cHtml;
-        this.grpCounties.querySelectorAll('.cnty-node').forEach((el) => {
-          el.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const c = this.data.counties[Number(el.dataset.cntyIdx)];
-            if (c) this.openCountyDetail(c);
-          });
-        });
       }
 
-      // 2. Landmarks (6,934)
+      // 2. Landmarks (6,934) with Viewport Culling + Spatial Grid LOD
       if (!showLandmarks) {
         this.grpLandmarks.innerHTML = '';
       } else {
         let lmHtml = '';
-        const step = this.displayMode === 'landmarks' && k < 2.0 && this.activeLmCat === 'ALL' && !this.selectedPref ? 2 : 1;
-        for (let i = 0; i < this.data.landmarks.length; i += step) {
+        const dotGrid = new Set();
+        const labelGrid = new Set();
+        const useDotCulling = k < 4.0 && !selPrefName;
+        const dotCellPx = k < 1.8 ? 11 : k < 2.8 ? 8 : 5;
+        const showLmLabels = k >= 3.2 || selPrefName != null;
+
+        for (let i = 0; i < this.data.landmarks.length; i++) {
           const lm = this.data.landmarks[i];
+          if (lm._sx < vp.minX || lm._sx > vp.maxX || lm._sy < vp.minY || lm._sy > vp.maxY) continue;
           if (this.activeLmCat !== 'ALL' && lm.c !== this.activeLmCat) continue;
-          if (
-            this.selectedPref &&
-            lm.p !== this.selectedPref.name &&
-            this.displayMode !== 'landmarks' &&
-            !this.chkLandmarks.checked &&
-            k < 3.5
-          ) {
+          const isSelPref = selPrefName && lm.p === selPrefName;
+          if (selPrefName && !isSelPref && this.displayMode !== 'landmarks' && !this.chkLandmarks.checked && k < 3.5) {
             continue;
           }
           if (this.activeDaoId !== 'ALL') {
             const p = this.prefByName.get(lm.p);
             if (!p || p.dao_id !== this.activeDaoId) continue;
           }
-          const [x, y] = this.projector.toScreen(lm.xy[0], lm.xy[1]);
+
+          const scrX = lm._sx * k + this.camera.x;
+          const scrY = lm._sy * k + this.camera.y;
+
+          if (useDotCulling && !isSelPref) {
+            const dKey = Math.floor(scrX / dotCellPx) * 10000 + Math.floor(scrY / dotCellPx);
+            if (dotGrid.has(dKey)) continue;
+            dotGrid.add(dKey);
+          }
+
+          let drawLabel = false;
+          if (showLmLabels && (isSelPref || k >= 3.2)) {
+            const lKey = Math.floor(scrX / 52) * 10000 + Math.floor(scrY / 16);
+            if (!labelGrid.has(lKey)) {
+              labelGrid.add(lKey);
+              drawLabel = true;
+            }
+          }
+
           const col = LM_CAT_COLORS[lm.c] || '#5d554c';
-          lmHtml += `<g class="lm-node" data-lm-idx="${i}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})" style="cursor:pointer">
+          lmHtml += `<g class="lm-node" data-lm-idx="${i}" transform="translate(${lm._sx.toFixed(1)},${lm._sy.toFixed(1)})" style="cursor:pointer">
             <g class="inv-scale">
               <circle cx="0" cy="0" r="1.7" fill="${col}" opacity="0.88"/>
-              ${k >= 3.2 || (this.selectedPref && lm.p === this.selectedPref.name) ? `<text x="0" y="-3.2" text-anchor="middle" font-size="8.0" fill="${col}" filter="url(#label-halo)">${escHtml(lm.n)}</text>` : ''}
+              ${drawLabel ? `<text x="0" y="-3.2" text-anchor="middle" font-size="8.0" fill="${col}">${escHtml(lm.n)}</text>` : ''}
             </g>
           </g>`;
         }
         this.grpLandmarks.innerHTML = lmHtml;
-        this.grpLandmarks.querySelectorAll('.lm-node').forEach((el) => {
-          el.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const lm = this.data.landmarks[Number(el.dataset.lmIdx)];
-            if (lm) this.openLandmarkDetail(lm);
-          });
-        });
       }
     }
 
@@ -857,16 +1137,18 @@
         this.grpActiveRays.innerHTML = '';
         return;
       }
-      const [x1, y1] = this.projector.toScreen(pref.coord[0], pref.coord[1]);
+      const x1 = pref._sx;
+      const y1 = pref._sy;
       let html = `<g transform="translate(${x1.toFixed(1)},${y1.toFixed(1)})" pointer-events="none"><g class="inv-scale"><circle cx="0" cy="0" r="6.5" fill="none" stroke="#b5452f" stroke-width="1.8"/></g></g>`;
 
-      const outgoing = this.data.edges.filter((e) => e.source === pref.name);
+      const outgoing = this.edgesBySource.get(pref.name) || [];
       for (const e of outgoing) {
-        const [x2, y2] = this.projector.toScreen(e.target_coord[0], e.target_coord[1]);
+        const x2 = e._x2;
+        const y2 = e._y2;
         const mx = (x1 + x2) * 0.5;
         const my = (y1 + y2) * 0.5;
         html += `<line class="net-edge-active" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" marker-end="url(#arrow-vermilion)"/>`;
-        html += `<g transform="translate(${mx.toFixed(1)},${my.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-2.5" text-anchor="middle" font-size="8.8" font-weight="600" fill="#b5452f" filter="url(#label-halo)">${escHtml(e.direction)}：${escHtml(e.target)}へ ${e.distance_li}里</text></g></g>`;
+        html += `<g transform="translate(${mx.toFixed(1)},${my.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-2.5" text-anchor="middle" font-size="8.8" font-weight="600" fill="#b5452f">${escHtml(e.direction)}：${escHtml(e.target)}へ ${e.distance_li}里</text></g></g>`;
       }
       this.grpActiveRays.innerHTML = html;
     }
@@ -902,7 +1184,7 @@
           siyi_dongyi: this.data.siyi.filter((s) => s.dao_id === 'siyi_dongyi').length,
           siyi_nanman: this.data.siyi.filter((s) => s.dao_id === 'siyi_nanman').length,
           siyi_xirong: this.data.siyi.filter((s) => s.dao_id === 'siyi_xirong').length,
-          siyi_beidi:  this.data.siyi.filter((s) => s.dao_id === 'siyi_beidi').length,
+          siyi_beidi: this.data.siyi.filter((s) => s.dao_id === 'siyi_beidi').length,
         };
         const currentSub = this.activeSiyiSub || 'ALL';
         statsEl.innerHTML = `<div class="stat-grid-box">
@@ -942,19 +1224,19 @@
           </div>`;
         });
         listEl.innerHTML = sHtml;
-        listEl.querySelectorAll('.pref-list-item').forEach((el) => {
-          el.addEventListener('click', () => {
-            const s = this.data.siyi[Number(el.dataset.siyiIdx)];
-            if (s) this.openSiyiDetail(s);
-          });
-        });
+        listEl.onclick = (e) => {
+          const item = e.target.closest('.pref-list-item[data-siyi-idx]');
+          if (item) {
+            const s = this.data.siyi[Number(item.dataset.siyiIdx)];
+            if (s) this.openSiyiDetail(s, true);
+          }
+        };
         return;
       }
 
       const prefs = isAll
         ? this.data.prefectures
         : this.data.prefectures.filter((p) => p.dao_id === this.activeDaoId);
-      const tangHH = prefs.reduce((s, p) => s + (p.tang_households || 0), 0);
       const songHH = prefs.reduce((s, p) => s + (p.song_total_households || 0), 0);
       const songZhu = prefs.reduce((s, p) => s + (p.song_zhu_households || 0), 0);
       const songKe = prefs.reduce((s, p) => s + (p.song_ke_households || 0), 0);
@@ -977,27 +1259,31 @@
       let pHtml = '';
       for (const p of prefs) {
         const isSel = this.selectedPref && this.selectedPref.id === p.id;
+        const distCount = p.distance_count != null ? p.distance_count : (p.distances ? p.distances.length : 0);
         pHtml += `<div class="pref-list-item${isSel ? ' is-selected' : ''}" data-pref-id="${escHtml(p.id)}">
           <div>
             <strong>${escHtml(p.name)}</strong>
             <span style="font-size:11px;color:var(--text-muted)">${p.jun_name ? `(${escHtml(p.jun_name)})` : ''} · ${escHtml(p.vol)}</span>
           </div>
           <div style="font-size:11px;color:var(--text-secondary)">
-            ${p.county_names.length}県 · 四至${p.distances.length}
+            ${p.county_names.length}県 · 四至${distCount}
           </div>
         </div>`;
       }
       listEl.innerHTML = pHtml;
-      listEl.querySelectorAll('.pref-list-item').forEach((el) => {
-        el.addEventListener('click', () => {
-          const p = this.prefById.get(el.dataset.prefId);
+      listEl.onclick = (e) => {
+        const item = e.target.closest('.pref-list-item[data-pref-id]');
+        if (item) {
+          const p = this.prefById.get(item.dataset.prefId);
           if (p) this.openPrefectureDetail(p, true);
-        });
-      });
+        }
+      };
     }
 
     openPrefectureDetail(pref, fly = true) {
+      this._loadTextsAsync();
       this.selectedPref = pref;
+      this._openCardType = 'pref';
       this.genCard.classList.remove('is-hidden');
       this.genKicker.textContent = `${pref.dao} · ${pref.vol} · 州府軍監考証`;
       this.genHeading.textContent = `${pref.name}${pref.jun_name ? `（${pref.jun_name}）` : ''}`;
@@ -1005,9 +1291,10 @@
 
       if (fly) {
         this.flyToGeo(pref.coord[0], pref.coord[1], Math.max(this.camera.k, 3.0));
+      } else {
+        this.renderDynamicDetailLayers();
       }
       this.renderPrefectures();
-      this.renderDynamicDetailLayers();
       this.renderActiveRays(pref);
 
       const counties = this.countiesByPref.get(pref.name) || [];
@@ -1048,8 +1335,8 @@
         （CHGIS基準点との偏差: <strong>${pref.trilateration_error_km} km</strong>）
       </div>`;
 
-      // 3. History Japanese translation (with collapsible Classical Chinese original)
-      const histJa = pref.history_ja || pref.history || '';
+      // 3. History Japanese translation
+      const histJa = pref.history_ja || pref.history || (this.textsLoaded ? '' : '解説データを読み込み中…');
       html += `<div class="section-subhead"><span>『太平寰宇記』建置沿革（現代語和訳）</span></div>
       <div style="font-size:12.5px;line-height:1.7;background:rgba(255,255,255,0.68);padding:9px 11px;border-radius:7px;border-left:3px solid var(--vermilion);">
         ${escHtml(histJa)}
@@ -1113,10 +1400,10 @@
         html += `<div style="max-height:175px;overflow-y:auto;border:1px solid rgba(43,38,34,0.1);border-radius:7px;padding:5px;background:rgba(255,255,255,0.55);">`;
         for (const lm of lms.slice(0, 60)) {
           const citBadges = (lm.cit || []).map((c) => `<span class="info-tag cit-tag">『${escHtml(c)}』</span>`).join('');
-          const lmDescJa = lm.desc_ja || lm.desc;
+          const lmDescJa = lm.desc_ja || lm.desc || '';
           html += `<div style="font-size:11.5px;padding:4px 3px;border-bottom:1px dashed rgba(43,38,34,0.1);">
             <div><strong>【${escHtml(lm.c)}】${escHtml(lm.n)}</strong> <span style="color:var(--text-muted)">(${escHtml(lm.cnty)}${lm.dir ? ` · ${escHtml(lm.dir)}${lm.li}里` : ''})</span> ${citBadges}</div>
-            <div style="color:var(--text-secondary);font-size:11.5px;margin-top:2px;line-height:1.55;">${escHtml(lmDescJa)}</div>
+            ${lmDescJa ? `<div style="color:var(--text-secondary);font-size:11.5px;margin-top:2px;line-height:1.55;">${escHtml(lmDescJa)}</div>` : ''}
           </div>`;
         }
         html += `</div>`;
@@ -1137,7 +1424,7 @@
           const cObj = counties.find(
             (c) => c.name === cname || c.name === cname + '縣' || c.name.replace('縣', '') === cname
           );
-          if (cObj) this.openCountyDetail(cObj);
+          if (cObj) this.openCountyDetail(cObj, true);
         });
       });
       this.genBody.querySelectorAll('.prod-tag').forEach((tag) => {
@@ -1150,15 +1437,20 @@
       });
     }
 
-    openCountyDetail(county) {
+    openCountyDetail(county, fly = true) {
+      this._loadTextsAsync();
+      this.selectedCounty = county;
+      this._openCardType = 'county';
       this.genCard.classList.remove('is-hidden');
       this.genKicker.textContent = `${county.dao} · ${county.prefecture} · 所属県考証`;
       this.genHeading.textContent = `${county.name}（${county.prefecture}管轄）`;
       this.genSub.textContent = `方位里程: ${county.direction ? `州の${county.direction}${county.distance_li}里` : '州郭下/域内'} ｜ 郷数: 旧${county.old_xiang ?? '—'}郷 → 現${county.curr_xiang ?? '—'}郷 ｜ 座標: [${county.coord[0]}, ${county.coord[1]}]`;
-      this.flyToGeo(county.coord[0], county.coord[1], Math.max(this.camera.k, 4.2));
+      if (fly) {
+        this.flyToGeo(county.coord[0], county.coord[1], Math.max(this.camera.k, 4.2));
+      }
 
       const lms = (this.landmarksByPref.get(county.prefecture) || []).filter((l) => l.cnty === county.name);
-      const introJa = county.intro_ja || county.intro || '';
+      const introJa = county.intro_ja || county.intro || (this.textsLoaded ? '' : '解説データを読み込み中…');
       let html = `<div class="section-subhead"><span>県建置沿革（現代語和訳）</span></div>`;
       html += `<div style="font-size:12.5px;line-height:1.7;background:rgba(255,255,255,0.68);padding:9px 11px;border-radius:7px;border-left:3px solid var(--cobalt);">
         ${escHtml(introJa)}
@@ -1174,10 +1466,10 @@
       html += `<div class="section-subhead"><span>${escHtml(county.name)}内の山川・古跡・陵墓（${lms.length} 箇所）</span></div>`;
       for (const lm of lms) {
         const citBadges = (lm.cit || []).map((c) => `<span class="info-tag cit-tag">『${escHtml(c)}』</span>`).join('');
-        const lmDescJa = lm.desc_ja || lm.desc;
+        const lmDescJa = lm.desc_ja || lm.desc || '';
         html += `<div style="font-size:11.5px;padding:5px 3px;border-bottom:1px dashed rgba(43,38,34,0.12);">
           <div><strong>【${escHtml(lm.c)}】${escHtml(lm.n)}</strong> <span style="color:var(--vermilion)">${lm.dir ? `県の${escHtml(lm.dir)}${lm.li}里` : ''}</span> ${citBadges}</div>
-          <div style="color:var(--text-secondary);margin-top:2px;line-height:1.55;">${escHtml(lmDescJa)}</div>
+          ${lmDescJa ? `<div style="color:var(--text-secondary);margin-top:2px;line-height:1.55;">${escHtml(lmDescJa)}</div>` : ''}
         </div>`;
       }
       const parentPref = this.prefByName.get(county.prefecture);
@@ -1191,15 +1483,20 @@
       }
     }
 
-    openLandmarkDetail(lm) {
+    openLandmarkDetail(lm, fly = true) {
+      this._loadTextsAsync();
+      this.selectedLandmark = lm;
+      this._openCardType = 'lm';
       this.genCard.classList.remove('is-hidden');
       this.genKicker.textContent = `${lm.d} · ${lm.p}${lm.cnty} · 【${lm.c}】考証`;
       this.genHeading.textContent = lm.n;
       this.genSub.textContent = `所属: ${lm.p} ${lm.cnty}（${lm.v}） ｜ 位置: ${lm.dir ? `県の${lm.dir}${lm.li}里` : '県域内'} ｜ 推計座標: [${lm.xy[0]}, ${lm.xy[1]}]`;
-      this.flyToGeo(lm.xy[0], lm.xy[1], Math.max(this.camera.k, 4.8));
+      if (fly) {
+        this.flyToGeo(lm.xy[0], lm.xy[1], Math.max(this.camera.k, 4.8));
+      }
 
       const citBadges = (lm.cit || []).map((c) => `<span class="info-tag cit-tag">『${escHtml(c)}』引用</span>`).join(' ');
-      const descJa = lm.desc_ja || lm.desc || '';
+      const descJa = lm.desc_ja || lm.desc || (this.textsLoaded ? '' : '解説データを読み込み中…');
       let html = `<div style="margin:6px 0;">${citBadges || '<span class="info-tag cit-tag">『太平寰宇記』本文</span>'}</div>`;
       html += `<div style="font-size:13px;line-height:1.72;background:rgba(255,255,255,0.68);padding:10px 12px;border-radius:8px;border-left:3px solid var(--vermilion);">
         ${escHtml(descJa)}
@@ -1223,17 +1520,22 @@
       }
     }
 
-    openSiyiDetail(s) {
+    openSiyiDetail(s, fly = true) {
+      this._loadTextsAsync();
+      this.selectedSiyi = s;
+      this._openCardType = 'siyi';
       this.genCard.classList.remove('is-hidden');
       this.genKicker.textContent = `${s.dao} · ${s.vol} · 四夷諸国伝`;
       this.genHeading.textContent = s.name;
       this.genSub.textContent = `${s.distance_chang_an_li ? `長安より: ${fmtNum(s.distance_chang_an_li)} 里 ｜ ` : ''}基準座標: [${s.coord[0]}, ${s.coord[1]}]`;
-      this.flyToGeo(s.coord[0], s.coord[1], 2.8);
+      if (fly) {
+        this.flyToGeo(s.coord[0], s.coord[1], 2.8);
+      }
 
       let html = '';
       const sizhiJa = s.sizhi_ja || s.sizhi;
       const custJa = s.customs_ja || s.customs;
-      const histJa = s.history_ja || s.history;
+      const histJa = s.history_ja || s.history || (this.textsLoaded ? '' : '解説データを読み込み中…');
 
       if (sizhiJa) {
         html += `<div class="section-subhead"><span>四至・道里（和訳）</span></div><p style="font-size:12px;line-height:1.65;background:rgba(255,255,255,0.55);padding:7px 9px;border-radius:6px;">${escHtml(sizhiJa)}</p>`;
@@ -1268,13 +1570,13 @@
             sub: `治所: ${p.seat} · 皇朝戸: ${fmtNum(p.song_total_households)}`,
             act: () => this.openPrefectureDetail(p, true),
           });
-        } else if (p.products.some((pr) => pr.includes(q))) {
+        } else if (p.products && p.products.some((pr) => pr.includes(q))) {
           hits.push({
             label: `【土産: ${q}】${p.name}（${p.dao}）`,
             sub: `土産: ${p.products.join('・')}`,
             act: () => this.openPrefectureDetail(p, true),
           });
-        } else if (p.figures.some((fg) => fg.includes(q))) {
+        } else if (p.figures && p.figures.some((fg) => fg.includes(q))) {
           const figsJa = p.figures_ja && p.figures_ja.length ? p.figures_ja : p.figures;
           const mFig = figsJa.find((fg) => fg.includes(q)) || p.figures.find((fg) => fg.includes(q));
           hits.push({
@@ -1293,7 +1595,7 @@
             hits.push({
               label: `【県】${c.name}（${c.prefecture} · ${c.dao}）`,
               sub: (c.intro_ja || c.intro || '').slice(0, 50),
-              act: () => this.openCountyDetail(c),
+              act: () => this.openCountyDetail(c, true),
             });
             if (hits.length >= 25) break;
           }
@@ -1307,7 +1609,7 @@
             hits.push({
               label: `【${lm.c}】${lm.n}（${lm.p}${lm.cnty}）`,
               sub: (lm.desc_ja || lm.desc || '').slice(0, 55),
-              act: () => this.openLandmarkDetail(lm),
+              act: () => this.openLandmarkDetail(lm, true),
             });
             if (hits.length >= 25) break;
           }
@@ -1320,8 +1622,8 @@
           if (s.name.includes(q)) {
             hits.push({
               label: `【四夷】${s.name}（${s.dao} · ${s.vol}）`,
-              sub: (s.history_ja || s.history || '').slice(0, 50),
-              act: () => this.openSiyiDetail(s),
+              sub: (s.history_ja || s.history || s.short_preview || '').slice(0, 50),
+              act: () => this.openSiyiDetail(s, true),
             });
             if (hits.length >= 25) break;
           }
@@ -1390,9 +1692,9 @@
     }
 
     _moveHoverTip(e) {
-      const frame = document.getElementById('viewport-frame').getBoundingClientRect();
-      const x = Math.min(frame.width - 240, e.clientX - frame.left + 14);
-      const y = Math.max(10, e.clientY - frame.top - 28);
+      const rect = this._viewportRect || (this._viewportRect = this.viewportFrame.getBoundingClientRect());
+      const x = Math.min(rect.width - 240, e.clientX - rect.left + 14);
+      const y = Math.max(10, e.clientY - rect.top - 28);
       this.hoverTip.style.left = `${x}px`;
       this.hoverTip.style.top = `${y}px`;
     }
@@ -1402,4 +1704,3 @@
     window.taipingApp = new TaipingAtlasApp();
   });
 })();
-

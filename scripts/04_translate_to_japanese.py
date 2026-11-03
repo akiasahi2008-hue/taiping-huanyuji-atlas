@@ -507,42 +507,9 @@ def main():
     landmarks_path.write_text(json.dumps(landmarks, ensure_ascii=False, indent=2), encoding="utf-8")
     siyi_path.write_text(json.dumps(siyi_list, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 6. Update js/taiping_atlas_data.js
-    js_bundle_path = JS_DIR / "taiping_atlas_data.js"
-    raw_js = js_bundle_path.read_text(encoding="utf-8")
-    marker = "window.TAIPING_ATLAS_DATA = "
-    pos = raw_js.find(marker)
-    if pos != -1:
-        header = raw_js[: pos + len(marker)]
-        json_str = raw_js[pos + len(marker) :].rstrip(";\n ")
-        bundle = json.loads(json_str)
-
-        # Update prefectures in bundle
-        for bp in bundle.get("prefectures", []):
-            pid = bp["id"]
-            if pid in pref_ja_map:
-                bp["history_ja"], bp["customs_ja"], bp["surnames_ja"], bp["figures_ja"] = pref_ja_map[pid]
-
-        # Update counties in bundle
-        for idx, bc in enumerate(bundle.get("counties", [])):
-            if idx < len(counties):
-                bc["intro_ja"] = counties[idx]["intro_ja"]
-
-        # Update landmarks in bundle
-        for idx, blm in enumerate(bundle.get("landmarks", [])):
-            if idx < len(landmarks):
-                blm["desc_ja"] = landmarks[idx]["desc_ja"]
-
-        # Update siyi in bundle
-        for idx, bs in enumerate(bundle.get("siyi", [])):
-            if idx < len(siyi_list):
-                bs["history_ja"] = siyi_list[idx]["history_ja"]
-                bs["sizhi_ja"] = siyi_list[idx]["sizhi_ja"]
-                bs["customs_ja"] = siyi_list[idx]["customs_ja"]
-
-        new_js = header + json.dumps(bundle, ensure_ascii=False, separators=(",", ":")) + ";\n"
-        js_bundle_path.write_text(new_js, encoding="utf-8")
-        print(f"Updated {js_bundle_path} ({len(new_js)/1024/1024:.2f} MB)")
+    # 6. Rebuild js/taiping_atlas_data.js and js/taiping_atlas_texts.js via 03 script
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT_DIR / "scripts" / "03_spatial_trilateration_and_geojson.py")], check=True)
 
     print("All Japanese translations generated and saved successfully!")
 

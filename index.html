@@ -13,6 +13,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    .back-to-portal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #8b2500;
+      color: #fff !important;
+      text-decoration: none !important;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(139, 37, 0, 0.25);
+      transition: all 0.15s ease;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    .back-to-portal-btn:hover {
+      background: #a02c00;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(139, 37, 0, 0.35);
+    }
+
     /* 『太平寰宇記』専用拡張スタイル */
     .mode-switch-group {
       display: inline-flex;
@@ -250,11 +272,24 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.18);
     }
     /* SVG custom styles */
+    #atlas-svg text {
+      paint-order: stroke fill;
+      stroke: #f6f1e6;
+      stroke-width: 2.8px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #viewport-frame.is-camera-moving #camera-rig {
+      pointer-events: none;
+    }
+    #viewport-frame.is-camera-moving #lm-cat-bar {
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
     .dao-poly {
       fill-opacity: 0.18;
       stroke-width: 1.5;
       stroke-dasharray: 4 2;
-      transition: fill-opacity 0.2s;
       vector-effect: non-scaling-stroke;
     }
     .dao-poly:hover {
@@ -266,7 +301,6 @@
       stroke-width: 0.8;
       vector-effect: non-scaling-stroke;
       cursor: pointer;
-      transition: fill-opacity 0.15s, stroke-width 0.15s;
     }
     .pref-poly:hover {
       fill-opacity: 0.36;
@@ -338,6 +372,9 @@
   <div id="atlas-shell">
     <header id="nav-bar">
       <div class="brand-group">
+        <a href="../史書.html" class="back-to-portal-btn" title="中国史書（二十四史）全文和訳ポータルへ戻る">
+          <span>← 史書ポータル</span>
+        </a>
         <h1 id="site-heading">
           <a class="home-link" id="act-home" href="./" title="全体表示にリセット">
             <span class="seal-mark" id="txt-seal">太平寰宇記</span>
@@ -375,7 +412,7 @@
             <label class="layer-chip"><input type="checkbox" id="chk-daos" checked /><span>十三道疆域</span></label>
             <label class="layer-chip"><input type="checkbox" id="chk-prefectures" checked /><span>州府軍監境 (387)</span></label>
             <label class="layer-chip"><input type="checkbox" id="chk-settlements" checked /><span>州府治所名</span></label>
-            <label class="layer-chip"><input type="checkbox" id="chk-network" checked /><span>四至八到里程網</span></label>
+            <label class="layer-chip"><input type="checkbox" id="chk-network" /><span>四至八到里程網</span></label>
             <label class="layer-chip"><input type="checkbox" id="chk-counties" /><span>所属県 (1,150)</span></label>
             <label class="layer-chip"><input type="checkbox" id="chk-landmarks" /><span>山川古跡 (6,934)</span></label>
             <label class="layer-chip"><input type="checkbox" id="chk-siyi" checked /><span>四夷諸国 (203)</span></label>
@@ -398,15 +435,6 @@
         <div id="svg-stage-wrap">
           <svg id="atlas-svg" class="terrain-active" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="太平寰宇記 歴史地図">
             <defs>
-              <filter id="label-halo" x="-20%" y="-20%" width="140%" height="140%">
-                <feMorphology operator="dilate" radius="1.4" in="SourceAlpha" result="dilated" />
-                <feFlood flood-color="#f6f1e6" flood-opacity="0.92" result="bg" />
-                <feComposite in="bg" in2="dilated" operator="in" result="outline" />
-                <feMerge>
-                  <feMergeNode in="outline" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
               <linearGradient id="terrain-fade-h" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" class="terrain-edge-stop" />
                 <stop offset="4.5%" class="terrain-edge-stop" stop-opacity="0" />
