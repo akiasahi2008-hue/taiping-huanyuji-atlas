@@ -357,6 +357,25 @@
       cursor: pointer;
       font-variant-numeric: tabular-nums;
     }
+    #nav-bar .brand-group {
+      display: flex;
+      align-items: center;
+      min-width: 0;
+      flex-shrink: 1;
+      overflow: hidden;
+    }
+    #nav-bar .brand-group h1 {
+      min-width: 0;
+      overflow: hidden;
+    }
+    #nav-bar .subtitle-mark {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    #nav-bar .control-strip {
+      flex-shrink: 0;
+    }
     #viewport-frame.is-camera-moving #camera-rig {
       pointer-events: none;
     }
@@ -457,7 +476,7 @@
           <a class="home-link" id="act-home" href="./" title="全体表示にリセット">
             <span class="seal-mark" id="txt-seal">太平寰宇記</span>
           </a>
-          <span class="subtitle-mark" id="txt-subtitle">北宋太宗朝天下輿図 · 全二百巻空間解析（十三道・387州府・1,150県・6,934山川古跡）</span>
+          <span class="subtitle-mark" id="txt-subtitle">北宋太宗朝天下輿図（全二百巻）</span>
         </h1>
       </div>
 
@@ -471,6 +490,15 @@
 
         <span class="toolbar-divider" aria-hidden="true"></span>
 
+        <div class="font-scale-widget" title="地図および解説パネルの文字サイズを調整（モニタ解像度に合わせて50%〜180%で変更可能）">
+          <button type="button" id="act-font-dec" class="font-step-btn" title="文字を小さく (A-)">A-</button>
+          <input type="range" id="inp-font-scale" min="50" max="180" step="5" value="100" aria-label="文字サイズ調整" />
+          <button type="button" id="act-font-inc" class="font-step-btn font-step-inc" title="文字を大きく (A+)">A+</button>
+          <span id="lbl-font-scale" class="font-scale-pct" title="クリックで100%にリセット">100%</span>
+        </div>
+
+        <span class="toolbar-divider" aria-hidden="true"></span>
+
         <button id="act-layers-menu" class="action-btn subtle layers-trigger-btn" type="button" aria-expanded="false" aria-controls="layers-popover">
           <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 1.8L1.5 5.2 8 8.6l6.5-3.4L8 1.8zM1.5 8.2L8 11.6l6.5-3.4M1.5 11.2L8 14.6l6.5-3.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>レイヤー</span>
@@ -479,17 +507,8 @@
 
         <button id="act-data-modal" class="action-btn subtle" type="button" title="GeoJSON・CSV・Colabノートブック・解析統計を表示">
           <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 13.5h11M8 2v8.5M4.8 7.5L8 10.7l3.2-3.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>GeoJSON / 工程データ</span>
+          <span>データ</span>
         </button>
-
-        <span class="toolbar-divider" aria-hidden="true"></span>
-
-        <div class="font-scale-widget" title="地図および解説パネルの文字サイズを調整（モニタ解像度に合わせて50%〜180%で変更可能）">
-          <button type="button" id="act-font-dec" class="font-step-btn" title="文字を小さく (A-)">A-</button>
-          <input type="range" id="inp-font-scale" min="50" max="180" step="5" value="100" aria-label="文字サイズ調整" />
-          <button type="button" id="act-font-inc" class="font-step-btn font-step-inc" title="文字を大きく (A+)">A+</button>
-          <span id="lbl-font-scale" class="font-scale-pct" title="クリックで100%にリセット">100%</span>
-        </div>
       </div>
 
       <div id="layers-popover" class="layers-popover is-hidden" role="dialog" aria-label="地図レイヤー設定">
