@@ -95,6 +95,7 @@
       });
 
       this.camera = { x: 0, y: 0, k: 1.0 };
+      this.fontScale = 1.0;
       this.activeDaoId = 'ALL';
       this.activeSiyiSub = 'ALL';
       this.selectedPref = null;
@@ -758,6 +759,56 @@
         this._loadTextsAsync();
         if (inpSearch.value.trim()) this._runSearch(inpSearch.value.trim(), resList);
       });
+
+      // Font scale slider & buttons (A- / A+ / %)
+      const inpFont = document.getElementById('inp-font-scale');
+      const btnFontDec = document.getElementById('act-font-dec');
+      const btnFontInc = document.getElementById('act-font-inc');
+      const lblFont = document.getElementById('lbl-font-scale');
+      if (inpFont) {
+        let initPct = 100;
+        try {
+          const saved = Number(localStorage.getItem('taiping_font_scale'));
+          if (saved >= 50 && saved <= 180) initPct = saved;
+        } catch (_) {}
+        this.setFontScale(initPct, false);
+
+        inpFont.addEventListener('input', () => {
+          this.setFontScale(Number(inpFont.value), true);
+        });
+        if (btnFontDec) {
+          btnFontDec.addEventListener('click', () => {
+            this.setFontScale(Math.round(this.fontScale * 100) - 10, true);
+          });
+        }
+        if (btnFontInc) {
+          btnFontInc.addEventListener('click', () => {
+            this.setFontScale(Math.round(this.fontScale * 100) + 10, true);
+          });
+        }
+        if (lblFont) {
+          lblFont.addEventListener('click', () => {
+            this.setFontScale(100, true);
+          });
+        }
+      }
+    }
+
+    setFontScale(pct, rerender = true) {
+      const clamped = Math.max(50, Math.min(180, Math.round(pct / 5) * 5));
+      this.fontScale = clamped / 100;
+      this.svg.style.setProperty('--text-scale', this.fontScale.toFixed(3));
+      document.documentElement.style.setProperty('--text-scale', this.fontScale.toFixed(3));
+      const inpFont = document.getElementById('inp-font-scale');
+      const lblFont = document.getElementById('lbl-font-scale');
+      if (inpFont) inpFont.value = String(clamped);
+      if (lblFont) lblFont.textContent = `${clamped}%`;
+      try {
+        localStorage.setItem('taiping_font_scale', String(clamped));
+      } catch (_) {}
+      if (rerender) {
+        this.renderDynamicDetailLayers();
+      }
     }
 
     _applyCamera() {
@@ -1059,7 +1110,7 @@
 
       const vp = this._getViewportBox(60);
       const selPrefName = this.selectedPref ? this.selectedPref.name : null;
-      const visualBoost = k > 1.0 ? Math.min(1.65, Math.pow(k, 0.24)) : 1.0;
+      const visualBoost = (k > 1.0 ? Math.min(1.65, Math.pow(k, 0.24)) : 1.0) * (this.fontScale || 1.0);
 
       // Unified Screen-Space Label Bounding-Box Collision Detector
       // Prevents any County or Landmark label from overlapping Prefecture labels or each other

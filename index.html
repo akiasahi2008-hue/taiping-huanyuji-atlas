@@ -278,6 +278,84 @@
       stroke-width: 2.8px;
       stroke-linecap: round;
       stroke-linejoin: round;
+      transform: scale(var(--text-scale, 1));
+      transform-origin: 0px 0px;
+    }
+    /* 文字サイズ調整スライダーバー（ヘッダー右部） */
+    .font-scale-widget {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(43, 38, 34, 0.06);
+      border: 1px solid rgba(181, 69, 47, 0.28);
+      border-radius: 8px;
+      padding: 3px 9px;
+      height: 30px;
+      user-select: none;
+    }
+    .font-step-btn {
+      border: none;
+      background: transparent;
+      color: var(--vermilion);
+      font-family: var(--serif-stack);
+      font-weight: 700;
+      font-size: 11.5px;
+      padding: 0 2px;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.85;
+      transition: opacity 0.12s, transform 0.12s;
+    }
+    .font-step-btn.font-step-inc {
+      font-size: 14px;
+    }
+    .font-step-btn:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    #inp-font-scale {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 74px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(43, 38, 34, 0.22);
+      outline: none;
+      cursor: pointer;
+    }
+    #inp-font-scale::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #c88a2b;
+      border: 1.5px solid #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.12s;
+    }
+    #inp-font-scale::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+      background: var(--vermilion);
+    }
+    #inp-font-scale::-moz-range-thumb {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #c88a2b;
+      border: 1.5px solid #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .font-scale-pct {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--vermilion);
+      min-width: 34px;
+      text-align: right;
+      cursor: pointer;
+      font-variant-numeric: tabular-nums;
     }
     #viewport-frame.is-camera-moving #camera-rig {
       pointer-events: none;
@@ -403,6 +481,15 @@
           <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 13.5h11M8 2v8.5M4.8 7.5L8 10.7l3.2-3.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>GeoJSON / 工程データ</span>
         </button>
+
+        <span class="toolbar-divider" aria-hidden="true"></span>
+
+        <div class="font-scale-widget" title="地図および解説パネルの文字サイズを調整（モニタ解像度に合わせて50%〜180%で変更可能）">
+          <button type="button" id="act-font-dec" class="font-step-btn" title="文字を小さく (A-)">A-</button>
+          <input type="range" id="inp-font-scale" min="50" max="180" step="5" value="100" aria-label="文字サイズ調整" />
+          <button type="button" id="act-font-inc" class="font-step-btn font-step-inc" title="文字を大きく (A+)">A+</button>
+          <span id="lbl-font-scale" class="font-scale-pct" title="クリックで100%にリセット">100%</span>
+        </div>
       </div>
 
       <div id="layers-popover" class="layers-popover is-hidden" role="dialog" aria-label="地図レイヤー設定">

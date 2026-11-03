@@ -20,8 +20,6 @@ def upload():
     files_to_upload = [
         ("index.html", f"{remote_root}/index.html"),
         ("js/app.js", f"{remote_root}/js/app.js"),
-        ("js/taiping_atlas_data.js", f"{remote_root}/js/taiping_atlas_data.js"),
-        ("js/taiping_atlas_texts.js", f"{remote_root}/js/taiping_atlas_texts.js"),
     ]
 
     for local_path, remote_path in files_to_upload:
