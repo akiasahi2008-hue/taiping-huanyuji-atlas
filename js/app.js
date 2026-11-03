@@ -1791,7 +1791,7 @@
           <span style="color:#b5452f">●</span> 三京（東京・西京・長安）
           <span style="color:#3a322b;margin-left:6px;">●</span> 州府軍監 (387)
           <span style="color:#2e5f85;margin-left:6px;">●</span> 所属県 (1,150)
-          <span style="color:#6e655c;margin-left:6px;">◆</span> 四夷 (203)
+          <span style="color:#6e655c;margin-left:6px;">◆</span> 四夷 (${this.data.siyi.length})
         </div>`;
       }
     }
