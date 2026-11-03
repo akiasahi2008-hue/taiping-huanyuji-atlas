@@ -654,7 +654,7 @@ def main():
     county_coords_map: dict[tuple[str, str], list[float]] = {}
     for c in counties:
         pname = c["prefecture"]
-        p_coord = working_coords.get(pname, [114.35, 34.79])
+        p_coord = pref_coord_by_vol.get((c.get("vol", ""), pname)) or pref_coord_map.get(pname, [114.35, 34.79])
         cname = c["name"]
         c_simp = to_simp(cname)
         c_base = to_simp(cname[:-1]) if cname.endswith("縣") else c_simp
@@ -666,16 +666,19 @@ def main():
             c["coord_source"] = "CHGIS基準点"
         elif c["distance_li"] and c["azimuth"] is not None and c["distance_li"] <= 600:
             dist_km = c["distance_li"] * empirical_km_per_li
-            c["coord"] = offset_coord(p_coord, c["azimuth"], dist_km)
+            jitter_az = ((deterministic_angle(f"{pname}_{cname}") / 360.0) - 0.5) * 12.0
+            c["coord"] = offset_coord(p_coord, (c["azimuth"] + jitter_az) % 360.0, dist_km)
             c["coord_source"] = f"州治より{c['direction']}{c['distance_li']}里"
         else:
             # Seat county or county without explicit mileage
             if cname.replace("縣", "") in pname or c["intro"].startswith(cname + "郭下") or "倚郭" in c["intro"][:25]:
-                c["coord"] = [round(p_coord[0] + 0.01, 4), round(p_coord[1] + 0.01, 4)]
+                ang = deterministic_angle(f"seat_{pname}_{cname}")
+                c["coord"] = offset_coord(p_coord, ang, 1.8)
                 c["coord_source"] = "州府倚郭（治所）"
             else:
                 ang = deterministic_angle(f"{pname}_{cname}")
-                c["coord"] = offset_coord(p_coord, ang, 18.0)
+                rad = 14.0 + (deterministic_angle(f"rad_{pname}_{cname}") / 360.0) * 18.0
+                c["coord"] = offset_coord(p_coord, ang, rad)
                 c["coord_source"] = "州域内推計配置"
         county_coords_map[(pname, cname)] = c["coord"]
 
@@ -683,14 +686,22 @@ def main():
     for lm in landmarks:
         pname = lm["prefecture"]
         cname = lm["county"]
-        base_coord = county_coords_map.get((pname, cname)) or working_coords.get(pname, [114.35, 34.79])
+        base_coord = (
+            county_coords_map.get((pname, cname))
+            or pref_coord_by_vol.get((lm.get("vol", ""), pname))
+            or pref_coord_map.get(pname, [114.35, 34.79])
+        )
+        seed_key = f"{pname}_{cname}_{lm['name']}"
         if lm["distance_li"] and lm["azimuth"] is not None and lm["distance_li"] <= 500:
-            dist_km = min(120.0, lm["distance_li"] * empirical_km_per_li)
-            lm["coord"] = offset_coord(base_coord, lm["azimuth"], dist_km)
+            dist_km = min(120.0, max(1.5, lm["distance_li"] * empirical_km_per_li))
+            # Add subtle angular jitter (±10 deg) so landmarks with identical direction/mileage don't stack on top of each other
+            jitter_az = ((deterministic_angle(seed_key) / 360.0) - 0.5) * 20.0
+            lm["coord"] = offset_coord(base_coord, (lm["azimuth"] + jitter_az) % 360.0, dist_km)
             lm["coord_source"] = f"縣{lm['direction']}{lm['distance_li']}里"
         else:
-            ang = deterministic_angle(f"{pname}_{cname}_{lm['name']}")
-            lm["coord"] = offset_coord(base_coord, ang, 6.5)
+            ang = deterministic_angle(seed_key)
+            rad = 2.8 + (deterministic_angle(f"rad_{seed_key}") / 360.0) * 9.5
+            lm["coord"] = offset_coord(base_coord, ang, rad)
             lm["coord_source"] = "縣域内推計"
 
     # 7. Georeference Si-Yi States (四夷諸国)
@@ -990,8 +1001,8 @@ def main():
             lm["vol"],
             lm.get("direction") or "",
             lm.get("distance_li") or 0,
-            round(xy[0], 2),
-            round(xy[1], 2),
+            round(xy[0], 4),
+            round(xy[1], 4),
         ])
         texts_landmarks.append([
             (lm.get("desc") or "")[:180],

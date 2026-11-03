@@ -500,10 +500,14 @@
         <div id="map-key" aria-live="polite"></div>
 
         <div id="canvas-br-dock">
-          <button id="act-reset-camera" class="canvas-reset-btn" type="button" title="全体表示にリセット">
-            <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg>
-            <span>全体表示</span>
-          </button>
+          <div style="display:flex;gap:4px;align-items:center;">
+            <button id="act-zoom-in" class="canvas-reset-btn" type="button" title="拡大 (ズームイン)" style="padding:5px 10px;font-weight:700;font-size:14px;">＋</button>
+            <button id="act-zoom-out" class="canvas-reset-btn" type="button" title="縮小 (ズームアウト)" style="padding:5px 10px;font-weight:700;font-size:14px;">－</button>
+            <button id="act-reset-camera" class="canvas-reset-btn" type="button" title="全体表示にリセット">
+              <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg>
+              <span>全体表示</span>
+            </button>
+          </div>
           <div id="scale-bar-box" aria-hidden="true">
             <div class="scale-label" id="scale-label-text">500 km (約1,340宋里)</div>
             <div class="scale-ruler" id="scale-ruler-bar"></div>

@@ -50,7 +50,7 @@
       let out = '';
       for (let i = 0; i < ring.length; i++) {
         const [px, py] = this.toScreen(ring[i][0], ring[i][1]);
-        out += (i === 0 ? 'M' : 'L') + px.toFixed(1) + ' ' + py.toFixed(1);
+        out += (i === 0 ? 'M' : 'L') + px.toFixed(2) + ' ' + py.toFixed(2);
       }
       return out + 'Z';
     }
@@ -60,7 +60,7 @@
       let out = '';
       for (let i = 0; i < line.length; i++) {
         const [px, py] = this.toScreen(line[i][0], line[i][1]);
-        out += (i === 0 ? 'M' : 'L') + px.toFixed(1) + ' ' + py.toFixed(1);
+        out += (i === 0 ? 'M' : 'L') + px.toFixed(2) + ' ' + py.toFixed(2);
       }
       return out;
     }
@@ -427,6 +427,7 @@
       this._detailTimer = setTimeout(() => {
         this._detailTimer = 0;
         this.renderDynamicDetailLayers();
+        if (this.selectedPref) this.renderActiveRays(this.selectedPref);
       }, delayMs);
     }
 
@@ -494,8 +495,8 @@
           const rect = this._viewportRect || (this._viewportRect = this.svg.getBoundingClientRect());
           const mx = ((e.clientX - rect.left) / rect.width) * 1000;
           const my = ((e.clientY - rect.top) / rect.height) * 700;
-          const factor = e.deltaY < 0 ? 1.22 : 1 / 1.22;
-          const nextK = Math.max(0.85, Math.min(18.0, this.camera.k * factor));
+          const factor = e.deltaY < 0 ? 1.24 : 1 / 1.24;
+          const nextK = Math.max(0.85, Math.min(120.0, this.camera.k * factor));
           const ratio = nextK / this.camera.k;
           this.camera.x = mx - (mx - this.camera.x) * ratio;
           this.camera.y = my - (my - this.camera.y) * ratio;
@@ -600,10 +601,18 @@
         if (!this.selectedPref) this.grpActiveRays.innerHTML = '';
       });
 
-      // Reset camera
+      // Reset camera & Zoom buttons
       document.getElementById('act-reset-camera').addEventListener('click', () => {
         this.selectDao('ALL', true);
       });
+      const btnZoomIn = document.getElementById('act-zoom-in');
+      const btnZoomOut = document.getElementById('act-zoom-out');
+      if (btnZoomIn) {
+        btnZoomIn.addEventListener('click', () => this.zoomByFactor(1.45));
+      }
+      if (btnZoomOut) {
+        btnZoomOut.addEventListener('click', () => this.zoomByFactor(1 / 1.45));
+      }
       document.getElementById('act-home').addEventListener('click', (e) => {
         e.preventDefault();
         this.selectDao('ALL', true);
@@ -754,18 +763,32 @@
     _applyCamera() {
       const { x, y, k } = this.camera;
       this.cameraRig.setAttribute('transform', `translate(${x.toFixed(2)},${y.toFixed(2)}) scale(${k.toFixed(4)})`);
-      const visualBoost = k > 1.0 ? Math.min(1.8, Math.pow(k, 0.28)) : 1.0;
+      const visualBoost = k > 1.0 ? Math.min(1.65, Math.pow(k, 0.24)) : 1.0;
       const invK = visualBoost / Math.max(1.0, k);
-      this.svg.style.setProperty('--inv-k', invK.toFixed(4));
-      const kmPerScreen = Math.round(500 / k);
-      const liPerScreen = Math.round(kmPerScreen / 0.3721);
+      this.svg.style.setProperty('--inv-k', invK.toFixed(5));
+      const rawKm = 500 / k;
+      const kmPerScreen = rawKm >= 10 ? Math.round(rawKm) : Number(rawKm.toFixed(1));
+      const liPerScreen = Math.round(rawKm / 0.3721);
       const lbl = document.getElementById('scale-label-text');
       if (lbl) lbl.textContent = `${kmPerScreen} km (約${liPerScreen.toLocaleString()}宋里)`;
     }
 
+    zoomByFactor(factor) {
+      const mx = 500;
+      const my = 350;
+      const nextK = Math.max(0.85, Math.min(120.0, this.camera.k * factor));
+      const ratio = nextK / this.camera.k;
+      this.camera.x = mx - (mx - this.camera.x) * ratio;
+      this.camera.y = my - (my - this.camera.y) * ratio;
+      this.camera.k = nextK;
+      this._applyCamera();
+      this.renderDynamicDetailLayers();
+      if (this.selectedPref) this.renderActiveRays(this.selectedPref);
+    }
+
     flyToGeo(lon, lat, targetK = 3.2) {
       const [sx, sy] = this.projector.toScreen(lon, lat);
-      const nextK = Math.max(1.0, Math.min(16.0, targetK));
+      const nextK = Math.max(1.0, Math.min(120.0, targetK));
       this.camera.k = nextK;
       this.camera.x = 500 - sx * nextK;
       this.camera.y = 350 - sy * nextK;
@@ -996,7 +1019,7 @@
         const fSize = isCap ? 11.0 : isFu ? 9.6 : 8.5;
         const opacity = isSiyi ? '0.75' : '1.0';
         const capLabel = isSiyi && p.name === '雍州' ? '長安（雍州）' : p.name;
-        html += `<g class="pref-node" data-pref-id="${escHtml(p.id)}" transform="translate(${p._sx.toFixed(1)},${p._sy.toFixed(1)})" style="cursor:pointer" opacity="${opacity}">
+        html += `<g class="pref-node" data-pref-id="${escHtml(p.id)}" transform="translate(${p._sx.toFixed(3)},${p._sy.toFixed(3)})" style="cursor:pointer" opacity="${opacity}">
           <g class="inv-scale">
             <circle cx="0" cy="0" r="${r}" fill="${fill}" stroke="#fbf8f1" stroke-width="0.8"/>
             <text x="0" y="${(-r - 2.6).toFixed(1)}" text-anchor="middle" font-family="var(--serif-stack)" font-size="${fSize}" font-weight="${isCap || isFu ? '700' : '500'}" fill="${isCap ? '#9c2c18' : '#2b2622'}">${escHtml(capLabel)}</text>
@@ -1034,17 +1057,51 @@
         return;
       }
 
-      const vp = this._getViewportBox(55);
+      const vp = this._getViewportBox(60);
       const selPrefName = this.selectedPref ? this.selectedPref.name : null;
+      const visualBoost = k > 1.0 ? Math.min(1.65, Math.pow(k, 0.24)) : 1.0;
 
-      // 1. Counties (1,150) with Viewport Culling + Label Grid Decluttering
+      // Unified Screen-Space Label Bounding-Box Collision Detector
+      // Prevents any County or Landmark label from overlapping Prefecture labels or each other
+      const placedBoxes = [];
+      const canPlaceBox = (cx, cy, halfW, halfH) => {
+        const x1 = cx - halfW;
+        const x2 = cx + halfW;
+        const y1 = cy - halfH;
+        const y2 = cy + halfH;
+        for (let j = 0; j < placedBoxes.length; j++) {
+          const b = placedBoxes[j];
+          if (x1 < b.x2 && x2 > b.x1 && y1 < b.y2 && y2 > b.y1) return false;
+        }
+        placedBoxes.push({ x1, x2, y1, y2 });
+        return true;
+      };
+
+      // Reserve bounding boxes for visible Prefecture labels first
+      if (this.chkSettlements.checked) {
+        for (let i = 0; i < this.data.prefectures.length; i++) {
+          const p = this.data.prefectures[i];
+          if (p._sx < vp.minX || p._sx > vp.maxX || p._sy < vp.minY || p._sy > vp.maxY) continue;
+          if (this.activeDaoId !== 'ALL' && p.dao_id !== this.activeDaoId) continue;
+          const scrX = p._sx * k + this.camera.x;
+          const scrY = p._sy * k + this.camera.y;
+          const halfW = (p.name.length * 5.2 + 4) * visualBoost;
+          const halfH = 6.8 * visualBoost;
+          placedBoxes.push({
+            x1: scrX - halfW,
+            x2: scrX + halfW,
+            y1: scrY - halfH * 2.1,
+            y2: scrY + halfH * 0.5,
+          });
+        }
+      }
+
+      // 1. Counties (1,150) with Viewport Culling + Exact Bounding-Box Label Decluttering
       if (!showCounties) {
         this.grpCounties.innerHTML = '';
       } else {
         let cHtml = '';
-        const cntyLabelGrid = new Set();
-        const showAllCntyLabels = k >= 3.0;
-        const showSomeCntyLabels = k >= 2.2;
+        const showCntyLabels = k >= 2.2 || selPrefName != null;
 
         for (let i = 0; i < this.data.counties.length; i++) {
           const c = this.data.counties[i];
@@ -1056,36 +1113,32 @@
           if (this.activeDaoId !== 'ALL' && c.dao_id !== this.activeDaoId) {
             continue;
           }
+          const scrX = c._sx * k + this.camera.x;
+          const scrY = c._sy * k + this.camera.y;
+
           let drawLabel = false;
-          if (isSelPref || showAllCntyLabels) {
-            drawLabel = true;
-          } else if (showSomeCntyLabels) {
-            const gx = Math.floor((c._sx * k + this.camera.x) / 46);
-            const gy = Math.floor((c._sy * k + this.camera.y) / 18);
-            const gKey = gx * 10000 + gy;
-            if (!cntyLabelGrid.has(gKey)) {
-              cntyLabelGrid.add(gKey);
-              drawLabel = true;
-            }
+          if (showCntyLabels && (isSelPref || k >= 2.2)) {
+            const halfW = (c.name.length * 4.3 + 2.5) * visualBoost;
+            const halfH = 5.4 * visualBoost;
+            drawLabel = canPlaceBox(scrX, scrY - 5.5 * visualBoost, halfW, halfH);
           }
-          cHtml += `<g class="cnty-node" data-cnty-idx="${i}" transform="translate(${c._sx.toFixed(1)},${c._sy.toFixed(1)})" style="cursor:pointer">
+          cHtml += `<g class="cnty-node" data-cnty-idx="${i}" transform="translate(${c._sx.toFixed(3)},${c._sy.toFixed(3)})" style="cursor:pointer">
             <g class="inv-scale">
-              <circle cx="0" cy="0" r="2.0" fill="#2e5f85" stroke="#fff" stroke-width="0.5"/>
-              ${drawLabel ? `<text x="0" y="-3.6" text-anchor="middle" font-size="8.4" fill="#1f496b">${escHtml(c.name)}</text>` : ''}
+              <circle cx="0" cy="0" r="2.1" fill="#2e5f85" stroke="#fff" stroke-width="0.6"/>
+              ${drawLabel ? `<text x="0" y="-3.8" text-anchor="middle" font-size="8.4" font-weight="600" fill="#1f496b">${escHtml(c.name)}</text>` : ''}
             </g>
           </g>`;
         }
         this.grpCounties.innerHTML = cHtml;
       }
 
-      // 2. Landmarks (6,934) with Viewport Culling + Spatial Grid LOD
+      // 2. Landmarks (6,934) with Viewport Culling + Exact Bounding-Box Label Decluttering
       if (!showLandmarks) {
         this.grpLandmarks.innerHTML = '';
       } else {
         let lmHtml = '';
         const dotGrid = new Set();
-        const labelGrid = new Set();
-        const useDotCulling = k < 4.0 && !selPrefName;
+        const useDotCulling = k < 6.0 && !selPrefName;
         const dotCellPx = k < 1.8 ? 11 : k < 2.8 ? 8 : 5;
         const showLmLabels = k >= 3.2 || selPrefName != null;
 
@@ -1113,18 +1166,16 @@
 
           let drawLabel = false;
           if (showLmLabels && (isSelPref || k >= 3.2)) {
-            const lKey = Math.floor(scrX / 52) * 10000 + Math.floor(scrY / 16);
-            if (!labelGrid.has(lKey)) {
-              labelGrid.add(lKey);
-              drawLabel = true;
-            }
+            const halfW = (lm.n.length * 4.0 + 2.0) * visualBoost;
+            const halfH = 5.0 * visualBoost;
+            drawLabel = canPlaceBox(scrX, scrY - 5.0 * visualBoost, halfW, halfH);
           }
 
           const col = LM_CAT_COLORS[lm.c] || '#5d554c';
-          lmHtml += `<g class="lm-node" data-lm-idx="${i}" transform="translate(${lm._sx.toFixed(1)},${lm._sy.toFixed(1)})" style="cursor:pointer">
+          lmHtml += `<g class="lm-node" data-lm-idx="${i}" transform="translate(${lm._sx.toFixed(3)},${lm._sy.toFixed(3)})" style="cursor:pointer">
             <g class="inv-scale">
-              <circle cx="0" cy="0" r="1.7" fill="${col}" opacity="0.88"/>
-              ${drawLabel ? `<text x="0" y="-3.2" text-anchor="middle" font-size="8.0" fill="${col}">${escHtml(lm.n)}</text>` : ''}
+              <circle cx="0" cy="0" r="1.8" fill="${col}" stroke="rgba(255,255,255,0.65)" stroke-width="0.4" opacity="0.9"/>
+              ${drawLabel ? `<text x="0" y="-3.4" text-anchor="middle" font-size="8.0" fill="${col}">${escHtml(lm.n)}</text>` : ''}
             </g>
           </g>`;
         }
@@ -1139,16 +1190,25 @@
       }
       const x1 = pref._sx;
       const y1 = pref._sy;
-      let html = `<g transform="translate(${x1.toFixed(1)},${y1.toFixed(1)})" pointer-events="none"><g class="inv-scale"><circle cx="0" cy="0" r="6.5" fill="none" stroke="#b5452f" stroke-width="1.8"/></g></g>`;
+      const k = this.camera.k;
+      let html = `<g transform="translate(${x1.toFixed(3)},${y1.toFixed(3)})" pointer-events="none"><g class="inv-scale"><circle cx="0" cy="0" r="6.5" fill="none" stroke="#b5452f" stroke-width="1.8"/></g></g>`;
+
+      // When zoomed in very deeply (> 18x) to inspect individual counties/landmarks, hide the long-distance inter-prefecture ray labels so they don't clutter the local map
+      const showRayText = k < 18.0;
+      const rayOpacity = k >= 12.0 ? '0.35' : '0.88';
 
       const outgoing = this.edgesBySource.get(pref.name) || [];
       for (const e of outgoing) {
         const x2 = e._x2;
         const y2 = e._y2;
-        const mx = (x1 + x2) * 0.5;
-        const my = (y1 + y2) * 0.5;
-        html += `<line class="net-edge-active" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" marker-end="url(#arrow-vermilion)"/>`;
-        html += `<g transform="translate(${mx.toFixed(1)},${my.toFixed(1)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-2.5" text-anchor="middle" font-size="8.8" font-weight="600" fill="#b5452f">${escHtml(e.direction)}：${escHtml(e.target)}へ ${e.distance_li}里</text></g></g>`;
+        // Place label at 62% along the ray so it stays outside the dense county/landmark cluster around the source prefecture
+        const t = k >= 5.0 ? 0.68 : 0.52;
+        const mx = x1 + (x2 - x1) * t;
+        const my = y1 + (y2 - y1) * t;
+        html += `<line class="net-edge-active" x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" opacity="${rayOpacity}" marker-end="url(#arrow-vermilion)"/>`;
+        if (showRayText) {
+          html += `<g transform="translate(${mx.toFixed(2)},${my.toFixed(2)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-2.5" text-anchor="middle" font-size="8.6" font-weight="600" fill="#b5452f">${escHtml(e.direction)}：${escHtml(e.target)}へ ${e.distance_li}里</text></g></g>`;
+        }
       }
       this.grpActiveRays.innerHTML = html;
     }
@@ -1290,7 +1350,7 @@
       this.genSub.textContent = `治所: ${pref.seat || '郭下'}県 ｜ 州境: 東西${pref.east_west_li || '—'}里・南北${pref.north_south_li || '—'}里 ｜ 基準座標: [${pref.coord[0]}, ${pref.coord[1]}] (${pref.coord_source})`;
 
       if (fly) {
-        this.flyToGeo(pref.coord[0], pref.coord[1], Math.max(this.camera.k, 3.0));
+        this.flyToGeo(pref.coord[0], pref.coord[1], Math.max(this.camera.k, 5.5));
       } else {
         this.renderDynamicDetailLayers();
       }
@@ -1446,7 +1506,7 @@
       this.genHeading.textContent = `${county.name}（${county.prefecture}管轄）`;
       this.genSub.textContent = `方位里程: ${county.direction ? `州の${county.direction}${county.distance_li}里` : '州郭下/域内'} ｜ 郷数: 旧${county.old_xiang ?? '—'}郷 → 現${county.curr_xiang ?? '—'}郷 ｜ 座標: [${county.coord[0]}, ${county.coord[1]}]`;
       if (fly) {
-        this.flyToGeo(county.coord[0], county.coord[1], Math.max(this.camera.k, 4.2));
+        this.flyToGeo(county.coord[0], county.coord[1], Math.max(this.camera.k, 14.0));
       }
 
       const lms = (this.landmarksByPref.get(county.prefecture) || []).filter((l) => l.cnty === county.name);
@@ -1492,7 +1552,7 @@
       this.genHeading.textContent = lm.n;
       this.genSub.textContent = `所属: ${lm.p} ${lm.cnty}（${lm.v}） ｜ 位置: ${lm.dir ? `県の${lm.dir}${lm.li}里` : '県域内'} ｜ 推計座標: [${lm.xy[0]}, ${lm.xy[1]}]`;
       if (fly) {
-        this.flyToGeo(lm.xy[0], lm.xy[1], Math.max(this.camera.k, 4.8));
+        this.flyToGeo(lm.xy[0], lm.xy[1], Math.max(this.camera.k, 24.0));
       }
 
       const citBadges = (lm.cit || []).map((c) => `<span class="info-tag cit-tag">『${escHtml(c)}』引用</span>`).join(' ');
