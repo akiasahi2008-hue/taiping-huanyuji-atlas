@@ -505,10 +505,15 @@
           <span class="caret-mark" aria-hidden="true">▾</span>
         </button>
 
-        <button id="act-data-modal" class="action-btn subtle" type="button" title="GeoJSON・CSV・Colabノートブック・解析統計を表示">
+        <button id="act-data-modal" class="action-btn subtle" type="button" title="GeoJSON・CSV・Colabノートブック・解析統計・GitHubリポジトリを表示">
           <svg class="btn-svg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M2.5 13.5h11M8 2v8.5M4.8 7.5L8 10.7l3.2-3.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span>データ</span>
         </button>
+
+        <a href="https://github.com/akiasahi2008-hue/taiping-huanyuji-atlas" target="_blank" rel="noopener noreferrer" class="action-btn subtle" title="GitHub リポジトリを開く（オープンソース・構造化データ・解析スクリプト）" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;">
+          <svg height="13" width="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          <span>GitHub</span>
+        </a>
       </div>
 
       <div id="layers-popover" class="layers-popover is-hidden" role="dialog" aria-label="地図レイヤー設定">
@@ -691,26 +696,44 @@
         <button id="act-close-modal" class="icon-close" type="button">✕</button>
       </div>
       <div style="font-size:13px;line-height:1.65;color:var(--text-main);">
-        <p style="margin-top:0;">ご指定の3段階ワークフローに基づき、全200巻の漢文テキスト取得からNER構造化・空間三辺測量・GeoJSON変換までを実行済みです。</p>
+        <p style="margin-top:0;">北宋太宗朝の地誌『太平寰宇記』全200巻（四庫本で欠落していた巻113〜118は清末『古逸叢書』宋代原本より翻刻・復元）の漢文テキストからNER構造化・空間三辺測量・GeoJSON変換・日本語現代語訳（元号西暦併記）を実行した成果物一覧です。</p>
+
+        <!-- GitHub リポジトリ リンク -->
+        <div style="margin:12px 0 16px;padding:12px 16px;background:rgba(43,38,34,0.05);border:1px solid rgba(181,69,47,0.22);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <div>
+            <div style="font-weight:700;color:var(--text-main);font-size:13.5px;display:flex;align-items:center;gap:7px;">
+              <svg height="17" width="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <span>GitHub リポジトリ（オープンソース・全データ・解析スクリプト）</span>
+            </div>
+            <div style="font-size:11.5px;color:var(--text-muted);margin-top:3px;">
+              全200巻の翻刻テキスト、GeoJSON、CSV、現代語訳、NetworkX三辺測量パイプラインの全コードを公開しています。
+            </div>
+          </div>
+          <a href="https://github.com/akiasahi2008-hue/taiping-huanyuji-atlas" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;background:var(--vermilion);color:#fff;text-decoration:none;font-weight:600;font-size:12.5px;padding:7px 14px;border-radius:7px;box-shadow:0 2px 6px rgba(181,69,47,0.3);white-space:nowrap;transition:all 0.15s ease;">
+            <span>GitHub を開く</span>
+            <span style="font-size:11px;">↗</span>
+          </a>
+        </div>
+
         <div class="stat-grid-box">
           <div class="stat-card">
             <div class="stat-lbl">① 漢文テキスト・NER構造化</div>
-            <div class="stat-val">全200巻 / 6,934古跡</div>
-            <div class="stat-sub">data/*.json, *.csv に出力済</div>
+            <div class="stat-val">全200巻 / 7,227古跡</div>
+            <div class="stat-sub">389州府軍監・1,196県・203四夷国</div>
           </div>
           <div class="stat-card">
             <div class="stat-lbl">② 四至八到・空間三辺測量</div>
-            <div class="stat-val">2,513 里程エッジ</div>
-            <div class="stat-sub">実測中央値: 1宋里 = 0.3721 km</div>
+            <div class="stat-val">3,356 里程エッジ</div>
+            <div class="stat-sub">実測中央値: 1宋里 = 0.3711 km</div>
           </div>
         </div>
         <h3 style="font-size:13.5px;color:var(--vermilion);margin:12px 0 6px;">生成済みファイル（ローカル & Google Colab 共通）</h3>
         <ul style="margin:0;padding-left:18px;font-size:12.5px;">
           <li><strong>構造化JSON / CSV (<code>data/</code>)</strong>:
-            <a href="data/taiping_huanyuji_prefectures.csv" download>taiping_huanyuji_prefectures.csv</a> (387州府軍監) /
-            <a href="data/taiping_huanyuji_distances.csv" download>taiping_huanyuji_distances.csv</a> (3,223四至八到) /
-            <a href="data/taiping_huanyuji_counties.csv" download>taiping_huanyuji_counties.csv</a> (1,150県) /
-            <a href="data/taiping_huanyuji_landmarks.csv" download>taiping_huanyuji_landmarks.csv</a> (6,934山川古跡)
+            <a href="data/taiping_huanyuji_prefectures.csv" download>taiping_huanyuji_prefectures.csv</a> (389州府軍監) /
+            <a href="data/taiping_huanyuji_distances.csv" download>taiping_huanyuji_distances.csv</a> (3,356四至八到) /
+            <a href="data/taiping_huanyuji_counties.csv" download>taiping_huanyuji_counties.csv</a> (1,196県) /
+            <a href="data/taiping_huanyuji_landmarks.csv" download>taiping_huanyuji_landmarks.csv</a> (7,227山川古跡)
           </li>
           <li><strong>標準 RFC 7946 GeoJSON (<code>geojson/</code>)</strong>:
             <a href="geojson/dao_regions.geojson" download>dao_regions.geojson</a> (十三道ポリゴン) /
@@ -722,6 +745,9 @@
           </li>
           <li><strong>Google Colab ノートブック (<code>notebooks/</code>)</strong>:
             <a href="notebooks/taiping_huanyuji_gis_pipeline.ipynb" download>taiping_huanyuji_gis_pipeline.ipynb</a>（CHGIS突合・NetworkX三辺測量・GeoPandas/Folium可視化をColab上で再現・カスタマイズ可能）
+          </li>
+          <li><strong>GitHub リポジトリ</strong>:
+            <a href="https://github.com/akiasahi2008-hue/taiping-huanyuji-atlas" target="_blank" rel="noopener noreferrer">https://github.com/akiasahi2008-hue/taiping-huanyuji-atlas</a>
           </li>
         </ul>
       </div>
