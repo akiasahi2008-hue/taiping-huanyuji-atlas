@@ -56,3 +56,4 @@ with open(cache_path, "w", encoding="utf-8") as f:
     json.dump(cache, f, ensure_ascii=False, indent=2)
 
 print(f"Updated translation_cache_ja.json with {len(TRANSLATIONS)} entries.")
+

@@ -47,3 +47,4 @@ subprocess.run([sys.executable, "scripts/05_annotate_era_years.py"], check=True)
 subprocess.run([sys.executable, "scripts/03_spatial_trilateration_and_geojson.py"], check=True)
 
 print("Rebuilding complete!")
+
