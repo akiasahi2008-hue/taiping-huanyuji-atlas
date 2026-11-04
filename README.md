@@ -94,3 +94,4 @@ python -m http.server 8000
 - **底本テキスト**：『太平寰宇記』（北宋・楽史 撰）
 - **基礎地理データ**：CHGIS (Harvard Yenching Institute / Fudan University)
 - **開発**：Antigravity & akiasahi2008-hue
+

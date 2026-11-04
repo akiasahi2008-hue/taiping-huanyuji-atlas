@@ -10,7 +10,11 @@ import glob
 import json
 import os
 import re
+import sys
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
@@ -164,6 +168,12 @@ def extract_households_fixed(text: str) -> dict:
         if m_zhuke:
             res["song_total"] = parse_cn_num(m_zhuke.group(1))
             res["song_note"] = "主客合算記載（内訳記載なし）"
+            m_zhu_sub = re.search(r"主([一二三四五六七八九十百千萬兩]+)", song_part[m_zhuke.end():])
+            m_ke_sub = re.search(r"客([一二三四五六七八九十百千萬兩]+)", song_part[m_zhuke.end():])
+            if m_zhu_sub and m_ke_sub:
+                res["song_zhu"] = parse_cn_num(m_zhu_sub.group(1))
+                res["song_ke"] = parse_cn_num(m_ke_sub.group(1))
+                res["song_note"] = "主客合算＋内訳記載"
             return res
 
         m_han = re.search(r"漢(?:税)?[户戶戸]?([一二三四五六七八九十百千萬兩]+)", song_part)

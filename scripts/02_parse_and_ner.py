@@ -363,6 +363,12 @@ def extract_households(text: str) -> dict:
         if m_zhuke:
             res["song_total"] = parse_cn_num(m_zhuke.group(1))
             res["song_note"] = "主客合算記載（内訳記載なし）"
+            m_zhu_sub = re.search(r"主([一二三四五六七八九十百千萬兩]+)", song_part[m_zhuke.end():])
+            m_ke_sub = re.search(r"客([一二三四五六七八九十百千萬兩]+)", song_part[m_zhuke.end():])
+            if m_zhu_sub and m_ke_sub:
+                res["song_zhu"] = parse_cn_num(m_zhu_sub.group(1))
+                res["song_ke"] = parse_cn_num(m_ke_sub.group(1))
+                res["song_note"] = "主客合算＋内訳記載"
             return res
 
         m_zhu = re.search(r"(?:主[户戶戸]?|[户戶戸尸]主)([一二三四五六七八九十百千萬兩]+)", song_part)
@@ -513,7 +519,7 @@ def parse_all_volumes():
 
             if not clean_l.startswith(("同", "與", "並同", "風俗")):
                 m_intro = re.match(
-                    r"^([^\s　]{1,4}?(?:州|府|軍|監))(?:([^\s　今理治禹貢春秋秦漢本古下立之也]{1,4}?郡))?(?:舊[^\s　]{1,8}?)?(?:今)?[理治]([^\s　禹貢春秋星分周秦漢古本]{1,6}?)(?:縣|二縣|郡|城)",
+                    r"^([^\s　]{1,4}?(?:州|府|軍|監))(?:([^\s　今理治禹貢春秋秦漢本古下立之也]{1,4}?郡))?(?:舊[^\s　]{1,8}?)?(?:今)?[理治]([^\s　禹貢春秋星分周秦漢古本]{1,8}?)(?:縣|二縣|郡|城|洞之南|所|鎮|寨|處)",
                     clean_l,
                 )
                 if m_intro and len(clean_l) > 25:
@@ -521,6 +527,8 @@ def parse_all_volumes():
                     pref_name = norm_name(m_intro.group(1))
                     jun_name = norm_name(m_intro.group(2) or "")
                     seat_name = norm_name(m_intro.group(3) or "")
+                    if pref_name == "桂陽監":
+                        seat_name = "桂陽洞"
                     intro_text = clean_l
                 elif (
                     len(clean_l) <= 16
@@ -585,9 +593,9 @@ def parse_all_volumes():
                 continue
 
             if current_pref is not None:
-                if re.search(r"(元領縣|今領縣|領縣[一二三四五六七八九十])", clean_l) and len(clean_l) < 40:
-                    m_orig = re.search(r"元領縣([一二三四五六七八九十百]+)", clean_l)
-                    m_curr = re.search(r"今(?:領縣)?([一二三四五六七八九十百]+)", clean_l)
+                if re.search(r"(元領|今領|領縣|領[一二三四五六七八九十]+縣)", clean_l) and len(clean_l) < 40:
+                    m_orig = re.search(r"元領(?:場縣|縣)?([一二三四五六七八九十百]+)", clean_l)
+                    m_curr = re.search(r"今(?:領縣|縣)?([一二三四五六七八九十百]+)", clean_l)
                     if m_orig:
                         current_pref["orig_counties_count"] = parse_cn_num(m_orig.group(1))
                     if m_curr:
@@ -604,7 +612,7 @@ def parse_all_volumes():
                     i += 1
                     continue
 
-                if clean_l in ("州境", "府境", "軍境", "監境") or clean_l.endswith("州境") or clean_l.endswith("府境"):
+                if clean_l in ("州境", "府境", "軍境", "監境") or clean_l.endswith("州境") or clean_l.endswith("府境") or clean_l.endswith("監境"):
                     section_mode = "jing"
                     i += 1
                     continue
@@ -648,7 +656,7 @@ def parse_all_volumes():
                 for kc in current_pref["county_names"]:
                     kc_base = kc[:-1] if kc.endswith("縣") and len(kc) >= 3 else kc
                     if norm_l.startswith(kc_base + "縣") or (len(kc_base) >= 2 and norm_l.startswith(kc_base) and ("鄉" in norm_l[:35] or "本" in norm_l[:35] or "里" in norm_l[:25])):
-                        known_c_match = kc_base + ("縣" if not kc_base.endswith("縣") else "")
+                        known_c_match = kc_base if (kc_base.endswith("縣") or kc_base.endswith("場") or kc_base.endswith("鎮") or kc_base.endswith("城")) else kc_base + "縣"
                         break
 
                 m_county = re.match(
