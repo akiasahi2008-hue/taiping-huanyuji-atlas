@@ -319,32 +319,74 @@ def extract_distances(text: str, source_pref: str, vol_id: str, dao_name: str) -
 
 
 def extract_households(text: str) -> dict:
-    clean = re.sub(r"\{\{[^}]+\}\}", "", text).replace("　", "").replace(" ", "")
+    clean = re.sub(r"\{\{[^}]+\}\}", "", text).replace("　", "").replace(" ", "").replace("皇一朝", "皇朝")
     res = {
         "tang_kaiyuan": None,
         "song_zhu": None,
         "song_ke": None,
         "song_total": None,
+        "song_note": None,
         "raw": clean[:160],
     }
-    m_tang = re.search(r"開元[^皇]*?[户戶]([一二三四五六七八九十百千萬兩]+)", clean)
-    if m_tang:
-        res["tang_kaiyuan"] = parse_cn_num(m_tang.group(1))
+    m_tang_list = list(
+        re.finditer(
+            r"(?:開元|間元|天寶|天寳|唐元|元和十道要畧|元和|長慶|唐舊|舊領|舊管)(?:年|中|領縣[一二三四五六七八九十]+|領?[一二三四五六七八九十]+縣|領)?[户戶戸尸]?([一二三四五六七八九十百千萬兩]+)",
+            clean,
+        )
+    )
+    for mt in m_tang_list:
+        end_pos = mt.end()
+        if end_pos < len(clean) and clean[end_pos] in ("年", "載", "月", "州", "縣", "鄉"):
+            if clean[mt.start() : end_pos].endswith("元年") and end_pos < len(clean) and clean[end_pos] in CN_DIGITS:
+                pass
+            else:
+                continue
+        val = parse_cn_num(mt.group(1))
+        if val and val >= 10:
+            res["tang_kaiyuan"] = val
+            break
 
-    m_zhu = re.search(r"主([一二三四五六七八九十百千萬兩]+)", clean)
-    if m_zhu:
-        res["song_zhu"] = parse_cn_num(m_zhu.group(1))
+    song_part = ""
+    m_song_start = re.search(r"(皇朝.*|今管.*|^管[户戶戸主客一二三四五六七八九十百千萬兩].*|^都管[户戶戸].*)", clean)
+    if m_song_start:
+        song_part = m_song_start.group(1)
 
-    m_ke = re.search(r"客([一二三四五六七八九十百千萬兩]+)", clean)
-    if m_ke:
-        res["song_ke"] = parse_cn_num(m_ke.group(1))
+    if song_part:
+        if any(k in song_part for k in ("不供户", "不供戶", "不言户", "只言丁")) and "丁" in song_part:
+            m_ding = re.search(r"([一二三四五六七八九十百千萬兩]+)丁|丁[户戶戸]?([一二三四五六七八九十百千萬兩]+)", song_part)
+            if m_ding:
+                ding_val = parse_cn_num(m_ding.group(1) or m_ding.group(2))
+                res["song_note"] = f"丁数のみ記載（{ding_val:,}丁・不供戸）"
+            return res
 
-    if res["song_zhu"] is not None or res["song_ke"] is not None:
-        res["song_total"] = (res["song_zhu"] or 0) + (res["song_ke"] or 0)
-    else:
-        m_song = re.search(r"皇朝[^主客]*?[户戶]([一二三四五六七八九十百千萬兩]+)", clean)
-        if m_song:
-            res["song_total"] = parse_cn_num(m_song.group(1))
+        m_zhuke = re.search(r"主客(?:都共|共|都|[户戶戸]|漢[户戶戸])?([一二三四五六七八九十百千萬兩]+)", song_part)
+        if m_zhuke:
+            res["song_total"] = parse_cn_num(m_zhuke.group(1))
+            res["song_note"] = "主客合算記載（内訳記載なし）"
+            return res
+
+        m_zhu = re.search(r"(?:主[户戶戸]?|[户戶戸尸]主)([一二三四五六七八九十百千萬兩]+)", song_part)
+        m_ke = re.search(r"[客容](?:[户戶戸])?([一二三四五六七八九十百千萬兩]+)", song_part)
+        if not m_zhu and m_ke:
+            m_implicit_zhu = re.search(
+                r"皇朝(?:領縣[一二三四五六七八九十]+)?[户戶戸]([一二三四五六七八九十百千萬兩]+)[客容]",
+                song_part,
+            )
+            if m_implicit_zhu:
+                m_zhu = m_implicit_zhu
+        if m_zhu:
+            res["song_zhu"] = parse_cn_num(m_zhu.group(1))
+        if m_ke:
+            res["song_ke"] = parse_cn_num(m_ke.group(1))
+
+        if res["song_zhu"] is not None or res["song_ke"] is not None:
+            res["song_total"] = (res["song_zhu"] or 0) + (res["song_ke"] or 0)
+            return res
+
+        m_tot = re.search(r"(?:皇朝|今管|都管|^管)[^主客丁]*?[户戶戸]([一二三四五六七八九十百千萬兩]+)", song_part)
+        if m_tot:
+            res["song_total"] = parse_cn_num(m_tot.group(1))
+            res["song_note"] = "総戸数のみ記載（主客内訳なし）"
     return res
 
 

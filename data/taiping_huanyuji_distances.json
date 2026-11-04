@@ -33715,7 +33715,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "東京",
     "target_detail": "東京",
     "direction": "北",
@@ -33726,7 +33726,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "西京",
     "target_detail": "西京",
     "direction": "北",
@@ -33737,7 +33737,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "舊瀼州",
     "target_detail": "舊瀼州",
     "direction": "南",
@@ -33748,7 +33748,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "舊澄州",
     "target_detail": "舊澄州",
     "direction": "北",
@@ -33759,7 +33759,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "田州",
     "target_detail": "田州",
     "direction": "西南",
@@ -33770,7 +33770,7 @@
     "dao": "嶺南道"
   },
   {
-    "source": "管羈縻州",
+    "source": "邕州",
     "target": "賓州",
     "target_detail": "賓州",
     "direction": "東北",

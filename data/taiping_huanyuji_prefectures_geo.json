@@ -190,13 +190,14 @@
       "唐劉。",
       "仁軏（尉氏の出身）：与子姓三人並授上柱国州黨榮之号所居為楽城郷三柱里。"
     ],
+    "household_note": null,
     "coord": [
       114.35,
       34.79
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.4073,
+      114.4072,
       34.6617
     ],
     "trilateration_error_km": 15.2,
@@ -441,6 +442,7 @@
       "裴休（済源の出身）",
       "曹確（河南の出身）"
     ],
+    "household_note": null,
     "coord": [
       112.45,
       34.62
@@ -675,6 +677,7 @@
       "上官（儀陝州の出身）：相高宗。",
       "唐姚（崇硤石の出身）：為開元之名相姪孫誾為城父令与張巡同守睢陽官尚書郎。"
     ],
+    "household_note": null,
     "coord": [
       111.24,
       34.62
@@ -873,6 +876,7 @@
       "董過（弘農の出身）：嘗云読書百遍其義自見為大司農王濬弘農人為晋竜驤将軍平呉。",
       "唐宋（之問弘農の出身）"
     ],
+    "household_note": null,
     "coord": [
       111.16,
       34.05
@@ -1082,13 +1086,14 @@
       "棗拠（長社の出身）",
       "褚彦（回陽翟の出身）"
     ],
+    "household_note": null,
     "coord": [
       113.74,
       33.89
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.5159,
+      113.516,
       33.9392
     ],
     "trilateration_error_km": 21.4,
@@ -1278,6 +1283,7 @@
     "customs_ja": "『漢書地理志』に「古の韓の地である。土は狭くして倹であり、其の俗は侈を崇ぶ。」とある。人物としては、馮異は字を公孫といい、潁川父城の人で、光武将軍となり、諸将が功を論ずる時、常に独り樹下に屏れて、大樹将軍と号された。臧宮は字を君翁といい、潁川郟の人で、光武に従って征戦した。樊英は字を季斉といい、南陽魯陽の人で、順帝が徴して京師に至らせたが、礼を以て屈させなかった。李膺は潁川襄城の人である。唐の馬燧は汝州郟城の人で、功成りて北平郡王に封ぜられた。周允元は汝州安城の人で、則天朝に侍郎となり、侍宴の時各々詩書の中の善言を述べたが、允元は「君を堯舜に如かざるを恥ず」と言い、則天はこれを賞した。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.96,
       33.96
@@ -1285,9 +1291,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       112.923,
-      34.2838
+      34.2836
     ],
-    "trilateration_error_km": 36.2,
+    "trilateration_error_km": 36.1,
     "rings": [
       [
         [
@@ -1341,7 +1347,7 @@
     ],
     "east_west_li": 39,
     "north_south_li": 157,
-    "tang_households": null,
+    "tang_households": 53627,
     "song_zhu_households": 11946,
     "song_ke_households": 1596,
     "song_total_households": 13542,
@@ -1480,13 +1486,14 @@
       "唐崔日（用滑州霊昌の出身）：相玄宗。",
       "盧懷（慎滑州霊昌の出身）：相玄宗。"
     ],
+    "household_note": null,
     "coord": [
       114.75,
       35.66
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.7516,
+      113.7517,
       34.3659
     ],
     "trilateration_error_km": 170.2,
@@ -1687,13 +1694,14 @@
       "麻黄。",
       "鳳融席尤佳（旧貢）"
     ],
+    "household_note": null,
     "coord": [
       113.56,
       34.77
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.3038,
+      113.3039,
       34.8814
     ],
     "trilateration_error_km": 26.5,
@@ -1917,6 +1925,7 @@
       "謝惠連（皆陳郡陽夏の出身）",
       "謝莊。"
     ],
+    "household_note": null,
     "coord": [
       114.83,
       33.54
@@ -2160,14 +2169,15 @@
       "干宝（新蔡の出身）：撰搜神記三十卷示劉惔惔曰卿可謂鬼之董狐。",
       "唐源（乾曜西平の出身）：為相。"
     ],
+    "household_note": null,
     "coord": [
       114.3,
       32.93
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.9371,
-      33.0429
+      114.937,
+      33.043
     ],
     "trilateration_error_km": 60.7,
     "rings": [
@@ -2367,6 +2377,7 @@
       "管夷（吾潁上の出身）",
       "應璩（汝陰の出身）"
     ],
+    "household_note": null,
     "coord": [
       115.69,
       33.02
@@ -2374,7 +2385,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       115.5336,
-      32.8495
+      32.8494
     ],
     "trilateration_error_km": 23.9,
     "rings": [
@@ -2586,6 +2597,7 @@
       "韓安（国梁成安の出身）：坐法被獄吏辱之喬元睢陽人。",
       "唐有（魏元忠宋城の出身）：為相。"
     ],
+    "household_note": null,
     "coord": [
       115.67,
       34.5
@@ -2786,14 +2798,15 @@
       "唐朱敬（則亳州永域の出身）：相則天家代以孝義聞門標六閥。",
       "奚陟（亳州の出身）：不肯受翰林院学士。"
     ],
+    "household_note": null,
     "coord": [
       115.95,
       33.59
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.0602,
-      33.4793
+      116.0603,
+      33.4794
     ],
     "trilateration_error_km": 16.0,
     "rings": [
@@ -2852,7 +2865,7 @@
     ],
     "east_west_li": 159,
     "north_south_li": 235,
-    "tang_households": null,
+    "tang_households": 33387,
     "song_zhu_households": 15108,
     "song_ke_households": 27724,
     "song_total_households": 42832,
@@ -2976,6 +2989,7 @@
       "劉禎（字は公幹、東平の出身）",
       "馬隆（平陸の出身）：為武威太守以磁石夾道賊負鉄不得過以為神也。"
     ],
+    "household_note": null,
     "coord": [
       116.29,
       35.91
@@ -3175,6 +3189,7 @@
       "蛇牀子貢。",
       "犬。"
     ],
+    "household_note": null,
     "coord": [
       115.38,
       35.27
@@ -3365,6 +3380,7 @@
       "張馴（後漢の出身）：子雋定陶人通春秋与蔡邕共定六経為丹陽太。",
       "守徴拝尚書。"
     ],
+    "household_note": null,
     "coord": [
       115.57,
       35.07
@@ -3551,13 +3567,14 @@
     "customs_ja": "鄆州の風俗と同じ。",
     "surnames_ja": "濮陽郡の著姓（の著姓（七姓）：）： 呉 徐 房 慶 黄 袁 扶人物 ／ 蘧伯玉 史鰌 卜商居西河為文侯師 端木賜汲黯皆為濮陽人 呉質鄄城人 呉隠之濮陽鄄城人為広州刺史酌貪泉而飲因為詩曰古人云此水一㰱懐千金試復夷斉飲終當不易心 唐杜暹濮陽人為相 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115.56,
       35.64
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.4627,
+      115.4628,
       35.9552
     ],
     "trilateration_error_km": 36.1,
@@ -3613,10 +3630,10 @@
     ],
     "east_west_li": 105,
     "north_south_li": 155,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 38510,
+    "song_zhu_households": 14191,
+    "song_ke_households": 2843,
+    "song_total_households": 17034,
     "customs": "同鄆州 ",
     "surnames": "",
     "figures": [
@@ -3735,13 +3752,14 @@
       "程昱（東阿の出身）：少時夣上泰山捧日本名立太祖加上日字為昱。",
       "江淹（済陽の出身）"
     ],
+    "household_note": null,
     "coord": [
       116.01,
       35.39
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.1056,
+      116.1055,
       35.4406
     ],
     "trilateration_error_km": 10.3,
@@ -3934,13 +3952,14 @@
     "customs_ja": "曹州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.08,
       34.79
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.0537,
+      116.0538,
       34.8513
     ],
     "trilateration_error_km": 7.2,
@@ -4168,6 +4187,7 @@
       "呉有張昭宋有朱齡石到彦之土産。",
       "禹貢浮磬孤桐蠙蛛暨魚今蠙蛛已絶浮磬時有歳貢五色土各一斗。"
     ],
+    "household_note": null,
     "coord": [
       117.05,
       34.44
@@ -4175,7 +4195,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       117.4835,
-      33.7568
+      33.7569
     ],
     "trilateration_error_km": 85.8,
     "rings": [
@@ -4364,13 +4384,14 @@
       "魯肅（臨淮の出身）：家富周瑜求糧肅有米二囤各三千斛直指囤与瑜。",
       "唐有王義（方泗州漣水の出身）"
     ],
+    "household_note": null,
     "coord": [
       118.45,
       33.12
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.7223,
+      118.7224,
       34.0066
     ],
     "trilateration_error_km": 101.8,
@@ -4580,6 +4601,7 @@
       "嵇康（嵇喜俱譙の出身）",
       "劉伶（沛国の出身）"
     ],
+    "household_note": null,
     "coord": [
       117.39,
       33.34
@@ -4642,9 +4664,9 @@
     "east_west_li": 150,
     "north_south_li": 147,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 6167,
+    "song_ke_households": 10222,
+    "song_total_households": 16389,
     "customs": "同泗州 ",
     "surnames": "",
     "figures": [
@@ -4751,13 +4773,14 @@
       "薛宣。",
       "劉虞（皆剡の出身）：也。"
     ],
+    "household_note": null,
     "coord": [
       117.96,
       34.15
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      117.935,
+      117.9351,
       34.2206
     ],
     "trilateration_error_km": 8.2,
@@ -4894,6 +4917,7 @@
     "customs_ja": "楚州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       119.26,
       33.78
@@ -5131,6 +5155,7 @@
     "customs_ja": "『輿地志』に云う、夫れ斉は東に即墨の饒あり、南に太山の固あり、懸隔千里、斉は十二を得たりと。『漢書』に云う、太公は斉地が海に負い、鹵は瀉せ、五穀少なく、人民寡なきを以て、乃ち女工の業を勧め、魚塩の利を通じ、人物輻凑せり。故に其の俗は弥よ侈なり。織作は氷紈綺繡純麗の物、太公斉を治め道術を修め、賢智を尊び、有功を賞す。故に今に至るまで其の士は経術を好み、功名を矜り、舒緩闊達にして智に足る。其の失は則ち奢夸朋党、言と行と謬り、虚詐情ならず、言は其の情を得べからず。急にすれば則ち離散し、緩にすれば則ち放縦す。南燕の尚書潘聰曰く、青斉は沃壌にして、号して東秦と曰う。土方二千、戸余十万、四塞の固、負海の饒、所謂用武の国なりと。『貨殖伝』に云う、斉の俗は孥虜を賤しむと。",
     "surnames_ja": "楽安郡の著姓（の著姓（九姓）：）： 孫 任 高 薛 閻 仲 蔣房 亢 千乗郡の著姓（の著姓（二姓）：）： 倪 庾 斉郡の著姓（の著姓（四姓）：）： 史𡩋 左 梁 咸陽郡の著姓（の著姓（三姓）：）： 成 毌 益人物 ／ 陳敬仲 晏嬰 陳仲子居於陵 田單 魯仲連婁敬 公孫弘 管寧 邴原北海朱虚人与管寧華歆為友 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.48,
       36.7
@@ -5308,14 +5333,15 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       119.1,
       36.71
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      119.34,
-      36.5072
+      119.3401,
+      36.5071
     ],
     "trilateration_error_km": 31.1,
     "rings": [
@@ -5484,6 +5510,7 @@
     "customs_ja": "青州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       117.76,
       36.8
@@ -5491,7 +5518,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       117.8773,
-      36.1433
+      36.1432
     ],
     "trilateration_error_km": 73.8,
     "rings": [
@@ -5687,6 +5714,7 @@
       "崔融（全節の出身）",
       "何彦（全節の出身）"
     ],
+    "household_note": null,
     "coord": [
       117.0,
       36.67
@@ -5694,7 +5722,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       116.746,
-      36.6614
+      36.6615
     ],
     "trilateration_error_km": 22.7,
     "rings": [
@@ -5883,6 +5911,7 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       120.87,
       37.43
@@ -5890,7 +5919,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.7385,
-      37.4256
+      37.4254
     ],
     "trilateration_error_km": 99.9,
     "rings": [
@@ -6137,6 +6166,7 @@
       "劉岱字公山弟繇字仲礼所謂騁騏驥于千里。",
       "太史（慈東萊の出身）：北海相孔融敬之。"
     ],
+    "household_note": null,
     "coord": [
       119.94,
       37.18
@@ -6144,7 +6174,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       119.2262,
-      36.9805
+      36.9804
     ],
     "trilateration_error_km": 67.1,
     "rings": [
@@ -6208,9 +6238,9 @@
     "east_west_li": 115,
     "north_south_li": 110,
     "tang_households": 67397,
-    "song_zhu_households": 562,
-    "song_ke_households": 1889,
-    "song_total_households": 2451,
+    "song_zhu_households": 10211,
+    "song_ke_households": 8480,
+    "song_total_households": 18691,
     "customs": "與兖州同",
     "surnames": "魯國郡七姓　夏　孔　唐　車　顔　粟　宰山陽郡三姓　鞏　郄　蹇 / （闕）郡五姓　胡　周　羊　曹　孫 / 平昌郡三姓　管　孟　牟 / （闕）郡五姓　邵　隸　徐　史　錢 / ",
     "figures": [
@@ -6518,6 +6548,7 @@
       "唐有徐洪（字は彦伯、兗瑕丘の出身）",
       "郄士（美高平金郷の出身）：与顔真卿對論應對如流。"
     ],
+    "household_note": null,
     "coord": [
       116.83,
       35.55
@@ -6525,9 +6556,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       117.1727,
-      35.9298
+      35.9299
     ],
-    "trilateration_error_km": 52.3,
+    "trilateration_error_km": 52.4,
     "rings": [
       [
         [
@@ -6760,14 +6791,15 @@
       "唐徐（有功東海の出身）：則天時人官至司刑卿凡活者五百家盧黄門曰當雷霆震怒之下能全仁恕千載未見其儔。",
       "呉通（玄通州の出身）：与弟通微徳宗時同為翰林学士。"
     ],
+    "household_note": null,
     "coord": [
       119.02,
       34.52
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.1879,
-      34.5896
+      119.1878,
+      34.5899
     ],
     "trilateration_error_km": 17.2,
     "rings": [
@@ -6953,13 +6985,14 @@
     "customs_ja": "宻州の風俗と同じ。",
     "surnames_ja": "瑯琊郡の著姓（の著姓（六姓）：）： 王 顔 諸葛 惠 暢 符人物 ／ 匡衡東海人 楽毅 疏広東海蘭陵人与兄子受俱為太子師傅乞骸骨羣公祖送東都門 王吉瑯琊臯虞人為昌邑中尉与貢禹為友世称王陽在位貢禹彈冠 貢禹為光禄大夫 管仲斉相瑯琊人丞相諸葛亮瑯琊陽都人 王導瑯琊臨沂人晋 ／ 丞相 顔延之 王僧達 王儉 王融 王素徃東陽隠山中聞蚿蟲聲遂為蚿賦以自況 王簡棲撰頭陀寺碑 王丘為黄門侍郎 已上並瑯琊人顔之推 顔杲卿攝常山太守禄山反城陥大罵 ／ 而死皆瑯琊臨沂人 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.2,
       35.06
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.3646,
+      118.3645,
       34.8924
     ],
     "trilateration_error_km": 23.9,
@@ -7169,14 +7202,15 @@
       "鄭玄。",
       "臧榮（緒東莞莒の出身）：号被褐先生隠居京口以宣尼庚子日生其日陳五経拝之括東西晋為一書。"
     ],
+    "household_note": null,
     "coord": [
       119.48,
       36.12
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.8252,
-      35.533
+      118.8251,
+      35.5329
     ],
     "trilateration_error_km": 88.0,
     "rings": [
@@ -7263,10 +7297,10 @@
     ],
     "east_west_li": 185,
     "north_south_li": 228,
-    "tang_households": 56599,
-    "song_zhu_households": 22676,
-    "song_ke_households": 4819,
-    "song_total_households": 27495,
+    "tang_households": 362909,
+    "song_zhu_households": 34450,
+    "song_ke_households": 26276,
+    "song_total_households": 60726,
     "customs": "秦有四塞之固漢高納劉敬之言都之因徙齊諸田楚屈景燕趙韓魏之後豪族名家于關中强本弱末以制天下自是每因諸帝山陵則遷户立縣率以為常故五方錯雜風俗不一漢朝京輔稱為難理漢書地里志云濵南山近夏陽人俗質木不耻冦盗性剛毅而好勝敵 ",
     "surnames": "京兆郡八姓　韋　杜　扶　叚　宋　田　黎金 / 武功郡二姓　蘓　韓 / 始平郡二姓　馮　龎 / 馮翊郡五姓　郭　盖　雷　黨　吉 / ",
     "figures": [
@@ -7559,6 +7593,7 @@
       "蒼頡姓（侯岡氏馮翊の出身）：黄帝史官造書契。",
       "嚴翰善春秋公羊鍾繇交好与繇答難翰曰故更為明公服耳然公羊未肯也。"
     ],
+    "household_note": null,
     "coord": [
       108.94,
       34.26
@@ -7566,7 +7601,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       109.3962,
-      34.6907
+      34.6906
     ],
     "trilateration_error_km": 63.6,
     "rings": [
@@ -7767,13 +7802,14 @@
       "姚仲（下邽の出身）：多諌疏官至右僕射。",
       "楊炯（華陰の出身）"
     ],
+    "household_note": null,
     "coord": [
       109.57,
       34.69
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.2198,
+      110.2197,
       34.6104
     ],
     "trilateration_error_km": 60.1,
@@ -7994,13 +8030,14 @@
       "楊炎。",
       "李淳（風皆岐州の出身）"
     ],
+    "household_note": null,
     "coord": [
       107.39,
       34.52
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.5345,
+      107.5344,
       34.5162
     ],
     "trilateration_error_km": 13.2,
@@ -8056,9 +8093,9 @@
     "east_west_li": 190,
     "north_south_li": 180,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 19800,
+    "song_ke_households": 6108,
+    "song_total_households": 25908,
     "customs": "與雍州同 ",
     "surnames": "",
     "figures": [
@@ -8171,13 +8208,14 @@
       "田遊巌。",
       "韓瑗（並三原の出身）：栁公綽華原人弟公權。"
     ],
+    "household_note": null,
     "coord": [
       109.01,
       34.94
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.9627,
+      108.9629,
       34.7931
     ],
     "trilateration_error_km": 16.9,
@@ -8233,10 +8271,10 @@
     ],
     "east_west_li": 200,
     "north_south_li": 459,
-    "tang_households": 6805,
-    "song_zhu_households": 10971,
-    "song_ke_households": 8606,
-    "song_total_households": 19577,
+    "tang_households": null,
+    "song_zhu_households": 7369,
+    "song_ke_households": 1756,
+    "song_total_households": 9125,
     "customs": "與鳯翔小異尤類秦州",
     "surnames": "",
     "figures": [
@@ -8468,6 +8506,7 @@
     "figures_ja": [
       "唐段 -- 𠭊 or 段 ?秀実汧陽人以笏擊朱泚徳宗贈太尉。"
     ],
+    "household_note": null,
     "coord": [
       108.24,
       34.52
@@ -8661,6 +8700,7 @@
       "張耽（安定の出身）：好学程卓孝友著名。",
       "皇甫（謐安定の出身）"
     ],
+    "household_note": null,
     "coord": [
       107.43,
       35.22
@@ -8723,10 +8763,10 @@
     ],
     "east_west_li": 55,
     "north_south_li": 95,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 8075,
+    "song_zhu_households": 3436,
+    "song_ke_households": 3549,
+    "song_total_households": 6985,
     "customs": "",
     "surnames": "",
     "figures": [
@@ -8861,6 +8901,7 @@
       "皇甫（儀真朝那の出身）：少在文武志好詩書。",
       "皇甫（謐安定の出身）"
     ],
+    "household_note": null,
     "coord": [
       106.28,
       36.0
@@ -8931,10 +8972,10 @@
     ],
     "east_west_li": 200,
     "north_south_li": 120,
-    "tang_households": 19461,
-    "song_zhu_households": 14112,
-    "song_ke_households": 5785,
-    "song_total_households": 19897,
+    "tang_households": 17981,
+    "song_zhu_households": 4294,
+    "song_ke_households": 7587,
+    "song_total_households": 11881,
     "customs": "與邠寧畧同 漢書云公劉處邠其人有先王遺風好稼穡務本業故邠詩言農桑衣食之本甚備焉其俗尚勇力習戰備戎狄處勢使之然天水隴西安定頗同也 ",
     "surnames": "新平郡三姓　古　附　異 / ",
     "figures": [
@@ -9182,6 +9223,7 @@
       "傅燮（北地の出身）：為漢陽太守。",
       "李育習公羊春秋為同𨛦班固所重為尚書令唐侯君集三水人将上軍伏誅。"
     ],
+    "household_note": null,
     "coord": [
       107.88,
       36.03
@@ -9391,6 +9433,7 @@
     "customs_ja": "16: 邠州と同じ。人物は無し。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.92,
       35.53
@@ -9398,7 +9441,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       107.9144,
-      35.4503
+      35.4504
     ],
     "trilateration_error_km": 8.9,
     "rings": [
@@ -9590,6 +9633,7 @@
     "customs_ja": "02: 秦の要塞の要害の地で、京師と連なっている。漢の時代に匈奴がしばしば朔方に侵入したので、塞外の烽火が甘泉を照らした。すなわち現在の渭北の九𡽀山がこれである。白翟の故地であり、風俗は羌や渾と雑居し、これを撫すれば懐安し、これを擾すれば動きやすい。古来からそうである。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.32,
       35.88
@@ -9780,6 +9824,7 @@
     "customs_ja": "04: 白翟の古い風俗は羌や渾と雑居し、これを撫すれば懐安し、これを擾すれば動きやすい。古来からそうである。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.09,
       35.5
@@ -9787,7 +9832,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       109.2501,
-      35.4865
+      35.4867
     ],
     "trilateration_error_km": 14.6,
     "rings": [
@@ -9989,14 +10034,15 @@
     "customs_ja": "（闕）",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.3,
       35.94
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.4212,
-      36.0338
+      110.4211,
+      36.0339
     ],
     "trilateration_error_km": 15.1,
     "rings": [
@@ -10207,6 +10253,7 @@
     "customs_ja": "略与鄜州仝。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.67,
       36.75
@@ -10275,7 +10322,7 @@
     ],
     "east_west_li": 580,
     "north_south_li": 80,
-    "tang_households": null,
+    "tang_households": 11456,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": 2661,
@@ -10423,14 +10470,15 @@
     "figures_ja": [
       "傅詔（霊州の出身）：晋司隷校尉咸七世孫詔愽覽古今世称学府。"
     ],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       106.2,
       38.1
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.7391,
-      37.845
+      106.7394,
+      37.8447
     ],
     "trilateration_error_km": 55.1,
     "rings": [
@@ -10504,7 +10552,7 @@
     ],
     "east_west_li": 510,
     "north_south_li": 330,
-    "tang_households": null,
+    "tang_households": 3540,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -10635,14 +10683,15 @@
     "customs_ja": "10: 同原州　人物無し。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       104.69,
       36.56
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.9489,
-      36.7879
+      104.9488,
+      36.7878
     ],
     "trilateration_error_km": 34.3,
     "rings": [
@@ -10696,7 +10745,7 @@
     ],
     "east_west_li": 248,
     "north_south_li": 278,
-    "tang_households": null,
+    "tang_households": 3035,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -10820,6 +10869,7 @@
     "customs_ja": "12: 牧養して牛馬を業とする。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       107.6,
       37.59
@@ -10884,9 +10934,9 @@
     "east_west_li": 10,
     "north_south_li": 120,
     "tang_households": 9200,
-    "song_zhu_households": 2722,
-    "song_ke_households": 2235,
-    "song_total_households": 4957,
+    "song_zhu_households": 2096,
+    "song_ke_households": 19290,
+    "song_total_households": 21386,
     "customs": "漢武帝好大喜功開邊置𨛦多從闗中貧民或報怨犯法者以充牣其中故習俗頗殊地廣人稀逐水草蓄牧以兵馬為務酒醴之㑹上下通焉 ",
     "surnames": "",
     "figures": [],
@@ -11151,14 +11201,15 @@
     "customs_ja": "14: 漢の武帝は大喜功を好み、辺を開いて郡を置き、多く関中の貧民や報怨犯法の者を従えてこれを充満したので、習俗はやや殊であり、地は広く人は稀で、水草を逐って畜牧し、兵馬を務めとし、酒醴の会は上下通じて行われる。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       108.79,
       37.99
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.8464,
-      37.8709
+      109.8462,
+      37.8708
     ],
     "trilateration_error_km": 93.6,
     "rings": [
@@ -11307,6 +11358,7 @@
     "customs_ja": "蕃漢户相雜。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       108.76,
       36.82
@@ -11314,7 +11366,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       109.67,
-      37.1191
+      37.1189
     ],
     "trilateration_error_km": 87.4,
     "rings": [
@@ -11368,7 +11420,7 @@
     "tang_households": 1715,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 2885,
     "customs": "與夏州同 ",
     "surnames": "",
     "figures": [],
@@ -11492,6 +11544,7 @@
     "customs_ja": "夏州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       110.26,
       37.5
@@ -11685,13 +11738,14 @@
     "customs_ja": "夏州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       109.9,
       38.05
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.0747,
+      110.0748,
       38.2076
     ],
     "trilateration_error_km": 23.3,
@@ -11826,6 +11880,7 @@
     "customs_ja": "気性は強悍である。『漢書』に「定襄・雲中はもと戎狄の地であり、その人は鄙朴で礼文に乏しく、射猟を好む」とある。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       111.82,
       40.25
@@ -11833,7 +11888,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       112.39,
-      40.3365
+      40.3362
     ],
     "trilateration_error_km": 49.3,
     "rings": [
@@ -11905,6 +11960,7 @@
     "customs_ja": "与振武同。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.5,
       38.84
@@ -11970,7 +12026,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 4095,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -12107,16 +12163,17 @@
     "customs_ja": "与振武同。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       111.19,
       40.27
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.6176,
-      39.3464
+      110.6175,
+      39.3463
     ],
-    "trilateration_error_km": 113.7,
+    "trilateration_error_km": 113.8,
     "rings": [
       [
         [
@@ -12158,7 +12215,7 @@
     "tang_households": null,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 570,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -12237,13 +12294,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       111.07,
       39.03
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.7301,
+      110.73,
       38.8934
     ],
     "trilateration_error_km": 33.1,
@@ -12427,6 +12485,7 @@
     "customs_ja": "夏州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       107.98,
       38.45
@@ -12615,16 +12674,17 @@
     "customs_ja": "地は磧鹵に居し、田疇は毎歳三たび易わる。漢魏以後は多く胡羌の侵す所となり、人俗は水草に随って畜牧し、辺外に迫近し、唯鞍馬騎射を以て事とす。風声気俗は古より而も然り。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       111.02,
       40.4
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.0775,
-      39.9811
+      110.0767,
+      39.9805
     ],
-    "trilateration_error_km": 92.6,
+    "trilateration_error_km": 92.7,
     "rings": [
       [
         [
@@ -12948,6 +13008,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（党項・西夏境界州）",
     "coord": [
       108.68,
       40.75
@@ -12955,7 +13016,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       108.9939,
-      40.068
+      40.0679
     ],
     "trilateration_error_km": 80.4,
     "rings": [
@@ -13049,10 +13110,10 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 62800,
+    "song_zhu_households": 26820,
+    "song_ke_households": 2502,
+    "song_total_households": 29322,
     "customs": "其人有堯之遺教君子深思小人儉陋又多晉公族子孫以詐力相傾矜誇功名嫁娶送死皆侈靡於他邦隋圖經云并州其氣勇抗誠信韓魏趙謂之三晉剽捍盗賊常為他邦劇漢書云韓信謂陳豨曰太原為天下精兵處後漢末天下擾亂髙幹為并州刺史牽招說幹曰并州左有恒山之險右有大河之固北有強胡之援可以守焉又風俗介之推焚身民咸言神靈忌燒火由是人至冬中輒一月寒食不復烟㸑老少不堪多因而死周舉為并州刺史乃作書置子推廟言盛寒去火殘損人民非賢者之意使温食衆惑稍解風俗頗革今有祠焉 ",
     "surnames": "太原十一姓　王　武　郭　霍　廖　郝 / 温　閻　昝　令狐　尉遲 / 晉郡三姓　　魚　儀　景 / ",
     "figures": [
@@ -13227,6 +13288,7 @@
       "喬林（太原の出身）：拝相八十日。",
       "張楚（金太原の出身）：秋官尚書。"
     ],
+    "household_note": null,
     "coord": [
       112.55,
       37.87
@@ -13408,13 +13470,14 @@
     "figures_ja": [
       "唐段（文昌西河の出身）：宰相。"
     ],
+    "household_note": null,
     "coord": [
       112.07,
       37.1
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.7177,
+      111.7176,
       37.1568
     ],
     "trilateration_error_km": 31.9,
@@ -13466,10 +13529,10 @@
     ],
     "east_west_li": 320,
     "north_south_li": 278,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 10726,
+    "song_zhu_households": 2730,
+    "song_ke_households": 1472,
+    "song_total_households": 4202,
     "customs": "與忻州同又與代州同 ",
     "surnames": "",
     "figures": [],
@@ -13630,13 +13693,14 @@
     "customs_ja": "忻州と同じ。また代州と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.67,
       38.42
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.6836,
+      111.6835,
       38.9667
     ],
     "trilateration_error_km": 60.8,
@@ -13819,14 +13883,15 @@
     "customs_ja": "并州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.13,
       37.68
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1506,
-      37.2261
+      111.1507,
+      37.2262
     ],
     "trilateration_error_km": 50.5,
     "rings": [
@@ -14015,14 +14080,15 @@
       "秦秀（新興雲中の出身）：学行忠直知名。",
       "劉殷（新興の出身）：祖母思堇冬日視地忽生堇焉夣人曰西籬下有粟十五鍾銘曰七年粟也。"
     ],
+    "household_note": null,
     "coord": [
       112.75,
       38.42
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.4639,
-      38.4482
+      112.4638,
+      38.4483
     ],
     "trilateration_error_km": 25.1,
     "rings": [
@@ -14159,6 +14225,7 @@
     "customs_ja": "嵐州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.95,
       38.06
@@ -14376,6 +14443,7 @@
       "尹翁（帰平陽の出身）：為扶風令語不及私。",
       "賈逵（字は梁道、襄陵の出身）：為弘農太守魏太祖曰使天下二千石悉如賈逵吾何憂矣唐員半千晋州臨汾人。"
     ],
+    "household_note": null,
     "coord": [
       111.52,
       36.09
@@ -14561,6 +14629,7 @@
     "customs_ja": "与上黨同。",
     "surnames_ja": "高平郡の著姓（の著姓（六姓）：）： 米 范 巴 翟 過 獨孤人物無 ／ 土物 ／ 人參 紫草 白石英貢 石雄 茯苓 蜜 蠟 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.85,
       35.5
@@ -14739,13 +14808,14 @@
     "customs_ja": "蕃漢相雑り武を好み士を少くす。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       113.41,
       37.03
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.4622,
+      113.4623,
       37.0787
     ],
     "trilateration_error_km": 7.1,
@@ -14956,6 +15026,7 @@
       "唐苗晋（卿潞州壺関の出身）：為吏部侍郎河北採訪使帰本県下馬過県門以父母之郷故也事親以孝聞官至侍中韓国公。",
       "孫逖（潞州渉県の出身）：十五謁崔日用令為土大爐賦搦拙筆立成後拝中書舍人逖自以為通籍近閨而父官纔邑宰乃上表乞减外官与父元宗優詔奬之。"
     ],
+    "household_note": null,
     "coord": [
       113.11,
       36.19
@@ -15193,6 +15264,7 @@
       "張廵（蒲州河東県の出身）",
       "栁宗（元河東の出身）：栁州刺史時人呼為栁栁州。"
     ],
+    "household_note": null,
     "coord": [
       110.27,
       34.82
@@ -15372,6 +15444,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.95,
       35.23
@@ -15435,10 +15508,10 @@
     ],
     "east_west_li": 365,
     "north_south_li": 230,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 81988,
+    "song_zhu_households": 39932,
+    "song_ke_households": 6638,
+    "song_total_households": 46570,
     "customs": "與河南府同 ",
     "surnames": "",
     "figures": [
@@ -15621,6 +15694,7 @@
       "敬暉（太平の出身）：誅張易之拝侍中進封平陽郡王。",
       "裴度（聞喜の出身）：六拝正司空。"
     ],
+    "household_note": null,
     "coord": [
       111.72,
       35.52
@@ -15834,14 +15908,15 @@
     "customs_ja": "晋州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.88,
       36
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7216,
-      35.9359
+      110.7217,
+      35.936
     ],
     "trilateration_error_km": 15.9,
     "rings": [
@@ -16008,13 +16083,14 @@
     "customs_ja": "その人は本と号部にして久しく漢法に帰す。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.84,
       36.7
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.0927,
+      111.0928,
       36.8314
     ],
     "trilateration_error_km": 26.8,
@@ -16076,10 +16152,10 @@
     ],
     "east_west_li": 220,
     "north_south_li": 228,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 15707,
+    "song_zhu_households": 31067,
+    "song_ke_households": 2415,
+    "song_total_households": 33482,
     "customs": "雁門并州屬郡也其風俗與太原畧同然自代北至雲朔等州北臨絶塞之地封畧之内畨民雜居剛勁之心恒多不測歉饉則剽刦豐飽則柔從萌報寃仇號為難制不憚攻殺所謂袵金革死而不厭者是也縱有編户亦染舊風比於他郡實為難理 ",
     "surnames": "",
     "figures": [
@@ -16223,6 +16299,7 @@
       "周黨（字は伯况、広武の出身）：少孤為宗人所養徴為議郎以病去職居澠池也。",
       "王覇（字は儒仲、太原広武の出身）：少有清節建武中徴則称名不称臣有司糺問其故曰天子有所不臣諸侯有所不友。"
     ],
+    "household_note": null,
     "coord": [
       113.04,
       38.91
@@ -16230,7 +16307,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       112.866,
-      38.8916
+      38.8917
     ],
     "trilateration_error_km": 15.2,
     "rings": [
@@ -16491,14 +16568,15 @@
     "customs_ja": "代州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・雲中地域）",
     "coord": [
       113.3,
       40.09
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.3206,
-      39.9457
+      112.3209,
+      39.9455
     ],
     "trilateration_error_km": 84.9,
     "rings": [
@@ -16665,6 +16743,7 @@
     "customs_ja": "潞州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.69,
       36.68
@@ -16672,9 +16751,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       112.8859,
-      37.0072
+      37.0073
     ],
-    "trilateration_error_km": 40.3,
+    "trilateration_error_km": 40.4,
     "rings": [
       [
         [
@@ -16830,16 +16909,17 @@
     "customs_ja": "并州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.25,
       37.5
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.105,
+      112.1047,
       37.68
     ],
-    "trilateration_error_km": 23.7,
+    "trilateration_error_km": 23.8,
     "rings": [
       [
         [
@@ -16980,6 +17060,7 @@
     "customs_ja": "并州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       113.63,
       37.79
@@ -17122,6 +17203,7 @@
     "customs_ja": "嵐州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.57,
       38.7
@@ -17340,13 +17422,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.2,
       39.2
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.9019,
+      111.9018,
       38.8875
     ],
     "trilateration_error_km": 69.9,
@@ -17402,7 +17485,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 4887,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -17515,14 +17598,15 @@
     "figures_ja": [
       "馮唐代人也已老為郎。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・雲中地域）",
     "coord": [
       114.48,
       39.62
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.3314,
-      40.0914
+      114.3315,
+      40.0913
     ],
     "trilateration_error_km": 53.9,
     "rings": [
@@ -17704,6 +17788,7 @@
       "張遼（字は文遠、馬邑の出身）：為魏征東将軍。",
       "賀抜勝（字は破胡、神武の出身）：為僕射。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・雲中地域）",
     "coord": [
       112.39,
       39.33
@@ -17711,7 +17796,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       113.2924,
-      39.2076
+      39.2075
     ],
     "trilateration_error_km": 78.9,
     "rings": [
@@ -17897,16 +17982,17 @@
     "customs_ja": "河南覃懐の地は周では畿内であり、今管する県はもと河内に属した。故に風俗は周地とほぼ同じである。『漢書』に云う、子男の国は虢を大となす。虢国はすなわち今の汜水県である。勢と険を恃み、崇侈貪冒である。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.78,
       34.9
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.0522,
+      113.0523,
       34.9546
     ],
-    "trilateration_error_km": 25.5,
+    "trilateration_error_km": 25.6,
     "rings": [
       [
         [
@@ -18108,13 +18194,14 @@
       "穆寧（懷州河内の出身）：有家法。",
       "張鎬（懷州の出身）：起家二年拝相。"
     ],
+    "household_note": null,
     "coord": [
       112.95,
       35.09
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.8703,
+      112.8702,
       34.7755
     ],
     "trilateration_error_km": 35.7,
@@ -18178,10 +18265,10 @@
     ],
     "east_west_li": 240,
     "north_south_li": 320,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 117175,
+    "song_zhu_households": 55987,
+    "song_ke_households": 20985,
+    "song_total_households": 76972,
     "customs": "毛詩云魏地陕隘其人機巧史記云邯鄲亦漳河之間一都㑹也北通燕涿南有鄭衛俗與趙相類然近梁魯微重而矜節漢書云邯鄲土廣俗雜大率精急髙氣勢 ",
     "surnames": "魏郡五姓　申　暴　柏　鴨　萇 / ",
     "figures": [
@@ -18330,6 +18417,7 @@
       "紬貢。",
       "『漢書』にいわく、冀州其利松栢。"
     ],
+    "household_note": null,
     "coord": [
       115.15,
       36.28
@@ -18337,7 +18425,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       115.1664,
-      36.486
+      36.4861
     ],
     "trilateration_error_km": 23.0,
     "rings": [
@@ -18541,6 +18629,7 @@
       "絹。",
       "平綢。"
     ],
+    "household_note": null,
     "coord": [
       116.08,
       36.61
@@ -18548,7 +18637,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       115.5279,
-      36.6545
+      36.6546
     ],
     "trilateration_error_km": 49.5,
     "rings": [
@@ -18752,6 +18841,7 @@
       "杜正（倫洹水の出身）：隋時与兄正玄俱以秀才擢第相高宗至中書令。",
       "源乾（曜臨漳の出身）：為相。"
     ],
+    "household_note": null,
     "coord": [
       114.35,
       36.1
@@ -18877,6 +18967,7 @@
       "孫登（汲郡共の出身）",
       "張彌（字巨泰汲の出身）：聚衆拠武徳城石勒攻得之彌曰當活健兒何以殺也勒抜為牙門将。"
     ],
+    "household_note": null,
     "coord": [
       114.07,
       35.42
@@ -19078,6 +19169,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       114.25,
       36.61
@@ -19141,10 +19233,10 @@
     ],
     "east_west_li": 180,
     "north_south_li": 160,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 7300,
+    "song_zhu_households": 19317,
+    "song_ke_households": 4223,
+    "song_total_households": 23540,
     "customs": "左氏傳吳季子過衛見蘧伯玉曰衛多君子 ",
     "surnames": "",
     "figures": [
@@ -19264,13 +19356,14 @@
     "figures_ja": [
       "京房（頓丘の出身）"
     ],
+    "household_note": null,
     "coord": [
       115.18,
       35.79
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.5911,
+      114.591,
       35.9365
     ],
     "trilateration_error_km": 55.5,
@@ -19420,6 +19513,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115.05,
       35.9
@@ -19474,7 +19568,7 @@
     "north_south_li": 48,
     "tang_households": null,
     "song_zhu_households": null,
-    "song_ke_households": 1360,
+    "song_ke_households": null,
     "song_total_households": 1360,
     "customs": "",
     "surnames": "",
@@ -19589,6 +19683,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       114.55,
       35.67
@@ -19596,7 +19691,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       114.6988,
-      35.7122
+      35.7123
     ],
     "trilateration_error_km": 14.2,
     "rings": [
@@ -19815,13 +19910,14 @@
       "趙奢為馬服君。",
       "石奮趙人与四子皆二千石号為万石君仕孝文時。"
     ],
+    "household_note": null,
     "coord": [
       114.96,
       36.91
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6807,
+      114.6806,
       36.7908
     ],
     "trilateration_error_km": 28.2,
@@ -19877,10 +19973,10 @@
     ],
     "east_west_li": 249,
     "north_south_li": 190,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 81400,
+    "song_zhu_households": 16934,
+    "song_ke_households": 3473,
+    "song_total_households": 20407,
     "customs": "",
     "surnames": "",
     "figures": [
@@ -20042,6 +20138,7 @@
       "疑四百余條四子潛魏州刺史沸同州刺史涉衛尉卿洽殿中監時人謂之万石張家。",
       "崔邠（貝州武城の出身）：兄弟六人官至三品。"
     ],
+    "household_note": null,
     "coord": [
       115.67,
       37.07
@@ -20105,7 +20202,7 @@
     ],
     "east_west_li": 282,
     "north_south_li": 136,
-    "tang_households": null,
+    "tang_households": 58820,
     "song_zhu_households": 15408,
     "song_ke_households": 14420,
     "song_total_households": 29828,
@@ -20230,14 +20327,15 @@
       "唐宋（璟邢州南和の出身）：為相。",
       "魏謩（鉅鹿の出身）：為相魏元同鉅鹿人則天朝納言。"
     ],
+    "household_note": null,
     "coord": [
       114.5,
       37.12
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.8862,
-      37.1033
+      114.8863,
+      37.1034
     ],
     "trilateration_error_km": 34.3,
     "rings": [
@@ -20292,7 +20390,7 @@
     ],
     "east_west_li": 250,
     "north_south_li": 117,
-    "tang_households": null,
+    "tang_households": 51430,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -20434,13 +20532,14 @@
       "李泌（趙郡の出身）：相。",
       "李珏（趙郡賛皇の出身）：拝相。"
     ],
+    "household_note": "原書「皇朝戸 闕」または記載なし",
     "coord": [
       114.77,
       37.75
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.8742,
+      114.8743,
       37.7946
     ],
     "trilateration_error_km": 10.4,
@@ -20628,6 +20727,7 @@
     "customs_ja": "定州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115.07,
       37.99
@@ -20701,9 +20801,9 @@
     "east_west_li": 210,
     "north_south_li": 270,
     "tang_households": 42694,
-    "song_zhu_households": null,
+    "song_zhu_households": 38407,
     "song_ke_households": 10570,
-    "song_total_households": 10570,
+    "song_total_households": 48977,
     "customs": "通典云山東之人性緩尚儒仗氣任俠漢書曰燕趙之人敢於急難是也冀部天下上國聖賢之藪澤其人剛狠無賓序之禮丈夫相聚遊戲悲歌慷慨起則椎剽掘塜作姦巧多弄物為倡優女子彈絃遊媚富貴又云邯鄲北通燕涿土廣俗襍大率情急髙氣勢輕為奸嫁娶送死奢靡不事農商患其剽悍故冀州之部盜賊常為他郡劇又云仕宦不偶值冀州部言人剽悍 ",
     "surnames": "中山郡五姓　旻　甄　焦　楊　藺 / ",
     "figures": [
@@ -20845,6 +20945,7 @@
     "figures_ja": [
       "楽毅（其先楽羊の出身）：為魏文侯将封霊寿子孫因家焉毅使子燕委質為臣以為亞卿後奔趙為望諸君李康字蕭遠中山人撰運命論入文選。"
     ],
+    "household_note": null,
     "coord": [
       114.57,
       38.14
@@ -20852,7 +20953,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       114.4756,
-      38.2552
+      38.2553
     ],
     "trilateration_error_km": 15.2,
     "rings": [
@@ -21072,13 +21173,14 @@
       "崔寧（安平の出身）：檢校司空。",
       "郭正（一定州の出身）：相則天。"
     ],
+    "household_note": null,
     "coord": [
       114.88,
       38.84
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.0419,
+      115.0418,
       38.2428
     ],
     "trilateration_error_km": 67.9,
@@ -21143,7 +21245,7 @@
     ],
     "east_west_li": 260,
     "north_south_li": 36,
-    "tang_households": null,
+    "tang_households": 94120,
     "song_zhu_households": 18635,
     "song_ke_households": 3712,
     "song_total_households": 22347,
@@ -21305,13 +21407,14 @@
       "張載（武邑の出身）：唐孔穎達冀州衡水人為散騎常侍。",
       "高士（廉渤海蓚県の出身）"
     ],
+    "household_note": null,
     "coord": [
       115.75,
       37.58
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.6373,
+      115.6374,
       37.3737
     ],
     "trilateration_error_km": 25.0,
@@ -21364,10 +21467,10 @@
     ],
     "east_west_li": 190,
     "north_south_li": 260,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 42211,
+    "song_zhu_households": 15488,
+    "song_ke_households": 5872,
+    "song_total_households": 21360,
     "customs": "與冀州同 ",
     "surnames": "",
     "figures": [
@@ -21496,13 +21599,14 @@
     "figures_ja": [
       "唐魏知（古深州陸沢の出身）：為相。"
     ],
+    "household_note": null,
     "coord": [
       115.62,
       38.05
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.5206,
+      115.5205,
       38.0727
     ],
     "trilateration_error_km": 9.1,
@@ -21556,7 +21660,7 @@
     ],
     "east_west_li": 195,
     "north_south_li": 219,
-    "tang_households": null,
+    "tang_households": 61770,
     "song_zhu_households": 11356,
     "song_ke_households": 3568,
     "song_total_households": 14924,
@@ -21673,13 +21777,14 @@
     "customs_ja": "冀州の風俗と同じ。",
     "surnames_ja": "平原県の著姓（六姓）： 師 雍 芮 義 華 東方人物 ／ 東方朔平原厭次人 禰衡平原人 管輅平原人劉峻字孝標平原人著辨命論 王刋 高翊皆 ／ 平原人 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.74,
       37.29
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.4627,
+      116.4626,
       37.4148
     ],
     "trilateration_error_km": 28.2,
@@ -21739,7 +21844,7 @@
     ],
     "east_west_li": 349,
     "north_south_li": 142,
-    "tang_households": null,
+    "tang_households": 25545,
     "song_zhu_households": 15685,
     "song_ke_households": 40493,
     "song_total_households": 56178,
@@ -21881,6 +21986,7 @@
     "figures_ja": [
       "任昉（楽安の出身）：与沈約為一代詞宗。"
     ],
+    "household_note": null,
     "coord": [
       117.39,
       37.39
@@ -21939,9 +22045,9 @@
     "east_west_li": 220,
     "north_south_li": 138,
     "tang_households": null,
-    "song_zhu_households": null,
+    "song_zhu_households": 9185,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 9185,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -22075,6 +22181,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.02,
       37.38
@@ -22153,7 +22260,7 @@
     ],
     "east_west_li": 362,
     "north_south_li": 312,
-    "tang_households": null,
+    "tang_households": 124042,
     "song_zhu_households": 22375,
     "song_ke_households": 27315,
     "song_total_households": 49690,
@@ -22327,13 +22434,14 @@
       "唐袁恕已（滄州東光県の出身）：誅張易之封為南陽郡王。",
       "賈耽（南皮の出身）：拝相著貞元十道録。"
     ],
+    "household_note": null,
     "coord": [
       116.86,
       38.21
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.7471,
+      116.7469,
       37.8087
     ],
     "trilateration_error_km": 45.7,
@@ -22390,10 +22498,10 @@
     ],
     "east_west_li": 170,
     "north_south_li": 70,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 98018,
+    "song_zhu_households": 18364,
+    "song_ke_households": 3100,
+    "song_total_households": 21464,
     "customs": "",
     "surnames": "",
     "figures": [
@@ -22534,6 +22642,7 @@
       "唐斉（映瀛州の出身）",
       "李義（府瀛州饒陽の出身）：祖為梓州射洪県丞因家于永泰。"
     ],
+    "household_note": null,
     "coord": [
       116.16,
       38.41
@@ -22592,7 +22701,7 @@
     ],
     "east_west_li": 80,
     "north_south_li": 60,
-    "tang_households": null,
+    "tang_households": 53400,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -22731,6 +22840,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書「皇朝戸 闕」または記載なし",
     "coord": [
       116.23,
       38.77
@@ -22788,10 +22898,10 @@
     ],
     "east_west_li": 200,
     "north_south_li": 395,
-    "tang_households": null,
+    "tang_households": 44035,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 2643,
     "customs": "與幽州同 ",
     "surnames": "",
     "figures": [
@@ -22914,6 +23024,7 @@
       "祖約（字は士言、范陽遒の出身）：能清言有名理為光禄大夫門施行馬。",
       "祖逖字士雍約弟也与劉琨俱為司州主簿夜聞荒雞鳴蹴琨曰此非惡聲也二人並有英気每語時輒中宵起坐逖北征済江中流擊楫曰祖逖不清中原而済有如大江。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       115.38,
       39.46
@@ -22983,7 +23094,7 @@
     "tang_households": null,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 4040,
     "customs": "與易州同 ",
     "surnames": "",
     "figures": [],
@@ -23115,6 +23226,7 @@
     "customs_ja": "易州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       116.21,
       38.94
@@ -23287,6 +23399,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.39,
       39.12
@@ -23294,7 +23407,7 @@
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
       116.369,
-      38.9943
+      38.9942
     ],
     "trilateration_error_km": 14.1,
     "rings": [
@@ -23451,6 +23564,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115.48,
       38.85
@@ -23511,10 +23625,10 @@
     ],
     "east_west_li": 80,
     "north_south_li": 73,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 11300,
+    "song_zhu_households": 2984,
+    "song_ke_households": 1239,
+    "song_total_households": 4223,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -23651,14 +23765,15 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.43,
       37.89
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.3418,
-      37.9322
+      116.3419,
+      37.9323
     ],
     "trilateration_error_km": 9.0,
     "rings": [
@@ -23844,14 +23959,15 @@
     "customs_ja": "寧州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.8,
       38.56
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.7871,
-      38.2173
+      116.7872,
+      38.2172
     ],
     "trilateration_error_km": 38.1,
     "rings": [
@@ -24012,6 +24128,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.38,
       39.02
@@ -24019,7 +24136,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       116.39,
-      39.229
+      39.2292
     ],
     "trilateration_error_km": 23.3,
     "rings": [
@@ -24067,7 +24184,7 @@
     "tang_households": null,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 1310,
     "customs": "與易州同 ",
     "surnames": "",
     "figures": [],
@@ -24166,6 +24283,7 @@
     "customs_ja": "易州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       115.65,
       39.04
@@ -24224,9 +24342,9 @@
     "east_west_li": 82,
     "north_south_li": 70,
     "tang_households": null,
-    "song_zhu_households": 5883,
-    "song_ke_households": 306,
-    "song_total_households": 6189,
+    "song_zhu_households": 810,
+    "song_ke_households": 20,
+    "song_total_households": 830,
     "customs": "與易州同 與定州同 ",
     "surnames": "",
     "figures": [],
@@ -24405,13 +24523,14 @@
     "customs_ja": "易州と同じ。定州と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115.32,
       39.0
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      115.8427,
+      115.8428,
       38.7976
     ],
     "trilateration_error_km": 50.5,
@@ -24464,7 +24583,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 67242,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -24623,6 +24742,7 @@
       "盧照（鄰范陽の出身）",
       "盧鴻（范陽の出身）：徙家洛陽隠嵩山徵至不拝元宗。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       116.39,
       39.9
@@ -24630,7 +24750,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       116.3212,
-      39.7044
+      39.7043
     ],
     "trilateration_error_km": 22.5,
     "rings": [
@@ -24747,6 +24867,7 @@
       "崔瑗（字は子玉、涿郡の出身）：作座右銘入文選土産。",
       "綾。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       116.07,
       39.34
@@ -24805,7 +24926,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 5317,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -24934,13 +25055,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       117.73,
       39.92
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.2312,
+      117.231,
       40.0014
     ],
     "trilateration_error_km": 43.5,
@@ -24992,7 +25114,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 2263,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25133,6 +25255,7 @@
     "figures_ja": [
       "伯夷叔斉孤竹君之二子隠於首陽山採薇而食之唐陽城北平人徵拝諫議大夫。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       119.13,
       39.88
@@ -25140,7 +25263,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       120.1221,
-      41.2461
+      41.2462
     ],
     "trilateration_error_km": 173.5,
     "rings": [
@@ -25201,7 +25324,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 2263,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25316,6 +25439,7 @@
       "張恂（字は洪讓、上谷沮陽の出身）",
       "張長年為（汝南太守郡の出身）：兄弟分析争一牛訟之長年曰脱有二牛各應得一以家牛与之。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       115.52,
       40.4
@@ -25323,7 +25447,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       115.8007,
-      40.2612
+      40.2611
     ],
     "trilateration_error_km": 28.4,
     "rings": [
@@ -25384,7 +25508,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 997,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25510,14 +25634,15 @@
       "屈遵（字は子度、昌黎の出身）：仕魏為中書令。",
       "唐李光（弼営州栁城の出身）：侍中臨津王弟光進太子太保涼国公双節在門養母以孝聞。"
     ],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       120.45,
       41.57
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      121.7423,
-      40.7103
+      121.7415,
+      40.7101
     ],
     "trilateration_error_km": 144.4,
     "rings": [
@@ -25599,7 +25724,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 6064,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25714,13 +25839,14 @@
     "customs_ja": "幽州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は契丹［遼］領・燕雲十六州）",
     "coord": [
       116.84,
       40.37
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.5945,
+      116.5944,
       39.9944
     ],
     "trilateration_error_km": 46.7,
@@ -25778,7 +25904,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 2045,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25902,6 +26028,7 @@
     "customs_ja": "『春秋説題辞』に「箕尾は燕の陰気たり、俗は利を貪り、地は栗に宜し」とある。土産は付尾・綿布・栗。『貨殖伝』に「燕秦に千樹の栗あり」とある。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.25,
       40.22
@@ -25958,7 +26085,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 611,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -25971,6 +26098,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       114.07,
       38.02
@@ -26027,7 +26155,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 250,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26040,6 +26168,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.6,
       39.95
@@ -26092,7 +26221,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 1664,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26105,6 +26234,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.5,
       40.1
@@ -26157,7 +26287,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 1037,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26237,6 +26367,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.65,
       40.13
@@ -26244,7 +26375,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       116.6177,
-      40.155
+      40.1549
     ],
     "trilateration_error_km": 3.9,
     "rings": [
@@ -26289,7 +26420,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 618,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26302,6 +26433,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.95,
       40.15
@@ -26354,7 +26486,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 200,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26367,6 +26499,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       123.61,
       42
@@ -26427,7 +26560,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 130,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26440,6 +26573,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       117.1,
       40.05
@@ -26492,7 +26626,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 314,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26505,6 +26639,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.3,
       39.7
@@ -26565,7 +26700,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 107,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26578,6 +26713,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       117.3,
       39.95
@@ -26634,7 +26770,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 569,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26647,6 +26783,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       116.75,
       39.85
@@ -26711,7 +26848,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 569,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26724,6 +26861,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       120.45,
       41.57
@@ -26812,7 +26950,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 159,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26825,6 +26963,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       114.64,
       37.59
@@ -26882,7 +27021,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 281,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -26895,6 +27034,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       120.45,
       41.57
@@ -26996,6 +27136,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       120.08,
       40.3
@@ -27056,7 +27197,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 414,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -27069,6 +27210,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       123.35,
       42.75
@@ -27145,7 +27287,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 632,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -27158,6 +27300,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       117.5,
       40.2
@@ -27220,7 +27363,7 @@
     "county_names": [],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 1582,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -27233,6 +27376,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "coord": [
       123.17,
       41.27
@@ -27318,7 +27462,7 @@
     ],
     "east_west_li": 153,
     "north_south_li": 177,
-    "tang_households": null,
+    "tang_households": 160950,
     "song_zhu_households": 89438,
     "song_ke_households": 2440,
     "song_total_households": 91878,
@@ -27489,6 +27633,7 @@
       "壯乃知父為夷所得三出徼外経六年乃遇之。",
       "唐李白（字は太白、蜀郡の出身）"
     ],
+    "household_note": null,
     "coord": [
       104.07,
       30.67
@@ -27691,6 +27836,7 @@
     "customs_ja": "与益州仝。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.94,
       30.99
@@ -27698,7 +27844,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       104.0665,
-      30.8891
+      30.8892
     ],
     "trilateration_error_km": 16.5,
     "rings": [
@@ -27750,10 +27896,10 @@
     ],
     "east_west_li": 322,
     "north_south_li": 234,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 69005,
+    "song_zhu_households": 48518,
+    "song_ke_households": 10260,
+    "song_total_households": 58778,
     "customs": "同益州 ",
     "surnames": "",
     "figures": [],
@@ -27880,6 +28026,7 @@
     "customs_ja": "益州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       104.28,
       30.98
@@ -28050,6 +28197,7 @@
     "customs_ja": "益州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.62,
       31.0
@@ -28057,7 +28205,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       103.5438,
-      30.8658
+      30.8659
     ],
     "trilateration_error_km": 16.6,
     "rings": [
@@ -28258,6 +28406,7 @@
       "張綱（武陽の出身）：順帝時人其一也楊義字文然武陽人。",
       "李密（字は令伯、武陽の出身）"
     ],
+    "household_note": null,
     "coord": [
       103.6,
       30.02
@@ -28441,6 +28590,7 @@
     "customs_ja": "『尚書』武成に「庸・蜀・羌・髳・微・盧・彭・濮の人」とあり、孔安国の注に「八国は皆な蛮夷戎狄である」という。州の民は夷獠と錯居し、華人はその風は侈を尚び、その俗は文を好む。夷人は椎髻跣足で短衣袵し、酷く鬼神を信じ、竹木を以て楼居とし、礼義法律を知らず、拘えることができない。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.77,
       29.55
@@ -28505,10 +28655,10 @@
     ],
     "east_west_li": 208,
     "north_south_li": 102,
-    "tang_households": null,
-    "song_zhu_households": null,
+    "tang_households": 42107,
+    "song_zhu_households": 38497,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 38497,
     "customs": "此𨛦與夷獠相雜愈於諸郡 ",
     "surnames": "",
     "figures": [
@@ -28656,6 +28806,7 @@
       "茶。",
       "按茶経卭臨数邑茶有火前火後嫩緑黄芽号又有火畨餅每餅重四十両入西畨黨項重之如中国名山者其味甘苦又故伐蜀記云鎮南焦葛上者匹値十千。"
     ],
+    "household_note": null,
     "coord": [
       103.44,
       30.48
@@ -28720,7 +28871,7 @@
     ],
     "east_west_li": 340,
     "north_south_li": 61,
-    "tang_households": null,
+    "tang_households": 56577,
     "song_zhu_households": 36254,
     "song_ke_households": 10322,
     "song_total_households": 46576,
@@ -28786,13 +28937,14 @@
     "customs_ja": "益州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.67,
       30.63
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.6604,
+      103.6605,
       30.67
     ],
     "trilateration_error_km": 4.5,
@@ -28843,7 +28995,7 @@
     ],
     "east_west_li": 182,
     "north_south_li": 103,
-    "tang_households": null,
+    "tang_households": 23060,
     "song_zhu_households": 14059,
     "song_ke_households": 6010,
     "song_total_households": 20069,
@@ -28989,13 +29141,14 @@
     "customs_ja": "獽人があり、言語は夏人と同じからず、嫁娶はただ鼓笛のみである。喪に遭えば乃ち竿を立て布を懸けてその門庭に置き、別所に殯し、その体骸が燥くに至れば木函に盛って山穴の中に置く。李膺記に「この四郡の獽である」という。また夷人があり、獽類と同じく、また獠人があり、獽夷と同じく、ただ名字が異なるのみである。人物としては段翳、字は元璋、広漢新都の人で、易を治め風角に明るく、来学する者があれば預めその姓名を知り、即ち膏薬を筒中に封じて一生の葭萌に至る者に与えた。土産は綿・紬・茶である。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       104.55,
       30.39
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.6761,
+      104.6762,
       30.2548
     ],
     "trilateration_error_km": 19.3,
@@ -29052,10 +29205,10 @@
     ],
     "east_west_li": 340,
     "north_south_li": 124,
-    "tang_households": null,
+    "tang_households": 29600,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 20829,
     "customs": "與簡州同 ",
     "surnames": "",
     "figures": [
@@ -29199,6 +29352,7 @@
       "董鈞字文伯五官郎中。",
       "王延（世資中の出身）：治河有功為光禄大夫。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       104.85,
       29.76
@@ -29270,9 +29424,9 @@
     "east_west_li": 180,
     "north_south_li": 239,
     "tang_households": null,
-    "song_zhu_households": 80735,
-    "song_ke_households": 3826,
-    "song_total_households": 84561,
+    "song_zhu_households": 10722,
+    "song_ke_households": 2837,
+    "song_total_households": 13559,
     "customs": "與簡州同 同卭州卭雅之夷獠婦人娠七月而産産畢置兒向水中浮者取養沉者棄之千百無一沉者長則㧞去上齒如狗牙各以為華飾今有四牙長於諸牙而唇髙者别是一種能食人無長齒者不能食俗信妖巫擊銅鼓以祈禱至今盧山縣新安鄉五百餘戸即其遺人也 ",
     "surnames": "",
     "figures": [
@@ -29516,6 +29670,7 @@
     "figures_ja": [
       "衛継字子萊蜀為左尚書。"
     ],
+    "household_note": null,
     "coord": [
       104.43,
       30.72
@@ -29523,7 +29678,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       104.1161,
-      30.6994
+      30.6993
     ],
     "trilateration_error_km": 30.1,
     "rings": [
@@ -29571,8 +29726,8 @@
     "north_south_li": null,
     "tang_households": 6850,
     "song_zhu_households": 332,
-    "song_ke_households": null,
-    "song_total_households": 332,
+    "song_ke_households": 186,
+    "song_total_households": 518,
     "customs": "蕃部蠻夷混雜之地元無市肆每漢人與蕃人博易不使見錢漢用紬絹茶布蕃部用紅椒鹽馬之類人物無 ",
     "surnames": "",
     "figures": [],
@@ -29673,14 +29828,15 @@
     "customs_ja": "蕃部蛮夷が混雑する地で、もともと市肆はない。漢人と蕃人が交易するごとに銭を見せず、漢は紬絹・茶・布を用い、蕃部は紅椒・塩・馬の類を用いる。人物は無し。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       102.65,
       29.35
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      100.5153,
-      29.4321
+      100.5158,
+      29.4316
     ],
     "trilateration_error_km": 207.0,
     "rings": [
@@ -29745,8 +29901,8 @@
     "north_south_li": 240,
     "tang_households": 2500,
     "song_zhu_households": 273,
-    "song_ke_households": null,
-    "song_total_households": 273,
+    "song_ke_households": 53,
+    "song_total_households": 326,
     "customs": "此一州本羌戎之人好弓馬以勇悍相尚詩禮之訓闕如也貧下者冬則避寒入蜀傭賃自食故蜀人謂之作氐人物無 ",
     "surnames": "",
     "figures": [],
@@ -29874,6 +30030,7 @@
     "customs_ja": "この一州はもと羌戎の人で、弓馬を好み、勇悍を以て相尚び、詩礼の訓えは欠如している。貧下の者は冬には寒を避けて蜀に入り、傭賃して自ら食う。故に蜀人は之を作氐と謂う。人物は無し。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.85,
       31.68
@@ -30072,6 +30229,7 @@
     "customs_ja": "茂州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.68,
       32.04
@@ -30156,9 +30314,9 @@
     "east_west_li": 170,
     "north_south_li": 260,
     "tang_households": 81179,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": 54,
+    "song_zhu_households": 954,
+    "song_ke_households": 5694,
+    "song_total_households": 6648,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -30367,6 +30525,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       103.17,
       31.44
@@ -30480,7 +30639,7 @@
     "tang_households": 4500,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 5263,
     "customs": "其土有四族黎蒯虞牟夷夏雜居風俗各異其蠻獠之類不識文字不知禮教言語不通嗜慾不同椎髻跣足鑿齒穿耳衣緋布羊皮莎草以神鬼為徴騐以殺傷為戲笑少壯為上衰老為下男女無别山岡是居 民能鼻飲水 ",
     "surnames": "",
     "figures": [
@@ -30618,14 +30777,15 @@
       "隗相字叔通養母至孝母好食江中流水有横石生江中成橋漢徴為郎。",
       "呉順字叔和至孝赤烏巢其門後為永昌太守。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       104.64,
       28.75
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.8333,
-      28.6914
+      104.8334,
+      28.6915
     ],
     "trilateration_error_km": 19.9,
     "rings": [
@@ -30700,7 +30860,7 @@
     "tang_households": 570,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 170,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -30712,6 +30872,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（漢戸・外は蕃戸）",
     "coord": [
       103.35,
       31.7
@@ -30765,7 +30926,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 400,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -30884,6 +31045,7 @@
     "customs_ja": "霸州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       102.95,
       32.1
@@ -31068,13 +31230,14 @@
     "customs_ja": "拓州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       102.75,
       31.9
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      102.8603,
+      102.8604,
       32.1976
     ],
     "trilateration_error_km": 34.7,
@@ -31159,6 +31322,7 @@
     "customs_ja": "尚骨卜は木を刻みて信と為し、火葬して楽を送り、鼓吹を以て送終と為す。木耳夷は死すれば薪を積みて之を焼き、烟正しければ大いに牛羊を殺し相賀して以て楽を作す。若し風に遇いて烟旁ら散ずれば乃ち大いに悲哭す。濮夷は『九州要記』に云う「郡界千里に在り、常に木上に居り屋を作る。尾長二寸、若し尾を損すれば立ちどころに死す。若し地上に居らんと欲すれば則ち預め窟穴して以て尾を安んず」と。文夷は『九州要記』を按ずるに云う「嶲の西夷は人身青くして文あり、竜鱗の如し。臂脛の間に生ず。将に婚せんとするには路に会して歌謡し相感合して以て夫婦と為す」と。又た穿鼻儋耳の種あり。瘴気に声あり、人に著けば人死し、木に著けば木折る。号けて鬼巣と曰う。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       102.26,
       27.89
@@ -31331,6 +31495,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.45,
       31.55
@@ -31472,6 +31637,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.25,
       31.65
@@ -31657,14 +31823,15 @@
     "customs_ja": "仝扶州。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.6,
       32.64
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.653,
-      32.58
+      103.6529,
+      32.5798
     ],
     "trilateration_error_km": 8.3,
     "rings": [
@@ -31776,6 +31943,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.3,
       32.5
@@ -31838,7 +32006,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 2100,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -31934,14 +32102,15 @@
     "customs_ja": "地は夷徼に辺し、人は羌・蛮に雑る。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       102.9,
       32.25
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.2369,
-      32.0323
+      103.237,
+      32.0324
     ],
     "trilateration_error_km": 39.9,
     "rings": [
@@ -31999,7 +32168,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 810,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -32118,16 +32287,17 @@
     "customs_ja": "羌性同當州。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.35,
       31.95
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.3957,
+      103.3956,
       31.8634
     ],
-    "trilateration_error_km": 10.6,
+    "trilateration_error_km": 10.5,
     "rings": [
       [
         [
@@ -32175,7 +32345,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 577,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -32316,6 +32486,7 @@
     "customs_ja": "當州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（吐蕃・西南夷境界州）",
     "coord": [
       103.05,
       31.85
@@ -32570,6 +32741,7 @@
       "巴西。",
       "南充。"
     ],
+    "household_note": null,
     "coord": [
       105.09,
       31.1
@@ -32643,7 +32815,7 @@
     ],
     "east_west_li": 230,
     "north_south_li": 175,
-    "tang_households": null,
+    "tang_households": 60050,
     "song_zhu_households": 28436,
     "song_ke_households": 9280,
     "song_total_households": 37716,
@@ -32793,13 +32965,14 @@
       "王晏（字は叔博、広漢涪の出身）",
       "李膺（涪城の出身）：撰益記三卷。"
     ],
+    "household_note": null,
     "coord": [
       104.72,
       31.55
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      104.664,
+      104.6641,
       31.4584
     ],
     "trilateration_error_km": 11.5,
@@ -32855,10 +33028,10 @@
     ],
     "east_west_li": 468,
     "north_south_li": 296,
-    "tang_households": null,
-    "song_zhu_households": 890,
-    "song_ke_households": 642,
-    "song_total_households": 1532,
+    "tang_households": 23500,
+    "song_zhu_households": 7536,
+    "song_ke_households": 8304,
+    "song_total_households": 15840,
     "customs": "與龍州同 與劍州同然山髙水峻人多瘤癡聾蓋山水之氣使然也 ",
     "surnames": "",
     "figures": [
@@ -33129,6 +33302,7 @@
       "李業入獨行伝。",
       "文斉為鎮遠将軍。"
     ],
+    "household_note": null,
     "coord": [
       105.47,
       32.03
@@ -33189,10 +33363,10 @@
     ],
     "east_west_li": 127,
     "north_south_li": 318,
-    "tang_households": null,
-    "song_zhu_households": null,
+    "tang_households": 34728,
+    "song_zhu_households": 12392,
     "song_ke_households": 13115,
-    "song_total_households": 13115,
+    "song_total_households": 25507,
     "customs": "與益州同 ",
     "surnames": "",
     "figures": [],
@@ -33326,6 +33500,7 @@
     "customs_ja": "益州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       104.14,
       30.0
@@ -33333,7 +33508,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       103.9138,
-      30.0353
+      30.0352
     ],
     "trilateration_error_km": 22.1,
     "rings": [
@@ -33396,6 +33571,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       104.16,
       29.98
@@ -33456,7 +33632,7 @@
     ],
     "east_west_li": 250,
     "north_south_li": 145,
-    "tang_households": null,
+    "tang_households": 5639,
     "song_zhu_households": 50011,
     "song_ke_households": 16704,
     "song_total_households": 66715,
@@ -33475,6 +33651,7 @@
     "customs_ja": "夏人は少なく蛮獠が多い。男は巾櫛せず、女は班布を衣、姓名は顛倒し、礼法を知らない。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       104.42,
       29.46
@@ -33525,7 +33702,7 @@
     "county_names": [],
     "east_west_li": 245,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 41300,
     "song_zhu_households": 23249,
     "song_ke_households": 6637,
     "song_total_households": 29886,
@@ -33660,14 +33837,15 @@
       "陳寿（字は承祚、安漢の出身）：為著作郎撰三国志。",
       "閻纘（安漢の出身）：獨哭張華。"
     ],
+    "household_note": null,
     "coord": [
       106.08,
       30.8
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.8663,
-      30.8261
+      105.8664,
+      30.826
     ],
     "trilateration_error_km": 20.6,
     "rings": [
@@ -33729,10 +33907,10 @@
     ],
     "east_west_li": 249,
     "north_south_li": 263,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 18200,
+    "song_zhu_households": 21746,
+    "song_ke_households": 22234,
+    "song_total_households": 43980,
     "customs": "與果州同 ",
     "surnames": "",
     "figures": [
@@ -33875,6 +34053,7 @@
       "譙隆（字は伯司、閬中の出身）：景帝時為上林令武帝欲広園囿隆固諫遷成臯令。",
       "洛下閎（字は長公、閬中の出身）：隠于洛亭武帝徴待詔太史改造太初歴閎曰後八百歳此歴差一日當有聖人出定之。"
     ],
+    "household_note": null,
     "coord": [
       105.97,
       31.56
@@ -33882,7 +34061,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       105.8753,
-      31.1495
+      31.1497
     ],
     "trilateration_error_km": 46.5,
     "rings": [
@@ -33939,10 +34118,10 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 35630,
+    "song_zhu_households": 22047,
+    "song_ke_households": 16634,
+    "song_total_households": 38681,
     "customs": "人物無",
     "surnames": "",
     "figures": [],
@@ -34080,6 +34259,7 @@
     "customs_ja": "人物無。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.59,
       30.53
@@ -34139,10 +34319,10 @@
     ],
     "east_west_li": 319,
     "north_south_li": 440,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 25600,
+    "song_zhu_households": 1366,
+    "song_ke_households": 13144,
+    "song_total_households": 14510,
     "customs": "與遂州同　人物無 ",
     "surnames": "",
     "figures": [],
@@ -34267,6 +34447,7 @@
     "customs_ja": "遂州と同じ。人物はなし。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.33,
       30.1
@@ -34380,10 +34561,10 @@
     ],
     "east_west_li": 190,
     "north_south_li": 210,
-    "tang_households": null,
-    "song_zhu_households": 2298,
-    "song_ke_households": 3102,
-    "song_total_households": 5400,
+    "tang_households": 16594,
+    "song_zhu_households": 2047,
+    "song_ke_households": 2415,
+    "song_total_households": 4462,
     "customs": "地無桑麻毎嵗畬田刀耕火種其夷獠則與漢不同性多獷戾而又好婬祠巢居岩谷因險慿髙著班布擊銅皷弄鞘刀男則露髻跣足女則椎髻横裾夫亡婦不歸家葬之岩穴刻木為契刺血為信銜寃則累代相酬乏用則鬻賣男女其習俗如此 同瀘州 管鹽井大小六井嵗出鹽貨三十餘萬貫　雞足山在城東隔水三里　同心山在城東五里 ",
     "surnames": "",
     "figures": [
@@ -34593,6 +34774,7 @@
       "侯馥不屈于李雄者。",
       "漢光武微時過江陽生一子望気者言江陽有貴兒県人殺之光武後封為廟祠謫江陽人不使冠帶。"
     ],
+    "household_note": null,
     "coord": [
       105.44,
       28.87
@@ -34658,7 +34840,7 @@
     ],
     "east_west_li": 260,
     "north_south_li": 320,
-    "tang_households": null,
+    "tang_households": 1190,
     "song_zhu_households": 1180,
     "song_ke_households": 12700,
     "song_total_households": 13880,
@@ -34797,6 +34979,7 @@
     "customs_ja": "夏の風があり、獠の風がある。すべて叢菁に住み、虚に懸けて屋を構え、閣籣と号する。男は蓬頭跣足、女は椎髻穿耳。生処の山水をもって姓名とし、殺すをもって能事とする。父母の喪には几筵を立てない。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.71,
       29.7
@@ -34804,7 +34987,7 @@
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
       105.3874,
-      29.8014
+      29.8013
     ],
     "trilateration_error_km": 33.1,
     "rings": [
@@ -34860,7 +35043,7 @@
     ],
     "east_west_li": 110,
     "north_south_li": 162,
-    "tang_households": null,
+    "tang_households": 54500,
     "song_zhu_households": 11647,
     "song_ke_households": 15900,
     "song_total_households": 27547,
@@ -34972,6 +35155,7 @@
       "檀道（済高平金郷の出身）：世居京口。",
       "唐桓彦（範潤州曲阿の出身）：以誅張易之功拝納言為侍中扶陽郡。"
     ],
+    "household_note": null,
     "coord": [
       119.56,
       31.92
@@ -35065,6 +35249,7 @@
     "figures_ja": [
       "陶弘景（字は通明、丹陽秣陵の出身）：為斉王侍読挂冠帰隠茅山梁武即位有大事無不諮詢時人謂之山中宰相。"
     ],
+    "household_note": null,
     "coord": [
       118.78,
       32.04
@@ -35320,13 +35505,14 @@
       "唐朱（子奢蘇州呉の出身）：也才子。",
       "陸元（方蘇州呉県の出身）：相則天其子象先相睿宗。"
     ],
+    "household_note": null,
     "coord": [
       120.94,
       31.43
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.2537,
+      120.2536,
       31.5259
     ],
     "trilateration_error_km": 66.0,
@@ -35378,10 +35564,10 @@
     ],
     "east_west_li": 200,
     "north_south_li": 165,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 102600,
+    "song_zhu_households": 28071,
+    "song_ke_households": 27481,
+    "song_total_households": 55552,
     "customs": "承太伯之高蹤由季子之遺烈蓋英賢之舊壤雜吳夏之語音人性質直黎庶淳讓言地則三吳襟帶之邦百越舟車之㑹舉江左之郡者常潤其首焉 ",
     "surnames": "",
     "figures": [
@@ -35541,6 +35727,7 @@
       "周盤（竜義興の出身）：力戦位至散騎常侍斉武戲之曰卿著貂蟬何如兠鍪盤竜曰此貂蟬従兠鍪中生耳。",
       "唐劉禕（之常州晋陵の出身）：高宗朝北門学士相則天以拒制使賜死。"
     ],
+    "household_note": null,
     "coord": [
       120.1,
       31.6
@@ -35653,6 +35840,7 @@
     "customs_ja": "常州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       120.29,
       31.92
@@ -35858,6 +36046,7 @@
       "唐許敬（宗杭州新城の出身）：善心之子善心読万卷書十五解属文其先自東晋南渡相太宗曽孫遠為睢陽太守。",
       "褚無（量杭州の出身）：官至散騎常侍封舒国公。"
     ],
+    "household_note": null,
     "coord": [
       119.51,
       30.16
@@ -35923,7 +36112,7 @@
     "tang_households": 59000,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 38748,
     "customs": "與蘇州同 ",
     "surnames": "吳興郡四姓　姚　沈　丘　紉　長城郡二姓錢　胥 / ",
     "figures": [
@@ -36077,6 +36266,7 @@
       "沈約（呉興武康の出身）：著晋宋梁書并文集凡三百六十四卷。",
       "唐丘（呉興県の出身）：為常侍致仕。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       119.99,
       30.81
@@ -36146,10 +36336,10 @@
     ],
     "east_west_li": 390,
     "north_south_li": 320,
-    "tang_households": null,
+    "tang_households": 22700,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 12251,
     "customs": "同歙州 ",
     "surnames": "",
     "figures": [
@@ -36282,6 +36472,7 @@
       "嚴子陵。",
       "戴顒。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       119.17,
       29.59
@@ -36289,7 +36480,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.1905,
-      29.3439
+      29.344
     ],
     "trilateration_error_km": 27.4,
     "rings": [
@@ -36339,7 +36530,7 @@
     "north_south_li": 91,
     "tang_households": null,
     "song_zhu_households": null,
-    "song_ke_households": 23052,
+    "song_ke_households": null,
     "song_total_households": 23052,
     "customs": "",
     "surnames": "",
@@ -36401,14 +36592,15 @@
     "figures_ja": [
       "蘇州の風俗と同じ。"
     ],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       121.08,
       30.84
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.7118,
-      30.6414
+      120.7117,
+      30.6415
     ],
     "trilateration_error_km": 41.5,
     "rings": [
@@ -36469,9 +36661,9 @@
     ],
     "east_west_li": 232,
     "north_south_li": 447,
-    "tang_households": null,
+    "tang_households": 64100,
     "song_zhu_households": null,
-    "song_ke_households": 56491,
+    "song_ke_households": null,
     "song_total_households": 56491,
     "customs": "漢書云文身斷髮以避蛟龍之害言人常在水中故斷其髮文其身以象龍子則龍不見傷害宋畧云會稽山陰編户三萬號為天下繁劇之所 ",
     "surnames": "會稽郡七姓　虞　孔　夏　榮　鍾　兹　謝人物 / 鄭吉會稽人為西域都䕶謝夷吾山陰人為荆州刺史　鄭弘㑹稽人為太尉第五倫為司空班次在下弘曲躬自卑因聽雲母屏風分隔其閒　鍾離意會稽人為臨淮太守出行春天澍雨白鹿夾轂主簿云三公車畫白鹿必為三公　嚴清有異人曰汝骨得道長生以一卷書與清曰汝得長生　孟嘗會稽上虞人為合浦太守珠還　虞翻會稽人以所著易注示孔融融曰延陵之音樂吾子之易理乃知東南之美者非徒會稽之竹箭也可謂探賾窮通矣孫權行酒翻佯醉徙交州十年　闞澤會稽人年十三夢名在月中　丁固山陰人少夢松生腹上謂人曰松字十八公果為司徒　朱育山陰人　夏統字仲御永興人母病詣洛市藥三月三日洛中王公至浮橋仲御曝藥不顧　王羲之山陰人　孔稚圭會稽人也虞羲集會稽人也　虞荔會稽餘姚人九歳太常 / 陸倕問五經中十事荔對無遺梁時為翰林學士兼中書舍人　唐虞世南越州餘姚人　賀知章會稽人　孔述睿越州人代宗徴入厯史館脩撰乞還鄉太子賓客致仕 / ",
@@ -36589,14 +36781,15 @@
     "customs_ja": "『漢書』に「文身断髪して蛟竜の害を避く」とある。人は常に水中に在る故に、その髪を断ち、その身に文を施して竜子に象り、則ち竜は傷害を見さず。『宋略』に「會稽山陰の編戸三万、天下の繁劇の所と号す」とある。",
     "surnames_ja": "會稽郡の著姓（の著姓（七姓）：）： 虞 孔 夏 榮 鍾 兹 謝人物 ／ 鄭吉會稽人為西域都䕶謝夷吾山陰人為荊州刺史 鄭弘会稽人為太尉第五倫為司空班次在下弘曲躬自卑因聽雲母屏風分隔其閒 鍾離意會稽人為臨淮太守出行春天澍雨白鹿夾轂主簿云三公車畫白鹿必為三公 嚴清有異人曰汝骨得道長生以一卷書与清曰汝得長生 孟嘗會稽上虞人為合浦太守珠還 虞翻會稽人以所著易注示孔融融曰延陵之音楽吾子之易理乃知東南之美者非徒會稽之竹箭也可謂探賾窮通矣孫權行酒翻佯醉徙交州十年 闞沢會稽人年十三夢名在月中 丁固山陰人少夢松生腹上謂人曰松字十八公果為司徒 朱育山陰人 夏統字仲御永興人母病詣洛市薬三月三日洛中王公至浮橋仲御曝薬不顧 王羲之山陰人 孔稚圭會稽人也虞羲集會稽人也 虞荔會稽余姚人九歳太常 ／ 陸倕問五経中十事荔對無遺梁時為翰林学士兼中書舍人 唐虞世南越州余姚人 賀知章會稽人 孔述睿越州人代宗徴入暦史館脩撰乞還郷太子賓客致仕 /",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       120.58,
       29.76
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.5521,
-      29.8253
+      120.552,
+      29.8252
     ],
     "trilateration_error_km": 7.7,
     "rings": [
@@ -36655,7 +36848,7 @@
     "north_south_li": 205,
     "tang_households": 27100,
     "song_zhu_households": null,
-    "song_ke_households": 19859,
+    "song_ke_households": null,
     "song_total_households": 19859,
     "customs": "與婺州同 ",
     "surnames": "",
@@ -36783,6 +36976,7 @@
     "customs_ja": "婺州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       118.85,
       28.89
@@ -36973,6 +37167,7 @@
     "customs_ja": "『郡国志』に「揚州の東境、婺州は正に東越の地を得たり。漢の時その地は會稽郡に属し、呉は東陽郡と為す。民俗は軽躁にして信行少なく、淫祀を好む。人物：楊琰、字は機平、烏傷の人、零陵太守と為る。石灰を草上に盛り、馬尾に灰を鼓して賊を敗る。駱統、字は公緒、烏傷の人、陸遜に随いて蜀を破る。駱賓王、義烏の人。唐の徐安貞、蘭陵県の人」とある。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       120.01,
       29.23
@@ -37061,6 +37256,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       121.6,
       29.81
@@ -37267,14 +37463,15 @@
     "customs_ja": "越州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       121.1,
       28.92
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      121.1483,
-      28.0459
+      121.1479,
+      28.0462
     ],
     "trilateration_error_km": 97.3,
     "rings": [
@@ -37334,7 +37531,7 @@
     ],
     "east_west_li": null,
     "north_south_li": 300,
-    "tang_households": null,
+    "tang_households": 16100,
     "song_zhu_households": 16082,
     "song_ke_households": 24658,
     "song_total_households": 40740,
@@ -37471,13 +37668,14 @@
     "customs_ja": "俗は淫祀を好み、甌越の風有り。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       120.43,
       27.9
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.3093,
+      120.309,
       28.057
     ],
     "trilateration_error_km": 21.1,
@@ -37554,7 +37752,7 @@
     "north_south_li": 610,
     "tang_households": 19700,
     "song_zhu_households": null,
-    "song_ke_households": 20586,
+    "song_ke_households": null,
     "song_total_households": 20586,
     "customs": "與台州同 ",
     "surnames": "縉雲郡三邑　黄　賴　豐 / ",
@@ -37678,6 +37876,7 @@
     "customs_ja": "台州の風俗と同じ。",
     "surnames_ja": "縉雲郡三邑 黄 賴 豐 /",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       119.56,
       28.21
@@ -37685,7 +37884,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.8434,
-      28.5209
+      28.5211
     ],
     "trilateration_error_km": 44.3,
     "rings": [
@@ -37934,16 +38133,17 @@
     "figures_ja": [
       "自唐設舉場此州之才子登科者甚衆黄瑾纂為閩中名士録。"
     ],
+    "household_note": null,
     "coord": [
       119.12,
       26.38
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.1029,
-      25.8537
+      119.1025,
+      25.8536
     ],
-    "trilateration_error_km": 58.5,
+    "trilateration_error_km": 58.6,
     "rings": [
       [
         [
@@ -38011,9 +38211,9 @@
     "east_west_li": 620,
     "north_south_li": 700,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 33830,
+    "song_ke_households": 22840,
+    "song_total_households": 56670,
     "customs": "與建州同 ",
     "surnames": "",
     "figures": [],
@@ -38143,6 +38343,7 @@
     "customs_ja": "建州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.07,
       26.32
@@ -38207,7 +38408,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 22770,
     "song_zhu_households": 46637,
     "song_ke_households": 43855,
     "song_total_households": 90492,
@@ -38348,6 +38549,7 @@
     "figures_ja": [
       "顧野王仕陳為光祿卿。"
     ],
+    "household_note": null,
     "coord": [
       118.24,
       27.48
@@ -38355,7 +38557,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       118.3847,
-      26.9427
+      26.943
     ],
     "trilateration_error_km": 61.4,
     "rings": [
@@ -38408,9 +38610,9 @@
     "east_west_li": 230,
     "north_south_li": 265,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 34391,
+    "song_ke_households": 13490,
+    "song_total_households": 47881,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -38500,14 +38702,15 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       117.4,
       27.24
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.113,
-      27.2564
+      118.1129,
+      27.2566
     ],
     "trilateration_error_km": 70.5,
     "rings": [
@@ -38571,6 +38774,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       118.33,
       27.03
@@ -38758,6 +38962,7 @@
     "figures_ja": [
       "自唐設舉場此州之才子間生登科者甚衆黄璞纂為名士録。"
     ],
+    "household_note": null,
     "coord": [
       118.13,
       25.22
@@ -38816,7 +39021,7 @@
     ],
     "east_west_li": null,
     "north_south_li": 500,
-    "tang_households": null,
+    "tang_households": 15000,
     "song_zhu_households": 19730,
     "song_ke_households": 4277,
     "song_total_households": 24007,
@@ -38978,13 +39183,14 @@
     "customs_ja": "泉州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       117.49,
       24.73
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.1492,
+      118.1491,
       25.0029
     ],
     "trilateration_error_km": 73.1,
@@ -39193,6 +39399,7 @@
     "customs_ja": "福州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.52,
       25.54
@@ -39200,7 +39407,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       116.8825,
-      25.5256
+      25.5257
     ],
     "trilateration_error_km": 36.4,
     "rings": [
@@ -39359,6 +39566,7 @@
     "customs_ja": "泉州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.8,
       25.42
@@ -39575,16 +39783,17 @@
     "customs_ja": "宣州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.08,
       29.67
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.0087,
-      29.9239
+      118.0089,
+      29.9238
     ],
-    "trilateration_error_km": 29.1,
+    "trilateration_error_km": 29.0,
     "rings": [
       [
         [
@@ -39642,9 +39851,9 @@
     "east_west_li": 143,
     "north_south_li": 257,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 12219,
+    "song_ke_households": 2841,
+    "song_total_households": 15060,
     "customs": "與宣州同 ",
     "surnames": "",
     "figures": [],
@@ -39776,6 +39985,7 @@
     "customs_ja": "宣州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.56,
       31.36
@@ -39783,7 +39993,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       118.3126,
-      31.5838
+      31.5839
     ],
     "trilateration_error_km": 34.2,
     "rings": [
@@ -39844,10 +40054,10 @@
     ],
     "east_west_li": 330,
     "north_south_li": 242,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 24600,
+    "song_zhu_households": 18381,
+    "song_ke_households": 15043,
+    "song_total_households": 33424,
     "customs": "與宣州同 ",
     "surnames": "",
     "figures": [
@@ -39990,14 +40200,15 @@
     "figures_ja": [
       "唐費（冠卿池州の出身）：及第帰恨禄不及養三徴拾遺不起。"
     ],
+    "household_note": null,
     "coord": [
       117.44,
       30.34
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.9127,
-      30.3281
+      117.9126,
+      30.3278
     ],
     "trilateration_error_km": 45.4,
     "rings": [
@@ -40202,13 +40413,14 @@
       "徐穉孺（子豫章南昌の出身）：太守陳蕃在郡惟設一榻礼之。",
       "雷次（宗南昌の出身）：入廬山事惠遠𨼆退。"
     ],
+    "household_note": null,
     "coord": [
       115.6,
       28.67
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.4742,
+      115.4743,
       28.4183
     ],
     "trilateration_error_km": 30.6,
@@ -40258,9 +40470,9 @@
     "east_west_li": 485,
     "north_south_li": 170,
     "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "song_zhu_households": 29396,
+    "song_ke_households": 16933,
+    "song_total_households": 46329,
     "customs": "與洪州同 ",
     "surnames": "",
     "figures": [],
@@ -40355,6 +40567,7 @@
     "customs_ja": "洪州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       115,
       28.36
@@ -40419,7 +40632,7 @@
     ],
     "east_west_li": 450,
     "north_south_li": 330,
-    "tang_households": null,
+    "tang_households": 40899,
     "song_zhu_households": 22805,
     "song_ke_households": 23113,
     "song_total_households": 45918,
@@ -40564,6 +40777,7 @@
     "figures_ja": [
       "賈義（豫章鄱陽の出身）：為侍御史。"
     ],
+    "household_note": null,
     "coord": [
       117.24,
       29.01
@@ -40636,7 +40850,7 @@
     ],
     "east_west_li": 540,
     "north_south_li": 450,
-    "tang_households": null,
+    "tang_households": 2350,
     "song_zhu_households": 28199,
     "song_ke_households": 12486,
     "song_total_households": 40685,
@@ -40734,13 +40948,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       117.97,
       28.45
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      117.8524,
+      117.8523,
       28.2143
     ],
     "trilateration_error_km": 28.6,
@@ -40959,13 +41174,14 @@
     "figures_ja": [
       "唐鍾紹（京䖍州贑県の出身）：性孝小時得瓜菓先進二親工書直鳳閣為苑総監従玄宗平内難其夜拝中書侍郎至中書令。"
     ],
+    "household_note": null,
     "coord": [
       115.05,
       25.81
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6257,
+      114.6258,
       26.05
     ],
     "trilateration_error_km": 50.1,
@@ -41172,6 +41388,7 @@
     "figures_ja": [
       "宜春山水（秀麗鍾於詞の出身）：自唐有舉場登科者実繁江南諸郡俱不及之有宜陽集以載其名。"
     ],
+    "household_note": null,
     "coord": [
       114.39,
       27.8
@@ -41377,14 +41594,15 @@
     "figures_ja": [
       "陶侃（毋諶氏新淦の出身）：家貧以紡績資給侃令交結勝已者。"
     ],
+    "household_note": null,
     "coord": [
       114.79,
       26.79
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.2506,
-      27.5993
+      116.2505,
+      27.5994
     ],
     "trilateration_error_km": 170.2,
     "rings": [
@@ -41448,7 +41666,7 @@
     "tang_households": 20100,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 61279,
     "customs": "與洪州同 ",
     "surnames": "",
     "figures": [],
@@ -41585,6 +41803,7 @@
     "customs_ja": "洪州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       116.24,
       27.72
@@ -41592,7 +41811,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       116.2591,
-      28.2087
+      28.2086
     ],
     "trilateration_error_km": 54.4,
     "rings": [
@@ -41750,14 +41969,15 @@
     "customs_ja": "撫州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の数値記載なし",
     "coord": [
       116.65,
       27.13
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.1816,
-      27.442
+      116.1819,
+      27.4421
     ],
     "trilateration_error_km": 57.8,
     "rings": [
@@ -41814,10 +42034,10 @@
     ],
     "east_west_li": 590,
     "north_south_li": null,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 19800,
+    "song_zhu_households": 12319,
+    "song_ke_households": 12045,
+    "song_total_households": 24364,
     "customs": "與洪州同 ",
     "surnames": "潯陽郡三姓　陶　翟　騫 / ",
     "figures": [
@@ -41952,6 +42172,7 @@
       "翟湯（字は道深、潯陽の出身）：篤行純素仁譲謹潔耕而後食。",
       "陶潛（柴桑の出身）：也少有高趣少言不慕榮利読書不求甚解性嗜酒或置酒招之期必於醉環堵蕭然不蔽風雨執事者以為彭沢令觧印賦帰去來。"
     ],
+    "household_note": null,
     "coord": [
       116,
       29.66
@@ -42127,6 +42348,7 @@
     "figures_ja": [
       "具載江州。"
     ],
+    "household_note": null,
     "coord": [
       115.71,
       29.18
@@ -42326,13 +42548,14 @@
       "孟陋（武昌の出身）：少孤曽祖宗為呉司空陋幼而貞潔喪母過礼。",
       "孟嘉（江夏の出身）：侍桓温宴竜山風吹帽墜唐李鄘江夏人自淮南節度詔入拝相。"
     ],
+    "household_note": null,
     "coord": [
       114.09,
       29.82
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.912,
+      113.9124,
       30.2715
     ],
     "trilateration_error_km": 53.0,
@@ -42531,6 +42754,7 @@
     "customs_ja": "与黔中同。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.39,
       29.7
@@ -42600,7 +42824,7 @@
     ],
     "east_west_li": 1104,
     "north_south_li": 830,
-    "tang_households": null,
+    "tang_households": 4200,
     "song_zhu_households": 1279,
     "song_ke_households": 2504,
     "song_total_households": 3783,
@@ -42721,37 +42945,38 @@
     "customs_ja": "渓洞に雑居するは多くは蛮獠であり、その性は獷悍、その風は淫祀にして、礼法の道は固よりこれを知らない。開宝四年（971年）に黔南が上言するに、江心に石魚が現れ、上に古記ありて云う、広徳元年（763年）二月に大江の水が退き石魚が現れたと。部民は相伝えて豊稔の兆しと為した。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.62,
       28.04
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.2327,
-      29.5575
+      108.2326,
+      29.5571
     ],
     "trilateration_error_km": 216.2,
     "rings": [
       [
         [
-          110.31,
-          27.68
+          110.44,
+          27.43
         ],
         [
-          109.55,
-          27.61
+          109.79,
+          27.46
         ],
         [
-          108.94,
-          27.98
+          108.97,
+          28.06
         ],
         [
           109.51,
           29.18
         ],
         [
-          110.31,
-          27.68
+          110.44,
+          27.43
         ]
       ]
     ]
@@ -42907,22 +43132,19 @@
     "customs_ja": "黔中と同じであるが、蛮夷の俗は頗る通じない所がある。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       107.19,
       27.95
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.5434,
-      28.5632
+      107.5435,
+      28.5631
     ],
     "trilateration_error_km": 76.5,
     "rings": [
       [
-        [
-          106.75,
-          28.14
-        ],
         [
           107.59,
           28.52
@@ -42938,6 +43160,10 @@
         [
           106.75,
           28.14
+        ],
+        [
+          107.59,
+          28.52
         ]
       ]
     ]
@@ -43066,16 +43292,17 @@
     "customs_ja": "黔州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書「皇朝戸 闕」",
     "coord": [
       106.93,
       27.7
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.2712,
-      26.9613
+      107.2716,
+      26.9618
     ],
-    "trilateration_error_km": 88.8,
+    "trilateration_error_km": 88.7,
     "rings": [
       [
         [
@@ -43265,25 +43492,30 @@
     "customs_ja": "地は黔州と同じで、特に生獠が雑居している。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       108.25,
       28.32
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.5394,
+      108.5393,
       28.4003
     ],
     "trilateration_error_km": 29.7,
     "rings": [
       [
         [
-          108.8,
-          27.91
+          107.91,
+          29.07
         ],
         [
-          108.31,
-          27.43
+          108.77,
+          27.95
+        ],
+        [
+          108.3,
+          27.44
         ],
         [
           107.88,
@@ -43300,10 +43532,6 @@
         [
           107.91,
           29.07
-        ],
-        [
-          108.8,
-          27.91
         ]
       ]
     ]
@@ -43482,6 +43710,7 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": "原書「皇朝戸 闕」",
     "coord": [
       108.55,
       28.55
@@ -43489,7 +43718,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       108.7658,
-      28.597
+      28.5969
     ],
     "trilateration_error_km": 21.7,
     "rings": [
@@ -43515,12 +43744,12 @@
           29.18
         ],
         [
-          108.94,
-          27.98
+          108.97,
+          28.06
         ],
         [
-          108.8,
-          27.91
+          108.77,
+          27.95
         ],
         [
           107.91,
@@ -43683,16 +43912,17 @@
     "customs_ja": "渝州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書「皇朝戸 闕」",
     "coord": [
       106.68,
       28.98
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.7612,
+      106.7613,
       29.0014
     ],
-    "trilateration_error_km": 8.2,
+    "trilateration_error_km": 8.3,
     "rings": [
       [
         [
@@ -43813,14 +44043,15 @@
     "customs_ja": "その俗は多く生獠が雑じり、言語はあるいは通じる。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       106.9,
       28.6
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.681,
-      27.8121
+      106.6811,
+      27.8122
     ],
     "trilateration_error_km": 90.2,
     "rings": [
@@ -43947,6 +44178,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       106.75,
       28.75
@@ -43954,9 +44186,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.68,
-      28.0741
+      28.0744
     ],
-    "trilateration_error_km": 75.5,
+    "trilateration_error_km": 75.4,
     "rings": [
       [
         [
@@ -44011,7 +44243,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 22849,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -44052,6 +44284,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       107.5,
       27.05
@@ -44065,8 +44298,8 @@
     "rings": [
       [
         [
-          108.31,
-          27.43
+          108.3,
+          27.44
         ],
         [
           108.49,
@@ -44109,8 +44342,8 @@
           27.68
         ],
         [
-          108.31,
-          27.43
+          108.3,
+          27.44
         ]
       ]
     ]
@@ -44133,7 +44366,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 5368,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -44148,6 +44381,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       109.56,
       26.91
@@ -44165,12 +44399,16 @@
           26.4
         ],
         [
-          109.42,
-          27.16
+          109.79,
+          27.46
         ],
         [
-          110.47,
-          26.65
+          110.46,
+          27.42
+        ],
+        [
+          110.56,
+          26.8
         ],
         [
           110.17,
@@ -44183,79 +44421,6 @@
         [
           108.49,
           26.4
-        ]
-      ]
-    ]
-  },
-  {
-    "id": "卷122_龍標縣州",
-    "name": "龍標縣州",
-    "jun_name": "",
-    "seat": "溪武陽",
-    "vol": "卷122",
-    "vol_num": 122,
-    "dao_id": "jiangnan_w",
-    "dao": "江南西道",
-    "history": "龍標縣州理溪武陽縣地五溪之境屬武陵郡後漢省入辰陽又為辰陽縣地晉武太康中復置武陽縣隋平陳置辰州又屬焉",
-    "orig_counties_count": null,
-    "curr_counties_count": null,
-    "county_names": [
-      "浣溪縣"
-    ],
-    "east_west_li": null,
-    "north_south_li": null,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
-    "customs": "",
-    "surnames": "",
-    "figures": [],
-    "products": [],
-    "distances": [],
-    "history_ja": "竜標県は州の理で、渓武陽県の地、五渓の境で、武陵郡に属した。後漢に省かれて辰陽に入り、また辰陽県の地となった。晋の武の太康中に復して武陽県を置き、隋が陳を平らげて辰州を置き、またこれに属した。",
-    "customs_ja": "",
-    "surnames_ja": "",
-    "figures_ja": [],
-    "coord": [
-      109.7,
-      27.2
-    ],
-    "coord_source": "CHGIS/歴史地図集",
-    "trilaterated_coord": [
-      109.7,
-      27.2
-    ],
-    "trilateration_error_km": 0.0,
-    "rings": [
-      [
-        [
-          110.31,
-          27.68
-        ],
-        [
-          110.58,
-          27.53
-        ],
-        [
-          110.59,
-          26.79
-        ],
-        [
-          110.47,
-          26.65
-        ],
-        [
-          109.42,
-          27.16
-        ],
-        [
-          109.55,
-          27.61
-        ],
-        [
-          110.31,
-          27.68
         ]
       ]
     ]
@@ -44299,6 +44464,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
     "coord": [
       109.2,
       27.35
@@ -44312,32 +44478,99 @@
     "rings": [
       [
         [
-          108.8,
-          27.91
+          109.72,
+          27.51
         ],
         [
-          108.94,
-          27.98
-        ],
-        [
-          109.55,
-          27.61
-        ],
-        [
-          109.42,
-          27.16
+          109.79,
+          27.46
         ],
         [
           108.49,
           26.4
         ],
         [
-          108.31,
-          27.43
+          108.34,
+          27.23
         ],
         [
-          108.8,
-          27.91
+          109.72,
+          27.51
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "卷122_業州",
+    "name": "業州",
+    "jun_name": "龍溪郡",
+    "seat": "峩山",
+    "vol": "卷122",
+    "vol_num": 122,
+    "dao_id": "jiangnan_w",
+    "dao": "江南西道",
+    "history": "業州龍溪郡今理峩山縣長安四年分沅州二縣置舞州開元十三年又改為業州天寶元年改為龍溪郡乾元元年復為業州",
+    "orig_counties_count": null,
+    "curr_counties_count": null,
+    "county_names": [
+      "浣溪縣"
+    ],
+    "east_west_li": null,
+    "north_south_li": null,
+    "tang_households": 1672,
+    "song_zhu_households": null,
+    "song_ke_households": null,
+    "song_total_households": null,
+    "customs": "",
+    "surnames": "",
+    "figures": [],
+    "products": [],
+    "distances": [],
+    "history_ja": "業州（龍渓郡）は現在の峩山県に治所を置く。長安四年（704年）に沅州の二県を分けて舞州を置き、開元十三年（725年）にまた改めて業州とし、天宝元年（742年）に改めて龍渓郡とし、乾元元年（758年）に復た業州とした。",
+    "customs_ja": "",
+    "surnames_ja": "",
+    "figures_ja": [],
+    "lng": 109.18,
+    "lat": 27.45,
+    "coord_source": "CHGIS/歴史地図集",
+    "fengsu": "已上與沅州同",
+    "fengsu_ja": "以上は沅州と同じである。",
+    "tuchan": [],
+    "household_note": "唐代のみ記載（西南渓洞・夜郎辺境州）",
+    "coord": [
+      109.18,
+      27.45
+    ],
+    "trilaterated_coord": [
+      109.18,
+      27.45
+    ],
+    "trilateration_error_km": 0.0,
+    "rings": [
+      [
+        [
+          108.77,
+          27.95
+        ],
+        [
+          108.97,
+          28.06
+        ],
+        [
+          109.72,
+          27.51
+        ],
+        [
+          108.34,
+          27.23
+        ],
+        [
+          108.3,
+          27.44
+        ],
+        [
+          108.77,
+          27.95
         ]
       ]
     ]
@@ -44508,16 +44741,17 @@
       "盛産母目失明因食螬蠐目遂明。",
       "李善（揚州江都の出身）：注文選六十卷子邕。"
     ],
+    "household_note": null,
     "coord": [
       119.37,
       32.54
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.158,
-      32.4866
+      119.1579,
+      32.4867
     ],
-    "trilateration_error_km": 20.7,
+    "trilateration_error_km": 20.8,
     "rings": [
       [
         [
@@ -44673,14 +44907,15 @@
     "customs_ja": "（闕）",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.15,
       31.62
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.6978,
-      32.069
+      117.6977,
+      32.0689
     ],
     "trilateration_error_km": 65.7,
     "rings": [
@@ -44876,14 +45111,15 @@
     "figures_ja": [
       "韓信（淮陰の出身）"
     ],
+    "household_note": null,
     "coord": [
       119.5,
       33.47
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.6936,
-      32.9153
+      119.6935,
+      32.9152
     ],
     "trilateration_error_km": 64.3,
     "rings": [
@@ -44943,6 +45179,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       120.15,
       33.38
@@ -45158,14 +45395,15 @@
     "figures_ja": [
       "周瑜（字は公瑾、廬江舒の出身）：事呉獨破曹公于赤壁瑜精音律有誤必顧諺曰曲有誤周郎顧。"
     ],
+    "household_note": null,
     "coord": [
       116.56,
       30.55
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.1797,
-      30.8188
+      116.1796,
+      30.8187
     ],
     "trilateration_error_km": 47.1,
     "rings": [
@@ -45359,14 +45597,15 @@
       "左慈（字は元放、廬江の出身）",
       "周瑜（仕呉舒の出身）：也為呉将破曹公水軍十万于赤壁瑜精音律。"
     ],
+    "household_note": null,
     "coord": [
       117.14,
       31.71
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.3755,
-      31.7831
+      117.3754,
+      31.783
     ],
     "trilateration_error_km": 23.7,
     "rings": [
@@ -45542,13 +45781,14 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       115.46,
       30.49
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.0547,
+      115.0548,
       30.9417
     ],
     "trilateration_error_km": 63.4,
@@ -45738,13 +45978,14 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       115.24,
       31.94
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6493,
+      114.6492,
       32.323
     ],
     "trilateration_error_km": 70.1,
@@ -45926,6 +46167,7 @@
     "customs_ja": "揚州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       118.28,
       32.35
@@ -45933,7 +46175,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       117.9785,
-      32.2505
+      32.2504
     ],
     "trilateration_error_km": 30.4,
     "rings": [
@@ -46091,6 +46333,7 @@
     "customs_ja": "揚州の域では、婚娶・喪礼は諸夏と異ならない。性質は真直で、商を賤しみ農を務める。その食は秔稲、その衣は絁布である。地は淮河を帯び、皆舟楫を通じ、貨遷する者は米・麦・柴・炭である。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       117.52,
       32.71
@@ -46098,7 +46341,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       117.359,
-      32.84
+      32.8398
     ],
     "trilateration_error_km": 20.9,
     "rings": [
@@ -46183,6 +46426,7 @@
       "綿。",
       "麻布。"
     ],
+    "household_note": null,
     "coord": [
       116.39,
       31.95
@@ -46339,16 +46583,17 @@
     "customs_ja": "揚州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       120.29,
       32.61
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.5323,
-      32.4317
+      119.5324,
+      32.4318
     ],
-    "trilateration_error_km": 73.8,
+    "trilateration_error_km": 73.7,
     "rings": [
       [
         [
@@ -46541,14 +46786,15 @@
     "customs_ja": "揚州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       121.24,
       32.01
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.4643,
-      32.4632
+      120.4642,
+      32.4633
     ],
     "trilateration_error_km": 88.7,
     "rings": [
@@ -46636,6 +46882,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       120.57,
       32.39
@@ -46820,6 +47067,7 @@
     "customs_ja": "揚州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       119.45,
       32.78
@@ -46878,9 +47126,9 @@
     "east_west_li": 119,
     "north_south_li": 46,
     "tang_households": null,
-    "song_zhu_households": 2055,
-    "song_ke_households": 7800,
-    "song_total_households": 9855,
+    "song_zhu_households": 7148,
+    "song_ke_households": 7633,
+    "song_total_households": 14781,
     "customs": "同揚州 ",
     "surnames": "",
     "figures": [],
@@ -47058,6 +47306,7 @@
     "customs_ja": "揚州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       119.0,
       32.69
@@ -47065,7 +47314,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       119.024,
-      32.6287
+      32.6288
     ],
     "trilateration_error_km": 7.2,
     "rings": [
@@ -47238,6 +47487,7 @@
     "customs_ja": "蘄州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       114.78,
       31.04
@@ -47446,13 +47696,14 @@
     "customs_ja": "鄂州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       114.27,
       30.55
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.0599,
+      114.0598,
       30.1547
     ],
     "trilateration_error_km": 48.4,
@@ -47638,14 +47889,15 @@
     "figures_ja": [
       "黃香（字は文彊、江夏安陸の出身）：号為黃童天下無双唐郝処俊安陸州人為相諫高祖不可以国事付天后也。"
     ],
+    "household_note": null,
     "coord": [
       113.78,
       31.39
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.9658,
-      31.2976
+      113.9657,
+      31.2977
     ],
     "trilateration_error_km": 20.4,
     "rings": [
@@ -47698,7 +47950,7 @@
     ],
     "east_west_li": 130,
     "north_south_li": 135,
-    "tang_households": null,
+    "tang_households": 21020,
     "song_zhu_households": 1020,
     "song_ke_households": 446,
     "song_total_households": 1466,
@@ -47820,13 +48072,14 @@
     "figures_ja": [
       "王讚（義陽の出身）"
     ],
+    "household_note": null,
     "coord": [
       114.09,
       32.13
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.1636,
+      114.1637,
       32.1592
     ],
     "trilateration_error_km": 7.7,
@@ -47885,9 +48138,9 @@
     "east_west_li": 125,
     "north_south_li": 480,
     "tang_households": 37400,
-    "song_zhu_households": 1120,
-    "song_ke_households": 1070,
-    "song_total_households": 2190,
+    "song_zhu_households": 11364,
+    "song_ke_households": 6170,
+    "song_total_households": 17534,
     "customs": "土産並與興元府同事跡 諸葛城即諸葛孔明拔隴西千餘家還漢中築此城以處之因取名焉　白馬山漢水記云西縣有白馬山又張衡家傳云衡于濜口升仙時乗白馬後人遙望山上往往有白馬因以為名亦神仙十化之一也濜水源出縣北四十五里獨石谷南流經縣西二百步南注漢水　漢水在縣南一百里東流　西樂城古城甚險因號為張魯城在縣四十里　沔陽故城在縣東南六十里沔陽故城是南臨漢水隋開皇三年廢曹魏末梁州曽理于此蜀先主曽于此城設壇即王位　百牢闗在縣西南隋開皇中蜀以蜀路險號曰百牢闗一云置在白牢谷　諸葛武侯冡在縣東南一十里與妻合冡塟焉 三泉縣 ",
     "surnames": "（闕） / ",
     "figures": [
@@ -48167,6 +48420,7 @@
       "張騫（漢中の出身）",
       "李固（漢中の出身）：為太尉。"
     ],
+    "household_note": null,
     "coord": [
       107.03,
       33.07
@@ -48363,6 +48617,7 @@
     "customs_ja": "土は桑麻少なく、婦人は機杼の勤め無く、井税の布帛・口食の塩酪に至るまで皆他郡に資す。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       106.52,
       33.91
@@ -48434,6 +48689,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       106.45,
       33.85
@@ -48635,16 +48891,17 @@
     "customs_ja": "土風習俗は半ば氐羌に雑じり、婚娶は頗る中土に参じる。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       104.68,
       32.94
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.9574,
-      32.5321
+      104.9575,
+      32.5323
     ],
-    "trilateration_error_km": 52.3,
+    "trilateration_error_km": 52.2,
     "rings": [
       [
         [
@@ -48830,6 +49087,7 @@
     "customs_ja": "語は蜀音を帯び、然れども山高く水峻しく、人は山上に居り種植甚だ微く、惟だ負販を以て業と為し、礼楽の道は未だ之を聞かず。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.15,
       33.33
@@ -48837,7 +49095,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.324,
-      33.3493
+      33.3494
     ],
     "trilateration_error_km": 16.3,
     "rings": [
@@ -49026,6 +49284,7 @@
     "customs_ja": "梁州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.82,
       32.43
@@ -49033,9 +49292,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       105.9866,
-      32.2706
+      32.2705
     ],
-    "trilateration_error_km": 23.6,
+    "trilateration_error_km": 23.7,
     "rings": [
       [
         [
@@ -49240,6 +49499,7 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       106.28,
       29.97
@@ -49408,6 +49668,7 @@
     "customs_ja": "大凡蜀人の風俗は一様であるが、辺蛮の界の郷村には獠戸があり、すなわち異なっている。今、渝の山谷の中に狼猱の郷俗があり、屋を高樹に構えてこれを閣䦨と呼び、糸竹を解せず、ただ銅鼓を坎ち、木葉を視て以て四時を別ち、父子は諱を同じくし、夫妻は名を共にし、鬼を祭って以て福を祈る。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.55,
       29.56
@@ -49572,6 +49833,7 @@
     "customs_ja": "巴の風俗は皆田神を重んじ、春は木を刻んで虔に祈り、冬は牲を用いて解賽し、邪巫は鼓を撃って以て淫祀と為し、男女は皆竹枝歌を唱う。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       108.41,
       31.16
@@ -49584,6 +49846,10 @@
     "trilateration_error_km": 86.7,
     "rings": [
       [
+        [
+          107.99,
+          31.8
+        ],
         [
           108.21,
           32.13
@@ -49611,10 +49877,6 @@
         [
           107.99,
           31.8
-        ],
-        [
-          108.21,
-          32.13
         ]
       ]
     ]
@@ -49760,14 +50022,15 @@
     "customs_ja": "開州の風俗と同じ。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.5,
       31.21
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.3202,
-      31.8113
+      108.3201,
+      31.8112
     ],
     "trilateration_error_km": 102.5,
     "rings": [
@@ -49979,6 +50242,7 @@
     "customs_ja": "梁州の風俗と同じ。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.55,
       33.22
@@ -50237,14 +50501,15 @@
       "元賀（字は文和、宕渠の出身）：為大司農。",
       "馮緄為廷尉。"
     ],
+    "household_note": null,
     "coord": [
       106.97,
       30.84
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.9114,
-      30.3124
+      106.9113,
+      30.3125
     ],
     "trilateration_error_km": 58.9,
     "rings": [
@@ -50440,6 +50705,7 @@
     "customs_ja": "合・果・渠の三州と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.63,
       30.46
@@ -50447,7 +50713,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.7764,
-      30.3642
+      30.3643
     ],
     "trilateration_error_km": 17.6,
     "rings": [
@@ -50650,6 +50916,7 @@
     "customs_ja": "峡州の風俗と同じ。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.75,
       31.86
@@ -50898,13 +51165,14 @@
     "customs_ja": "雜似獠户。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.41,
       31.05
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.0991,
+      107.099,
       31.3571
     ],
     "trilateration_error_km": 73.9,
@@ -51095,6 +51363,7 @@
     "customs_ja": "梁州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.83,
       32.35
@@ -51262,6 +51531,7 @@
     "customs_ja": "蓬州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.24,
       31.95
@@ -51326,7 +51596,7 @@
     ],
     "east_west_li": 400,
     "north_south_li": 2000,
-    "tang_households": null,
+    "tang_households": 9670,
     "song_zhu_households": 3617,
     "song_ke_households": 8415,
     "song_total_households": 12032,
@@ -51470,14 +51740,15 @@
     "customs_ja": "漢の高祖は巴蜀を発して三秦を伐ち、巴中の渠帥七姓を遷して商洛に居らしめ、その俗は今に至るまでなお多く山に猟し木を伐り、深く楚の風がある。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.03,
       32.69
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.5089,
-      32.5524
+      108.5092,
+      32.5526
     ],
     "trilateration_error_km": 51.1,
     "rings": [
@@ -51538,7 +51809,7 @@
     ],
     "east_west_li": 330,
     "north_south_li": 550,
-    "tang_households": null,
+    "tang_households": 8962,
     "song_zhu_households": 3763,
     "song_ke_households": 1305,
     "song_total_households": 5068,
@@ -51712,14 +51983,15 @@
     "customs_ja": "02: 漢の高祖は巴蜀から発して三秦を克ち、そこで蜀の巴中渠帥の七姓を商洛の間に遷した。今に至るまでなお存している。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.84,
       33.72
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.4315,
-      33.0108
+      109.4316,
+      33.0109
     ],
     "trilateration_error_km": 87.5,
     "rings": [
@@ -51916,13 +52188,14 @@
     "customs_ja": "04: 『史記』に「秦が韓を滅ぼし、天下の不軌の人を南陽に徙した。故にその俗は夸奢にして気力を尚び、商賈・漁猟を好み、蔵匿して制し難し。宛は西に武関に通じ、東に淮海を受く。一都会なり」とある。",
     "surnames_ja": "南陽郡の著姓（十の著姓（一姓）：）： 張 楽 趙 井何 白 韓 鄧 姬 周 滕人物 ／ 百里奚宛人仕虞去虞為秦穆公所用霸西戎 范蠡楚宛三户人越王以為大夫句踐霸乃辞去乗扁舟出三江入五湖句踐鑄金像於坐側 鄧禹南陽新野人為大司馬封高宻侯 呉漢宛人為大司馬忠侯伐公孫述八戦八克 張堪南陽人 宋均南陽安衆人時九江虎暴均為太守務退姦貪思進忠善其虎自去 張衡南陽西鄂人今鄧州向城県有平子墓 左雄為尚書令 何晏南陽人也 黄忠 陳震 吕義皆南陽人 曹景宗新野人読史至司馬穰苴楽毅伝撫卷歎曰大丈夫當如是為梁右衛将軍 庾肩吾字慎之南陽新野人仕梁為度支尚書賊宋子仙破会稽購得肩吾欲殺之乃曰吾聞汝能作詩今可即作若能将貸汝命肩吾操筆便成辞藻甚美子仙乃釋之詩曰髪与年俱老愁将罪共深聊持轉風燭慙照広陵琴卒贈散騎常侍子庾信字子山与徐孺子陵文並称綺艶世号徐庾 唐岑文本孫義南陽人 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.96,
       33.08
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.1472,
+      112.1471,
       32.7857
     ],
     "trilateration_error_km": 37.1,
@@ -52170,6 +52443,7 @@
     "figures_ja": [
       "無。"
     ],
+    "household_note": null,
     "coord": [
       113.15,
       32.7
@@ -52177,7 +52451,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       113.335,
-      32.5887
+      32.5888
     ],
     "trilateration_error_km": 21.3,
     "rings": [
@@ -52381,13 +52655,14 @@
     "figures_ja": [
       "無。"
     ],
+    "household_note": null,
     "coord": [
       110.8,
       32.74
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1292,
+      111.1293,
       32.7206
     ],
     "trilateration_error_km": 30.9,
@@ -52607,13 +52882,14 @@
     "customs_ja": "金州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.4,
       32.03
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.652,
+      110.6521,
       32.1488
     ],
     "trilateration_error_km": 27.2,
@@ -52823,6 +53099,7 @@
     "customs_ja": "10: 唐州と同じく、特に狩猟や伐木が多い。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       113.09,
       31.83
@@ -52880,7 +53157,7 @@
     ],
     "east_west_li": 165,
     "north_south_li": 525,
-    "tang_households": null,
+    "tang_households": 12000,
     "song_zhu_households": 1308,
     "song_ke_households": 2658,
     "song_total_households": 3966,
@@ -53079,13 +53356,14 @@
     "figures_ja": [
       "宋玉郢人。"
     ],
+    "household_note": null,
     "coord": [
       112.88,
       31.12
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.9471,
+      112.9472,
       31.0482
     ],
     "trilateration_error_km": 10.2,
@@ -53315,6 +53593,7 @@
     "customs_ja": "与荊襄同。",
     "surnames_ja": "闕 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       113.35,
       30.32
@@ -53624,16 +53903,17 @@
       "孫甫。",
       "鮑防（襄州の出身）"
     ],
+    "household_note": null,
     "coord": [
       112.02,
       31.86
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.1776,
-      32.2794
+      112.1775,
+      32.2795
     ],
-    "trilateration_error_km": 48.9,
+    "trilateration_error_km": 49.0,
     "rings": [
       [
         [
@@ -53797,13 +54077,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.67,
       32.39
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.5715,
+      111.5714,
       32.8925
     ],
     "trilateration_error_km": 56.6,
@@ -53994,6 +54275,7 @@
     "customs_ja": "楚の風俗は剽悍で巧みに猾く、『管子』に「水は弱く清く、その民は軽果で詐を好む」とある。士女は麻や楮を織ることを業とし、蚕桑を事としない。男子は力を尽くして耕し、火種（焼畑）を行い、文学を知らない。巫鬼を信じ、淫祀を重んじることは蜀と同じ風である。（欠文）",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.28,
       30.8
@@ -54001,7 +54283,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       111.0061,
-      30.8632
+      30.8633
     ],
     "trilateration_error_km": 27.1,
     "rings": [
@@ -54160,14 +54442,15 @@
     "customs_ja": "峡州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.53,
       31.05
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.7817,
-      30.6648
+      108.7819,
+      30.6649
     ],
     "trilateration_error_km": 83.3,
     "rings": [
@@ -54231,6 +54514,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の記載なし",
     "coord": [
       109.6,
       31.4
@@ -54289,10 +54573,10 @@
     ],
     "east_west_li": 181,
     "north_south_li": 248,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 4845,
+    "song_zhu_households": 1127,
+    "song_ke_households": 1435,
+    "song_total_households": 2562,
     "customs": "同峽州 ",
     "surnames": "（闕） / ",
     "figures": [
@@ -54425,6 +54709,7 @@
     "figures_ja": [
       "戦国有屈原。"
     ],
+    "household_note": null,
     "coord": [
       110.52,
       30.93
@@ -54490,10 +54775,10 @@
     ],
     "east_west_li": 228,
     "north_south_li": 450,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 5100,
+    "song_zhu_households": 619,
+    "song_ke_households": 1280,
+    "song_total_households": 1899,
     "customs": "正月七日鄉市士女渡江南娥眉磧上作鷄子卜繋小鼔唱竹枝歌二月三日攜酒饌鼔樂於郊外飲宴至暮而迴謂之迎富 ",
     "surnames": "（闕） / ",
     "figures": [],
@@ -54607,13 +54892,14 @@
     "customs_ja": "正月七日、郷市の士女は江南の娥眉磧に渡り、鶏子卜を行い、小鼓を結び付けて竹枝歌を歌う。二月三日、酒饌と鼓楽を携えて郊外で飲宴し、暮れに至って帰る。これを迎富と呼ぶ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       108.41,
       30.81
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.1651,
+      108.165,
       30.4824
     ],
     "trilateration_error_km": 43.3,
@@ -54769,14 +55055,15 @@
     "customs_ja": "夷獠はかなり黔中に似ている。正月三日に墓を拝し、二月二日に酒を携えて郊外で迎富を行い、除夜に灯を燃やして先祖の墓を照らす。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.68,
       30.22
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.4227,
-      29.8183
+      108.4223,
+      29.8184
     ],
     "trilateration_error_km": 84.3,
     "rings": [
@@ -54889,6 +55176,7 @@
     "customs_ja": "忠州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       107.8,
       30.67
@@ -54949,9 +55237,9 @@
     "east_west_li": 410,
     "north_south_li": 190,
     "tang_households": 24827,
-    "song_zhu_households": null,
-    "song_ke_households": 24170,
-    "song_total_households": 24170,
+    "song_zhu_households": 19144,
+    "song_ke_households": 24177,
+    "song_total_households": 43321,
     "customs": "天水隴西六郡良家子以才力選焉君子有勇而無義即為亂小人有勇而無義即為盜故此隴右數郡人俗質木不恥寇盜 ",
     "surnames": "天水郡七姓　權　趙　尹　莊　龍　狄 / 姜 / ",
     "figures": [
@@ -55106,14 +55394,15 @@
       "李逢（吉隴西の出身）",
       "李石（隴西の出身）：文宗相。"
     ],
+    "household_note": null,
     "coord": [
       105.2,
       35.56
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      106.1494,
-      34.7414
+      106.1493,
+      34.7415
     ],
     "trilateration_error_km": 125.4,
     "rings": [
@@ -55237,14 +55526,15 @@
     "customs_ja": "鳳州と同じく、耕作の時には鼓を鳴らし歌を歌って楽しむ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.73,
       33.74
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.6621,
-      35.1465
+      105.6622,
+      35.1466
     ],
     "trilateration_error_km": 156.5,
     "rings": [
@@ -55410,6 +55700,7 @@
     "customs_ja": "人以騎射為事。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書「旧戸無籍」（数値記載なし）",
     "coord": [
       106.65,
       35.22
@@ -55470,7 +55761,7 @@
     "north_south_li": null,
     "tang_households": null,
     "song_zhu_households": null,
-    "song_ke_households": 1397,
+    "song_ke_households": null,
     "song_total_households": 1397,
     "customs": "",
     "surnames": "",
@@ -55481,6 +55772,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       105.72,
       34.58
@@ -55541,10 +55833,10 @@
     ],
     "east_west_li": 55,
     "north_south_li": 65,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 6425,
+    "song_zhu_households": 1231,
+    "song_ke_households": 1292,
+    "song_total_households": 2523,
     "customs": "與秦州同 ",
     "surnames": "隴西郡八姓　李　牛　彭　辛　聞　蹇　艾蓋 / ",
     "figures": [],
@@ -55615,6 +55907,7 @@
     "customs_ja": "秦州の風俗と同じ。",
     "surnames_ja": "隴西郡の著姓（の著姓（八姓）：）： 李 牛 彭 辛 聞 蹇 艾蓋 /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       106.67,
       35.54
@@ -55669,7 +55962,7 @@
     ],
     "east_west_li": 305,
     "north_south_li": 215,
-    "tang_households": null,
+    "tang_households": 5389,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -55798,13 +56091,14 @@
     "customs_ja": "（闕）",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       102.4,
       36.48
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      102.9246,
+      102.9247,
       36.299
     ],
     "trilateration_error_km": 51.1,
@@ -55856,7 +56150,7 @@
     ],
     "east_west_li": 217,
     "north_south_li": 610,
-    "tang_households": null,
+    "tang_households": 5389,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -55928,6 +56222,7 @@
     "customs_ja": "秦渭州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       104.03,
       36.02
@@ -55935,7 +56230,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       103.701,
-      36.2524
+      36.2525
     ],
     "trilateration_error_km": 39.3,
     "rings": [
@@ -55993,7 +56288,7 @@
     ],
     "east_west_li": 400,
     "north_south_li": 830,
-    "tang_households": null,
+    "tang_households": 32462,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56159,14 +56454,15 @@
     "figures_ja": [
       "賈詡（字は文和、姑臧の出身）：詡有良平之奇謀魏為大中大夫。"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       102.87,
       37.72
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      101.6833,
-      38.2123
+      101.6832,
+      38.2122
     ],
     "trilateration_error_km": 117.6,
     "rings": [
@@ -56244,7 +56540,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 6284,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56270,6 +56566,7 @@
       "魏龎涓（字は子異、酒泉の出身）：為西海太守。",
       "唐趙彥（昭甘州張掖の出身）：也相中宗。"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       100.27,
       39
@@ -56352,7 +56649,7 @@
     ],
     "east_west_li": 564,
     "north_south_li": 540,
-    "tang_households": null,
+    "tang_households": 2230,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56375,6 +56672,7 @@
       "馬訪（酒泉の出身）：為右将軍。",
       "祁嘉（字は孔賓、酒泉の出身）：夜忽聞窻中有聲呼云祁孔賓隠去來。"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       98.5,
       39.74
@@ -56456,7 +56754,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 1260,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56602,13 +56900,14 @@
       "索靖（字幼安燉の出身）：累榮官族草書尤絶人号得張芝肉為尚書郎。",
       "郭瑀（字は元瑜、燉煌の出身）：少有超俗之志好談論。"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       94.66,
       40.14
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      93.9339,
+      93.9343,
       41.1835
     ],
     "trilateration_error_km": 131.2,
@@ -56683,7 +56982,7 @@
     ],
     "east_west_li": 393,
     "north_south_li": 684,
-    "tang_households": null,
+    "tang_households": 477,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56825,6 +57124,7 @@
     "figures_ja": [
       "張煥（字は然明、燉煌の出身）"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       95.78,
       40.52
@@ -56832,7 +57132,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       94.9179,
-      41.4421
+      41.442
     ],
     "trilateration_error_km": 125.5,
     "rings": [
@@ -56911,7 +57211,7 @@
     ],
     "east_west_li": 1015,
     "north_south_li": 490,
-    "tang_households": null,
+    "tang_households": 3467,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -56927,6 +57227,7 @@
     "customs_ja": "甘肅州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       93.51,
       42.83
@@ -56989,7 +57290,7 @@
     ],
     "east_west_li": 228,
     "north_south_li": 307,
-    "tang_households": null,
+    "tang_households": 5782,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57082,13 +57383,14 @@
     "customs_ja": "洮州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       103.21,
       35.6
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.0445,
+      103.0446,
       35.8007
     ],
     "trilateration_error_km": 26.9,
@@ -57135,7 +57437,7 @@
     ],
     "east_west_li": 480,
     "north_south_li": 320,
-    "tang_households": null,
+    "tang_households": 2923,
     "song_zhu_households": 1690,
     "song_ke_households": 4620,
     "song_total_households": 6310,
@@ -57237,13 +57539,14 @@
     "customs_ja": "文王が西伯となり、西羌を理化した。文王が薨じた後、羌人は文王の化に感じ、婦人は孝髽角をなし、今に至るまで泯びない。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       105.25,
       33.32
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      104.7638,
+      104.764,
       33.855
     ],
     "trilateration_error_km": 74.6,
@@ -57294,7 +57597,7 @@
     ],
     "east_west_li": 550,
     "north_south_li": 220,
-    "tang_households": null,
+    "tang_households": 2800,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57371,14 +57674,15 @@
       "董卓（隴西臨洮の出身）",
       "唐李（晟隴右臨洮の出身）：也封西平郡王徳宗朝以隴右未復請附貫万年県。"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       103.37,
       34.62
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      102.9532,
-      34.5792
+      102.9534,
+      34.5793
     ],
     "trilateration_error_km": 38.4,
     "rings": [
@@ -57426,7 +57730,7 @@
     ],
     "east_west_li": 160,
     "north_south_li": 367,
-    "tang_households": null,
+    "tang_households": 4325,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57442,6 +57746,7 @@
     "customs_ja": "貴於婦人。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       104.04,
       34.43
@@ -57500,7 +57805,7 @@
     ],
     "east_west_li": 394,
     "north_south_li": 490,
-    "tang_households": null,
+    "tang_households": 261,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57515,6 +57820,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       102.15,
       36.05
@@ -57589,7 +57895,7 @@
     ],
     "east_west_li": 265,
     "north_south_li": 129,
-    "tang_households": null,
+    "tang_households": 1275,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57706,16 +58012,17 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       103.22,
       34.06
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.2209,
-      33.85
+      103.221,
+      33.8503
     ],
-    "trilateration_error_km": 23.4,
+    "trilateration_error_km": 23.3,
     "rings": [
       [
         [
@@ -57779,7 +58086,7 @@
     ],
     "east_west_li": 365,
     "north_south_li": 429,
-    "tang_households": null,
+    "tang_households": 1190,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -57917,14 +58224,15 @@
     "customs_ja": "大類は隴右の語に雑じり羌人である。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       104.39,
       34.05
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.4372,
-      33.6625
+      104.4371,
+      33.6627
     ],
     "trilateration_error_km": 43.3,
     "rings": [
@@ -57988,7 +58296,7 @@
     ],
     "east_west_li": 895,
     "north_south_li": 485,
-    "tang_households": null,
+    "tang_households": 19000,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -58105,16 +58413,17 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       89.19,
       42.95
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      89.8846,
+      89.8857,
       42.83
     ],
-    "trilateration_error_km": 58.1,
+    "trilateration_error_km": 58.2,
     "rings": [
       [
         [
@@ -58187,7 +58496,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 2226,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -58326,14 +58635,15 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       89.17,
       44.0
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      89.8161,
-      44.1018
+      89.8167,
+      44.1014
     ],
     "trilateration_error_km": 52.9,
     "rings": [
@@ -58393,6 +58703,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       89.18,
       44.02
@@ -58480,6 +58791,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       93.5,
       42.82
@@ -58559,6 +58871,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       93.1,
       43.6
@@ -58739,6 +59052,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（北宋期は吐蕃・西域化外）",
     "coord": [
       82.96,
       41.72
@@ -58843,7 +59157,7 @@
     "tang_households": 1800,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 5831,
     "customs": "與南海同 ",
     "surnames": "（闕） / ",
     "figures": [],
@@ -58972,14 +59286,15 @@
     "customs_ja": "与南海同。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       116.5,
       23.8
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.4992,
-      23.9374
+      116.499,
+      23.9376
     ],
     "trilateration_error_km": 15.3,
     "rings": [
@@ -59161,14 +59476,15 @@
     "customs_ja": "広州と同じ人で、甲香を採るを業とす。土地は風多く旱少なく、耕種は多く洞中に在り。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       112.06,
       22.01
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.8035,
-      21.8959
+      111.8034,
+      21.896
     ],
     "trilateration_error_km": 29.3,
     "rings": [
@@ -59374,14 +59690,15 @@
     "customs_ja": "広州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       111.7,
       22.26
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.8446,
-      22.2114
+      111.8445,
+      22.2115
     ],
     "trilateration_error_km": 15.8,
     "rings": [
@@ -59563,6 +59880,7 @@
     "customs_ja": "『郡国志』に云う、俗に青石を以て刀剣を作り、銅鉄の法の如くし、婦人もまた環を作りて珠玉に代うと。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.91,
       23.37
@@ -59724,6 +60042,7 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       110.49,
       23.54
@@ -59778,10 +60097,10 @@
     ],
     "east_west_li": 285,
     "north_south_li": 295,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 21000,
+    "song_zhu_households": 9200,
+    "song_ke_households": 954,
+    "song_total_households": 10154,
     "customs": "與廣州同 ",
     "surnames": "（闕） / ",
     "figures": [
@@ -59802,6 +60121,7 @@
     "figures_ja": [
       "張九（齡韶州曲江の出身）：相唐元宗。"
     ],
+    "household_note": null,
     "coord": [
       113.45,
       24.81
@@ -59949,16 +60269,17 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       112.51,
       23.01
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.7973,
-      21.8598
+      112.7969,
+      21.8602
     ],
-    "trilateration_error_km": 131.3,
+    "trilateration_error_km": 131.2,
     "rings": [
       [
         [
@@ -60146,14 +60467,15 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       115.56,
       24.02
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.2223,
-      24.2449
+      115.2224,
+      24.245
     ],
     "trilateration_error_km": 42.4,
     "rings": [
@@ -60339,16 +60661,17 @@
     "customs_ja": "広州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の数値記載なし",
     "coord": [
       114.41,
       23.11
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.355,
-      23.7879
+      113.3558,
+      23.7882
     ],
-    "trilateration_error_km": 131.4,
+    "trilateration_error_km": 131.3,
     "rings": [
       [
         [
@@ -60431,6 +60754,7 @@
     "customs_ja": "与南海同。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       116.1,
       24.39
@@ -60546,14 +60870,15 @@
     "customs_ja": "土産は並びに広州と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       113.39,
       24.19
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.4346,
-      24.5211
+      113.4345,
+      24.5212
     ],
     "trilateration_error_km": 37.1,
     "rings": [
@@ -60675,6 +61000,7 @@
     "customs_ja": "韶州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       114.18,
       24.99
@@ -60682,7 +61008,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       114.4668,
-      25.4621
+      25.4622
     ],
     "trilateration_error_km": 59.9,
     "rings": [
@@ -60865,13 +61191,14 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       111.69,
       24.3
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.3834,
+      112.3833,
       24.5235
     ],
     "trilateration_error_km": 74.5,
@@ -61067,14 +61394,15 @@
     "figures_ja": [
       "唐高（力士潘州の出身）：為驃騎大将軍封斉国公。"
     ],
+    "household_note": null,
     "coord": [
       111.03,
       21.81
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.0206,
-      22.1904
+      111.0205,
+      22.1903
     ],
     "trilateration_error_km": 42.3,
     "rings": [
@@ -61276,6 +61604,7 @@
     "figures_ja": [
       "（闕）"
     ],
+    "household_note": null,
     "coord": [
       110.29,
       25.27
@@ -61341,10 +61670,10 @@
     ],
     "east_west_li": 80,
     "north_south_li": 90,
-    "tang_households": 250,
-    "song_zhu_households": 6087,
-    "song_ke_households": 121,
-    "song_total_households": 6208,
+    "tang_households": 929,
+    "song_zhu_households": null,
+    "song_ke_households": null,
+    "song_total_households": null,
     "customs": "俗不知嵗惟取用八月酉日為臘長㓜相慰賀以為年初每月中旬年少女兒盛服吹笙相召明月下以相調弄號曰夜泊以為娯二更後匹耦兩兩相携隨處相合至曉則散男兒以白布為頭巾女兒以布為衫 俗以鷄骨占吉凶漢書云越巫以鷄卜此也衣服即都落古貝焦布豪渠之家䘮則鳴鑼鼓召衆則鳴舂堂巧作木罍籐㡌五色籐箱席 ",
     "surnames": "",
     "figures": [],
@@ -61547,6 +61876,7 @@
     "customs_ja": "俗は歳を知らず、惟だ八月酉日を用いて臘と為す。長幼相慰賀して以て年初と為す。毎月中旬、年少女児は盛服し笙を吹きて相召し、明月の下に相調弄し、号して夜泊と曰い、以て娯しみと為す。二更後、匹耦両両相携え、随処に相合し、暁に至れば則ち散ず。男児は白布を以て頭巾と為し、女児は布を以て衫と為す。俗は鶏骨を以て吉凶を占う。『漢書』に云う、越巫鶏卜を以てす、是れなり。衣服は即ち都落古貝焦布。豪渠の家は喪すれば則ち鑼鼓を鳴らし、衆を召せば則ち舂堂を鳴らす。巧みに木罍・籐帽・五色籐箱・席を作る。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "丁数のみ記載（638丁・不供戸）",
     "coord": [
       110.99,
       22.92
@@ -61554,7 +61884,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       110.8607,
-      22.7351
+      22.735
     ],
     "trilateration_error_km": 24.5,
     "rings": [
@@ -61732,6 +62062,7 @@
     "customs_ja": "穀熟する時、里閈同じく戍日を取って臘と為す。男女盛服し椎髻徒跣し、聚会して歌を作す。悉く高欄を以て居と為し、号して干欄と曰う。三日に一市す。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.97,
       22.38
@@ -61790,7 +62121,7 @@
     ],
     "east_west_li": 109,
     "north_south_li": 210,
-    "tang_households": 1290,
+    "tang_households": 2334,
     "song_zhu_households": 3785,
     "song_ke_households": 1340,
     "song_total_households": 5125,
@@ -61906,13 +62237,14 @@
     "customs_ja": "竇州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.89,
       24.47
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.6829,
+      110.683,
       24.7227
     ],
     "trilateration_error_km": 35.0,
@@ -62099,13 +62431,14 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.52,
       24.2
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.7151,
+      110.715,
       24.6396
     ],
     "trilateration_error_km": 52.7,
@@ -62289,16 +62622,17 @@
     "customs_ja": "無。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       110.08,
       23.39
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.9577,
-      23.3187
+      110.0099,
+      23.2923
     ],
-    "trilateration_error_km": 14.8,
+    "trilateration_error_km": 13.0,
     "rings": [
       [
         [
@@ -62346,9 +62680,9 @@
     ],
     "east_west_li": 335,
     "north_south_li": 590,
-    "tang_households": 714,
+    "tang_households": 8000,
     "song_zhu_households": null,
-    "song_ke_households": 1049,
+    "song_ke_households": null,
     "song_total_households": 1049,
     "customs": "康瀧一同並夷獠相雜 康州土産 大甲香　鈎籐　烏藥　鮫魚皮 荆楊樹一名豕樹皮白味如脂異物志云斯調州有木名摩樹汁如脂 廢瀧州土産 舊貢石斛　其土草多卷施拔心不死離騷註云為宿莽出禹餘糧　菓有桬棠山海經云其味如李而無核食之使人不溺　又有古斗樹猶畨禺多荔枝 ",
     "surnames": "",
@@ -62448,6 +62782,7 @@
     "customs_ja": "康瀧一同に並びに夷獠相雑す。康州の土産は大甲香・鈎籐・烏薬・鮫魚皮・荊楊樹。一名豕樹、皮白く味脂の如し。『異物志』に云う、斯調州に木有り名は摩樹、汁脂の如し。瀧州を廃するの土産は旧貢石斛。其の土草多く卷施、心を抜けども死せず。『離騒』註に云う、宿莽と為す。禹余糧を出す。菓に桬棠有り。『山海経』に云う、其の味李の如くにして核無し。之を食すれば人をして溺れざらしむ。又古斗樹有り。猶お番禺に荔枝多きがごとし。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       111.69,
       22.88
@@ -62513,7 +62848,7 @@
     "tang_households": 800,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 1132,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -62641,6 +62976,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       111.71,
       23.57
@@ -62698,10 +63034,10 @@
     ],
     "east_west_li": 170,
     "north_south_li": 356,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 1160,
+    "song_zhu_households": 1188,
+    "song_ke_households": 499,
+    "song_total_households": 1687,
     "customs": "南越至新寧縣多俚獠善為犀渠左太冲所謂户有犀渠又云暘夷之甲以錫箔飾之雜以丹漆照輝昱晃左思所謂暘夷勃盧 ",
     "surnames": "",
     "figures": [
@@ -62821,6 +63157,7 @@
     "figures_ja": [
       "士燮（蒼梧の出身）：為交趾太守第一合浦太守次第䵋九真太守䵋弟武南海太守兄弟並為列郡震服百蛮尉佗不足踰也。"
     ],
+    "household_note": null,
     "coord": [
       111.28,
       23.48
@@ -62883,7 +63220,7 @@
     ],
     "east_west_li": 90,
     "north_south_li": 136,
-    "tang_households": null,
+    "tang_households": 1917,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -63009,6 +63346,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書に皇朝戸数の数値記載なし",
     "coord": [
       109.99,
       22.35
@@ -63021,14 +63359,6 @@
     "trilateration_error_km": 12.8,
     "rings": [
       [
-        [
-          109.68,
-          22.65
-        ],
-        [
-          110.05,
-          22.85
-        ],
         [
           110.25,
           22.28
@@ -63044,6 +63374,14 @@
         [
           109.68,
           22.65
+        ],
+        [
+          110.05,
+          22.85
+        ],
+        [
+          110.25,
+          22.28
         ]
       ]
     ]
@@ -63067,7 +63405,7 @@
     "north_south_li": null,
     "tang_households": 1986,
     "song_zhu_households": null,
-    "song_ke_households": 547,
+    "song_ke_households": null,
     "song_total_households": 547,
     "customs": "嶺外邑居猶有冠冕之風其姓陸者績之遺嗣尚有銀章青緺銅虎符鄉宗重之皆云績物也説文云緺青綬也其俗有禮㑹擊皮鼓吹葫蘆笙以為樂 ",
     "surnames": "",
@@ -63193,38 +63531,19 @@
     "customs_ja": "嶺外の邑居にはなお冠冕の風がある。その姓が陸の者は績の遺嗣であり、なお銀章・青緺・銅虎符を有し、郷宗はこれを重んじ、皆績の物であると言う。『説文』に云う、緺は青綬であると。その俗には礼会があり、皮鼓を撃ち、葫蘆笙を吹いて楽とする。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       108.81,
       23.22
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.9603,
-      23.2017
+      108.9604,
+      23.2018
     ],
     "trilateration_error_km": 15.5,
     "rings": [
       [
-        [
-          109.24,
-          23.35
-        ],
-        [
-          109.19,
-          23.08
-        ],
-        [
-          108.68,
-          22.65
-        ],
-        [
-          108.25,
-          22.68
-        ],
-        [
-          108.23,
-          22.76
-        ],
         [
           108.63,
           23.71
@@ -63236,6 +63555,22 @@
         [
           109.24,
           23.35
+        ],
+        [
+          109.19,
+          23.08
+        ],
+        [
+          108.79,
+          22.75
+        ],
+        [
+          108.41,
+          23.2
+        ],
+        [
+          108.63,
+          23.71
         ]
       ]
     ]
@@ -63257,7 +63592,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 1820,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -63361,16 +63696,17 @@
     "customs_ja": "栁州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "原書「皇朝戸 闕」",
     "coord": [
       108.15,
       23.5
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.4523,
-      23.3562
+      108.546,
+      23.3625
     ],
-    "trilateration_error_km": 34.7,
+    "trilateration_error_km": 43.2,
     "rings": [
       [
         [
@@ -63378,12 +63714,12 @@
           23.71
         ],
         [
-          108.23,
-          22.76
+          108.41,
+          23.2
         ],
         [
-          107.54,
-          23.5
+          107.49,
+          22.97
         ],
         [
           107.6,
@@ -63417,10 +63753,10 @@
     ],
     "east_west_li": 427,
     "north_south_li": 257,
-    "tang_households": null,
-    "song_zhu_households": null,
-    "song_ke_households": null,
-    "song_total_households": null,
+    "tang_households": 5500,
+    "song_zhu_households": 1134,
+    "song_ke_households": 1360,
+    "song_total_households": 2494,
     "customs": "與繡州同 ",
     "surnames": "（闕） / ",
     "figures": [],
@@ -63543,14 +63879,15 @@
     "customs_ja": "繡州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.51,
       23.72
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.6204,
-      23.7671
+      109.6205,
+      23.767
     ],
     "trilateration_error_km": 12.4,
     "rings": [
@@ -63735,13 +64072,14 @@
     "customs_ja": "栁州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.11,
       25.35
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.3874,
+      109.3872,
       24.5
     ],
     "trilateration_error_km": 98.6,
@@ -63779,15 +64117,15 @@
     ]
   },
   {
-    "id": "卷166_管羈縻州",
-    "name": "管羈縻州",
-    "jun_name": "",
+    "id": "卷166_邕州",
+    "name": "邕州",
+    "jun_name": "朗寧郡",
     "seat": "宣化",
     "vol": "卷166",
     "vol_num": 166,
     "dao_id": "lingnan",
     "dao": "嶺南道",
-    "history": "樂善州在州西北一百五十里皇朝雍熈二年歸化邕州朗寧郡今理宣化縣古南越地秦為桂林郡地漢改桂林為鬱林郡又為鬱林之領方縣地晉置晉興郡隋開皇初廢郡為宣化縣屬簡州大業三年州廢以",
+    "history": "邕州朗寧郡今理宣化縣古南越地秦為桂林郡地漢改桂林為鬱林郡又為鬱林之領方縣地晉置晉興郡隋開皇初廢郡為宣化縣屬簡州大業三年州廢以",
     "orig_counties_count": 8,
     "curr_counties_count": 5,
     "county_names": [
@@ -63801,7 +64139,7 @@
     "north_south_li": 307,
     "tang_households": 2890,
     "song_zhu_households": null,
-    "song_ke_households": 5950,
+    "song_ke_households": null,
     "song_total_households": 5950,
     "customs": "今鄉村皆戴白頭巾邕州圖經云俗恡嗇澆薄内險外蠢椎髻跣足尚雞卜及卯卜提㐌（注）音已○俚獠有四色語各别譯而方通也又在州晉城縣蠻渠嵗時于石溪口通商有馬㑹説文曰馬㑹今之獠布以竹灰為鹽不事五味 ",
     "surnames": "",
@@ -63884,49 +64222,50 @@
         "dao": "嶺南道"
       }
     ],
-    "history_ja": "楽善州は州の西北一百五十里にある。皇朝の雍煕二年（985年）に帰化した。邕州朗寧郡は現在の理は宣化県に置かれ、古の南越の地である。秦は桂林郡の地とし、漢は桂林を改めて鬱林郡とし、また鬱林の領方県の地とした。晋は晋興郡を置き、隋の開皇初年（581年）に郡を廃して宣化県とし、簡州に属させた。大業三年（607年）に州を廃し、以て…（以下欠文）",
+    "history_ja": "邕州朗寧郡は現在の理は宣化県に置かれ、古の南越の地である。秦は桂林郡の地とし、漢は桂林を改めて鬱林郡とし、また鬱林の領方県の地とした。晋は晋興郡を置き、隋の開皇初年（581年）に郡を廃して宣化県とし、簡州に属させた。大業三年（607年）に州を廃し、以て…（以下欠文）",
     "customs_ja": "今の郷村は皆白頭巾を戴く。『邕州図経』に云う、俗は吝嗇で澆薄、内は険しく外は蠢く、椎髻跣足、雞卜及び卯卜を尚ぶと。提㐌（注）音は已。俚獠には四色あり、語は各別にして訳して方に通ずる。また州の晋城県の蛮渠は歳時に石渓口に於いて通商し、馬会がある。『説文』に曰く、馬会は今の獠布なりと。竹灰を以て塩と為し、五味を事としない。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
-      107.5,
-      22.9
+      108.32,
+      22.82
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       108.2797,
       23.3344
     ],
-    "trilateration_error_km": 93.2,
+    "trilateration_error_km": 57.3,
     "rings": [
       [
         [
-          107.54,
-          23.5
+          108.41,
+          23.2
         ],
         [
-          108.23,
-          22.76
+          108.79,
+          22.75
         ],
         [
-          108.25,
-          22.68
+          108.76,
+          22.58
         ],
         [
-          108.01,
-          22.33
+          108.09,
+          22.21
         ],
         [
-          107.56,
-          22.17
+          107.67,
+          22.32
         ],
         [
-          106.87,
-          22.99
+          107.49,
+          22.97
         ],
         [
-          107.54,
-          23.5
+          108.41,
+          23.2
         ]
       ]
     ]
@@ -63951,7 +64290,7 @@
     "tang_households": 3026,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 514,
     "customs": "風俗多何滕黄陸等姓以水田為業不事蠶桑生以唱歌為樂死以木鼔助喪又郡連山數百里有里人皆以烏滸諸夷率同一姓男女同川而浴生首子即食之云宜弟居止接近塟同一坆謂之合骨非有戚屬大墓至百餘棺凡合管者則去婚異穴則聘女既嫁便缺去前一齒 ",
     "surnames": "（闕） / ",
     "figures": [],
@@ -64087,13 +64426,14 @@
     "customs_ja": "風俗は何・滕・黄・陸などの姓が多く、水田を以て業と為し、蚕桑を事としない。生は唱歌を以て楽と為し、死は木鼓を以て喪を助く。また郡は連山数百里、里人あり、皆烏滸諸夷と同じく一姓を率い、男女は川を同じくして浴し、首子を生めば即ちこれを食し、宜弟と云う。居止は接近し、葬は同じ坆にし、これを合骨と謂う。戚属あるに非ず、大墓は百余棺に至る。凡そ合管する者は則ち婚を去り、異穴なる者は則ち女を聘す。既に嫁すれば便ち前に一歯を缺き去る。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       109.59,
       23.06
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.9548,
+      109.9549,
       23.1564
     ],
     "trilateration_error_km": 38.8,
@@ -64144,10 +64484,10 @@
     ],
     "east_west_li": 245,
     "north_south_li": 250,
-    "tang_households": null,
+    "tang_households": 1921,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 159,
     "customs": "三梁故縣烏滸所巢 ",
     "surnames": "（闕） / ",
     "figures": [],
@@ -64270,16 +64610,17 @@
     "customs_ja": "三梁の故県は烏滸の巣くう所である。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       109.26,
       22.68
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.1104,
-      22.7303
+      109.1114,
+      22.7386
     ],
-    "trilateration_error_km": 16.3,
+    "trilateration_error_km": 16.6,
     "rings": [
       [
         [
@@ -64295,8 +64636,12 @@
           22.39
         ],
         [
-          108.68,
-          22.65
+          108.76,
+          22.58
+        ],
+        [
+          108.79,
+          22.75
         ],
         [
           109.19,
@@ -64342,6 +64687,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（嶺南渓洞・辺境州）",
     "coord": [
       106.95,
       23.62
@@ -64359,12 +64705,8 @@
           24.03
         ],
         [
-          107.54,
-          23.5
-        ],
-        [
-          106.87,
-          22.99
+          107.47,
+          22.94
         ],
         [
           105.83,
@@ -64436,6 +64778,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（嶺南渓洞・辺境州）",
     "coord": [
       109.3,
       22.15
@@ -64639,13 +64982,14 @@
     "customs_ja": "『十道志』に云う、獠人は雑居し、鼻飲跣足、好んで葫蘆笙を吹き、銅鼓を繋ぎ、射弓弩を習い、蚕桑なく、蕉葛を緝いて以て布と為し、文学を習わず、市を呼んで壚と為し、五日に一集す。人は惟だ剛悍にして死を重んじ生を軽んず。『郡国志』に云う、此の地は瘴気多く、春は青草瘴と謂い、秋は黄𦭘瘴と為す。瘴江の水は即ち馬援が仰いで飛鳶を視れば跕跕として水中に落つと云う、即ち此の地なり。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "丁数のみ記載（2,922丁・不供戸）",
     "coord": [
       110.41,
       22.5
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7049,
+      110.705,
       22.7916
     ],
     "trilateration_error_km": 44.4,
@@ -64826,6 +65170,7 @@
     "customs_ja": "夷人の風俗はすべて椎髻（髪を椎形に結う）と左袵（着物を左前に着る）である。『漢書』に「荊人は鬼話す」と云う。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       110.28,
       21.65
@@ -64833,7 +65178,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       111.03,
-      21.2061
+      21.2063
     ],
     "trilateration_error_km": 92.0,
     "rings": [
@@ -64884,7 +65229,7 @@
     "north_south_li": 150,
     "tang_households": 2500,
     "song_zhu_households": null,
-    "song_ke_households": 1491,
+    "song_ke_households": null,
     "song_total_households": 1491,
     "customs": "",
     "surnames": "",
@@ -65017,6 +65362,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       109.98,
       22.27
@@ -65079,7 +65425,7 @@
     "tang_households": 2700,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 2847,
     "customs": "今鄉村人皆戴白頭巾又别有夷人名高梁人不種田入海捕魚為業婚嫁不避同姓用臘月為嵗俚人不解言語交肱椎髻食用手摶水從鼻飲之也又有獠子巢居海曲每嵗一移椎髻鑿齒赤裩短褐專欲喫人得人一頭即得多婦高梁已下送塟皆撻鼓舂堂吹笙箭用藥箭 ",
     "surnames": "",
     "figures": [],
@@ -65222,22 +65568,19 @@
     "customs_ja": "今、郷村の人は皆、白頭巾を戴く。また別に夷人がいて、名を高梁人と云い、田を種えず、海に入り魚を捕るを業とする。婚嫁は同姓を避けず、臘月を以て歳と為す。俚人は言語を解せず、肱を交え椎髻し、食は手を以て摶ね、水は鼻より飲む。また獠子あり、海曲に巣居し、毎歳一たび移る。椎髻し歯を鑿ち、赤裩短褐し、専ら人を喫わんと欲し、人頭を一つ得れば即ち多くの婦を得る。高梁以下は、送葬には皆、鼓を撻ち堂を舂き、笙を吹き箭を用い、薬箭を用いる。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "主客合算記載（内訳記載なし）",
     "coord": [
       108.73,
       22.07
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.9578,
-      21.7919
+      108.9581,
+      21.7921
     ],
     "trilateration_error_km": 38.8,
     "rings": [
       [
-        [
-          108.68,
-          22.65
-        ],
         [
           108.98,
           22.39
@@ -65251,16 +65594,16 @@
           21.5
         ],
         [
-          108.01,
-          22.33
+          108.09,
+          22.21
         ],
         [
-          108.25,
-          22.68
+          108.76,
+          22.58
         ],
         [
-          108.68,
-          22.65
+          108.98,
+          22.39
         ]
       ]
     ]
@@ -65423,6 +65766,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.42,
       24.33
@@ -65430,7 +65774,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       109.2898,
-      24.2676
+      24.2677
     ],
     "trilateration_error_km": 14.9,
     "rings": [
@@ -65491,8 +65835,8 @@
     "north_south_li": 243,
     "tang_households": null,
     "song_zhu_households": 1786,
-    "song_ke_households": 201,
-    "song_total_households": 201,
+    "song_ke_households": 596,
+    "song_total_households": 2382,
     "customs": "江山險峻人風獷戾常持兵甲以事戰爭皆左袵椎髻禮異俗殊以巖穴為居止 ",
     "surnames": "",
     "figures": [],
@@ -65596,14 +65940,15 @@
     "customs_ja": "江山険峻にして人風獷戾、常に兵甲を持し戦爭を事とす。皆左袵椎髻にして礼異なり俗殊なり。巌穴を以て居止と為す。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       108.65,
       24.5
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.3957,
-      24.0127
+      108.396,
+      24.0128
     ],
     "trilateration_error_km": 60.0,
     "rings": [
@@ -65656,9 +66001,9 @@
     "east_west_li": null,
     "north_south_li": null,
     "tang_households": null,
-    "song_zhu_households": 52,
+    "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": 52,
+    "song_total_households": 240,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -65668,6 +66013,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       108.25,
       24.8
@@ -65811,13 +66157,14 @@
     "customs_ja": "夷人は越㐌と号し、多く珠を採り甲香を採るを業と為す。親戚宴會には即ち匏笙・銅鼓を以て楽と為す。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "丁数のみ記載（4,712丁・不供戸）",
     "coord": [
       109.12,
       21.67
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.198,
+      110.1981,
       22.4076
     ],
     "trilateration_error_km": 138.1,
@@ -65977,6 +66324,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": null,
     "coord": [
       109.93,
       20.92
@@ -66042,7 +66390,7 @@
     ],
     "east_west_li": 660,
     "north_south_li": 365,
-    "tang_households": null,
+    "tang_households": 3300,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -66173,13 +66521,14 @@
     "customs_ja": "『山海経』に曰く、儋耳は即ち離耳なり。皆その頬の皮を鏤り上は耳に連なり斥状は鷄腸の如く下垂す。海渚に在りて五穀を食わず、蚌及び鱉を食うのみ。俗に山嶺を呼びて黎と為し、人其の間に居り、号して生黎と曰う。行人を殺し歯牙を取り之を項に貫き以て驍勇を衒う。刀ありて未だ嘗て手を離れず。弓は竹を以て弦と為し、木皮を績ぎて布と為す。文身を尚び、豪富は文多く、貧賤は文少なし。但だ文字の多少を見て以て貧賤を別つ。禽獣の産を観、春秋の気を識り、藷芋の熟を占い、天文の歳を紀る。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "丁数のみ記載（685丁・不供戸）",
     "coord": [
       109.17,
       19.27
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.0414,
+      109.0417,
       19.45
     ],
     "trilateration_error_km": 24.1,
@@ -66265,10 +66614,10 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": 819,
-    "song_zhu_households": 340,
-    "song_ke_households": 12,
-    "song_total_households": 352,
+    "tang_households": 649,
+    "song_zhu_households": null,
+    "song_ke_households": null,
+    "song_total_households": null,
     "customs": "與瓊州同",
     "surnames": "",
     "figures": [],
@@ -66457,13 +66806,14 @@
     "customs_ja": "瓊州の風俗と同じ。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "丁数のみ記載（3,515丁・不供戸）",
     "coord": [
       110.18,
       19.45
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7926,
+      110.7921,
       19.27
     ],
     "trilateration_error_km": 67.3,
@@ -66522,7 +66872,7 @@
     ],
     "east_west_li": 384,
     "north_south_li": 257,
-    "tang_households": null,
+    "tang_households": 121,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": 289,
@@ -66615,6 +66965,7 @@
     "customs_ja": "女人は五色の布を以て帽と為し、班布を以て裙と為す。袋に似たり。号して都籠と曰う。班布を以て衫と為す。方五尺、中心に孔を開き、但だ頭の入るを容る。之を名づけて思便と曰う。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       110.24,
       18.75
@@ -66622,7 +66973,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       110.18,
-      18.0912
+      18.0916
     ],
     "trilateration_error_km": 73.5,
     "rings": [
@@ -66792,16 +67143,17 @@
     "customs_ja": "交州の風俗と同じ。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.78,
       19.81
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.7129,
+      104.7132,
       19.0
     ],
-    "trilateration_error_km": 143.7,
+    "trilateration_error_km": 143.6,
     "rings": [
       [
         [
@@ -66964,6 +67316,7 @@
     "customs_ja": "『郡国志』に云う、龎山洞の人々は去るときに両歯を為して飾りとし、胸に刻んで花文を施す。山中に市を立て、十日に一会する。銅を鋳て器を作り、大いさ盤の如く、名づけて旁旁と曰い、財布を為す。朱吾以南にまた狼野人があり、屋舎なく、樹に依って止宿し、生肉を食し、香を採るを業とす。人と交易するは上皇の人の如し。また狼□あり、身を裹むに猶お蔽うる衣なきを恥じ、夜に賈人と交易し、暗中に金を嗅ぎて便ち好悪を知る。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.68,
       18.68
@@ -66971,7 +67324,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.6478,
-      18.8121
+      18.8123
     ],
     "trilateration_error_km": 103.0,
     "rings": [
@@ -67026,7 +67379,7 @@
     ],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 494,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -67123,6 +67476,7 @@
     "customs_ja": "人は珠を採り海を煮て業と為す。皆蛮獠・烏滸の諸夷の居住するところで、編戸と為さず、率頭を名と為す。大封なる者は数百口、一戸を以て（闕）し、布五匹・米百斛を税として恒賦と為す。笙を号して舞う。「絃」の字は最後の一点を少なくし、鍾鳴の形は琶三「絃」の字は最後の一点を少なくし、名づけて登と為す。",
     "surnames_ja": "（闕） /",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       107.96,
       21.56
@@ -67136,16 +67490,16 @@
     "rings": [
       [
         [
-          106.96,
-          20.88
+          107.5,
+          22.09
         ],
         [
-          107.56,
-          22.17
+          107.67,
+          22.32
         ],
         [
-          108.01,
-          22.33
+          108.09,
+          22.21
         ],
         [
           108.55,
@@ -67174,6 +67528,10 @@
         [
           106.96,
           20.88
+        ],
+        [
+          107.5,
+          22.09
         ]
       ]
     ]
@@ -67215,6 +67573,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.55,
       19.1
@@ -67273,7 +67632,7 @@
     "county_names": [],
     "east_west_li": null,
     "north_south_li": null,
-    "tang_households": null,
+    "tang_households": 648,
     "song_zhu_households": null,
     "song_ke_households": null,
     "song_total_households": null,
@@ -67288,6 +67647,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.9,
       20.3
@@ -67368,6 +67728,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.85,
       21.6
@@ -67453,6 +67814,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       108.35,
       24.15
@@ -67465,10 +67827,6 @@
     "trilateration_error_km": 0.0,
     "rings": [
       [
-        [
-          107.6,
-          24.03
-        ],
         [
           107.56,
           24.12
@@ -67492,6 +67850,10 @@
         [
           107.6,
           24.03
+        ],
+        [
+          107.56,
+          24.12
         ]
       ]
     ]
@@ -67528,6 +67890,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       106.8,
       22.1
@@ -67589,6 +67952,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       105.6,
       19.0
@@ -67652,6 +68016,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       106.5,
       17.5
@@ -67755,6 +68120,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       106.5,
       22.0
@@ -67823,7 +68189,7 @@
     "tang_households": null,
     "song_zhu_households": null,
     "song_ke_households": null,
-    "song_total_households": null,
+    "song_total_households": 3667,
     "customs": "",
     "surnames": "",
     "figures": [],
@@ -67833,6 +68199,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "総戸数のみ記載（主客内訳なし）",
     "coord": [
       106.85,
       22.35
@@ -67850,12 +68217,12 @@
           23.07
         ],
         [
-          106.87,
-          22.99
+          107.47,
+          22.94
         ],
         [
-          107.56,
-          22.17
+          107.67,
+          22.32
         ],
         [
           107.5,
@@ -67917,6 +68284,7 @@
     "customs_ja": "",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "唐代のみ記載（交趾・安南旧州／羈縻州）",
     "coord": [
       108.15,
       24.65
@@ -67992,6 +68360,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       112.98,
       28.2
@@ -68066,6 +68435,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       112.61,
       26.89
@@ -68143,6 +68513,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.6,
       25.53
@@ -68223,6 +68594,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.61,
       26.21
@@ -68294,6 +68666,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.07,
       25.93
@@ -68306,10 +68679,6 @@
     "trilateration_error_km": 0.0,
     "rings": [
       [
-        [
-          110.59,
-          26.79
-        ],
         [
           111.04,
           26.66
@@ -68327,8 +68696,12 @@
           26.2
         ],
         [
-          110.59,
-          26.79
+          110.56,
+          26.8
+        ],
+        [
+          111.04,
+          26.66
         ]
       ]
     ]
@@ -68368,6 +68741,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       113.01,
       25.77
@@ -68448,6 +68822,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       112.38,
       24.78
@@ -68523,6 +68898,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間的に補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.47,
       27.24
@@ -68556,12 +68932,12 @@
           26.66
         ],
         [
-          110.59,
-          26.79
+          110.56,
+          26.8
         ],
         [
-          110.58,
-          27.53
+          110.46,
+          27.42
         ],
         [
           111.29,
@@ -68605,6 +68981,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       113.09,
       29.37
@@ -68682,6 +69059,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.75,
       29.64
@@ -68762,6 +69140,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       111.69,
       29.03
@@ -68835,6 +69214,7 @@
     "customs_ja": "四庫全書本の巻113〜119はもともと欠けている（隣接州の四至八到ネットワークおよび宋代地理志より空間補完した）。",
     "surnames_ja": "",
     "figures_ja": [],
+    "household_note": "四庫全書本原闕巻（戸口統計散逸）",
     "coord": [
       110.39,
       28.45
@@ -68852,12 +69232,8 @@
           29.34
         ],
         [
-          109.91,
-          29.6
-        ],
-        [
-          110.33,
-          29.7
+          110.07,
+          29.66
         ],
         [
           110.51,
@@ -68872,12 +69248,8 @@
           28.17
         ],
         [
-          110.58,
-          27.53
-        ],
-        [
-          110.31,
-          27.68
+          110.46,
+          27.42
         ],
         [
           109.51,

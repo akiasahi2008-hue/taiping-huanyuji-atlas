@@ -555,7 +555,7 @@
               if (p) {
                 this._showHoverTip(
                   e,
-                  `<strong>${escHtml(p.name)}</strong>（${escHtml(p.dao)} · ${escHtml(p.vol)}）<br/>治所: ${escHtml(p.seat || '郭下')} · 領県: ${p.county_names.length} · 皇朝戸: ${fmtNum(p.song_total_households)}`
+                  `<strong>${escHtml(p.name)}</strong>（${escHtml(p.dao)} · ${escHtml(p.vol)}）<br/>治所: ${escHtml(p.seat || '郭下')} · 領県: ${p.county_names.length} · 皇朝戸: ${p.song_total_households != null ? fmtNum(p.song_total_households) + '戸' : escHtml(p.household_note || '記載なし')}`
                 );
                 if (!this.selectedPref) this.renderActiveRays(p);
               }
@@ -1002,7 +1002,8 @@
         const total = p.song_total_households || p.tang_households || 0;
         if (!total) continue;
         const r = Math.max(3.5, Math.min(20, Math.sqrt(total / 1800)));
-        const zhuRatio = p.song_total_households ? (p.song_zhu_households || 0) / p.song_total_households : 0.6;
+        const hasBreakdown = p.song_zhu_households != null || p.song_ke_households != null;
+        const zhuRatio = p.song_total_households && hasBreakdown ? (p.song_zhu_households || 0) / p.song_total_households : 0.55;
         html += `<g class="hh-bubble" data-pref-id="${escHtml(p.id)}" style="cursor:pointer">
           <circle cx="${p._sx.toFixed(1)}" cy="${p._sy.toFixed(1)}" r="${r.toFixed(1)}" fill="rgba(217,138,60,0.55)" stroke="#b5452f" stroke-width="1" vector-effect="non-scaling-stroke"/>
           <circle cx="${p._sx.toFixed(1)}" cy="${p._sy.toFixed(1)}" r="${(r * Math.sqrt(zhuRatio)).toFixed(1)}" fill="rgba(181,69,47,0.72)" pointer-events="none"/>
@@ -1351,6 +1352,7 @@
       const songHH = prefs.reduce((s, p) => s + (p.song_total_households || 0), 0);
       const songZhu = prefs.reduce((s, p) => s + (p.song_zhu_households || 0), 0);
       const songKe = prefs.reduce((s, p) => s + (p.song_ke_households || 0), 0);
+      const songCombined = Math.max(0, songHH - songZhu - songKe);
       const cntyCount = prefs.reduce((s, p) => s + p.county_names.length, 0);
       const lmCount = prefs.reduce((s, p) => s + (this.landmarksByPref.get(p.name) || []).length, 0);
 
@@ -1363,7 +1365,7 @@
         <div class="stat-card">
           <div class="stat-lbl">皇朝（北宋）総戸数</div>
           <div class="stat-val">${fmtNum(songHH)} 戸</div>
-          <div class="stat-sub">主戸 ${fmtNum(songZhu)} / 客戸 ${fmtNum(songKe)}</div>
+          <div class="stat-sub">主戸 ${fmtNum(songZhu)} / 客戸 ${fmtNum(songKe)}${songCombined > 0 ? ` / 合算 ${fmtNum(songCombined)}` : ''}</div>
         </div>
       </div>`;
 
@@ -1411,22 +1413,25 @@
       const counties = this.countiesByPref.get(pref.name) || [];
       const lms = this.landmarksByPref.get(pref.name) || [];
 
+      const hasBreakdown = pref.song_zhu_households != null || pref.song_ke_households != null;
       const zhu = pref.song_zhu_households || 0;
       const ke = pref.song_ke_households || 0;
-      const tot = pref.song_total_households || zhu + ke;
-      const zhuPct = tot > 0 ? Math.round((zhu / tot) * 100) : 50;
+      const tot = pref.song_total_households != null ? pref.song_total_households : (hasBreakdown ? zhu + ke : 0);
+      const zhuPct = tot > 0 && hasBreakdown ? Math.round((zhu / tot) * 100) : 50;
       const kePct = 100 - zhuPct;
+      const tangStr = pref.tang_households != null ? `${fmtNum(pref.tang_households)} 戸` : '記載なし';
+      const songStr = tot > 0 ? `${fmtNum(tot)} 戸` : escHtml(pref.household_note || '記載なし');
 
       let html = '';
 
       // 1. Households bar
       html += `<div class="hh-bar-wrap">
-        <div style="display:flex;justify-content:space-between;font-size:11.5px;">
-          <span><strong>唐・開元戸数:</strong> ${fmtNum(pref.tang_households)} 戸</span>
-          <span><strong>北宋・皇朝戸数:</strong> ${fmtNum(tot)} 戸</span>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;font-size:11.5px;">
+          <span><strong>唐・開元（天宝）戸数:</strong> ${tangStr}</span>
+          <span><strong>北宋・皇朝戸数:</strong> ${songStr}</span>
         </div>
         ${
-          tot > 0
+          tot > 0 && hasBreakdown
             ? `<div class="hh-bar-track">
                 <div class="hh-bar-zhu" style="width:${zhuPct}%" title="主戸 ${fmtNum(zhu)}"></div>
                 <div class="hh-bar-ke" style="width:${kePct}%" title="客戸 ${fmtNum(ke)}"></div>
@@ -1434,6 +1439,13 @@
               <div style="display:flex;justify-content:space-between;font-size:10.5px;color:var(--text-secondary);">
                 <span style="color:#b5452f">■ 主戸: ${fmtNum(zhu)} (${zhuPct}%)</span>
                 <span style="color:#b86b1e">■ 客戸: ${fmtNum(ke)} (${kePct}%)</span>
+              </div>`
+            : tot > 0
+            ? `<div class="hh-bar-track">
+                <div class="hh-bar-zhu" style="width:100%;background:linear-gradient(90deg,#b5452f 0%,#b86b1e 100%)" title="主客合算 ${fmtNum(tot)}"></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:10.5px;color:var(--text-secondary);">
+                <span style="color:#b5452f">■ 主客合算: ${fmtNum(tot)} 戸（${escHtml(pref.household_note || '主戸・客戸の内訳記載なし')}）</span>
               </div>`
             : ''
         }
@@ -1678,7 +1690,7 @@
         if (p.name.includes(q) || (p.jun_name && p.jun_name.includes(q)) || (p.seat && p.seat.includes(q))) {
           hits.push({
             label: `【州府】${p.name}（${p.dao} · ${p.vol}）`,
-            sub: `治所: ${p.seat} · 皇朝戸: ${fmtNum(p.song_total_households)}`,
+            sub: `治所: ${p.seat} · 皇朝戸: ${p.song_total_households != null ? fmtNum(p.song_total_households) + '戸' : (p.household_note || '記載なし')}`,
             act: () => this.openPrefectureDetail(p, true),
           });
         } else if (p.products && p.products.some((pr) => pr.includes(q))) {

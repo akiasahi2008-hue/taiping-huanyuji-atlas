@@ -12511,7 +12511,7 @@
   },
   {
     "name": "浣溪縣",
-    "prefecture": "龍標縣州",
+    "prefecture": "沅州",
     "vol": "卷122",
     "dao_id": "jiangnan_w",
     "dao": "江南西道",
@@ -12526,7 +12526,7 @@
   },
   {
     "name": "峩山縣",
-    "prefecture": "獎州",
+    "prefecture": "業州",
     "vol": "卷122",
     "dao_id": "jiangnan_w",
     "dao": "江南西道",
@@ -12541,7 +12541,7 @@
   },
   {
     "name": "梓薑縣",
-    "prefecture": "獎州",
+    "prefecture": "業州",
     "vol": "卷122",
     "dao_id": "jiangnan_w",
     "dao": "江南西道",
@@ -16561,7 +16561,7 @@
   },
   {
     "name": "宣化縣",
-    "prefecture": "管羈縻州",
+    "prefecture": "邕州",
     "vol": "卷166",
     "dao_id": "lingnan",
     "dao": "嶺南道",
@@ -16576,7 +16576,7 @@
   },
   {
     "name": "樂昌縣",
-    "prefecture": "管羈縻州",
+    "prefecture": "邕州",
     "vol": "卷166",
     "dao_id": "lingnan",
     "dao": "嶺南道",
@@ -16591,7 +16591,7 @@
   },
   {
     "name": "武縁縣",
-    "prefecture": "管羈縻州",
+    "prefecture": "邕州",
     "vol": "卷166",
     "dao_id": "lingnan",
     "dao": "嶺南道",
@@ -16606,7 +16606,7 @@
   },
   {
     "name": "上林縣",
-    "prefecture": "管羈縻州",
+    "prefecture": "邕州",
     "vol": "卷166",
     "dao_id": "lingnan",
     "dao": "嶺南道",
