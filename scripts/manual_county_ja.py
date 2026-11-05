@@ -88,3 +88,4 @@ COUNTY_JA_MANUAL = {
 }
 
 print(f"Loaded {len(COUNTY_JA_MANUAL)} manual county translations.")
+

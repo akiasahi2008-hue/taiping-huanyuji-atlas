@@ -236,3 +236,4 @@ print("\nRebuilding js/taiping_atlas_data.js and js/taiping_atlas_texts.js...")
 subprocess.run([sys.executable, "scripts/03_spatial_trilateration_and_geojson.py"], check=True)
 
 print("\nAll translations successfully applied and rebuilt!")
+

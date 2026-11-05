@@ -2233,17 +2233,6 @@
     "dao": "河南道"
   },
   {
-    "source": "徐州",
-    "target": "宋州",
-    "target_detail": "宋州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 355,
-    "distance_raw": "東北至宋州三百五十五里",
-    "vol": "卷015",
-    "dao": "河南道"
-  },
-  {
     "source": "泗州",
     "target": "東京",
     "target_detail": "東京",
@@ -2938,12 +2927,12 @@
   },
   {
     "source": "淄州",
-    "target": "徐州",
-    "target_detail": "徐州",
+    "target": "齊州",
+    "target_detail": "齊州",
     "direction": "西",
     "azimuth": 270.0,
     "distance_li": 200,
-    "distance_raw": "西至徐州二百里",
+    "distance_raw": "西至齊州二百里",
     "vol": "卷019",
     "dao": "河南道"
   },
@@ -4038,28 +4027,6 @@
   },
   {
     "source": "雍州",
-    "target": "華州",
-    "target_detail": "華州",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 78,
-    "distance_raw": "南至華州七十八里",
-    "vol": "卷028",
-    "dao": "關西道"
-  },
-  {
-    "source": "雍州",
-    "target": "華州",
-    "target_detail": "華州下邽縣",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 89,
-    "distance_raw": "西至華州下邽縣八十九里",
-    "vol": "卷028",
-    "dao": "關西道"
-  },
-  {
-    "source": "雍州",
     "target": "鄜城",
     "target_detail": "鄜城縣",
     "direction": "北",
@@ -4984,17 +4951,6 @@
   },
   {
     "source": "慶州",
-    "target": "寧州",
-    "target_detail": "寧州",
-    "direction": "北",
-    "azimuth": 0.0,
-    "distance_li": 190,
-    "distance_raw": "北至寧州一百九十里",
-    "vol": "卷034",
-    "dao": "關西道"
-  },
-  {
-    "source": "慶州",
     "target": "涇州",
     "target_detail": "涇州",
     "direction": "西",
@@ -5023,17 +4979,6 @@
     "azimuth": 135.0,
     "distance_li": 315,
     "distance_raw": "東南至坊州三百十五里",
-    "vol": "卷034",
-    "dao": "關西道"
-  },
-  {
-    "source": "慶州",
-    "target": "涇州",
-    "target_detail": "涇州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 315,
-    "distance_raw": "西北至涇州三百十五里",
     "vol": "卷034",
     "dao": "關西道"
   },
@@ -6046,17 +5991,6 @@
     "azimuth": 270.0,
     "distance_li": 550,
     "distance_raw": "西至靈州五百五十里",
-    "vol": "卷037",
-    "dao": "關西道"
-  },
-  {
-    "source": "夏州",
-    "target": "延州",
-    "target_detail": "延州",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 300,
-    "distance_raw": "西至延州三百里",
     "vol": "卷037",
     "dao": "關西道"
   },
@@ -7663,17 +7597,6 @@
     "azimuth": 90.0,
     "distance_li": 160,
     "distance_raw": "東至汾州一百六十里",
-    "vol": "卷042",
-    "dao": "河東道"
-  },
-  {
-    "source": "石州",
-    "target": "隰州",
-    "target_detail": "隰州",
-    "direction": "東",
-    "azimuth": 90.0,
-    "distance_li": 250,
-    "distance_raw": "東至隰州二百五十里",
     "vol": "卷042",
     "dao": "河東道"
   },
@@ -9670,17 +9593,6 @@
   },
   {
     "source": "火山軍",
-    "target": "嵐州",
-    "target_detail": "嵐州",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 120,
-    "distance_raw": "西至嵐州一百二十里",
-    "vol": "卷050",
-    "dao": "河東道"
-  },
-  {
-    "source": "火山軍",
     "target": "契丹界横嶺",
     "target_detail": "契丹界横嶺",
     "direction": "北",
@@ -11429,17 +11341,6 @@
     "dao": "河北道"
   },
   {
-    "source": "祁州",
-    "target": "定州",
-    "target_detail": "定州新樂縣",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 60,
-    "distance_raw": "西南至定州新樂縣六十里",
-    "vol": "卷060",
-    "dao": "河北道"
-  },
-  {
     "source": "鎮州",
     "target": "東京",
     "target_detail": "東京",
@@ -11667,17 +11568,6 @@
     "azimuth": 225.0,
     "distance_li": 173,
     "distance_raw": "西南至鎮州一百七十三里",
-    "vol": "卷062",
-    "dao": "河北道"
-  },
-  {
-    "source": "定州",
-    "target": "鎮州",
-    "target_detail": "鎮州行唐縣",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 73,
-    "distance_raw": "西北至鎮州行唐縣七十三里",
     "vol": "卷062",
     "dao": "河北道"
   },
@@ -12096,17 +11986,6 @@
     "azimuth": 180.0,
     "distance_li": 180,
     "distance_raw": "南至淄州一百八十里",
-    "vol": "卷064",
-    "dao": "河北道"
-  },
-  {
-    "source": "棣州",
-    "target": "滄州",
-    "target_detail": "滄州",
-    "direction": "東",
-    "azimuth": 90.0,
-    "distance_li": 270,
-    "distance_raw": "東至滄州二百七十里",
     "vol": "卷064",
     "dao": "河北道"
   },
@@ -13267,17 +13146,6 @@
   },
   {
     "source": "乾寧軍",
-    "target": "滄州",
-    "target_detail": "滄州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 93,
-    "distance_raw": "東北至滄州九十三里",
-    "vol": "卷068",
-    "dao": "河北道"
-  },
-  {
-    "source": "乾寧軍",
     "target": "霸州大城",
     "target_detail": "霸州大城縣湖溝",
     "direction": "西北",
@@ -14268,17 +14136,6 @@
   },
   {
     "source": "檀州",
-    "target": "幽州",
-    "target_detail": "幽州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 190,
-    "distance_raw": "西北至幽州一百九十里",
-    "vol": "卷071",
-    "dao": "河北道"
-  },
-  {
-    "source": "檀州",
     "target": "媯州",
     "target_detail": "媯州",
     "direction": "西北",
@@ -14637,17 +14494,6 @@
     "azimuth": 180.0,
     "distance_li": 42,
     "distance_raw": "南至益州郫縣四十二里",
-    "vol": "卷073",
-    "dao": "劍南西道"
-  },
-  {
-    "source": "彭州",
-    "target": "漢州",
-    "target_detail": "漢州什邡縣",
-    "direction": "北",
-    "azimuth": 0.0,
-    "distance_li": 70,
-    "distance_raw": "北至漢州什邡縣七十里",
     "vol": "卷073",
     "dao": "劍南西道"
   },
@@ -15484,17 +15330,6 @@
     "azimuth": 0.0,
     "distance_li": 370,
     "distance_raw": "北至普州三百七十里",
-    "vol": "卷076",
-    "dao": "劍南西道"
-  },
-  {
-    "source": "資州",
-    "target": "榮州",
-    "target_detail": "榮州",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 150,
-    "distance_raw": "東南至榮州一百五十里",
     "vol": "卷076",
     "dao": "劍南西道"
   },
@@ -16930,34 +16765,12 @@
   },
   {
     "source": "悉州",
-    "target": "翼州",
-    "target_detail": "翼州",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 250,
-    "distance_raw": "西至翼州二百五十里",
-    "vol": "卷081",
-    "dao": "劍南西道"
-  },
-  {
-    "source": "悉州",
     "target": "静州",
     "target_detail": "静州",
     "direction": "西",
     "azimuth": 270.0,
     "distance_li": 60,
     "distance_raw": "西至静州六十里",
-    "vol": "卷081",
-    "dao": "劍南西道"
-  },
-  {
-    "source": "悉州",
-    "target": "静州",
-    "target_detail": "静州",
-    "direction": "北",
-    "azimuth": 0.0,
-    "distance_li": 82,
-    "distance_raw": "北至静州八十二里",
     "vol": "卷081",
     "dao": "劍南西道"
   },
@@ -16980,17 +16793,6 @@
     "azimuth": 135.0,
     "distance_li": 650,
     "distance_raw": "東南至成都府六百五十里",
-    "vol": "卷081",
-    "dao": "劍南西道"
-  },
-  {
-    "source": "悉州",
-    "target": "翼州",
-    "target_detail": "翼州界",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 190,
-    "distance_raw": "西南至翼州界一百九十里",
     "vol": "卷081",
     "dao": "劍南西道"
   },
@@ -18239,17 +18041,6 @@
   },
   {
     "source": "瀘州",
-    "target": "戎州",
-    "target_detail": "戎州南溪縣界",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 177,
-    "distance_raw": "東南至戎州南溪縣界一百七十七里",
-    "vol": "卷088",
-    "dao": "劍南東道"
-  },
-  {
-    "source": "瀘州",
     "target": "榮州",
     "target_detail": "榮州",
     "direction": "西北",
@@ -18333,17 +18124,6 @@
     "azimuth": 225.0,
     "distance_li": 240,
     "distance_raw": "西南至戎州南溪縣二百四十里",
-    "vol": "卷088",
-    "dao": "劍南東道"
-  },
-  {
-    "source": "瀘州",
-    "target": "榮州",
-    "target_detail": "榮州和義縣",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 120,
-    "distance_raw": "東北至榮州和義縣一百二十里",
     "vol": "卷088",
     "dao": "劍南東道"
   },
@@ -19064,17 +18844,6 @@
   },
   {
     "source": "湖州",
-    "target": "杭州",
-    "target_detail": "杭州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 190,
-    "distance_raw": "西北至杭州一百九十里",
-    "vol": "卷094",
-    "dao": "江南東道"
-  },
-  {
-    "source": "湖州",
     "target": "宣州",
     "target_detail": "宣州界",
     "direction": "西南",
@@ -19554,17 +19323,6 @@
     "azimuth": 315.0,
     "distance_li": 160,
     "distance_raw": "西北至睦州陸路一百六十里",
-    "vol": "卷097",
-    "dao": "江南東道"
-  },
-  {
-    "source": "婺州",
-    "target": "越州",
-    "target_detail": "越州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 390,
-    "distance_raw": "西南至越州三百九十里",
     "vol": "卷097",
     "dao": "江南東道"
   },
@@ -21220,17 +20978,6 @@
   },
   {
     "source": "洪州",
-    "target": "吉州",
-    "target_detail": "吉州",
-    "direction": "東",
-    "azimuth": 90.0,
-    "distance_li": 520,
-    "distance_raw": "東至吉州陸路五百二十里",
-    "vol": "卷106",
-    "dao": "江南西道"
-  },
-  {
-    "source": "洪州",
     "target": "衢州",
     "target_detail": "衢州界",
     "direction": "東",
@@ -21358,17 +21105,6 @@
     "azimuth": 45.0,
     "distance_li": 155,
     "distance_raw": "東北至洪州南昌縣一百五十五里",
-    "vol": "卷106",
-    "dao": "江南西道"
-  },
-  {
-    "source": "筠州",
-    "target": "洪州",
-    "target_detail": "洪州武寧縣",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 590,
-    "distance_raw": "西北至洪州武寜縣五百九十里",
     "vol": "卷106",
     "dao": "江南西道"
   },
@@ -21935,17 +21671,6 @@
   },
   {
     "source": "吉州",
-    "target": "撫州",
-    "target_detail": "撫州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 450,
-    "distance_raw": "西北至撫州四百五十里",
-    "vol": "卷109",
-    "dao": "江南西道"
-  },
-  {
-    "source": "吉州",
     "target": "袁州",
     "target_detail": "袁州",
     "direction": "西北",
@@ -22298,17 +22023,6 @@
   },
   {
     "source": "南康軍",
-    "target": "江州",
-    "target_detail": "江州",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 150,
-    "distance_raw": "西至江州一百五十里",
-    "vol": "卷111",
-    "dao": "江南西道"
-  },
-  {
-    "source": "南康軍",
     "target": "洪州",
     "target_detail": "洪州",
     "direction": "南",
@@ -22337,17 +22051,6 @@
     "azimuth": 45.0,
     "distance_li": 120,
     "distance_raw": "東北至江州湖口縣水路一百二十里",
-    "vol": "卷111",
-    "dao": "江南西道"
-  },
-  {
-    "source": "南康軍",
-    "target": "江州",
-    "target_detail": "江州德安縣界",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 60,
-    "distance_raw": "西南至江州徳安縣界六十里",
     "vol": "卷111",
     "dao": "江南西道"
   },
@@ -23092,17 +22795,6 @@
     "source": "道州",
     "target": "永州",
     "target_detail": "永州",
-    "direction": "西",
-    "azimuth": 270.0,
-    "distance_li": 260,
-    "distance_raw": "西至永州二百六十里",
-    "vol": "卷116",
-    "dao": "江南西道"
-  },
-  {
-    "source": "道州",
-    "target": "永州",
-    "target_detail": "永州",
     "direction": "北",
     "azimuth": 0.0,
     "distance_li": 300,
@@ -23162,17 +22854,6 @@
     "azimuth": 315.0,
     "distance_li": 3200,
     "distance_raw": "西北至長安三千二百里",
-    "vol": "卷116",
-    "dao": "江南西道"
-  },
-  {
-    "source": "永州",
-    "target": "道州",
-    "target_detail": "道州",
-    "direction": "東",
-    "azimuth": 90.0,
-    "distance_li": 300,
-    "distance_raw": "東至道州水路三百里",
     "vol": "卷116",
     "dao": "江南西道"
   },
@@ -24410,17 +24091,6 @@
   },
   {
     "source": "費州",
-    "target": "思州",
-    "target_detail": "思州思王縣",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 27,
-    "distance_raw": "南至思州思王縣二十七里",
-    "vol": "卷121",
-    "dao": "江南西道"
-  },
-  {
-    "source": "費州",
     "target": "牂牁充州",
     "target_detail": "牂牁充州",
     "direction": "正南微西",
@@ -24625,17 +24295,6 @@
     "azimuth": 45.0,
     "distance_li": 3160,
     "distance_raw": "東北至長安三千一百六十里",
-    "vol": "卷122",
-    "dao": "江南西道"
-  },
-  {
-    "source": "南州",
-    "target": "渝州",
-    "target_detail": "渝州界丹上山",
-    "direction": "東",
-    "azimuth": 90.0,
-    "distance_li": 60,
-    "distance_raw": "東至渝州界丹上山六十里",
     "vol": "卷122",
     "dao": "江南西道"
   },
@@ -24966,17 +24625,6 @@
     "azimuth": 180.0,
     "distance_li": 326,
     "distance_raw": "南至宣州三百二十六里",
-    "vol": "卷124",
-    "dao": "淮南道"
-  },
-  {
-    "source": "和州",
-    "target": "廬州",
-    "target_detail": "廬州",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 220,
-    "distance_raw": "南至廬州二百二十里",
     "vol": "卷124",
     "dao": "淮南道"
   },
@@ -26390,17 +26038,6 @@
   },
   {
     "source": "漢陽軍",
-    "target": "鄂州",
-    "target_detail": "鄂州大江中流為界",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 3,
-    "distance_raw": "東北至鄂州大江中流為界三里",
-    "vol": "卷131",
-    "dao": "淮南道"
-  },
-  {
-    "source": "漢陽軍",
     "target": "復州",
     "target_detail": "復州",
     "direction": "南",
@@ -26473,17 +26110,6 @@
     "azimuth": 225.0,
     "distance_li": 100,
     "distance_raw": "西南至復州水路一百里",
-    "vol": "卷131",
-    "dao": "淮南道"
-  },
-  {
-    "source": "漢陽軍",
-    "target": "鄂州",
-    "target_detail": "鄂州界",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 7,
-    "distance_raw": "東北至鄂州界七里",
     "vol": "卷131",
     "dao": "淮南道"
   },
@@ -27698,17 +27324,6 @@
     "dao": "山南西道"
   },
   {
-    "source": "開州",
-    "target": "達州",
-    "target_detail": "達州石皷縣",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 128,
-    "distance_raw": "東南至達州石皷縣一百二十八里",
-    "vol": "卷137",
-    "dao": "山南西道"
-  },
-  {
     "source": "達州",
     "target": "東京",
     "target_detail": "東京",
@@ -27793,17 +27408,6 @@
     "azimuth": 315.0,
     "distance_li": 200,
     "distance_raw": "西北至巴蓬等州界二百里",
-    "vol": "卷137",
-    "dao": "山南西道"
-  },
-  {
-    "source": "達州",
-    "target": "金州",
-    "target_detail": "金州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 1110,
-    "distance_raw": "西南至金州一千一百一十里",
     "vol": "卷137",
     "dao": "山南西道"
   },
@@ -28062,56 +27666,12 @@
   },
   {
     "source": "渠州",
-    "target": "合州",
-    "target_detail": "合州水路約",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 400,
-    "distance_raw": "西北至合州水路約四百里",
-    "vol": "卷138",
-    "dao": "山南西道"
-  },
-  {
-    "source": "渠州",
-    "target": "蓬州",
-    "target_detail": "蓬州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 250,
-    "distance_raw": "東北至蓬州水路二百五十里",
-    "vol": "卷138",
-    "dao": "山南西道"
-  },
-  {
-    "source": "渠州",
     "target": "界州岳池縣",
     "target_detail": "界州岳池縣界",
     "direction": "東北",
     "azimuth": 45.0,
     "distance_li": 135,
     "distance_raw": "東北至界州岳池縣界一百三十五里",
-    "vol": "卷138",
-    "dao": "山南西道"
-  },
-  {
-    "source": "渠州",
-    "target": "涪州",
-    "target_detail": "涪州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 240,
-    "distance_raw": "西北至涪州二百四十里",
-    "vol": "卷138",
-    "dao": "山南西道"
-  },
-  {
-    "source": "渠州",
-    "target": "達州",
-    "target_detail": "達州",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 540,
-    "distance_raw": "南至達州五百四十里",
     "vol": "卷138",
     "dao": "山南西道"
   },
@@ -28260,8 +27820,8 @@
   },
   {
     "source": "巴州",
-    "target": "巴嶺長安路",
-    "target_detail": "巴嶺長安路",
+    "target": "長安",
+    "target_detail": "長安（巴嶺路経由）",
     "direction": "東北",
     "azimuth": 45.0,
     "distance_li": 1220,
@@ -28458,17 +28018,6 @@
   },
   {
     "source": "蓬州",
-    "target": "達州",
-    "target_detail": "達州",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 325,
-    "distance_raw": "南至達州三百二十五里",
-    "vol": "卷139",
-    "dao": "山南西道"
-  },
-  {
-    "source": "蓬州",
     "target": "渠州",
     "target_detail": "渠州官路",
     "direction": "西北",
@@ -28497,17 +28046,6 @@
     "azimuth": 315.0,
     "distance_li": 554,
     "distance_raw": "西北至利州五百五十四里",
-    "vol": "卷139",
-    "dao": "山南西道"
-  },
-  {
-    "source": "蓬州",
-    "target": "開州",
-    "target_detail": "開州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 654,
-    "distance_raw": "西北至開州六百五十四里",
     "vol": "卷139",
     "dao": "山南西道"
   },
@@ -28717,17 +28255,6 @@
     "azimuth": 135.0,
     "distance_li": 375,
     "distance_raw": "東南至通州三百七十五里",
-    "vol": "卷140",
-    "dao": "山南西道"
-  },
-  {
-    "source": "壁州",
-    "target": "巴州",
-    "target_detail": "巴州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 145,
-    "distance_raw": "東北至巴州一百四十五里",
     "vol": "卷140",
     "dao": "山南西道"
   },
@@ -28942,17 +28469,6 @@
   },
   {
     "source": "商州",
-    "target": "合州",
-    "target_detail": "合州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 715,
-    "distance_raw": "西北至合州七百一十五里",
-    "vol": "卷141",
-    "dao": "山南西道"
-  },
-  {
-    "source": "商州",
     "target": "華州",
     "target_detail": "華州山路",
     "direction": "西",
@@ -28964,34 +28480,12 @@
   },
   {
     "source": "商州",
-    "target": "鄧州",
-    "target_detail": "鄧州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 715,
-    "distance_raw": "西南至鄧州七百一十五里",
-    "vol": "卷141",
-    "dao": "山南西道"
-  },
-  {
-    "source": "商州",
     "target": "虢州",
     "target_detail": "虢州",
     "direction": "東北",
     "azimuth": 45.0,
     "distance_li": 425,
     "distance_raw": "東北至虢州四百二十五里",
-    "vol": "卷141",
-    "dao": "山南西道"
-  },
-  {
-    "source": "商州",
-    "target": "金州",
-    "target_detail": "金州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 715,
-    "distance_raw": "東北至金州七百一十五里",
     "vol": "卷141",
     "dao": "山南西道"
   },
@@ -29151,12 +28645,12 @@
   },
   {
     "source": "唐州",
-    "target": "鄧州",
-    "target_detail": "鄧州路",
+    "target": "長安",
+    "target_detail": "長安（鄧州路経由）",
     "direction": "西北",
     "azimuth": 315.0,
     "distance_li": 1225,
-    "distance_raw": "西北至鄧州路一千二百二十五里",
+    "distance_raw": "西北至長安取鄧州路一千二百二十五里",
     "vol": "卷142",
     "dao": "山南東道"
   },
@@ -29175,10 +28669,10 @@
     "source": "唐州",
     "target": "隨州",
     "target_detail": "隨州",
-    "direction": "西",
-    "azimuth": 270.0,
+    "direction": "南",
+    "azimuth": 180.0,
     "distance_li": 425,
-    "distance_raw": "西至隨州四百二十五里",
+    "distance_raw": "南至隨州四百二十五里",
     "vol": "卷142",
     "dao": "山南東道"
   },
@@ -29186,10 +28680,10 @@
     "source": "唐州",
     "target": "鄧州",
     "target_detail": "鄧州",
-    "direction": "南",
-    "azimuth": 180.0,
+    "direction": "西",
+    "azimuth": 270.0,
     "distance_li": 324,
-    "distance_raw": "南至鄧州三百二十四里",
+    "distance_raw": "西至鄧州三百二十四里",
     "vol": "卷142",
     "dao": "山南東道"
   },
@@ -29228,12 +28722,12 @@
   },
   {
     "source": "唐州",
-    "target": "鄧州",
-    "target_detail": "鄧州",
+    "target": "許州",
+    "target_detail": "許州",
     "direction": "東北",
     "azimuth": 45.0,
     "distance_li": 330,
-    "distance_raw": "東北至鄧州三百三十里",
+    "distance_raw": "東北至許州三百三十里",
     "vol": "卷142",
     "dao": "山南東道"
   },
@@ -29245,17 +28739,6 @@
     "azimuth": 225.0,
     "distance_li": 354,
     "distance_raw": "西南至襄州三百五十四里",
-    "vol": "卷142",
-    "dao": "山南東道"
-  },
-  {
-    "source": "唐州",
-    "target": "蔡州",
-    "target_detail": "蔡州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 283,
-    "distance_raw": "西北至蔡州二百八十三里",
     "vol": "卷142",
     "dao": "山南東道"
   },
@@ -29524,39 +29007,6 @@
     "dao": "山南東道"
   },
   {
-    "source": "房州",
-    "target": "金州",
-    "target_detail": "金州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 542,
-    "distance_raw": "東北至金州五百四十二里",
-    "vol": "卷143",
-    "dao": "山南東道"
-  },
-  {
-    "source": "房州",
-    "target": "歸州",
-    "target_detail": "歸州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 538,
-    "distance_raw": "西北至歸州五百三十八里",
-    "vol": "卷143",
-    "dao": "山南東道"
-  },
-  {
-    "source": "房州",
-    "target": "均州",
-    "target_detail": "均州",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 250,
-    "distance_raw": "東南至均州二百五十里",
-    "vol": "卷143",
-    "dao": "山南東道"
-  },
-  {
     "source": "隨州",
     "target": "東京",
     "target_detail": "東京",
@@ -29646,45 +29096,12 @@
   },
   {
     "source": "隨州",
-    "target": "唐州",
-    "target_detail": "唐州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 435,
-    "distance_raw": "西北至唐州四百三十五里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "隨州",
     "target": "安州",
     "target_detail": "安州",
     "direction": "東南",
     "azimuth": 135.0,
     "distance_li": 360,
     "distance_raw": "東南至安州三百六十里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "隨州",
-    "target": "唐州",
-    "target_detail": "唐州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 363,
-    "distance_raw": "西南至唐州三百六十三里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "隨州",
-    "target": "郢州",
-    "target_detail": "郢州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 465,
-    "distance_raw": "東北至郢州四百六十五里",
     "vol": "卷144",
     "dao": "山南東道"
   },
@@ -29795,72 +29212,6 @@
     "azimuth": 90.0,
     "distance_li": 463,
     "distance_raw": "東至隨州四百六十三里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "安州",
-    "target_detail": "安州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 335,
-    "distance_raw": "西南至安州三百三十五里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "襄州",
-    "target_detail": "襄州",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 323,
-    "distance_raw": "東南至襄州三百二十三里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "隨州",
-    "target_detail": "隨州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 458,
-    "distance_raw": "西北至隨州四百五十八里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "長安",
-    "target_detail": "長安",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 1382,
-    "distance_raw": "東南至長安一千三百八十二里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "復州",
-    "target_detail": "復州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 148,
-    "distance_raw": "西北至復州一百四十八里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "郢州",
-    "target": "襄陽",
-    "target_detail": "襄陽",
-    "direction": "東南",
-    "azimuth": 135.0,
-    "distance_li": 310,
-    "distance_raw": "東南至襄陽三百十里",
     "vol": "卷144",
     "dao": "山南東道"
   },
@@ -29997,28 +29348,6 @@
     "dao": "山南東道"
   },
   {
-    "source": "復州",
-    "target": "郢州",
-    "target_detail": "郢州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 255,
-    "distance_raw": "西南至郢州二百五十五里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
-    "source": "復州",
-    "target": "安州",
-    "target_detail": "安州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 335,
-    "distance_raw": "西南至安州三百三十五里",
-    "vol": "卷144",
-    "dao": "山南東道"
-  },
-  {
     "source": "襄州",
     "target": "東京",
     "target_detail": "東京",
@@ -30110,10 +29439,10 @@
     "source": "襄州",
     "target": "陝州",
     "target_detail": "陝州",
-    "direction": "西南",
-    "azimuth": 225.0,
+    "direction": "西北",
+    "azimuth": 315.0,
     "distance_li": 619,
-    "distance_raw": "西南至陜州六百一十九里",
+    "distance_raw": "西北至陜州六百一十九里（原誤西南）",
     "vol": "卷145",
     "dao": "山南東道"
   },
@@ -30136,50 +29465,6 @@
     "azimuth": 45.0,
     "distance_li": 254,
     "distance_raw": "東北至唐州二百五十四里",
-    "vol": "卷145",
-    "dao": "山南東道"
-  },
-  {
-    "source": "襄州",
-    "target": "均州",
-    "target_detail": "均州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 355,
-    "distance_raw": "東北至均州三百五十五里",
-    "vol": "卷145",
-    "dao": "山南東道"
-  },
-  {
-    "source": "襄州",
-    "target": "鄧州",
-    "target_detail": "鄧州",
-    "direction": "西南",
-    "azimuth": 225.0,
-    "distance_li": 193,
-    "distance_raw": "西南至鄧州一百九十三里",
-    "vol": "卷145",
-    "dao": "山南東道"
-  },
-  {
-    "source": "襄州",
-    "target": "隨州",
-    "target_detail": "隨州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 345,
-    "distance_raw": "西北至隨州三百四十五里",
-    "vol": "卷145",
-    "dao": "山南東道"
-  },
-  {
-    "source": "襄州",
-    "target": "房州",
-    "target_detail": "房州",
-    "direction": "東北",
-    "azimuth": 45.0,
-    "distance_li": 483,
-    "distance_raw": "東北至房州四百八十三里",
     "vol": "卷145",
     "dao": "山南東道"
   },
@@ -30209,10 +29494,10 @@
     "source": "襄州",
     "target": "郢州",
     "target_detail": "郢州",
-    "direction": "西北",
-    "azimuth": 315.0,
-    "distance_li": 378,
-    "distance_raw": "西北至郢州三百七十八里",
+    "direction": "東南",
+    "azimuth": 135.0,
+    "distance_li": 374,
+    "distance_raw": "東南至郢州三百七十四里",
     "vol": "卷145",
     "dao": "山南東道"
   },
@@ -30339,8 +29624,8 @@
   },
   {
     "source": "峽州",
-    "target": "江陵府",
-    "target_detail": "江陵府大路至長安",
+    "target": "長安",
+    "target_detail": "長安（江陵府大路経由）",
     "direction": "東",
     "azimuth": 90.0,
     "distance_li": 1885,
@@ -30356,17 +29641,6 @@
     "azimuth": 90.0,
     "distance_li": 340,
     "distance_raw": "東至江陵府三百四十里",
-    "vol": "卷147",
-    "dao": "山南東道"
-  },
-  {
-    "source": "峽州",
-    "target": "歸州",
-    "target_detail": "歸州",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 200,
-    "distance_raw": "南取水路三百三十里西至歸州二百里",
     "vol": "卷147",
     "dao": "山南東道"
   },
@@ -30506,10 +29780,10 @@
     "source": "夔州",
     "target": "達州",
     "target_detail": "達州",
-    "direction": "東北",
-    "azimuth": 45.0,
+    "direction": "西北",
+    "azimuth": 315.0,
     "distance_li": 526,
-    "distance_raw": "東北至達州五百二十六里",
+    "distance_raw": "西北至達州五百二十六里（原誤東北）",
     "vol": "卷148",
     "dao": "山南東道"
   },
@@ -34701,17 +33975,6 @@
     "azimuth": 90.0,
     "distance_li": 150,
     "distance_raw": "東至容州一百五十里",
-    "vol": "卷165",
-    "dao": "嶺南道"
-  },
-  {
-    "source": "鬱林州",
-    "target": "容州",
-    "target_detail": "容州陸川縣",
-    "direction": "南",
-    "azimuth": 180.0,
-    "distance_li": 80,
-    "distance_raw": "南至容州陸川縣八十里",
     "vol": "卷165",
     "dao": "嶺南道"
   },

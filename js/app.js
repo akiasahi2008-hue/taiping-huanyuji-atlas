@@ -1250,17 +1250,73 @@
       const rayOpacity = k >= 12.0 ? '0.35' : '0.88';
 
       const outgoing = this.edgesBySource.get(pref.name) || [];
+
+      // Group outgoing edges by target to prevent text overlap between multiple records (e.g., center vs county border)
+      const byTarget = new Map();
       for (const e of outgoing) {
-        const x2 = e._x2;
-        const y2 = e._y2;
-        // Place label at 62% along the ray so it stays outside the dense county/landmark cluster around the source prefecture
-        const t = k >= 5.0 ? 0.68 : 0.52;
-        const mx = x1 + (x2 - x1) * t;
-        const my = y1 + (y2 - y1) * t;
-        html += `<line class="net-edge-active" x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" opacity="${rayOpacity}" marker-end="url(#arrow-vermilion)"/>`;
-        if (showRayText) {
-          html += `<g transform="translate(${mx.toFixed(2)},${my.toFixed(2)})" pointer-events="none"><g class="inv-scale"><text x="0" y="-2.5" text-anchor="middle" font-size="8.6" font-weight="600" fill="#b5452f">${escHtml(e.direction)}：${escHtml(e.target)}へ ${e.distance_li}里</text></g></g>`;
+        const key = e.target;
+        if (!byTarget.has(key)) byTarget.set(key, []);
+        byTarget.get(key).push(e);
+      }
+
+      for (const [targetName, edges] of byTarget.entries()) {
+        // Sort by distance ascending: closer records (e.g. border 80 li) appear closer to source, center (370 li) further out
+        edges.sort((a, b) => (a.distance_li || 0) - (b.distance_li || 0));
+
+        // Deduplicate completely identical records if any
+        const uniqueEdges = [];
+        const seen = new Set();
+        for (const e of edges) {
+          const sig = `${e.direction}_${e.distance_li}_${e.target_detail || ''}`;
+          if (!seen.has(sig)) {
+            seen.add(sig);
+            uniqueEdges.push(e);
+          }
         }
+
+        const count = uniqueEdges.length;
+        uniqueEdges.forEach((e, idx) => {
+          const x2 = e._x2;
+          const y2 = e._y2;
+          const dx = x2 - x1;
+          const dy = y2 - y1;
+
+          // Draw the ray line once per target coordinate to prevent stacking lines
+          if (idx === 0) {
+            html += `<line class="net-edge-active" x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" opacity="${rayOpacity}" marker-end="url(#arrow-vermilion)"/>`;
+          }
+
+          if (showRayText) {
+            // Distribute t along the ray so multiple records towards the same target never collide
+            let t = k >= 5.0 ? 0.68 : 0.52;
+            let textY = -2.5;
+
+            if (count === 2) {
+              t = idx === 0 ? (k >= 5.0 ? 0.42 : 0.36) : (k >= 5.0 ? 0.72 : 0.66);
+              textY = idx === 0 ? -4.5 : 0.5;
+            } else if (count >= 3) {
+              t = 0.30 + (idx * 0.42) / (count - 1);
+              textY = idx % 2 === 0 ? -4.5 : 1.0;
+            }
+
+            const mx = x1 + dx * t;
+            const my = y1 + dy * t;
+
+            // Clarify target label: if target_detail differs from target, indicate border or sub-county
+            let targetLabel = e.target;
+            if (e.target_detail && e.target_detail !== e.target) {
+              if (e.target_detail.endsWith('界')) {
+                const borderPart = e.target_detail.replace(e.target, '').replace(/界$/, '').trim();
+                targetLabel = borderPart ? `${e.target}（${borderPart}界）` : `${e.target}界`;
+              } else {
+                const subPart = e.target_detail.replace(e.target, '').trim();
+                targetLabel = subPart ? `${e.target}（${subPart}）` : e.target_detail;
+              }
+            }
+
+            html += `<g transform="translate(${mx.toFixed(2)},${my.toFixed(2)})" pointer-events="none"><g class="inv-scale"><text x="0" y="${textY.toFixed(1)}" text-anchor="middle" font-size="8.6" font-weight="600" fill="#b5452f">${escHtml(e.direction)}：${escHtml(targetLabel)}へ ${e.distance_li}里</text></g></g>`;
+          }
+        });
       }
       this.grpActiveRays.innerHTML = html;
     }

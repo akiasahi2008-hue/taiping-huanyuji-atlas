@@ -181,10 +181,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.4068,
-      34.6609
+      114.4071,
+      34.6613
     ],
-    "trilateration_error_km": 15.3,
+    "trilateration_error_km": 15.2,
     "rings": [
       [
         [
@@ -641,7 +641,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       111.5368,
-      34.6561
+      34.6559
     ],
     "trilateration_error_km": 27.4,
     "rings": [
@@ -833,8 +833,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.8898,
-      34.6047
+      110.8899,
+      34.6049
     ],
     "trilateration_error_km": 66.5,
     "rings": [
@@ -1028,8 +1028,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.5169,
-      33.9394
+      113.5164,
+      33.9393
     ],
     "trilateration_error_km": 21.3,
     "rings": [
@@ -1223,10 +1223,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.9234,
-      34.2802
+      112.9232,
+      34.2822
     ],
-    "trilateration_error_km": 35.8,
+    "trilateration_error_km": 36.0,
     "rings": [
       [
         [
@@ -1419,7 +1419,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.7523,
+      113.7519,
       34.3659
     ],
     "trilateration_error_km": 170.2,
@@ -1609,7 +1609,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.3039,
+      113.3038,
       34.8814
     ],
     "trilateration_error_km": 26.5,
@@ -1826,7 +1826,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       114.8631,
-      33.7664
+      33.7667
     ],
     "trilateration_error_km": 25.4,
     "rings": [
@@ -2053,10 +2053,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.9359,
-      33.0438
+      114.9366,
+      33.0433
     ],
-    "trilateration_error_km": 60.6,
+    "trilateration_error_km": 60.7,
     "rings": [
       [
         [
@@ -2468,7 +2468,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.8886,
+      115.8883,
       34.2337
     ],
     "trilateration_error_km": 35.8,
@@ -2656,8 +2656,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.0605,
-      33.4799
+      116.0604,
+      33.4796
     ],
     "trilateration_error_km": 16.0,
     "rings": [
@@ -2842,8 +2842,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      115.9311,
-      35.8079
+      115.9309,
+      35.8081
     ],
     "trilateration_error_km": 34.3,
     "rings": [
@@ -3031,8 +3031,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.2957,
-      34.9171
+      115.2954,
+      34.917
     ],
     "trilateration_error_km": 40.0,
     "rings": [
@@ -3215,8 +3215,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      115.6284,
-      35.0652
+      115.628,
+      35.065
     ],
     "trilateration_error_km": 5.3,
     "rings": [
@@ -3399,10 +3399,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.4638,
-      35.9543
+      115.4632,
+      35.9548
     ],
-    "trilateration_error_km": 36.0,
+    "trilateration_error_km": 36.1,
     "rings": [
       [
         [
@@ -3578,8 +3578,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.1053,
-      35.4408
+      116.1055,
+      35.4407
     ],
     "trilateration_error_km": 10.3,
     "rings": [
@@ -3974,17 +3974,6 @@
         "distance_raw": "東北至沂州三百五十里",
         "vol": "卷015",
         "dao": "河南道"
-      },
-      {
-        "source": "徐州",
-        "target": "宋州",
-        "target_detail": "宋州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 355,
-        "distance_raw": "東北至宋州三百五十五里",
-        "vol": "卷015",
-        "dao": "河南道"
       }
     ],
     "household_note": null,
@@ -3996,10 +3985,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.4837,
-      33.7573
+      117.6791,
+      33.7638
     ],
-    "trilateration_error_km": 85.8,
+    "trilateration_error_km": 94.9,
     "rings": [
       [
         [
@@ -4188,8 +4177,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.7228,
-      34.0072
+      118.7225,
+      34.0069
     ],
     "trilateration_error_km": 101.8,
     "rings": [
@@ -4395,7 +4384,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       117.1906,
-      33.5204
+      33.5201
     ],
     "trilateration_error_km": 27.3,
     "rings": [
@@ -4559,7 +4548,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      117.9355,
+      117.9352,
       34.2206
     ],
     "trilateration_error_km": 8.2,
@@ -4700,10 +4689,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      119.4813,
-      33.7358
+      119.4816,
+      33.7356
     ],
-    "trilateration_error_km": 21.0,
+    "trilateration_error_km": 21.1,
     "rings": [
       [
         [
@@ -4936,8 +4925,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      118.2776,
-      36.5851
+      118.2771,
+      36.5853
     ],
     "trilateration_error_km": 22.1,
     "rings": [
@@ -5111,8 +5100,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      119.3412,
-      36.5068
+      119.3406,
+      36.507
     ],
     "trilateration_error_km": 31.2,
     "rings": [
@@ -5234,12 +5223,12 @@
       },
       {
         "source": "淄州",
-        "target": "徐州",
-        "target_detail": "徐州",
+        "target": "齊州",
+        "target_detail": "齊州",
         "direction": "西",
         "azimuth": 270.0,
         "distance_li": 200,
-        "distance_raw": "西至徐州二百里",
+        "distance_raw": "西至齊州二百里",
         "vol": "卷019",
         "dao": "河南道"
       },
@@ -5285,10 +5274,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.8777,
-      36.1431
+      117.873,
+      36.5163
     ],
-    "trilateration_error_km": 73.8,
+    "trilateration_error_km": 33.1,
     "rings": [
       [
         [
@@ -5478,8 +5467,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.7471,
-      36.6619
+      116.7465,
+      36.6616
     ],
     "trilateration_error_km": 22.6,
     "rings": [
@@ -5671,7 +5660,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.7384,
-      37.4217
+      37.4238
     ],
     "trilateration_error_km": 99.9,
     "rings": [
@@ -5918,8 +5907,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      119.2263,
-      36.9796
+      119.2262,
+      36.9801
     ],
     "trilateration_error_km": 67.1,
     "rings": [
@@ -6262,8 +6251,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      117.1729,
-      35.9305
+      117.1728,
+      35.9301
     ],
     "trilateration_error_km": 52.4,
     "rings": [
@@ -6490,10 +6479,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.1858,
-      34.5937
+      119.187,
+      34.5915
     ],
-    "trilateration_error_km": 17.3,
+    "trilateration_error_km": 17.2,
     "rings": [
       [
         [
@@ -6681,10 +6670,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.364,
-      34.8931
+      118.3643,
+      34.8927
     ],
-    "trilateration_error_km": 23.8,
+    "trilateration_error_km": 23.9,
     "rings": [
       [
         [
@@ -6890,8 +6879,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.824,
-      35.5326
+      118.8247,
+      35.5328
     ],
     "trilateration_error_km": 88.1,
     "rings": [
@@ -7181,28 +7170,6 @@
       },
       {
         "source": "雍州",
-        "target": "華州",
-        "target_detail": "華州",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 78,
-        "distance_raw": "南至華州七十八里",
-        "vol": "卷028",
-        "dao": "關西道"
-      },
-      {
-        "source": "雍州",
-        "target": "華州",
-        "target_detail": "華州下邽縣",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 89,
-        "distance_raw": "西至華州下邽縣八十九里",
-        "vol": "卷028",
-        "dao": "關西道"
-      },
-      {
-        "source": "雍州",
         "target": "鄜城",
         "target_detail": "鄜城縣",
         "direction": "北",
@@ -7255,10 +7222,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.3958,
-      34.6899
+      108.9501,
+      34.51
     ],
-    "trilateration_error_km": 63.5,
+    "trilateration_error_km": 27.8,
     "rings": [
       [
         [
@@ -7454,10 +7421,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.2188,
-      34.6096
+      110.2193,
+      34.6101
     ],
-    "trilateration_error_km": 60.0,
+    "trilateration_error_km": 60.1,
     "rings": [
       [
         [
@@ -7665,10 +7632,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.5325,
+      107.5336,
       34.5162
     ],
-    "trilateration_error_km": 13.1,
+    "trilateration_error_km": 13.2,
     "rings": [
       [
         [
@@ -7836,10 +7803,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.9644,
-      34.7944
+      108.9635,
+      34.7936
     ],
-    "trilateration_error_km": 16.7,
+    "trilateration_error_km": 16.8,
     "rings": [
       [
         [
@@ -8131,7 +8098,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.507,
-      35.2195
+      35.2197
     ],
     "trilateration_error_km": 176.2,
     "rings": [
@@ -8318,7 +8285,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      107.0861,
+      107.086,
       35.3004
     ],
     "trilateration_error_km": 32.5,
@@ -8512,8 +8479,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.5663,
-      34.2692
+      105.5662,
+      34.2694
     ],
     "trilateration_error_km": 203.1,
     "rings": [
@@ -8764,17 +8731,6 @@
       },
       {
         "source": "慶州",
-        "target": "寧州",
-        "target_detail": "寧州",
-        "direction": "北",
-        "azimuth": 0.0,
-        "distance_li": 190,
-        "distance_raw": "北至寧州一百九十里",
-        "vol": "卷034",
-        "dao": "關西道"
-      },
-      {
-        "source": "慶州",
         "target": "涇州",
         "target_detail": "涇州",
         "direction": "西",
@@ -8805,17 +8761,6 @@
         "distance_raw": "東南至坊州三百十五里",
         "vol": "卷034",
         "dao": "關西道"
-      },
-      {
-        "source": "慶州",
-        "target": "涇州",
-        "target_detail": "涇州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 315,
-        "distance_raw": "西北至涇州三百十五里",
-        "vol": "卷034",
-        "dao": "關西道"
       }
     ],
     "household_note": null,
@@ -8827,10 +8772,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.0416,
-      35.5572
+      108.0337,
+      35.7417
     ],
-    "trilateration_error_km": 54.6,
+    "trilateration_error_km": 34.9,
     "rings": [
       [
         [
@@ -9035,10 +8980,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.9148,
-      35.4507
+      107.9146,
+      35.4505
     ],
-    "trilateration_error_km": 8.8,
+    "trilateration_error_km": 8.9,
     "rings": [
       [
         [
@@ -9423,7 +9368,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       109.2501,
-      35.4883
+      35.4873
     ],
     "trilateration_error_km": 14.6,
     "rings": [
@@ -9629,8 +9574,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.421,
-      36.0342
+      110.4211,
+      36.034
     ],
     "trilateration_error_km": 15.1,
     "rings": [
@@ -9845,7 +9790,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.4226,
+      109.4223,
       36.602
     ],
     "trilateration_error_km": 27.5,
@@ -10058,10 +10003,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.7427,
-      37.8421
+      106.7408,
+      37.8437
     ],
-    "trilateration_error_km": 55.5,
+    "trilateration_error_km": 55.3,
     "rings": [
       [
         [
@@ -10269,8 +10214,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.948,
-      36.7872
+      104.9485,
+      36.7876
     ],
     "trilateration_error_km": 34.2,
     "rings": [
@@ -10453,8 +10398,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.9164,
-      38.0535
+      107.9168,
+      38.0536
     ],
     "trilateration_error_km": 58.6,
     "rings": [
@@ -10594,17 +10539,6 @@
         "azimuth": 270.0,
         "distance_li": 550,
         "distance_raw": "西至靈州五百五十里",
-        "vol": "卷037",
-        "dao": "關西道"
-      },
-      {
-        "source": "夏州",
-        "target": "延州",
-        "target_detail": "延州",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 300,
-        "distance_raw": "西至延州三百里",
         "vol": "卷037",
         "dao": "關西道"
       },
@@ -10783,10 +10717,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.8448,
-      37.8701
+      109.622,
+      38.103
     ],
-    "trilateration_error_km": 93.5,
+    "trilateration_error_km": 73.9,
     "rings": [
       [
         [
@@ -10938,9 +10872,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       109.67,
-      37.1174
+      37.1183
     ],
-    "trilateration_error_km": 87.3,
+    "trilateration_error_km": 87.4,
     "rings": [
       [
         [
@@ -11121,7 +11055,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       110.1792,
-      37.4643
+      37.464
     ],
     "trilateration_error_km": 8.2,
     "rings": [
@@ -11311,8 +11245,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.0755,
-      38.2082
+      110.0751,
+      38.2078
     ],
     "trilateration_error_km": 23.3,
     "rings": [
@@ -11452,7 +11386,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       112.39,
-      40.332
+      40.3345
     ],
     "trilateration_error_km": 49.2,
     "rings": [
@@ -11728,10 +11662,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.6161,
-      39.3437
+      110.6169,
+      39.3452
     ],
-    "trilateration_error_km": 114.1,
+    "trilateration_error_km": 113.9,
     "rings": [
       [
         [
@@ -11856,10 +11790,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.729,
-      38.8932
+      110.7296,
+      38.8933
     ],
-    "trilateration_error_km": 33.2,
+    "trilateration_error_km": 33.1,
     "rings": [
       [
         [
@@ -12231,10 +12165,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.0663,
-      39.9723
+      110.0725,
+      39.9771
     ],
-    "trilateration_error_km": 93.9,
+    "trilateration_error_km": 93.2,
     "rings": [
       [
         [
@@ -12562,10 +12496,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.9939,
-      40.0665
+      108.994,
+      40.0673
     ],
-    "trilateration_error_km": 80.5,
+    "trilateration_error_km": 80.4,
     "rings": [
       [
         [
@@ -12825,9 +12759,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       112.4637,
-      37.7467
+      37.7471
     ],
-    "trilateration_error_km": 15.7,
+    "trilateration_error_km": 15.6,
     "rings": [
       [
         [
@@ -13001,10 +12935,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.7164,
-      37.1558
+      111.7171,
+      37.1564
     ],
-    "trilateration_error_km": 32.0,
+    "trilateration_error_km": 31.9,
     "rings": [
       [
         [
@@ -13222,10 +13156,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.683,
-      38.9673
+      111.6833,
+      38.9669
     ],
-    "trilateration_error_km": 60.9,
+    "trilateration_error_km": 60.8,
     "rings": [
       [
         [
@@ -13336,17 +13270,6 @@
       },
       {
         "source": "石州",
-        "target": "隰州",
-        "target_detail": "隰州",
-        "direction": "東",
-        "azimuth": 90.0,
-        "distance_li": 250,
-        "distance_raw": "東至隰州二百五十里",
-        "vol": "卷042",
-        "dao": "河東道"
-      },
-      {
-        "source": "石州",
         "target": "嵐州",
         "target_detail": "嵐州",
         "direction": "北",
@@ -13409,10 +13332,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1515,
-      37.2263
+      111.3762,
+      37.3136
     ],
-    "trilateration_error_km": 50.5,
+    "trilateration_error_km": 46.2,
     "rings": [
       [
         [
@@ -13600,8 +13523,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.4639,
-      38.4494
+      112.4638,
+      38.4488
     ],
     "trilateration_error_km": 25.1,
     "rings": [
@@ -13743,7 +13666,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       111.6327,
-      38.0144
+      38.0143
     ],
     "trilateration_error_km": 28.2,
     "rings": [
@@ -13953,8 +13876,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.6673,
-      36.1492
+      111.6675,
+      36.1494
     ],
     "trilateration_error_km": 14.8,
     "rings": [
@@ -14136,7 +14059,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.9489,
+      112.9492,
       35.4183
     ],
     "trilateration_error_km": 12.8,
@@ -14313,8 +14236,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.4629,
-      37.0793
+      113.4625,
+      37.0789
     ],
     "trilateration_error_km": 7.2,
     "rings": [
@@ -14525,10 +14448,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.2877,
-      36.3107
+      113.2878,
+      36.3109
     ],
-    "trilateration_error_km": 20.8,
+    "trilateration_error_km": 20.9,
     "rings": [
       [
         [
@@ -14749,8 +14672,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.9632,
-      35.0893
+      110.9627,
+      35.0894
     ],
     "trilateration_error_km": 69.9,
     "rings": [
@@ -14926,8 +14849,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1895,
-      34.6421
+      111.189,
+      34.6422
     ],
     "trilateration_error_km": 68.9,
     "rings": [
@@ -15152,10 +15075,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1931,
+      111.1927,
       35.502
     ],
-    "trilateration_error_km": 47.7,
+    "trilateration_error_km": 47.8,
     "rings": [
       [
         [
@@ -15363,10 +15286,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7224,
-      35.9374
+      110.722,
+      35.9365
     ],
-    "trilateration_error_km": 15.8,
+    "trilateration_error_km": 15.9,
     "rings": [
       [
         [
@@ -15536,8 +15459,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.0938,
-      36.8315
+      111.0932,
+      36.8314
     ],
     "trilateration_error_km": 26.9,
     "rings": [
@@ -15748,7 +15671,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       112.866,
-      38.8922
+      38.8919
     ],
     "trilateration_error_km": 15.2,
     "rings": [
@@ -16013,10 +15936,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.324,
-      39.9432
+      112.3221,
+      39.9445
     ],
-    "trilateration_error_km": 84.7,
+    "trilateration_error_km": 84.8,
     "rings": [
       [
         [
@@ -16185,10 +16108,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.8856,
-      37.0084
+      112.8857,
+      37.0077
     ],
-    "trilateration_error_km": 40.5,
+    "trilateration_error_km": 40.4,
     "rings": [
       [
         [
@@ -16348,10 +16271,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.1006,
+      112.103,
       37.68
     ],
-    "trilateration_error_km": 24.0,
+    "trilateration_error_km": 23.8,
     "rings": [
       [
         [
@@ -16496,7 +16419,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.5568,
+      113.5569,
       37.717
     ],
     "trilateration_error_km": 10.4,
@@ -16636,8 +16559,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.7322,
-      38.7663
+      111.7319,
+      38.7666
     ],
     "trilateration_error_km": 15.9,
     "rings": [
@@ -16801,17 +16724,6 @@
       },
       {
         "source": "火山軍",
-        "target": "嵐州",
-        "target_detail": "嵐州",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 120,
-        "distance_raw": "西至嵐州一百二十里",
-        "vol": "卷050",
-        "dao": "河東道"
-      },
-      {
-        "source": "火山軍",
         "target": "契丹界横嶺",
         "target_detail": "契丹界横嶺",
         "direction": "北",
@@ -16852,10 +16764,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.9014,
-      38.8871
+      111.8714,
+      38.9377
     ],
-    "trilateration_error_km": 69.9,
+    "trilateration_error_km": 64.9,
     "rings": [
       [
         [
@@ -17023,10 +16935,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.333,
-      40.0895
+      114.3321,
+      40.0906
     ],
-    "trilateration_error_km": 53.7,
+    "trilateration_error_km": 53.8,
     "rings": [
       [
         [
@@ -17207,8 +17119,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.2912,
-      39.2063
+      113.2919,
+      39.207
     ],
     "trilateration_error_km": 78.8,
     "rings": [
@@ -17399,8 +17311,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.0524,
-      34.9549
+      113.0523,
+      34.9548
     ],
     "trilateration_error_km": 25.6,
     "rings": [
@@ -17594,7 +17506,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.8695,
+      112.8699,
       34.7756
     ],
     "trilateration_error_km": 35.7,
@@ -17802,7 +17714,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       115.1663,
-      36.4865
+      36.4862
     ],
     "trilateration_error_km": 23.0,
     "rings": [
@@ -18203,7 +18115,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       114.4103,
-      36.043
+      36.0433
     ],
     "trilateration_error_km": 8.3,
     "rings": [
@@ -18320,8 +18232,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.3697,
-      35.7302
+      114.37,
+      35.7308
     ],
     "trilateration_error_km": 43.9,
     "rings": [
@@ -18519,10 +18431,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.5024,
-      36.3192
+      114.5026,
+      36.3191
     ],
-    "trilateration_error_km": 39.4,
+    "trilateration_error_km": 39.5,
     "rings": [
       [
         [
@@ -18702,10 +18614,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.5905,
-      35.9363
+      114.5908,
+      35.9364
     ],
-    "trilateration_error_km": 55.6,
+    "trilateration_error_km": 55.5,
     "rings": [
       [
         [
@@ -19024,7 +18936,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       114.6988,
-      35.7125
+      35.7124
     ],
     "trilateration_error_km": 14.2,
     "rings": [
@@ -19240,8 +19152,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6801,
-      36.7911
+      114.6804,
+      36.7909
     ],
     "trilateration_error_km": 28.2,
     "rings": [
@@ -19454,7 +19366,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       115.6142,
-      37.0945
+      37.0946
     ],
     "trilateration_error_km": 5.7,
     "rings": [
@@ -19630,10 +19542,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.8873,
-      37.1037
+      114.8867,
+      37.1035
     ],
-    "trilateration_error_km": 34.4,
+    "trilateration_error_km": 34.3,
     "rings": [
       [
         [
@@ -19821,7 +19733,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.875,
+      114.8746,
       37.7947
     ],
     "trilateration_error_km": 10.5,
@@ -19992,17 +19904,6 @@
         "distance_raw": "東北至定州義豐縣一百里",
         "vol": "卷060",
         "dao": "河北道"
-      },
-      {
-        "source": "祁州",
-        "target": "定州",
-        "target_detail": "定州新樂縣",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 60,
-        "distance_raw": "西南至定州新樂縣六十里",
-        "vol": "卷060",
-        "dao": "河北道"
       }
     ],
     "household_note": null,
@@ -20013,10 +19914,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.8932,
-      38.5334
+      114.8343,
+      38.3775
     ],
-    "trilateration_error_km": 62.4,
+    "trilateration_error_km": 47.8,
     "rings": [
       [
         [
@@ -20227,8 +20128,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.4764,
-      38.2561
+      114.476,
+      38.2556
     ],
     "trilateration_error_km": 15.3,
     "rings": [
@@ -20416,17 +20317,6 @@
       },
       {
         "source": "定州",
-        "target": "鎮州",
-        "target_detail": "鎮州行唐縣",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 73,
-        "distance_raw": "西北至鎮州行唐縣七十三里",
-        "vol": "卷062",
-        "dao": "河北道"
-      },
-      {
-        "source": "定州",
         "target": "莫州",
         "target_detail": "莫州",
         "direction": "東北",
@@ -20445,10 +20335,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.0416,
-      38.2426
+      115.1305,
+      38.3398
     ],
-    "trilateration_error_km": 67.9,
+    "trilateration_error_km": 59.7,
     "rings": [
       [
         [
@@ -20671,10 +20561,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.6378,
-      37.3743
+      115.6376,
+      37.374
     ],
-    "trilateration_error_km": 24.9,
+    "trilateration_error_km": 25.0,
     "rings": [
       [
         [
@@ -20858,10 +20748,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.5194,
-      38.0733
+      115.5201,
+      38.073
     ],
-    "trilateration_error_km": 9.2,
+    "trilateration_error_km": 9.1,
     "rings": [
       [
         [
@@ -21033,7 +20923,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.4617,
+      116.4623,
       37.4147
     ],
     "trilateration_error_km": 28.2,
@@ -21175,17 +21065,6 @@
       },
       {
         "source": "棣州",
-        "target": "滄州",
-        "target_detail": "滄州",
-        "direction": "東",
-        "azimuth": 90.0,
-        "distance_li": 270,
-        "distance_raw": "東至滄州二百七十里",
-        "vol": "卷064",
-        "dao": "河北道"
-      },
-      {
-        "source": "棣州",
         "target": "青州",
         "target_detail": "青州",
         "direction": "東南",
@@ -21237,10 +21116,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.4863,
-      37.4683
+      117.6682,
+      37.3927
     ],
-    "trilateration_error_km": 12.2,
+    "trilateration_error_km": 24.6,
     "rings": [
       [
         [
@@ -21430,7 +21309,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       117.2652,
-      37.6434
+      37.6433
     ],
     "trilateration_error_km": 72.7,
     "rings": [
@@ -21672,8 +21551,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.7455,
-      37.8091
+      116.7463,
+      37.8088
     ],
     "trilateration_error_km": 45.7,
     "rings": [
@@ -22066,7 +21945,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       116.0836,
-      38.8917
+      38.8915
     ],
     "trilateration_error_km": 18.5,
     "rings": [
@@ -22243,7 +22122,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.7638,
+      115.7634,
       39.5769
     ],
     "trilateration_error_km": 35.4,
@@ -22442,10 +22321,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.0685,
-      38.9348
+      116.0687,
+      38.9349
     ],
-    "trilateration_error_km": 12.3,
+    "trilateration_error_km": 12.2,
     "rings": [
       [
         [
@@ -22613,9 +22492,9 @@
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
       116.369,
-      38.9936
+      38.9939
     ],
-    "trilateration_error_km": 14.2,
+    "trilateration_error_km": 14.1,
     "rings": [
       [
         [
@@ -22764,6 +22643,72 @@
         "distance_raw": "東北至威虜軍四十里",
         "vol": "卷068",
         "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 4220,
+        "distance_raw": "東北至東京四千二百二十里",
+        "vol": "卷080",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "保州",
+        "target": "西京",
+        "target_detail": "西京",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 3800,
+        "distance_raw": "東北至西京三千八百里",
+        "vol": "卷080",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "保州",
+        "target": "長安",
+        "target_detail": "長安取維州路",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 2800,
+        "distance_raw": "東北至長安取維州路二千八百里",
+        "vol": "卷080",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "保州",
+        "target": "維州風流鎮",
+        "target_detail": "維州風流鎮",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 45,
+        "distance_raw": "東至維州風流鎮四十五里",
+        "vol": "卷080",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "保州",
+        "target": "吐蕃野城",
+        "target_detail": "吐蕃野城",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 80,
+        "distance_raw": "東至吐蕃野城八十里",
+        "vol": "卷080",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "保州",
+        "target": "天保軍",
+        "target_detail": "天保軍",
+        "direction": "西",
+        "azimuth": 270.0,
+        "distance_li": 135,
+        "distance_raw": "西至天保軍一百三十五里",
+        "vol": "卷080",
+        "dao": "劍南西道"
       }
     ],
     "household_note": null,
@@ -22972,8 +22917,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.3427,
-      37.9339
+      116.3422,
+      37.933
     ],
     "trilateration_error_km": 9.1,
     "rings": [
@@ -23134,17 +23079,6 @@
       },
       {
         "source": "乾寧軍",
-        "target": "滄州",
-        "target_detail": "滄州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 93,
-        "distance_raw": "東北至滄州九十三里",
-        "vol": "卷068",
-        "dao": "河北道"
-      },
-      {
-        "source": "乾寧軍",
         "target": "霸州大城",
         "target_detail": "霸州大城縣湖溝",
         "direction": "西北",
@@ -23163,10 +23097,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.7875,
-      38.2172
+      116.8245,
+      38.258
     ],
-    "trilateration_error_km": 38.1,
+    "trilateration_error_km": 33.6,
     "rings": [
       [
         [
@@ -23330,9 +23264,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       116.39,
-      39.232
+      39.2303
     ],
-    "trilateration_error_km": 23.6,
+    "trilateration_error_km": 23.4,
     "rings": [
       [
         [
@@ -23481,10 +23415,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      115.4735,
-      38.9021
+      115.4732,
+      38.9019
     ],
-    "trilateration_error_km": 21.6,
+    "trilateration_error_km": 21.7,
     "rings": [
       [
         [
@@ -23719,10 +23653,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      115.8443,
-      38.7973
+      115.8434,
+      38.7975
     ],
-    "trilateration_error_km": 50.7,
+    "trilateration_error_km": 50.6,
     "rings": [
       [
         [
@@ -23921,8 +23855,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.3207,
-      39.7035
+      116.321,
+      39.704
     ],
     "trilateration_error_km": 22.6,
     "rings": [
@@ -24037,8 +23971,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.1103,
-      39.4828
+      116.1098,
+      39.483
     ],
     "trilateration_error_km": 16.3,
     "rings": [
@@ -24222,10 +24156,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.2298,
+      117.2305,
       40.0014
     ],
-    "trilateration_error_km": 43.6,
+    "trilateration_error_km": 43.5,
     "rings": [
       [
         [
@@ -24418,7 +24352,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       120.122,
-      41.2466
+      41.2463
     ],
     "trilateration_error_km": 173.5,
     "rings": [
@@ -24595,9 +24529,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       115.8007,
-      40.2595
+      40.2604
     ],
-    "trilateration_error_km": 28.5,
+    "trilateration_error_km": 28.4,
     "rings": [
       [
         [
@@ -24782,10 +24716,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      121.7304,
-      40.7066
+      121.7369,
+      40.7087
     ],
-    "trilateration_error_km": 143.9,
+    "trilateration_error_km": 144.2,
     "rings": [
       [
         [
@@ -24944,17 +24878,6 @@
       },
       {
         "source": "檀州",
-        "target": "幽州",
-        "target_detail": "幽州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 190,
-        "distance_raw": "西北至幽州一百九十里",
-        "vol": "卷071",
-        "dao": "河北道"
-      },
-      {
-        "source": "檀州",
         "target": "媯州",
         "target_detail": "媯州",
         "direction": "西北",
@@ -24984,10 +24907,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.594,
-      39.9943
+      116.521,
+      40.0987
     ],
-    "trilateration_error_km": 46.7,
+    "trilateration_error_km": 40.5,
     "rings": [
       [
         [
@@ -25171,7 +25094,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      116.628,
+      116.6283,
       40.0406
     ],
     "trilateration_error_km": 37.8,
@@ -25962,7 +25885,96 @@
     "surnames": "",
     "figures": [],
     "products": [],
-    "distances": [],
+    "distances": [
+      {
+        "source": "黎州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 5000,
+        "distance_raw": "東北至東京五千里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "西京",
+        "target_detail": "西京",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 4500,
+        "distance_raw": "東南至西京四千五百里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "長安",
+        "target_detail": "長安",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 3580,
+        "distance_raw": "東北至長安三千五百八十里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "嶲州",
+        "target_detail": "嶲州",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 650,
+        "distance_raw": "東南至嶲州六百五十里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "戍州",
+        "target_detail": "戍州無路以山遠近測之可",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 755,
+        "distance_raw": "東南至戍州無路以山逺近測之可七百五十五里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "廓清縣",
+        "target_detail": "廓清縣",
+        "direction": "西",
+        "azimuth": 270.0,
+        "distance_li": 180,
+        "distance_raw": "西至廓清縣一百八十里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "盧山郡",
+        "target_detail": "盧山郡",
+        "direction": "北",
+        "azimuth": 0.0,
+        "distance_li": 240,
+        "distance_raw": "北至盧山郡二百四十里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      },
+      {
+        "source": "黎州",
+        "target": "粟蠻部落",
+        "target_detail": "粟蠻部落",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 200,
+        "distance_raw": "東南至粟蠻部落二百里",
+        "vol": "卷077",
+        "dao": "劍南西道"
+      }
+    ],
     "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "history_ja": "黎州は今、新黎県に治す。載初二年（690年）に慎州を析きて置き、浮渝靺鞨烏素固部落を処す。営州都督に隷す。万歳通天元年（696年）に宋州に遷して管治す。神竜の初め（705年）に還りて改めて幽州都督に隷す。",
     "coord": [
@@ -26129,7 +26141,129 @@
     "surnames": "",
     "figures": [],
     "products": [],
-    "distances": [],
+    "distances": [
+      {
+        "source": "昌州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 3830,
+        "distance_raw": "東北至東京三千八百三十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "西京",
+        "target_detail": "西京",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 3700,
+        "distance_raw": "東北至西京三千七百里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "長安",
+        "target_detail": "長安",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 2300,
+        "distance_raw": "東北至長安二千三百里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "資州",
+        "target_detail": "資州",
+        "direction": "西",
+        "azimuth": 270.0,
+        "distance_li": 230,
+        "distance_raw": "西至資州二百三十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "合州",
+        "target_detail": "合州",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 180,
+        "distance_raw": "東至合州一百八十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "普州",
+        "target_detail": "普州",
+        "direction": "北",
+        "azimuth": 0.0,
+        "distance_li": 260,
+        "distance_raw": "北至普州二百六十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "瀘州",
+        "target_detail": "瀘州",
+        "direction": "南",
+        "azimuth": 180.0,
+        "distance_li": 720,
+        "distance_raw": "南至瀘州七百二十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "渝州",
+        "target_detail": "渝州",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 720,
+        "distance_raw": "東南至渝州七百二十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "榮州",
+        "target_detail": "榮州",
+        "direction": "西南",
+        "azimuth": 225.0,
+        "distance_li": 370,
+        "distance_raw": "西南至榮州三百七十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "資州",
+        "target_detail": "資州",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 410,
+        "distance_raw": "西北至資州四百一十里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      },
+      {
+        "source": "昌州",
+        "target": "普州",
+        "target_detail": "普州",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 400,
+        "distance_raw": "東北至普州四百里",
+        "vol": "卷088",
+        "dao": "劍南東道"
+      }
+    ],
     "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "history_ja": "昌州は今、竜山県に治す。唐の貞観二年（628年）に置き、契丹松漠部落を領す。営州都督に隷す。万歳通天二年（697年）に青州に遷して安置す。神竜の初め（705年）に還りて幽州に隷す。",
     "coord": [
@@ -26299,7 +26433,85 @@
     "surnames": "",
     "figures": [],
     "products": [],
-    "distances": [],
+    "distances": [
+      {
+        "source": "信州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 2400,
+        "distance_raw": "西北至東京二千四百里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "西京",
+        "target_detail": "西京",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 2820,
+        "distance_raw": "西北至西京二千八百二十里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "長安",
+        "target_detail": "長安",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 3634,
+        "distance_raw": "西北至長安三千六百三十四里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "衢州",
+        "target_detail": "衢州",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 250,
+        "distance_raw": "東至衢州二百五十里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "撫州",
+        "target_detail": "撫州",
+        "direction": "南",
+        "azimuth": 180.0,
+        "distance_li": 320,
+        "distance_raw": "南至撫州三百二十里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "饒州",
+        "target_detail": "饒州",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 500,
+        "distance_raw": "西北至饒州陸路五百里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      },
+      {
+        "source": "信州",
+        "target": "建州",
+        "target_detail": "建州",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 540,
+        "distance_raw": "西北至建州五百四十里",
+        "vol": "卷107",
+        "dao": "江南西道"
+      }
+    ],
     "household_note": "唐代のみ記載（唐末廃絶・東北羈縻州）",
     "history_ja": "信州は今、旧黄竜県に治す。万歳通天元年（696年）に置き、契丹失活部落を処す。営州都督に隷す。二年に青州に遷して安置す。神竜の初め（705年）に還りて幽州都督に隷す。",
     "coord": [
@@ -26706,8 +26918,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.1414,
-      30.6495
+      104.141,
+      30.6494
     ],
     "trilateration_error_km": 7.2,
     "rings": [
@@ -26844,17 +27056,6 @@
       },
       {
         "source": "彭州",
-        "target": "漢州",
-        "target_detail": "漢州什邡縣",
-        "direction": "北",
-        "azimuth": 0.0,
-        "distance_li": 70,
-        "distance_raw": "北至漢州什邡縣七十里",
-        "vol": "卷073",
-        "dao": "劍南西道"
-      },
-      {
-        "source": "彭州",
         "target": "益州",
         "target_detail": "益州",
         "direction": "東南",
@@ -26906,10 +27107,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.0664,
-      30.8893
+      104.0201,
+      30.9204
     ],
-    "trilateration_error_km": 16.5,
+    "trilateration_error_km": 10.9,
     "rings": [
       [
         [
@@ -27261,10 +27462,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.5446,
-      30.8661
+      103.5442,
+      30.8659
     ],
-    "trilateration_error_km": 16.5,
+    "trilateration_error_km": 16.6,
     "rings": [
       [
         [
@@ -27463,8 +27664,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      103.8438,
-      30.0031
+      103.8432,
+      30.0033
     ],
     "trilateration_error_km": 23.5,
     "rings": [
@@ -27645,10 +27846,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.8134,
-      29.7033
+      103.8135,
+      29.7032
     ],
-    "trilateration_error_km": 17.6,
+    "trilateration_error_km": 17.5,
     "rings": [
       [
         [
@@ -27851,10 +28052,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      103.45,
+      103.4495,
       30.4811
     ],
-    "trilateration_error_km": 1.0,
+    "trilateration_error_km": 0.9,
     "rings": [
       [
         [
@@ -27979,7 +28180,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.6623,
+      103.6613,
       30.67
     ],
     "trilateration_error_km": 4.5,
@@ -28181,10 +28382,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.6773,
+      104.6767,
       30.2548
     ],
-    "trilateration_error_km": 19.4,
+    "trilateration_error_km": 19.3,
     "rings": [
       [
         [
@@ -28334,17 +28535,6 @@
       },
       {
         "source": "資州",
-        "target": "榮州",
-        "target_detail": "榮州",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 150,
-        "distance_raw": "東南至榮州一百五十里",
-        "vol": "卷076",
-        "dao": "劍南西道"
-      },
-      {
-        "source": "資州",
         "target": "陵州",
         "target_detail": "陵州",
         "direction": "西南",
@@ -28385,10 +28575,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.658,
-      29.8557
+      104.8362,
+      29.8669
     ],
-    "trilateration_error_km": 21.4,
+    "trilateration_error_km": 12.0,
     "rings": [
       [
         [
@@ -28699,8 +28889,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.1165,
-      30.6985
+      104.1163,
+      30.699
     ],
     "trilateration_error_km": 30.1,
     "rings": [
@@ -28855,10 +29045,10 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      100.5232,
-      29.4251
+      100.5188,
+      29.4289
     ],
-    "trilateration_error_km": 206.2,
+    "trilateration_error_km": 206.7,
     "rings": [
       [
         [
@@ -29055,7 +29245,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.8319,
+      103.8325,
       31.6559
     ],
     "trilateration_error_km": 3.2,
@@ -29251,10 +29441,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.7461,
-      31.9216
+      103.7462,
+      31.9219
     ],
-    "trilateration_error_km": 14.6,
+    "trilateration_error_km": 14.5,
     "rings": [
       [
         [
@@ -29544,8 +29734,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.2395,
-      30.9865
+      103.2393,
+      30.9864
     ],
     "trilateration_error_km": 50.9,
     "rings": [
@@ -29790,8 +29980,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.8342,
-      28.6931
+      104.8337,
+      28.6921
     ],
     "trilateration_error_km": 20.0,
     "rings": [
@@ -29873,7 +30063,107 @@
     "products": [
       "散麝香"
     ],
-    "distances": [],
+    "distances": [
+      {
+        "source": "霸州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "南",
+        "azimuth": 180.0,
+        "distance_li": 1200,
+        "distance_raw": "南至東京一千二百里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "西京",
+        "target_detail": "西京",
+        "direction": "西南",
+        "azimuth": 225.0,
+        "distance_li": 1600,
+        "distance_raw": "西南至西京一千六百里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "長安",
+        "target_detail": "長安",
+        "direction": "西南",
+        "azimuth": 225.0,
+        "distance_li": 2500,
+        "distance_raw": "西南至長安二千五百里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "瀛州",
+        "target_detail": "瀛州",
+        "direction": "南",
+        "azimuth": 180.0,
+        "distance_li": 190,
+        "distance_raw": "南至瀛州一百九十里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "幽州",
+        "target_detail": "幽州",
+        "direction": "北",
+        "azimuth": 0.0,
+        "distance_li": 200,
+        "distance_raw": "北至幽州二百里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "乾寧軍",
+        "target_detail": "乾寧軍",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 145,
+        "distance_raw": "東南至乾寧軍一百四十五里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "莫州",
+        "target_detail": "莫州",
+        "direction": "西南",
+        "azimuth": 225.0,
+        "distance_li": 70,
+        "distance_raw": "西南至莫州七十里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "當州",
+        "target_detail": "當州永清縣界孟村",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 30,
+        "distance_raw": "東北至當州永清縣界孟村三十里",
+        "vol": "卷067",
+        "dao": "河北道"
+      },
+      {
+        "source": "霸州",
+        "target": "當州",
+        "target_detail": "當州縣界永清村",
+        "direction": "西北",
+        "azimuth": 315.0,
+        "distance_li": 25,
+        "distance_raw": "西北至當州縣界永清村二十五里",
+        "vol": "卷067",
+        "dao": "河北道"
+      }
+    ],
     "household_note": "総戸数のみ記載（漢戸・外は蕃戸）",
     "history_ja": "霸州静戎郡は今、安信郡に治む。唐天宝元年（742年）、生羌を招附したるに因り静戎郡を置き、便ち羌附の酋董嘉俊を以て刺史と為し、七部族を領し、蕃卓子を把り、子孫相承けて絶えず。乾元元年（758年）、霸州と改め、本は隴右道に属し、永徽以後は割いて松州都督に属し、劔南道に入る。皇朝乾徳三年（965年）、西南夷の首領兼霸州刺史が上表して内附した。",
     "coord": [
@@ -29882,10 +30172,10 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      103.35,
-      31.7
+      102.893,
+      32.1849
     ],
-    "trilateration_error_km": 0.0,
+    "trilateration_error_km": 69.0,
     "rings": [
       [
         [
@@ -30052,8 +30342,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      102.8887,
-      31.8484
+      102.8884,
+      31.8482
     ],
     "trilateration_error_km": 28.6,
     "rings": [
@@ -30234,10 +30524,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      102.8613,
-      32.1966
+      102.8608,
+      32.1972
     ],
-    "trilateration_error_km": 34.6,
+    "trilateration_error_km": 34.7,
     "rings": [
       [
         [
@@ -30419,6 +30709,94 @@
       "羌活"
     ],
     "distances": [
+      {
+        "source": "保州",
+        "target": "東京",
+        "target_detail": "東京",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 1200,
+        "distance_raw": "東至東京一千二百里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "唐口",
+        "target_detail": "唐口",
+        "direction": "東",
+        "azimuth": 90.0,
+        "distance_li": 70,
+        "distance_raw": "東至唐口七十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "滿城",
+        "target_detail": "滿城",
+        "direction": "西",
+        "azimuth": 270.0,
+        "distance_li": 50,
+        "distance_raw": "西至滿城五十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "望都（闕）北",
+        "target_detail": "望都（闕）北至静戎軍",
+        "direction": "南",
+        "azimuth": 180.0,
+        "distance_li": 40,
+        "distance_raw": "南至望都（闕）北至静戎軍四十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "博野寧邊軍",
+        "target_detail": "博野寧邊軍",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 100,
+        "distance_raw": "東南至博野寧邊軍一百里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "望都",
+        "target_detail": "望都",
+        "direction": "西南",
+        "azimuth": 225.0,
+        "distance_li": 90,
+        "distance_raw": "西南至望都九十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "静戎軍",
+        "target_detail": "静戎軍",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 40,
+        "distance_raw": "東北至静戎軍四十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
+      {
+        "source": "保州",
+        "target": "威虜軍",
+        "target_detail": "威虜軍",
+        "direction": "東北",
+        "azimuth": 45.0,
+        "distance_li": 40,
+        "distance_raw": "東北至威虜軍四十里",
+        "vol": "卷068",
+        "dao": "河北道"
+      },
       {
         "source": "保州",
         "target": "東京",
@@ -30633,7 +31011,7 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      103.5306,
+      103.5303,
       31.9058
     ],
     "trilateration_error_km": 38.9,
@@ -30816,10 +31194,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.6518,
-      32.5776
+      103.6524,
+      32.5789
     ],
-    "trilateration_error_km": 8.5,
+    "trilateration_error_km": 8.4,
     "rings": [
       [
         [
@@ -31090,10 +31468,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.238,
+      103.2374,
       32.0324
     ],
-    "trilateration_error_km": 40.0,
+    "trilateration_error_km": 39.9,
     "rings": [
       [
         [
@@ -31188,34 +31566,12 @@
       },
       {
         "source": "悉州",
-        "target": "翼州",
-        "target_detail": "翼州",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 250,
-        "distance_raw": "西至翼州二百五十里",
-        "vol": "卷081",
-        "dao": "劍南西道"
-      },
-      {
-        "source": "悉州",
         "target": "静州",
         "target_detail": "静州",
         "direction": "西",
         "azimuth": 270.0,
         "distance_li": 60,
         "distance_raw": "西至静州六十里",
-        "vol": "卷081",
-        "dao": "劍南西道"
-      },
-      {
-        "source": "悉州",
-        "target": "静州",
-        "target_detail": "静州",
-        "direction": "北",
-        "azimuth": 0.0,
-        "distance_li": 82,
-        "distance_raw": "北至静州八十二里",
         "vol": "卷081",
         "dao": "劍南西道"
       },
@@ -31244,17 +31600,6 @@
       {
         "source": "悉州",
         "target": "翼州",
-        "target_detail": "翼州界",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 190,
-        "distance_raw": "西南至翼州界一百九十里",
-        "vol": "卷081",
-        "dao": "劍南西道"
-      },
-      {
-        "source": "悉州",
-        "target": "翼州",
         "target_detail": "翼州",
         "direction": "東北",
         "azimuth": 45.0,
@@ -31272,10 +31617,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.3953,
-      31.8637
+      103.2148,
+      31.8465
     ],
-    "trilateration_error_km": 10.5,
+    "trilateration_error_km": 17.2,
     "rings": [
       [
         [
@@ -31468,7 +31813,7 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      102.9366,
+      102.9363,
       32.0445
     ],
     "trilateration_error_km": 24.1,
@@ -31688,7 +32033,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.0667,
+      105.0666,
       31.1342
     ],
     "trilateration_error_km": 4.4,
@@ -31906,8 +32251,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      104.665,
-      31.458
+      104.6645,
+      31.4583
     ],
     "trilateration_error_km": 11.5,
     "rings": [
@@ -32237,8 +32582,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.1759,
-      32.1401
+      105.1757,
+      32.1404
     ],
     "trilateration_error_km": 30.3,
     "rings": [
@@ -32432,10 +32777,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.9146,
-      30.0342
+      103.9141,
+      30.0348
     ],
-    "trilateration_error_km": 22.0,
+    "trilateration_error_km": 22.1,
     "rings": [
       [
         [
@@ -32756,8 +33101,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.8677,
-      30.8258
+      105.867,
+      30.8259
     ],
     "trilateration_error_km": 20.5,
     "rings": [
@@ -32966,10 +33311,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.8749,
-      31.1512
+      105.8751,
+      31.1503
     ],
-    "trilateration_error_km": 46.3,
+    "trilateration_error_km": 46.4,
     "rings": [
       [
         [
@@ -33170,7 +33515,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       105.7292,
-      30.514
+      30.5139
     ],
     "trilateration_error_km": 13.5,
     "rings": [
@@ -33356,9 +33701,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       105.2389,
-      30.1917
+      30.192
     ],
-    "trilateration_error_km": 13.4,
+    "trilateration_error_km": 13.5,
     "rings": [
       [
         [
@@ -33548,17 +33893,6 @@
       },
       {
         "source": "瀘州",
-        "target": "戎州",
-        "target_detail": "戎州南溪縣界",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 177,
-        "distance_raw": "東南至戎州南溪縣界一百七十七里",
-        "vol": "卷088",
-        "dao": "劍南東道"
-      },
-      {
-        "source": "瀘州",
         "target": "榮州",
         "target_detail": "榮州",
         "direction": "西北",
@@ -33648,17 +33982,6 @@
       {
         "source": "瀘州",
         "target": "榮州",
-        "target_detail": "榮州和義縣",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 120,
-        "distance_raw": "東北至榮州和義縣一百二十里",
-        "vol": "卷088",
-        "dao": "劍南東道"
-      },
-      {
-        "source": "瀘州",
-        "target": "榮州",
         "target_detail": "榮州公井縣",
         "direction": "西北",
         "azimuth": 315.0,
@@ -33677,10 +34000,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.8181,
-      29.2381
+      105.0749,
+      29.2619
     ],
-    "trilateration_error_km": 73.0,
+    "trilateration_error_km": 56.2,
     "rings": [
       [
         [
@@ -33881,7 +34204,7 @@
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
       105.3874,
-      29.8013
+      29.8014
     ],
     "trilateration_error_km": 33.1,
     "rings": [
@@ -34051,8 +34374,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.3238,
-      32.2525
+      119.3233,
+      32.2527
     ],
     "trilateration_error_km": 43.2,
     "rings": [
@@ -34376,10 +34699,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.2522,
-      31.5261
+      120.253,
+      31.526
     ],
-    "trilateration_error_km": 66.1,
+    "trilateration_error_km": 66.0,
     "rings": [
       [
         [
@@ -34592,8 +34915,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.2184,
-      31.4644
+      120.2185,
+      31.464
     ],
     "trilateration_error_km": 18.8,
     "rings": [
@@ -34703,7 +35026,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       120.3802,
-      31.6213
+      31.6215
     ],
     "trilateration_error_km": 34.3,
     "rings": [
@@ -34899,8 +35222,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.1597,
-      30.3821
+      120.1596,
+      30.3825
     ],
     "trilateration_error_km": 67.1,
     "rings": [
@@ -35068,17 +35391,6 @@
       },
       {
         "source": "湖州",
-        "target": "杭州",
-        "target_detail": "杭州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 190,
-        "distance_raw": "西北至杭州一百九十里",
-        "vol": "卷094",
-        "dao": "江南東道"
-      },
-      {
-        "source": "湖州",
         "target": "宣州",
         "target_detail": "宣州界",
         "direction": "西南",
@@ -35108,10 +35420,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.0224,
-      30.5461
+      120.0209,
+      30.729
     ],
-    "trilateration_error_km": 29.5,
+    "trilateration_error_km": 9.5,
     "rings": [
       [
         [
@@ -35309,9 +35621,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.1905,
-      29.3453
+      29.3445
     ],
-    "trilateration_error_km": 27.3,
+    "trilateration_error_km": 27.4,
     "rings": [
       [
         [
@@ -35423,8 +35735,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.7103,
-      30.6427
+      120.7111,
+      30.642
     ],
     "trilateration_error_km": 41.6,
     "rings": [
@@ -35611,9 +35923,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       120.552,
-      29.8238
+      29.8247
     ],
-    "trilateration_error_km": 7.6,
+    "trilateration_error_km": 7.7,
     "rings": [
       [
         [
@@ -35803,9 +36115,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       118.9403,
-      29.0677
+      29.0681
     ],
-    "trilateration_error_km": 21.6,
+    "trilateration_error_km": 21.7,
     "rings": [
       [
         [
@@ -35969,17 +36281,6 @@
         "distance_raw": "西北至睦州陸路一百六十里",
         "vol": "卷097",
         "dao": "江南東道"
-      },
-      {
-        "source": "婺州",
-        "target": "越州",
-        "target_detail": "越州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 390,
-        "distance_raw": "西南至越州三百九十里",
-        "vol": "卷097",
-        "dao": "江南東道"
       }
     ],
     "household_note": null,
@@ -35991,10 +36292,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.622,
-      29.3516
+      119.4081,
+      29.2108
     ],
-    "trilateration_error_km": 40.0,
+    "trilateration_error_km": 58.5,
     "rings": [
       [
         [
@@ -36281,10 +36582,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      121.1432,
-      28.0504
+      121.146,
+      28.0479
     ],
-    "trilateration_error_km": 96.8,
+    "trilateration_error_km": 97.1,
     "rings": [
       [
         [
@@ -36484,10 +36785,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.3055,
+      120.3075,
       28.057
     ],
-    "trilateration_error_km": 21.3,
+    "trilateration_error_km": 21.2,
     "rings": [
       [
         [
@@ -36690,9 +36991,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       119.8434,
-      28.5234
+      28.5221
     ],
-    "trilateration_error_km": 44.5,
+    "trilateration_error_km": 44.4,
     "rings": [
       [
         [
@@ -36942,8 +37243,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.0977,
-      25.853
+      119.1005,
+      25.8534
     ],
     "trilateration_error_km": 58.6,
     "rings": [
@@ -37149,10 +37450,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.2216,
-      27.1093
+      118.2211,
+      27.1095
     ],
-    "trilateration_error_km": 89.0,
+    "trilateration_error_km": 89.1,
     "rings": [
       [
         [
@@ -37350,10 +37651,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.3838,
-      26.9472
+      118.3843,
+      26.9447
     ],
-    "trilateration_error_km": 60.9,
+    "trilateration_error_km": 61.2,
     "rings": [
       [
         [
@@ -37500,10 +37801,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.1117,
-      27.2594
+      118.1124,
+      27.2578
     ],
-    "trilateration_error_km": 70.4,
+    "trilateration_error_km": 70.5,
     "rings": [
       [
         [
@@ -37753,7 +38054,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.3693,
+      118.3692,
       25.63
     ],
     "trilateration_error_km": 51.5,
@@ -37971,7 +38272,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.1476,
+      118.1485,
       25.0029
     ],
     "trilateration_error_km": 73.0,
@@ -38184,10 +38485,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.8818,
-      25.5272
+      116.8822,
+      25.5263
     ],
-    "trilateration_error_km": 36.3,
+    "trilateration_error_km": 36.4,
     "rings": [
       [
         [
@@ -38348,8 +38649,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.8962,
-      25.6711
+      118.8966,
+      25.6705
     ],
     "trilateration_error_km": 29.5,
     "rings": [
@@ -38562,10 +38863,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.0113,
-      29.9228
+      118.0099,
+      29.9234
     ],
-    "trilateration_error_km": 28.9,
+    "trilateration_error_km": 29.0,
     "rings": [
       [
         [
@@ -38761,8 +39062,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      118.3123,
-      31.5841
+      118.3124,
+      31.5839
     ],
     "trilateration_error_km": 34.2,
     "rings": [
@@ -38971,10 +39272,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.911,
-      30.3246
+      117.912,
+      30.3265
     ],
-    "trilateration_error_km": 45.2,
+    "trilateration_error_km": 45.3,
     "rings": [
       [
         [
@@ -39083,17 +39384,6 @@
       },
       {
         "source": "洪州",
-        "target": "吉州",
-        "target_detail": "吉州",
-        "direction": "東",
-        "azimuth": 90.0,
-        "distance_li": 520,
-        "distance_raw": "東至吉州陸路五百二十里",
-        "vol": "卷106",
-        "dao": "江南西道"
-      },
-      {
-        "source": "洪州",
         "target": "衢州",
         "target_detail": "衢州界",
         "direction": "東",
@@ -39179,10 +39469,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.4761,
-      28.4175
+      115.7964,
+      28.6165
     ],
-    "trilateration_error_km": 30.6,
+    "trilateration_error_km": 20.1,
     "rings": [
       [
         [
@@ -39301,17 +39591,6 @@
       },
       {
         "source": "筠州",
-        "target": "洪州",
-        "target_detail": "洪州武寧縣",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 590,
-        "distance_raw": "西北至洪州武寜縣五百九十里",
-        "vol": "卷106",
-        "dao": "江南西道"
-      },
-      {
-        "source": "筠州",
         "target": "袁州",
         "target_detail": "袁州新喻縣",
         "direction": "西南",
@@ -39330,10 +39609,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.1846,
-      28.3038
+      115.0274,
+      28.3848
     ],
-    "trilateration_error_km": 19.1,
+    "trilateration_error_km": 3.8,
     "rings": [
       [
         [
@@ -39536,7 +39815,7 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       116.2059,
-      28.8758
+      28.8757
     ],
     "trilateration_error_km": 101.7,
     "rings": [
@@ -39703,8 +39982,8 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      117.8517,
-      28.2149
+      117.8521,
+      28.2145
     ],
     "trilateration_error_km": 28.6,
     "rings": [
@@ -39924,10 +40203,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6274,
+      114.6264,
       26.05
     ],
-    "trilateration_error_km": 50.0,
+    "trilateration_error_km": 50.1,
     "rings": [
       [
         [
@@ -40305,17 +40584,6 @@
       },
       {
         "source": "吉州",
-        "target": "撫州",
-        "target_detail": "撫州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 450,
-        "distance_raw": "西北至撫州四百五十里",
-        "vol": "卷109",
-        "dao": "江南西道"
-      },
-      {
-        "source": "吉州",
         "target": "袁州",
         "target_detail": "袁州",
         "direction": "西北",
@@ -40334,10 +40602,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.2496,
-      27.6002
+      116.0031,
+      27.7954
     ],
-    "trilateration_error_km": 170.2,
+    "trilateration_error_km": 163.9,
     "rings": [
       [
         [
@@ -40703,10 +40971,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.1846,
-      27.4431
+      116.183,
+      27.4425
     ],
-    "trilateration_error_km": 57.7,
+    "trilateration_error_km": 57.8,
     "rings": [
       [
         [
@@ -40898,10 +41166,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.6028,
-      29.6304
+      115.6025,
+      29.6298
     ],
-    "trilateration_error_km": 38.5,
+    "trilateration_error_km": 38.6,
     "rings": [
       [
         [
@@ -40989,17 +41257,6 @@
       },
       {
         "source": "南康軍",
-        "target": "江州",
-        "target_detail": "江州",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 150,
-        "distance_raw": "西至江州一百五十里",
-        "vol": "卷111",
-        "dao": "江南西道"
-      },
-      {
-        "source": "南康軍",
         "target": "洪州",
         "target_detail": "洪州",
         "direction": "南",
@@ -41028,17 +41285,6 @@
         "azimuth": 45.0,
         "distance_li": 120,
         "distance_raw": "東北至江州湖口縣水路一百二十里",
-        "vol": "卷111",
-        "dao": "江南西道"
-      },
-      {
-        "source": "南康軍",
-        "target": "江州",
-        "target_detail": "江州德安縣界",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 60,
-        "distance_raw": "西南至江州徳安縣界六十里",
         "vol": "卷111",
         "dao": "江南西道"
       },
@@ -41073,10 +41319,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.0417,
-      29.5449
+      115.7978,
+      29.325
     ],
-    "trilateration_error_km": 51.8,
+    "trilateration_error_km": 18.2,
     "rings": [
       [
         [
@@ -41264,10 +41510,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.9167,
+      113.9141,
       30.2715
     ],
-    "trilateration_error_km": 52.9,
+    "trilateration_error_km": 53.0,
     "rings": [
       [
         [
@@ -41472,10 +41718,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.7559,
-      29.459
+      112.7554,
+      29.4594
     ],
-    "trilateration_error_km": 33.8,
+    "trilateration_error_km": 33.9,
     "rings": [
       [
         [
@@ -41642,10 +41888,10 @@
     ],
     "coord_source": "CHGIS/考証指定基準点",
     "trilaterated_coord": [
-      115.5989,
+      115.5993,
       29.4391
     ],
-    "trilateration_error_km": 56.8,
+    "trilateration_error_km": 56.9,
     "rings": [
       [
         [
@@ -41860,7 +42106,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       112.7891,
-      27.9726
+      27.9717
     ],
     "trilateration_error_km": 31.5,
     "rings": [
@@ -42049,10 +42295,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.7579,
+      112.7586,
       26.9362
     ],
-    "trilateration_error_km": 15.5,
+    "trilateration_error_km": 15.6,
     "rings": [
       [
         [
@@ -42246,10 +42492,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.8681,
+      111.8673,
       27.2143
     ],
-    "trilateration_error_km": 39.5,
+    "trilateration_error_km": 39.4,
     "rings": [
       [
         [
@@ -42385,17 +42631,6 @@
         "source": "道州",
         "target": "永州",
         "target_detail": "永州",
-        "direction": "西",
-        "azimuth": 270.0,
-        "distance_li": 260,
-        "distance_raw": "西至永州二百六十里",
-        "vol": "卷116",
-        "dao": "江南西道"
-      },
-      {
-        "source": "道州",
-        "target": "永州",
-        "target_detail": "永州",
         "direction": "北",
         "azimuth": 0.0,
         "distance_li": 300,
@@ -42435,10 +42670,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.9535,
-      25.6422
+      111.7612,
+      25.469
     ],
-    "trilateration_error_km": 37.6,
+    "trilateration_error_km": 17.5,
     "rings": [
       [
         [
@@ -42554,17 +42789,6 @@
       {
         "source": "永州",
         "target": "道州",
-        "target_detail": "道州",
-        "direction": "東",
-        "azimuth": 90.0,
-        "distance_li": 300,
-        "distance_raw": "東至道州水路三百里",
-        "vol": "卷116",
-        "dao": "江南西道"
-      },
-      {
-        "source": "永州",
-        "target": "道州",
         "target_detail": "道州界",
         "direction": "南",
         "azimuth": 180.0,
@@ -42649,10 +42873,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.6063,
-      26.1175
+      111.7479,
+      26.1919
     ],
-    "trilateration_error_km": 10.3,
+    "trilateration_error_km": 13.9,
     "rings": [
       [
         [
@@ -43227,8 +43451,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      112.6825,
-      25.1076
+      112.6828,
+      25.1075
     ],
     "trilateration_error_km": 47.5,
     "rings": [
@@ -43606,10 +43830,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.9261,
-      29.6356
+      111.9267,
+      29.6367
     ],
-    "trilateration_error_km": 17.0,
+    "trilateration_error_km": 17.1,
     "rings": [
       [
         [
@@ -43825,10 +44049,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.9695,
-      29.225
+      111.9696,
+      29.2251
     ],
-    "trilateration_error_km": 34.7,
+    "trilateration_error_km": 34.8,
     "rings": [
       [
         [
@@ -44020,8 +44244,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.7606,
-      29.9069
+      107.7605,
+      29.9068
     ],
     "trilateration_error_km": 42.5,
     "rings": [
@@ -44209,10 +44433,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.2306,
-      29.5529
+      108.2318,
+      29.5554
     ],
-    "trilateration_error_km": 215.9,
+    "trilateration_error_km": 216.1,
     "rings": [
       [
         [
@@ -44394,8 +44618,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.5456,
-      28.5624
+      107.5444,
+      28.5628
     ],
     "trilateration_error_km": 76.5,
     "rings": [
@@ -44551,10 +44775,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.2777,
-      26.9671
+      107.2741,
+      26.964
     ],
-    "trilateration_error_km": 88.4,
+    "trilateration_error_km": 88.6,
     "rings": [
       [
         [
@@ -44675,17 +44899,6 @@
       },
       {
         "source": "費州",
-        "target": "思州",
-        "target_detail": "思州思王縣",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 27,
-        "distance_raw": "南至思州思王縣二十七里",
-        "vol": "卷121",
-        "dao": "江南西道"
-      },
-      {
-        "source": "費州",
         "target": "牂牁充州",
         "target_detail": "牂牁充州",
         "direction": "正南微西",
@@ -44749,10 +44962,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.5387,
-      28.4006
+      108.4904,
+      27.3337
     ],
-    "trilateration_error_km": 29.6,
+    "trilateration_error_km": 112.2,
     "rings": [
       [
         [
@@ -44963,10 +45176,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.7655,
-      28.5955
+      108.7656,
+      28.5963
     ],
-    "trilateration_error_km": 21.6,
+    "trilateration_error_km": 21.7,
     "rings": [
       [
         [
@@ -45067,17 +45280,6 @@
       },
       {
         "source": "南州",
-        "target": "渝州",
-        "target_detail": "渝州界丹上山",
-        "direction": "東",
-        "azimuth": 90.0,
-        "distance_li": 60,
-        "distance_raw": "東至渝州界丹上山六十里",
-        "vol": "卷122",
-        "dao": "江南西道"
-      },
-      {
-        "source": "南州",
         "target": "溱州",
         "target_detail": "溱州界",
         "direction": "南",
@@ -45162,10 +45364,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.7614,
-      29.0014
+      106.9289,
+      28.7897
     ],
-    "trilateration_error_km": 8.3,
+    "trilateration_error_km": 32.2,
     "rings": [
       [
         [
@@ -45291,10 +45493,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.6823,
-      27.8137
+      106.6816,
+      27.8128
     ],
-    "trilateration_error_km": 90.0,
+    "trilateration_error_km": 90.1,
     "rings": [
       [
         [
@@ -45424,9 +45626,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.68,
-      28.0782
+      28.076
     ],
-    "trilateration_error_km": 75.0,
+    "trilateration_error_km": 75.3,
     "rings": [
       [
         [
@@ -45963,10 +46165,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.1553,
-      32.4875
+      119.1568,
+      32.487
     ],
-    "trilateration_error_km": 21.0,
+    "trilateration_error_km": 20.8,
     "rings": [
       [
         [
@@ -46037,17 +46239,6 @@
         "azimuth": 180.0,
         "distance_li": 326,
         "distance_raw": "南至宣州三百二十六里",
-        "vol": "卷124",
-        "dao": "淮南道"
-      },
-      {
-        "source": "和州",
-        "target": "廬州",
-        "target_detail": "廬州",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 220,
-        "distance_raw": "南至廬州二百二十里",
         "vol": "卷124",
         "dao": "淮南道"
       },
@@ -46126,10 +46317,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.6971,
-      32.0683
+      117.8914,
+      31.9373
     ],
-    "trilateration_error_km": 65.7,
+    "trilateration_error_km": 42.9,
     "rings": [
       [
         [
@@ -46326,8 +46517,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.6928,
-      32.9146
+      119.6932,
+      32.915
     ],
     "trilateration_error_km": 64.3,
     "rings": [
@@ -46603,8 +46794,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.1782,
-      30.8183
+      116.1791,
+      30.8186
     ],
     "trilateration_error_km": 47.1,
     "rings": [
@@ -46798,10 +46989,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.3749,
-      31.7829
+      117.3752,
+      31.783
     ],
-    "trilateration_error_km": 23.6,
+    "trilateration_error_km": 23.7,
     "rings": [
       [
         [
@@ -46977,10 +47168,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.0554,
-      30.9412
+      115.055,
+      30.9415
     ],
-    "trilateration_error_km": 63.3,
+    "trilateration_error_km": 63.4,
     "rings": [
       [
         [
@@ -47165,10 +47356,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.6476,
-      32.3236
+      114.6485,
+      32.3232
     ],
-    "trilateration_error_km": 70.2,
+    "trilateration_error_km": 70.1,
     "rings": [
       [
         [
@@ -47351,8 +47542,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.9781,
-      32.2496
+      117.9783,
+      32.2501
     ],
     "trilateration_error_km": 30.5,
     "rings": [
@@ -47515,10 +47706,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      117.3602,
-      32.8374
+      117.3595,
+      32.8388
     ],
-    "trilateration_error_km": 20.6,
+    "trilateration_error_km": 20.7,
     "rings": [
       [
         [
@@ -47751,8 +47942,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      119.5327,
-      32.4323
+      119.5325,
+      32.432
     ],
     "trilateration_error_km": 73.7,
     "rings": [
@@ -47951,10 +48142,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      120.4635,
-      32.4639
+      120.4639,
+      32.4635
     ],
-    "trilateration_error_km": 88.8,
+    "trilateration_error_km": 88.7,
     "rings": [
       [
         [
@@ -48226,8 +48417,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      119.6158,
-      32.8111
+      119.6163,
+      32.8112
     ],
     "trilateration_error_km": 15.9,
     "rings": [
@@ -48463,9 +48654,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       119.0239,
-      32.6292
+      32.6289
     ],
-    "trilateration_error_km": 7.1,
+    "trilateration_error_km": 7.2,
     "rings": [
       [
         [
@@ -48640,10 +48831,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.9132,
-      30.6245
+      114.9128,
+      30.6241
     ],
-    "trilateration_error_km": 47.9,
+    "trilateration_error_km": 48.0,
     "rings": [
       [
         [
@@ -48740,17 +48931,6 @@
       },
       {
         "source": "漢陽軍",
-        "target": "鄂州",
-        "target_detail": "鄂州大江中流為界",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 3,
-        "distance_raw": "東北至鄂州大江中流為界三里",
-        "vol": "卷131",
-        "dao": "淮南道"
-      },
-      {
-        "source": "漢陽軍",
         "target": "復州",
         "target_detail": "復州",
         "direction": "南",
@@ -48825,17 +49005,6 @@
         "distance_raw": "西南至復州水路一百里",
         "vol": "卷131",
         "dao": "淮南道"
-      },
-      {
-        "source": "漢陽軍",
-        "target": "鄂州",
-        "target_detail": "鄂州界",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 7,
-        "distance_raw": "東北至鄂州界七里",
-        "vol": "卷131",
-        "dao": "淮南道"
       }
     ],
     "household_note": null,
@@ -48846,10 +49015,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.0597,
-      30.1546
+      114.0459,
+      30.4448
     ],
-    "trilateration_error_km": 48.4,
+    "trilateration_error_km": 24.5,
     "rings": [
       [
         [
@@ -49038,10 +49207,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.9644,
-      31.2981
+      113.9652,
+      31.2979
     ],
-    "trilateration_error_km": 20.3,
+    "trilateration_error_km": 20.4,
     "rings": [
       [
         [
@@ -49216,7 +49385,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      114.1645,
+      114.1641,
       32.1592
     ],
     "trilateration_error_km": 7.7,
@@ -49559,8 +49728,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.8024,
-      33.112
+      106.8023,
+      33.1121
     ],
     "trilateration_error_km": 21.7,
     "rings": [
@@ -49754,8 +49923,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.6317,
-      33.8618
+      106.6314,
+      33.8616
     ],
     "trilateration_error_km": 11.6,
     "rings": [
@@ -50023,8 +50192,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.9597,
-      32.5341
+      104.9584,
+      32.533
     ],
     "trilateration_error_km": 52.2,
     "rings": [
@@ -50217,10 +50386,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.325,
-      33.3498
+      106.3244,
+      33.3495
     ],
-    "trilateration_error_km": 16.4,
+    "trilateration_error_km": 16.3,
     "rings": [
       [
         [
@@ -50411,8 +50580,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.9869,
-      32.2701
+      105.9867,
+      32.2703
     ],
     "trilateration_error_km": 23.7,
     "rings": [
@@ -50621,8 +50790,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.3602,
-      29.7823
+      106.3604,
+      29.7817
     ],
     "trilateration_error_km": 22.3,
     "rings": [
@@ -50789,9 +50958,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       107.0176,
-      29.974
+      29.9737
     ],
-    "trilateration_error_km": 64.5,
+    "trilateration_error_km": 64.4,
     "rings": [
       [
         [
@@ -50929,17 +51098,6 @@
         "distance_raw": "東北至姚州界二百八里",
         "vol": "卷137",
         "dao": "山南西道"
-      },
-      {
-        "source": "開州",
-        "target": "達州",
-        "target_detail": "達州石皷縣",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 128,
-        "distance_raw": "東南至達州石皷縣一百二十八里",
-        "vol": "卷137",
-        "dao": "山南西道"
       }
     ],
     "household_note": null,
@@ -50951,10 +51109,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.5,
-      31.21
+      107.8543,
+      30.9069
     ],
-    "trilateration_error_km": 86.7,
+    "trilateration_error_km": 60.0,
     "rings": [
       [
         [
@@ -51116,17 +51274,6 @@
         "distance_raw": "西北至巴蓬等州界二百里",
         "vol": "卷137",
         "dao": "山南西道"
-      },
-      {
-        "source": "達州",
-        "target": "金州",
-        "target_detail": "金州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 1110,
-        "distance_raw": "西南至金州一千一百一十里",
-        "vol": "卷137",
-        "dao": "山南西道"
       }
     ],
     "household_note": null,
@@ -51137,10 +51284,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.3183,
-      31.8091
+      107.9184,
+      31.4435
     ],
-    "trilateration_error_km": 102.3,
+    "trilateration_error_km": 47.5,
     "rings": [
       [
         [
@@ -51354,8 +51501,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.2908,
-      33.1447
+      107.2911,
+      33.1451
     ],
     "trilateration_error_km": 25.5,
     "rings": [
@@ -51545,56 +51692,12 @@
       },
       {
         "source": "渠州",
-        "target": "合州",
-        "target_detail": "合州水路約",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 400,
-        "distance_raw": "西北至合州水路約四百里",
-        "vol": "卷138",
-        "dao": "山南西道"
-      },
-      {
-        "source": "渠州",
-        "target": "蓬州",
-        "target_detail": "蓬州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 250,
-        "distance_raw": "東北至蓬州水路二百五十里",
-        "vol": "卷138",
-        "dao": "山南西道"
-      },
-      {
-        "source": "渠州",
         "target": "界州岳池縣",
         "target_detail": "界州岳池縣界",
         "direction": "東北",
         "azimuth": 45.0,
         "distance_li": 135,
         "distance_raw": "東北至界州岳池縣界一百三十五里",
-        "vol": "卷138",
-        "dao": "山南西道"
-      },
-      {
-        "source": "渠州",
-        "target": "涪州",
-        "target_detail": "涪州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 240,
-        "distance_raw": "西北至涪州二百四十里",
-        "vol": "卷138",
-        "dao": "山南西道"
-      },
-      {
-        "source": "渠州",
-        "target": "達州",
-        "target_detail": "達州",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 540,
-        "distance_raw": "南至達州五百四十里",
         "vol": "卷138",
         "dao": "山南西道"
       }
@@ -51607,10 +51710,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.9109,
-      30.313
+      106.7814,
+      30.4634
     ],
-    "trilateration_error_km": 58.9,
+    "trilateration_error_km": 45.6,
     "rings": [
       [
         [
@@ -51810,7 +51913,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.7764,
-      30.365
+      30.3646
     ],
     "trilateration_error_km": 17.6,
     "rings": [
@@ -51911,8 +52014,8 @@
       },
       {
         "source": "巴州",
-        "target": "巴嶺長安路",
-        "target_detail": "巴嶺長安路",
+        "target": "長安",
+        "target_detail": "長安（巴嶺路経由）",
         "direction": "東北",
         "azimuth": 45.0,
         "distance_li": 1220,
@@ -52190,17 +52293,6 @@
       },
       {
         "source": "蓬州",
-        "target": "達州",
-        "target_detail": "達州",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 325,
-        "distance_raw": "南至達州三百二十五里",
-        "vol": "卷139",
-        "dao": "山南西道"
-      },
-      {
-        "source": "蓬州",
         "target": "渠州",
         "target_detail": "渠州官路",
         "direction": "西北",
@@ -52234,17 +52326,6 @@
       },
       {
         "source": "蓬州",
-        "target": "開州",
-        "target_detail": "開州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 654,
-        "distance_raw": "西北至開州六百五十四里",
-        "vol": "卷139",
-        "dao": "山南西道"
-      },
-      {
-        "source": "蓬州",
         "target": "朱州",
         "target_detail": "朱州",
         "direction": "東北",
@@ -52263,10 +52344,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.0984,
-      31.3572
+      106.8849,
+      31.3491
     ],
-    "trilateration_error_km": 73.8,
+    "trilateration_error_km": 56.1,
     "rings": [
       [
         [
@@ -52458,7 +52539,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.7527,
+      106.7528,
       32.269
     ],
     "trilateration_error_km": 11.6,
@@ -52602,17 +52683,6 @@
         "distance_raw": "東南至通州三百七十五里",
         "vol": "卷140",
         "dao": "山南西道"
-      },
-      {
-        "source": "壁州",
-        "target": "巴州",
-        "target_detail": "巴州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 145,
-        "distance_raw": "東北至巴州一百四十五里",
-        "vol": "卷140",
-        "dao": "山南西道"
       }
     ],
     "household_note": null,
@@ -52623,10 +52693,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.8101,
-      31.911
+      107.0709,
+      32.1326
     ],
-    "trilateration_error_km": 40.8,
+    "trilateration_error_km": 25.8,
     "rings": [
       [
         [
@@ -52830,10 +52900,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.5135,
-      32.554
+      108.5109,
+      32.5532
     ],
-    "trilateration_error_km": 50.7,
+    "trilateration_error_km": 50.9,
     "rings": [
       [
         [
@@ -52997,17 +53067,6 @@
       },
       {
         "source": "商州",
-        "target": "合州",
-        "target_detail": "合州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 715,
-        "distance_raw": "西北至合州七百一十五里",
-        "vol": "卷141",
-        "dao": "山南西道"
-      },
-      {
-        "source": "商州",
         "target": "華州",
         "target_detail": "華州山路",
         "direction": "西",
@@ -53019,34 +53078,12 @@
       },
       {
         "source": "商州",
-        "target": "鄧州",
-        "target_detail": "鄧州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 715,
-        "distance_raw": "西南至鄧州七百一十五里",
-        "vol": "卷141",
-        "dao": "山南西道"
-      },
-      {
-        "source": "商州",
         "target": "虢州",
         "target_detail": "虢州",
         "direction": "東北",
         "azimuth": 45.0,
         "distance_li": 425,
         "distance_raw": "東北至虢州四百二十五里",
-        "vol": "卷141",
-        "dao": "山南西道"
-      },
-      {
-        "source": "商州",
-        "target": "金州",
-        "target_detail": "金州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 715,
-        "distance_raw": "東北至金州七百一十五里",
         "vol": "卷141",
         "dao": "山南西道"
       },
@@ -53071,10 +53108,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.4325,
-      33.0124
+      109.7219,
+      33.5533
     ],
-    "trilateration_error_km": 87.3,
+    "trilateration_error_km": 21.5,
     "rings": [
       [
         [
@@ -53274,8 +53311,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.1467,
-      32.7853
+      112.1469,
+      32.7855
     ],
     "trilateration_error_km": 37.1,
     "rings": [
@@ -53374,12 +53411,12 @@
       },
       {
         "source": "唐州",
-        "target": "鄧州",
-        "target_detail": "鄧州路",
+        "target": "長安",
+        "target_detail": "長安（鄧州路経由）",
         "direction": "西北",
         "azimuth": 315.0,
         "distance_li": 1225,
-        "distance_raw": "西北至鄧州路一千二百二十五里",
+        "distance_raw": "西北至長安取鄧州路一千二百二十五里",
         "vol": "卷142",
         "dao": "山南東道"
       },
@@ -53398,10 +53435,10 @@
         "source": "唐州",
         "target": "隨州",
         "target_detail": "隨州",
-        "direction": "西",
-        "azimuth": 270.0,
+        "direction": "南",
+        "azimuth": 180.0,
         "distance_li": 425,
-        "distance_raw": "西至隨州四百二十五里",
+        "distance_raw": "南至隨州四百二十五里",
         "vol": "卷142",
         "dao": "山南東道"
       },
@@ -53409,10 +53446,10 @@
         "source": "唐州",
         "target": "鄧州",
         "target_detail": "鄧州",
-        "direction": "南",
-        "azimuth": 180.0,
+        "direction": "西",
+        "azimuth": 270.0,
         "distance_li": 324,
-        "distance_raw": "南至鄧州三百二十四里",
+        "distance_raw": "西至鄧州三百二十四里",
         "vol": "卷142",
         "dao": "山南東道"
       },
@@ -53451,12 +53488,12 @@
       },
       {
         "source": "唐州",
-        "target": "鄧州",
-        "target_detail": "鄧州",
+        "target": "許州",
+        "target_detail": "許州",
         "direction": "東北",
         "azimuth": 45.0,
         "distance_li": 330,
-        "distance_raw": "東北至鄧州三百三十里",
+        "distance_raw": "東北至許州三百三十里",
         "vol": "卷142",
         "dao": "山南東道"
       },
@@ -53468,17 +53505,6 @@
         "azimuth": 225.0,
         "distance_li": 354,
         "distance_raw": "西南至襄州三百五十四里",
-        "vol": "卷142",
-        "dao": "山南東道"
-      },
-      {
-        "source": "唐州",
-        "target": "蔡州",
-        "target_detail": "蔡州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 283,
-        "distance_raw": "西北至蔡州二百八十三里",
         "vol": "卷142",
         "dao": "山南東道"
       },
@@ -53524,10 +53550,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.3341,
-      32.5903
+      113.2242,
+      32.8348
     ],
-    "trilateration_error_km": 21.1,
+    "trilateration_error_km": 16.5,
     "rings": [
       [
         [
@@ -53732,7 +53758,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.1292,
+      111.1293,
       32.7206
     ],
     "trilateration_error_km": 30.9,
@@ -53913,39 +53939,6 @@
         "distance_raw": "東北至襄州界一百七十八里",
         "vol": "卷143",
         "dao": "山南東道"
-      },
-      {
-        "source": "房州",
-        "target": "金州",
-        "target_detail": "金州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 542,
-        "distance_raw": "東北至金州五百四十二里",
-        "vol": "卷143",
-        "dao": "山南東道"
-      },
-      {
-        "source": "房州",
-        "target": "歸州",
-        "target_detail": "歸州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 538,
-        "distance_raw": "西北至歸州五百三十八里",
-        "vol": "卷143",
-        "dao": "山南東道"
-      },
-      {
-        "source": "房州",
-        "target": "均州",
-        "target_detail": "均州",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 250,
-        "distance_raw": "東南至均州二百五十里",
-        "vol": "卷143",
-        "dao": "山南東道"
       }
     ],
     "household_note": null,
@@ -53956,10 +53949,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.653,
-      32.1488
+      110.9381,
+      32.2146
     ],
-    "trilateration_error_km": 27.3,
+    "trilateration_error_km": 54.7,
     "rings": [
       [
         [
@@ -54119,45 +54112,12 @@
       },
       {
         "source": "隨州",
-        "target": "唐州",
-        "target_detail": "唐州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 435,
-        "distance_raw": "西北至唐州四百三十五里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "隨州",
         "target": "安州",
         "target_detail": "安州",
         "direction": "東南",
         "azimuth": 135.0,
         "distance_li": 360,
         "distance_raw": "東南至安州三百六十里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "隨州",
-        "target": "唐州",
-        "target_detail": "唐州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 363,
-        "distance_raw": "西南至唐州三百六十三里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "隨州",
-        "target": "郢州",
-        "target_detail": "郢州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 465,
-        "distance_raw": "東北至郢州四百六十五里",
         "vol": "卷144",
         "dao": "山南東道"
       }
@@ -54171,10 +54131,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.2148,
-      31.8199
+      113.1079,
+      31.7861
     ],
-    "trilateration_error_km": 11.8,
+    "trilateration_error_km": 5.2,
     "rings": [
       [
         [
@@ -54347,72 +54307,6 @@
         "distance_raw": "東至隨州四百六十三里",
         "vol": "卷144",
         "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "安州",
-        "target_detail": "安州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 335,
-        "distance_raw": "西南至安州三百三十五里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "襄州",
-        "target_detail": "襄州",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 323,
-        "distance_raw": "東南至襄州三百二十三里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "隨州",
-        "target_detail": "隨州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 458,
-        "distance_raw": "西北至隨州四百五十八里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "長安",
-        "target_detail": "長安",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 1382,
-        "distance_raw": "東南至長安一千三百八十二里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "復州",
-        "target_detail": "復州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 148,
-        "distance_raw": "西北至復州一百四十八里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "郢州",
-        "target": "襄陽",
-        "target_detail": "襄陽",
-        "direction": "東南",
-        "azimuth": 135.0,
-        "distance_li": 310,
-        "distance_raw": "東南至襄陽三百十里",
-        "vol": "卷144",
-        "dao": "山南東道"
       }
     ],
     "household_note": null,
@@ -54424,10 +54318,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.9479,
-      31.0483
+      112.3967,
+      31.0266
     ],
-    "trilateration_error_km": 10.3,
+    "trilateration_error_km": 47.2,
     "rings": [
       [
         [
@@ -54626,28 +54520,6 @@
         "distance_raw": "東北至安州三百四十里",
         "vol": "卷144",
         "dao": "山南東道"
-      },
-      {
-        "source": "復州",
-        "target": "郢州",
-        "target_detail": "郢州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 255,
-        "distance_raw": "西南至郢州二百五十五里",
-        "vol": "卷144",
-        "dao": "山南東道"
-      },
-      {
-        "source": "復州",
-        "target": "安州",
-        "target_detail": "安州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 335,
-        "distance_raw": "西南至安州三百三十五里",
-        "vol": "卷144",
-        "dao": "山南東道"
       }
     ],
     "household_note": null,
@@ -54658,10 +54530,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.4171,
-      31.1491
+      112.9128,
+      30.5525
     ],
-    "trilateration_error_km": 92.4,
+    "trilateration_error_km": 49.2,
     "rings": [
       [
         [
@@ -54839,10 +54711,10 @@
         "source": "襄州",
         "target": "陝州",
         "target_detail": "陝州",
-        "direction": "西南",
-        "azimuth": 225.0,
+        "direction": "西北",
+        "azimuth": 315.0,
         "distance_li": 619,
-        "distance_raw": "西南至陜州六百一十九里",
+        "distance_raw": "西北至陜州六百一十九里（原誤西南）",
         "vol": "卷145",
         "dao": "山南東道"
       },
@@ -54865,50 +54737,6 @@
         "azimuth": 45.0,
         "distance_li": 254,
         "distance_raw": "東北至唐州二百五十四里",
-        "vol": "卷145",
-        "dao": "山南東道"
-      },
-      {
-        "source": "襄州",
-        "target": "均州",
-        "target_detail": "均州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 355,
-        "distance_raw": "東北至均州三百五十五里",
-        "vol": "卷145",
-        "dao": "山南東道"
-      },
-      {
-        "source": "襄州",
-        "target": "鄧州",
-        "target_detail": "鄧州",
-        "direction": "西南",
-        "azimuth": 225.0,
-        "distance_li": 193,
-        "distance_raw": "西南至鄧州一百九十三里",
-        "vol": "卷145",
-        "dao": "山南東道"
-      },
-      {
-        "source": "襄州",
-        "target": "隨州",
-        "target_detail": "隨州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 345,
-        "distance_raw": "西北至隨州三百四十五里",
-        "vol": "卷145",
-        "dao": "山南東道"
-      },
-      {
-        "source": "襄州",
-        "target": "房州",
-        "target_detail": "房州",
-        "direction": "東北",
-        "azimuth": 45.0,
-        "distance_li": 483,
-        "distance_raw": "東北至房州四百八十三里",
         "vol": "卷145",
         "dao": "山南東道"
       },
@@ -54938,10 +54766,10 @@
         "source": "襄州",
         "target": "郢州",
         "target_detail": "郢州",
-        "direction": "西北",
-        "azimuth": 315.0,
-        "distance_li": 378,
-        "distance_raw": "西北至郢州三百七十八里",
+        "direction": "東南",
+        "azimuth": 135.0,
+        "distance_li": 374,
+        "distance_raw": "東南至郢州三百七十四里",
         "vol": "卷145",
         "dao": "山南東道"
       }
@@ -54955,10 +54783,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.1764,
-      32.2806
+      112.1965,
+      32.3202
     ],
-    "trilateration_error_km": 49.0,
+    "trilateration_error_km": 53.8,
     "rings": [
       [
         [
@@ -55126,8 +54954,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.5712,
-      32.8926
+      111.5713,
+      32.8925
     ],
     "trilateration_error_km": 56.6,
     "rings": [
@@ -55215,8 +55043,8 @@
       },
       {
         "source": "峽州",
-        "target": "江陵府",
-        "target_detail": "江陵府大路至長安",
+        "target": "長安",
+        "target_detail": "長安（江陵府大路経由）",
         "direction": "東",
         "azimuth": 90.0,
         "distance_li": 1885,
@@ -55232,17 +55060,6 @@
         "azimuth": 90.0,
         "distance_li": 340,
         "distance_raw": "東至江陵府三百四十里",
-        "vol": "卷147",
-        "dao": "山南東道"
-      },
-      {
-        "source": "峽州",
-        "target": "歸州",
-        "target_detail": "歸州",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 200,
-        "distance_raw": "南取水路三百三十里西至歸州二百里",
         "vol": "卷147",
         "dao": "山南東道"
       },
@@ -55322,10 +55139,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.005,
-      30.8642
+      111.4035,
+      30.2607
     ],
-    "trilateration_error_km": 27.2,
+    "trilateration_error_km": 61.1,
     "rings": [
       [
         [
@@ -55459,10 +55276,10 @@
         "source": "夔州",
         "target": "達州",
         "target_detail": "達州",
-        "direction": "東北",
-        "azimuth": 45.0,
+        "direction": "西北",
+        "azimuth": 315.0,
         "distance_li": 526,
-        "distance_raw": "東北至達州五百二十六里",
+        "distance_raw": "西北至達州五百二十六里（原誤東北）",
         "vol": "卷148",
         "dao": "山南東道"
       },
@@ -55486,10 +55303,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.7846,
-      30.6672
+      109.3,
+      30.6659
     ],
-    "trilateration_error_km": 82.9,
+    "trilateration_error_km": 48.0,
     "rings": [
       [
         [
@@ -55745,10 +55562,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.471,
-      30.9261
+      110.4704,
+      30.926
     ],
-    "trilateration_error_km": 4.7,
+    "trilateration_error_km": 4.8,
     "rings": [
       [
         [
@@ -55926,10 +55743,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.1633,
-      30.4826
+      108.1643,
+      30.4825
     ],
-    "trilateration_error_km": 43.4,
+    "trilateration_error_km": 43.3,
     "rings": [
       [
         [
@@ -56087,10 +55904,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.4173,
-      29.8199
+      108.4202,
+      29.819
     ],
-    "trilateration_error_km": 83.8,
+    "trilateration_error_km": 84.1,
     "rings": [
       [
         [
@@ -56205,8 +56022,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      107.7727,
-      30.4751
+      107.7725,
+      30.4752
     ],
     "trilateration_error_km": 21.8,
     "rings": [
@@ -56407,10 +56224,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      106.1485,
-      34.7431
+      106.1489,
+      34.7422
     ],
-    "trilateration_error_km": 125.2,
+    "trilateration_error_km": 125.3,
     "rings": [
       [
         [
@@ -56537,10 +56354,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      105.6622,
-      35.1483
+      105.6621,
+      35.1473
     ],
-    "trilateration_error_km": 156.7,
+    "trilateration_error_km": 156.6,
     "rings": [
       [
         [
@@ -56709,7 +56526,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.7935,
-      35.2642
+      35.2638
     ],
     "trilateration_error_km": 13.9,
     "rings": [
@@ -56909,8 +56726,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      106.4148,
-      35.6135
+      106.4146,
+      35.6137
     ],
     "trilateration_error_km": 24.5,
     "rings": [
@@ -57090,10 +56907,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      102.9263,
-      36.2994
+      102.9254,
+      36.2992
     ],
-    "trilateration_error_km": 51.2,
+    "trilateration_error_km": 51.1,
     "rings": [
       [
         [
@@ -57219,9 +57036,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       103.7009,
-      36.2547
+      36.2534
     ],
-    "trilateration_error_km": 39.4,
+    "trilateration_error_km": 39.3,
     "rings": [
       [
         [
@@ -57446,8 +57263,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      101.6825,
-      38.2115
+      101.6829,
+      38.2119
     ],
     "trilateration_error_km": 117.6,
     "rings": [
@@ -57874,10 +57691,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      93.9393,
+      93.9364,
       41.1835
     ],
-    "trilateration_error_km": 131.0,
+    "trilateration_error_km": 131.1,
     "rings": [
       [
         [
@@ -58093,8 +57910,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      94.9165,
-      41.4416
+      94.9173,
+      41.4418
     ],
     "trilateration_error_km": 125.5,
     "rings": [
@@ -58346,8 +58163,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.0458,
-      35.8011
+      103.0451,
+      35.8009
     ],
     "trilateration_error_km": 26.8,
     "rings": [
@@ -58500,10 +58317,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      104.7665,
-      33.8541
+      104.765,
+      33.8546
     ],
-    "trilateration_error_km": 74.4,
+    "trilateration_error_km": 74.5,
     "rings": [
       [
         [
@@ -58629,10 +58446,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      102.9567,
-      34.5804
+      102.9548,
+      34.5798
     ],
-    "trilateration_error_km": 38.1,
+    "trilateration_error_km": 38.3,
     "rings": [
       [
         [
@@ -58958,10 +58775,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      103.2225,
-      33.8532
+      103.2216,
+      33.8515
     ],
-    "trilateration_error_km": 23.0,
+    "trilateration_error_km": 23.2,
     "rings": [
       [
         [
@@ -59168,10 +58985,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.436,
-      33.6649
+      104.4367,
+      33.6636
     ],
-    "trilateration_error_km": 43.0,
+    "trilateration_error_km": 43.2,
     "rings": [
       [
         [
@@ -59353,10 +59170,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      89.9011,
+      89.892,
       42.83
     ],
-    "trilateration_error_km": 59.4,
+    "trilateration_error_km": 58.7,
     "rings": [
       [
         [
@@ -59571,10 +59388,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      89.8237,
-      44.0963
+      89.8195,
+      44.0993
     ],
-    "trilateration_error_km": 53.3,
+    "trilateration_error_km": 53.1,
     "rings": [
       [
         [
@@ -60207,10 +60024,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      116.4969,
-      23.9395
+      116.4981,
+      23.9383
     ],
-    "trilateration_error_km": 15.5,
+    "trilateration_error_km": 15.4,
     "rings": [
       [
         [
@@ -60395,8 +60212,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.8023,
-      21.897
+      111.803,
+      21.8964
     ],
     "trilateration_error_km": 29.4,
     "rings": [
@@ -60606,10 +60423,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.8431,
-      22.2117
+      111.8439,
+      22.2115
     ],
-    "trilateration_error_km": 15.7,
+    "trilateration_error_km": 15.8,
     "rings": [
       [
         [
@@ -60794,7 +60611,7 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.751,
+      110.7511,
       23.39
     ],
     "trilateration_error_km": 16.4,
@@ -60951,10 +60768,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.425,
-      23.2794
+      110.4246,
+      23.2789
     ],
-    "trilateration_error_km": 29.7,
+    "trilateration_error_km": 29.8,
     "rings": [
       [
         [
@@ -61169,10 +60986,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.7922,
-      21.8645
+      112.795,
+      21.8619
     ],
-    "trilateration_error_km": 130.6,
+    "trilateration_error_km": 131.0,
     "rings": [
       [
         [
@@ -61363,8 +61180,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      115.2237,
-      24.2461
+      115.2229,
+      24.2455
     ],
     "trilateration_error_km": 42.4,
     "rings": [
@@ -61554,10 +61371,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      113.3663,
-      23.7921
+      113.3601,
+      23.7898
     ],
-    "trilateration_error_km": 130.7,
+    "trilateration_error_km": 131.1,
     "rings": [
       [
         [
@@ -61758,8 +61575,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      113.4343,
-      24.5224
+      113.4345,
+      24.5217
     ],
     "trilateration_error_km": 37.2,
     "rings": [
@@ -61885,7 +61702,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      114.4671,
+      114.467,
       25.4622
     ],
     "trilateration_error_km": 59.9,
@@ -62072,10 +61889,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      112.3816,
-      24.5246
+      112.3826,
+      24.524
     ],
-    "trilateration_error_km": 74.3,
+    "trilateration_error_km": 74.4,
     "rings": [
       [
         [
@@ -62271,8 +62088,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.0197,
-      22.1902
+      111.0201,
+      22.1903
     ],
     "trilateration_error_km": 42.3,
     "rings": [
@@ -62477,8 +62294,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.5053,
-      24.5334
+      110.5048,
+      24.5333
     ],
     "trilateration_error_km": 84.7,
     "rings": [
@@ -62931,10 +62748,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.9093,
-      22.1786
+      110.9095,
+      22.1784
     ],
-    "trilateration_error_km": 23.2,
+    "trilateration_error_km": 23.3,
     "rings": [
       [
         [
@@ -63103,10 +62920,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.6838,
-      24.722
+      110.6833,
+      24.7224
     ],
-    "trilateration_error_km": 34.9,
+    "trilateration_error_km": 35.0,
     "rings": [
       [
         [
@@ -63294,8 +63111,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.7144,
-      24.6394
+      110.7148,
+      24.6395
     ],
     "trilateration_error_km": 52.7,
     "rings": [
@@ -63483,9 +63300,9 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       110.0099,
-      23.293
+      23.2926
     ],
-    "trilateration_error_km": 12.9,
+    "trilateration_error_km": 13.0,
     "rings": [
       [
         [
@@ -63640,8 +63457,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.5239,
-      23.2831
+      111.5242,
+      23.2832
     ],
     "trilateration_error_km": 47.9,
     "rings": [
@@ -63831,10 +63648,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      111.5704,
-      23.3107
+      111.5706,
+      23.3108
     ],
-    "trilateration_error_km": 32.2,
+    "trilateration_error_km": 32.1,
     "rings": [
       [
         [
@@ -64008,8 +63825,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      111.4212,
-      23.4857
+      111.421,
+      23.4853
     ],
     "trilateration_error_km": 14.4,
     "rings": [
@@ -64132,17 +63949,6 @@
       },
       {
         "source": "鬱林州",
-        "target": "容州",
-        "target_detail": "容州陸川縣",
-        "direction": "南",
-        "azimuth": 180.0,
-        "distance_li": 80,
-        "distance_raw": "南至容州陸川縣八十里",
-        "vol": "卷165",
-        "dao": "嶺南道"
-      },
-      {
-        "source": "鬱林州",
         "target": "太平軍",
         "target_detail": "太平軍石康縣地名土竇分界",
         "direction": "西",
@@ -64194,10 +64000,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.8757,
-      22.3957
+      109.7786,
+      22.328
     ],
-    "trilateration_error_km": 12.8,
+    "trilateration_error_km": 21.9,
     "rings": [
       [
         [
@@ -64377,10 +64183,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.9611,
-      23.2027
+      108.9607,
+      23.2022
     ],
-    "trilateration_error_km": 15.6,
+    "trilateration_error_km": 15.5,
     "rings": [
       [
         [
@@ -64539,10 +64345,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.5468,
-      23.3616
+      108.5463,
+      23.3621
     ],
-    "trilateration_error_km": 43.3,
+    "trilateration_error_km": 43.2,
     "rings": [
       [
         [
@@ -64719,10 +64525,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.6224,
-      23.7652
+      109.6213,
+      23.7662
     ],
-    "trilateration_error_km": 12.5,
+    "trilateration_error_km": 12.4,
     "rings": [
       [
         [
@@ -64909,7 +64715,7 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.3841,
+      109.3859,
       24.5
     ],
     "trilateration_error_km": 98.5,
@@ -64986,7 +64792,7 @@
     ],
     "distances": [
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "東京",
         "target_detail": "東京",
         "direction": "北",
@@ -64997,7 +64803,7 @@
         "dao": "嶺南道"
       },
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "西京",
         "target_detail": "西京",
         "direction": "北",
@@ -65008,7 +64814,7 @@
         "dao": "嶺南道"
       },
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "舊瀼州",
         "target_detail": "舊瀼州",
         "direction": "南",
@@ -65019,7 +64825,7 @@
         "dao": "嶺南道"
       },
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "舊澄州",
         "target_detail": "舊澄州",
         "direction": "北",
@@ -65030,7 +64836,7 @@
         "dao": "嶺南道"
       },
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "田州",
         "target_detail": "田州",
         "direction": "西南",
@@ -65041,7 +64847,7 @@
         "dao": "嶺南道"
       },
       {
-        "source": "管羈縻州",
+        "source": "邕州",
         "target": "賓州",
         "target_detail": "賓州",
         "direction": "東北",
@@ -65061,7 +64867,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       108.2797,
-      23.3344
+      23.3343
     ],
     "trilateration_error_km": 57.3,
     "rings": [
@@ -65258,8 +65064,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.9556,
-      23.1561
+      109.9552,
+      23.1562
     ],
     "trilateration_error_km": 38.9,
     "rings": [
@@ -65440,8 +65246,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.1112,
-      22.7389
+      109.1113,
+      22.7387
     ],
     "trilateration_error_km": 16.6,
     "rings": [
@@ -65804,10 +65610,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7057,
-      22.7927
+      110.7053,
+      22.7921
     ],
-    "trilateration_error_km": 44.5,
+    "trilateration_error_km": 44.4,
     "rings": [
       [
         [
@@ -65991,9 +65797,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       111.03,
-      21.2088
+      21.2073
     ],
-    "trilateration_error_km": 91.8,
+    "trilateration_error_km": 91.9,
     "rings": [
       [
         [
@@ -66179,8 +65985,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.8683,
-      22.1404
+      109.8681,
+      22.1405
     ],
     "trilateration_error_km": 18.4,
     "rings": [
@@ -66383,8 +66189,8 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      108.9617,
-      21.7954
+      108.9596,
+      21.7934
     ],
     "trilateration_error_km": 38.8,
     "rings": [
@@ -66578,8 +66384,8 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      109.2903,
-      24.2678
+      109.29,
+      24.2677
     ],
     "trilateration_error_km": 14.9,
     "rings": [
@@ -66750,10 +66556,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      108.4007,
-      24.0146
+      108.398,
+      24.0135
     ],
-    "trilateration_error_km": 59.6,
+    "trilateration_error_km": 59.8,
     "rings": [
       [
         [
@@ -66962,10 +66768,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      110.1987,
-      22.408
+      110.1983,
+      22.4078
     ],
-    "trilateration_error_km": 138.2,
+    "trilateration_error_km": 138.1,
     "rings": [
       [
         [
@@ -67321,10 +67127,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      109.0465,
+      109.0437,
       19.45
     ],
-    "trilateration_error_km": 23.8,
+    "trilateration_error_km": 24.0,
     "rings": [
       [
         [
@@ -67603,10 +67409,10 @@
     ],
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
-      110.7852,
+      110.7893,
       19.27
     ],
-    "trilateration_error_km": 66.6,
+    "trilateration_error_km": 67.0,
     "rings": [
       [
         [
@@ -67761,9 +67567,9 @@
     "coord_source": "CHGIS/江山時序基準点",
     "trilaterated_coord": [
       110.18,
-      18.0973
+      18.094
     ],
-    "trilateration_error_km": 72.9,
+    "trilateration_error_km": 73.2,
     "rings": [
       [
         [
@@ -67935,10 +67741,10 @@
     ],
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
-      104.7169,
+      104.7147,
       19.0
     ],
-    "trilateration_error_km": 143.3,
+    "trilateration_error_km": 143.5,
     "rings": [
       [
         [
@@ -68107,7 +67913,7 @@
     "coord_source": "CHGIS/歴史地図集",
     "trilaterated_coord": [
       106.6478,
-      18.8156
+      18.8137
     ],
     "trilateration_error_km": 103.0,
     "rings": [
